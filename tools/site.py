@@ -11,7 +11,7 @@ import html
 import json
 import re
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 from urllib.parse import quote, urlencode
 
@@ -187,7 +187,9 @@ def expected_files():
         + ''.join(f'  <url><loc>{html.escape(u)}</loc></url>\n' for u in urls)
         + '</urlset>\n')
     files[ROOT / 'robots.txt'] = f'User-agent: *\nAllow: /\nSitemap: {site}sitemap.xml\n'
-    files[ROOT / 'pins.xml'] = pin_feed(config, load_js('pins.js', 'PINS'))
+    pins = load_js('pins.js', 'PINS')
+    files[ROOT / 'pins.xml'] = pin_feed(config, pins)
+    files[ROOT / 'videos.xml'] = pin_feed(config, pins, video=True)
     return files
 
 
@@ -226,10 +228,22 @@ def board_id(config, pin):
     return board.get('id', '')
 
 
-def pin_feed(config, pins):
-    """RSS-Feed mit den neuesten 50 Pins – Make.com liest ihn und postet neue Einträge auf Pinterest."""
+def video_file(pin):
+    return ROOT / 'assets' / 'social' / f"video-{pin['id']}.mp4"
+
+
+def pin_feed(config, pins, video=False):
+    """RSS-Feed mit den neuesten 50 Pins – Make.com liest ihn und postet neue Einträge auf Pinterest.
+
+    video=False: pins.xml mit Bild-Pins. Video-Pins sind hier nur drin, solange das Video-Scenario noch nicht läuft.
+    video=True:  videos.xml mit den Video-Pins (MP4 plus Bild als Titelbild) für das zweite Make-Scenario.
+    """
     site = config['siteUrl']
     esc = html.escape
+    if video:
+        pins = [p for p in pins if p.get('video') and video_file(p).exists()]
+    elif config.get('videoScenarioAktiv'):
+        pins = [p for p in pins if not p.get('video')]
     items = []
     for pin in sorted(pins, key=lambda p: (p['datum'], p['id']), reverse=True)[:50]:
         y, m, d = (int(x) for x in pin['datum'].split('-'))
@@ -238,22 +252,30 @@ def pin_feed(config, pins):
         image = pin_image(pin)
         image_url = f"{site}assets/social/{image.name}"
         size = image.stat().st_size if image.exists() else 0
+        if video:
+            vid = video_file(pin)
+            vid_url = f"{site}assets/social/{vid.name}"
+            media = (f'      <enclosure url="{esc(vid_url)}" length="{vid.stat().st_size}" type="video/mp4"/>\n'
+                     f'      <media:content url="{esc(vid_url)}" medium="video" type="video/mp4"/>\n'
+                     f'      <media:thumbnail url="{esc(image_url)}"/>\n')
+        else:
+            media = (f'      <enclosure url="{esc(image_url)}" length="{size}" type="image/png"/>\n'
+                     f'      <media:content url="{esc(image_url)}" medium="image" type="image/png"/>\n')
         items.append(
             '    <item>\n'
             f'      <title>{esc(pin["titel"])}</title>\n'
             f'      <link>{esc(pin_link(pin, site))}</link>\n'
-            f'      <guid isPermaLink="false">{esc(pin["id"])}</guid>\n'
+            f'      <guid isPermaLink="false">{esc(pin["id"])}{"-video" if video else ""}</guid>\n'
             f'      <category>{esc(board_id(config, pin))}</category>\n'
             f'      <pubDate>{weekday}, {d:02d} {month} {y} 08:00:00 +0000</pubDate>\n'
             f'      <description>{esc(pin["beschreibung"])}</description>\n'
-            f'      <enclosure url="{esc(image_url)}" length="{size}" type="image/png"/>\n'
-            f'      <media:content url="{esc(image_url)}" medium="image" type="image/png"/>\n'
+            + media +
             '    </item>\n')
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">\n'
         '  <channel>\n'
-        '    <title>Geschenke-Finder – Pinterest-Pins</title>\n'
+        f'    <title>Geschenke-Finder – Pinterest-{"Videos" if video else "Pins"}</title>\n'
         f'    <link>{esc(site)}</link>\n'
         '    <description>Neue Geschenkideen für Pinterest</description>\n'
         '    <language>de</language>\n'
@@ -354,6 +376,10 @@ def check():
         err(f"amazonDomain muss eines von {sorted(DOMAINS)} sein.")
     if not str(config.get('siteUrl', '')).startswith('https://') or not config['siteUrl'].endswith('/'):
         err('siteUrl muss mit https:// beginnen und mit / enden.')
+    key = config.get('indexNowKey', '')
+    key_file = ROOT / f'{key}.txt'
+    if not re.fullmatch(r'[0-9a-f]{32}', key) or not key_file.exists() or key_file.read_text(encoding='utf-8').strip() != key:
+        err('indexNowKey in daten/config.js und die Datei <Schlüssel>.txt im Hauptordner müssen zusammenpassen.')
     boards = config.get('pinterestBoards', {})
     if 'geschenkideen' not in boards:
         err('pinterestBoards braucht die allgemeine Pinnwand "geschenkideen" (Rückfall für alle Pins).')
@@ -465,6 +491,11 @@ def check():
         for t in (pin.get('titel', ''), pin.get('beschreibung', '')):
             if CLAIMS.search(t):
                 err(f'{where}: "{t[:40]}…" enthält eine unbelegte Behauptung (Bestseller, Testsieger …).')
+        if pin.get('video') and date.fromisoformat(pin.get('datum', '2000-01-01')) >= date.today() - timedelta(days=60) \
+                and not video_file(pin).exists():
+            err(f'{where}: Video fehlt – "python -P tools/videos.py" ausführen.')
+        if pin.get('design', 'a') not in ('a', 'b', 'c'):
+            err(f'{where}: design muss "a", "b" oder "c" sein.')
         if pin.get('board') and pin['board'] not in boards:
             err(f'{where}: board "{pin["board"]}" gibt es nicht – erlaubt: {sorted(boards)}.')
         seite = pin.get('seite', '')

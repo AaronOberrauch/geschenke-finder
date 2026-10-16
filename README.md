@@ -21,7 +21,9 @@ Amazon-Partnerseite mit Geschenkideen. Ein Bot pflegt sie jede Woche automatisch
 | `assets/` | Aussehen (`style.css`) und Logik (`app.js`) |
 | `tools/vorlage.html` | Vorlage für alle Seiten |
 | `tools/site.py` | `build` erzeugt die Seiten, `check` prüft alles |
-| `tools/grafiken.py` | erzeugt Pinterest-Pins, Stories und Vorschaubilder in `assets/social/` |
+| `tools/grafiken.py` | erzeugt Pinterest-Pins (Designs a/b/c), Stories und Vorschaubilder in `assets/social/` |
+| `tools/videos.py` | erzeugt Video-Pins (MP4) für Pins mit `"video": true`; daraus entsteht `videos.xml` |
+| `tools/indexnow.py` | meldet neue Seiten an Bing, Ecosia, DuckDuckGo & Co. |
 | `index.html`, `ideen/`, `sitemap.xml`, `robots.txt`, `pins.xml` | werden von `build` erzeugt – nicht von Hand ändern |
 | `_entwuerfe/` | Social-Media-Entwürfe vom Bot (nicht online) |
 

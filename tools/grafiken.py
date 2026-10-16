@@ -171,6 +171,98 @@ def tall(info, size, list_count):
     return img
 
 
+def footer(draw, info, w, h, cta_y, button=BRAND, text=WHITE, muted=MUTED):
+    """Button „Alle Ideen ansehen“, Adresse und Werbehinweis – gleich für alle Pin-Designs."""
+    cta_font = font(int(w * 0.05), bold=True)
+    cta = 'Alle Ideen ansehen  →'
+    cta_w = draw.textlength(cta, font=cta_font) + 2 * int(w * 0.06)
+    cta_h = int(cta_font.size * 2.1)
+    draw.rounded_rectangle([(w - cta_w) / 2, cta_y, (w + cta_w) / 2, cta_y + cta_h], radius=cta_h // 2, fill=button)
+    centered(draw, cta_y + (cta_h - cta_font.size * 1.33) / 2, cta, cta_font, text, w)
+    url_font = font(int(w * 0.03))
+    url_y = cta_y + cta_h + int(h * 0.015)
+    centered(draw, url_y, short_url(info['config']), url_font, muted, w)
+    centered(draw, url_y + int(url_font.size * 1.6), 'Anzeige · enthält Amazon-Partnerlinks', font(int(w * 0.024)), muted, w)
+
+
+def grid_pin(info, size=(1000, 1500)):
+    """Design B: Titel oben auf Weiß, darunter 2 × 3 große bunte Kacheln mit Emoji und Namen."""
+    w, h = size
+    img = Image.new('RGB', size, CREAM)
+    gradient(img, (0, 0, w, int(h * 0.05)), BRAND, BRAND_LIGHT)
+    draw = ImageDraw.Draw(img)
+    pad = int(w * 0.06)
+    y = int(h * 0.075)
+    pill_font = font(int(w * 0.032), bold=True)
+    pill = f"{info['subtitle']}"
+    pw = draw.textlength(pill, font=pill_font) + 40
+    draw.rounded_rectangle([(w - pw) / 2, y, (w + pw) / 2, y + pill_font.size * 1.7], radius=30, fill=(255, 237, 213))
+    centered(draw, y + pill_font.size * 0.25, pill, pill_font, (194, 65, 12), w)
+    y += int(pill_font.size * 2.4)
+    title_font, lines = fit_title(draw, info['title'], w - 2 * pad, 3, int(w * 0.085), int(w * 0.055),
+                                  max_height=int(h * 0.24))
+    for line in lines:
+        centered(draw, y, line, title_font, INK, w)
+        y += int(title_font.size * 1.15)
+    # 2 × 3 Kacheln
+    top = max(y + int(h * 0.03), int(h * 0.33))
+    gap = int(w * 0.035)
+    cols, rows = 2, 3
+    tile_w = (w - 2 * pad - gap) / cols
+    tile_h = (int(h * 0.80) - top - gap * (rows - 1)) / rows
+    name_font = font(int(min(w * 0.034, tile_h * 0.125)), bold=True)
+    for i, p in enumerate(info['products'][:6]):
+        cx = pad + (i % cols) * (tile_w + gap)
+        cy = top + (i // cols) * (tile_h + gap)
+        draw.rounded_rectangle([cx, cy, cx + tile_w, cy + tile_h], radius=int(tile_w * 0.09), fill=TILE[p['category']])
+        emoji(draw, (cx + tile_w / 2, cy + tile_h * 0.33), p['emoji'], int(tile_h * 0.36))
+        name_lines = wrap(draw, p['title'], name_font, tile_w - 30)[:2]
+        # Namen im unteren Teil der Kachel senkrecht mittig, egal ob 1 oder 2 Zeilen
+        block = len(name_lines) * name_font.size * 1.15
+        ny = cy + tile_h * 0.80 - block / 2
+        for nl in name_lines:
+            nw = draw.textlength(nl, font=name_font)
+            draw.text((cx + (tile_w - nw) / 2, ny), nl, font=name_font, fill=INK)
+            ny += name_font.size * 1.15
+    footer(draw, info, w, h, int(h * 0.835))
+    return img
+
+
+def list_pin(info, size=(1000, 1500)):
+    """Design C: dunkler Hintergrund, nummerierte Liste mit orangen Ziffern."""
+    w, h = size
+    dark, amber = (15, 23, 42), (251, 191, 36)
+    img = Image.new('RGB', size, dark)
+    draw = ImageDraw.Draw(img)
+    pad = int(w * 0.08)
+    emoji(draw, (w / 2, int(h * 0.09)), info['emoji'], int(w * 0.12))
+    y = int(h * 0.16)
+    title_font, lines = fit_title(draw, info['title'], w - 2 * pad, 3, int(w * 0.08), int(w * 0.052),
+                                  max_height=int(h * 0.22))
+    for line in lines:
+        centered(draw, y, line, title_font, WHITE, w)
+        y += int(title_font.size * 1.15)
+    centered(draw, y + int(h * 0.01), info['subtitle'], font(int(w * 0.038)), amber, w)
+    top = max(y + int(h * 0.06), int(h * 0.38))
+    items = info['products'][:6]
+    row_h = (int(h * 0.80) - top) / max(1, len(items))
+    num_font = font(int(min(row_h * 0.5, w * 0.075)), bold=True)
+    name_font = font(int(min(row_h * 0.32, w * 0.045)), bold=True)
+    for i, p in enumerate(items):
+        ry = top + i * row_h
+        draw.line([(pad, ry), (w - pad, ry)], fill=(30, 41, 59), width=2)
+        draw.text((pad, ry + (row_h - num_font.size * 1.3) / 2), str(i + 1), font=num_font, fill=amber)
+        text_x = pad + int(w * 0.11)
+        name = wrap(draw, p['title'], name_font, w - pad - text_x - int(row_h * 0.9))[0]
+        draw.text((text_x, ry + (row_h - name_font.size * 1.3) / 2), name, font=name_font, fill=WHITE)
+        emoji(draw, (w - pad - row_h * 0.35, ry + row_h / 2), p['emoji'], int(row_h * 0.5))
+    footer(draw, info, w, h, int(h * 0.835), button=amber, text=dark, muted=(148, 163, 184))
+    return img
+
+
+DESIGNS = {'a': lambda info: tall(info, (1000, 1500), 6), 'b': grid_pin, 'c': list_pin}
+
+
 def wide(info):
     """Vorschaubild 1200 x 630 für geteilte Links."""
     w, h = 1200, 630
@@ -245,7 +337,7 @@ def main():
             wanted.add(path)
     for pin, info in pin_infos():
         path = sitetool.pin_image(pin)
-        tall(info, (1000, 1500), 6).save(path, optimize=True)
+        DESIGNS[pin.get('design', 'a')](info).save(path, optimize=True)
         wanted.add(path)
     for old in OUT.glob('*.png'):
         if old not in wanted:

@@ -4,7 +4,13 @@
 // siteUrl:          die Adresse, unter der die Seite online ist (mit / am Ende)
 // pinterestBoards:  deine Pinterest-Pinnwände (Name und interne ID aus Make → Pinterest → List Boards).
 //                   Der Schlüssel links (z. B. "tiere") wird in daten/pins.js als "board" verwendet.
+// indexNowKey:      Schlüssel, mit dem tools/indexnow.py neue Seiten an Bing, Ecosia, DuckDuckGo & Co. meldet
+//                   (die Datei <Schlüssel>.txt im Hauptordner muss genau diesen Text enthalten).
+// videoScenarioAktiv: false = Video-Pins gehen vorerst als normale Bild-Pins über pins.xml raus.
+//                   true  = sobald das zweite Make-Scenario (videos.xml → Video-Pin) läuft; dann nur noch als Video.
 window.CONFIG = {
+  "indexNowKey": "bb7c77ebce127199306bf33e2fbb169b",
+  "videoScenarioAktiv": false,
   "partnerTag": "geschenkef0f0-21",
   "amazonDomain": "www.amazon.de",
   "siteUrl": "https://aaronoberrauch.github.io/geschenke-finder/",

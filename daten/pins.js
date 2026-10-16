@@ -104,5 +104,38 @@ window.PINS = [
       "Elektrische Heizdecke",
       "Aroma-Diffuser"
     ]
+  },
+  {
+    "id": "2026-10-16-wichteln-kollegen",
+    "datum": "2026-10-16",
+    "titel": "Wichtelgeschenke für Kollegen: 6 Ideen unter 15 €, die gut ankommen",
+    "beschreibung": "Du suchst ein Wichtelgeschenk für Kollegen und kennst die Person kaum? Vom Thermobecher über das Bullet Journal bis zum Party-Kartenspiel sind das kleine Geschenke unter 15 €, die jeder gebrauchen kann. Alle Wichtel-Ideen findest du auf der Seite. #wichteln #wichtelgeschenk #büro #geschenkideen #werbung",
+    "emoji": "🎅",
+    "seite": "wichtelgeschenke-unter-15-euro",
+    "filter": {},
+    "design": "b",
+    "produkte": ["Edelstahl-Thermobecher", "Bullet-Journal-Notizbuch", "Kartenspiel für Partys", "Kräutergarten-Anzuchtset", "Puzzle 1000 Teile", "Sunset-Lampe"]
+  },
+  {
+    "id": "2026-10-16-geschenk-hundebesitzer",
+    "datum": "2026-10-16",
+    "titel": "Geschenk für Hundebesitzer: 6 Ideen für Gassi, Spiel und Kuscheln",
+    "beschreibung": "Was schenkt man Hundebesitzern? Ein Leuchthalsband für dunkle Gassi-Runden, ein Schnüffelteppich gegen Langeweile oder ein gemütliches Hundebett – Geschenke für Hund und Herrchen in jedem Budget. Alle Ideen für Tierfreunde gibt es auf der Seite. #hundebesitzer #hundeliebe #geschenkideen #hundezubehör #werbung",
+    "emoji": "🐕",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {},
+    "design": "c",
+    "produkte": ["LED-Leuchthalsband für Hunde", "Schnüffelteppich für Hunde", "Intelligenzspielzeug für Hunde", "Hundebett mit erhöhtem Rand", "Hunde-Regenmantel", "GPS-Tracker für Hunde"]
+  },
+  {
+    "id": "2026-10-16-technik-teenager-video",
+    "datum": "2026-10-16",
+    "titel": "Technik-Geschenke für Teenager: von der Drohne bis zum Plattenspieler",
+    "beschreibung": "Du suchst Technik-Geschenke für Teenager? Eine Kamera-Drohne für Fotos von oben, ein Plattenspieler für Vinyl-Fans oder eine Sofortbildkamera für Erinnerungen zum Anfassen – Ideen für Jugendliche in jedem Budget. Alle Geschenke für Teenager findest du auf der Seite. #geschenkefürteenager #technikgeschenke #drohne #geschenkideen #werbung",
+    "emoji": "🚁",
+    "seite": "geschenke-fuer-teenager",
+    "filter": {"category": "tech"},
+    "video": true,
+    "produkte": ["Kamera-Drohne für Einsteiger", "Plattenspieler mit Lautsprechern", "Sofortbildkamera", "LED-Strip mit App-Steuerung", "Gaming-Headset", "Mini-Drohne für Kinder"]
   }
 ];

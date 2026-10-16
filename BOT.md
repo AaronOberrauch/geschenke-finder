@@ -13,7 +13,7 @@ um 18 Uhr. Arbeite vorsichtig: Lieber eine kleine, fehlerfreie Änderung als ein
 | Neue Themen- oder Nischen-Seite mit Ratgeber (3, 3b) | ja, max. 1 | nein | nein |
 | Ratgeber für 1 bestehende Seite ohne Ratgeber (3c) | ja | ja | ja |
 | Produkte (4) | 2–3 | 2–3 | 2–3 |
-| Pins (4b) | 3 | 3 | 3 |
+| Pins (4b), davon 1 Video-Pin | 5 | 5 | 5 |
 | Social-Media-Entwürfe (7) | 5 für die Woche | nein | nein |
 
 Bei den kurzen Läufen liest du die letzte `_entwuerfe/trends-*.md` und ergänzt sie nur. Sonntagspins dürfen
@@ -28,6 +28,7 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
 - Erzeugte Dateien über `python -I tools/site.py build` (nie von Hand)
 
 **Nicht anfassen:** `daten/config.js`, `impressum.html`, `datenschutz.html`, `google*.html` (Google-Bestätigung),
+die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
 `assets/`, `tools/`, `BOT.md`, `README.md`. Nie `git push --force`, nie Historie umschreiben.
 
 ## Ablauf
@@ -116,7 +117,7 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
      `budget` under15 | 15to50 | 50to150 | over150;
      `recipients` household | teenager | parents | kids;
      `occasions` weihnachten | geburtstag | wichteln | nikolaus | valentinstag | ostern | muttertag | vatertag | schulanfang.
-4b. **Pinterest-Pins: 3 neue pro Lauf** am Ende von `daten/pins.js` anhängen. Make.com holt sie über
+4b. **Pinterest-Pins: 5 neue pro Lauf** am Ende von `daten/pins.js` anhängen. Make.com holt sie über
    `pins.xml` ab und veröffentlicht sie automatisch – was du hier schreibst, geht **ohne weitere Kontrolle live**.
    Felder:
    - `id`: heutiges Datum + Stichwort, z. B. `2026-11-02-geschenke-fuer-papa` (einmalig, nie wiederverwenden)
@@ -140,20 +141,30 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
      Setze es nur, wenn die automatische Wahl offensichtlich schlechter passt.
      Für neue Anlässe ohne eigene Pinnwand (z. B. Valentinstag) passt automatisch „geschenkideen“ –
      schlag im Bericht vor, dafür eine eigene Pinnwand anzulegen.
+   - `design`: `"a"` (Liste mit Kacheln, orange), `"b"` (2 × 3 große Kacheln) oder `"c"` (dunkel, nummerierte
+     Liste). **Wechsle ab**, damit das Profil abwechslungsreich aussieht – nicht zwei gleiche hintereinander.
+   - `video`: `true` bei **genau 1 der 5 Pins pro Lauf** – daraus macht `tools/videos.py` ein ~10-Sekunden-Video.
+     Nimm dafür ein Thema mit 6 überzeugenden Produkten.
+   - Dieselbe Seite darf wieder einen Pin bekommen, wenn seit dem letzten Pin dazu mindestens 2 Wochen vergangen sind
+     **und** Titel, Design und Produktauswahl deutlich anders sind (Pinterest mag „frische“ Pins zum selben Thema).
    - `produkte`: optional bis zu 6 Produkttitel (genau wie in `daten/produkte.js`), die auf dem Pin stehen sollen –
      nimm die überzeugendsten für das Thema
    Wähle Themen passend zur Saison (anstehende Anlässe zuerst) und wiederhole keine Kombination aus Seite und Filter
-   der letzten 8 Wochen. **In jedem Lauf ist mindestens 1 der 3 Pins zum Thema Haustiere** – am besten mit der Saison
+   der letzten 8 Wochen. **In jedem Lauf ist mindestens 1 der 5 Pins zum Thema Haustiere** – am besten mit der Saison
    verbunden, z. B. `seite` weihnachtsgeschenke + `filter` {"category": "pets"} („Weihnachtsgeschenke für Hundebesitzer“)
    oder die Seite `geschenke-fuer-tierfreunde` mit `budget`-Filter. Einmal pro Woche (im Sonntagslauf, im Dezember
    und Januar in jedem Lauf) ist außerdem ein Pin zum Thema Home-Training dabei (Seite `home-training-geschenke` oder `filter` {"category": "sport"}). Gleiche Regeln wie bei Produkten: keine Preise einzelner Produkte, keine Bewertungen,
    keine Behauptungen wie „Bestseller“. Budget-Angaben wie „unter 15 €“ sind erlaubt.
 5. `python -P tools/grafiken.py` (erzeugt die Social-Media-Grafiken in `assets/social/` neu),
+   `python -P tools/videos.py` (erzeugt die neuen Video-Pins),
    dann `python -I tools/site.py build`, dann `python -I tools/site.py check`.
    Bei FEHLER: bis zu zwei Korrekturversuche. Klappt es nicht: alle Änderungen mit
    `git checkout -- . && git clean -fd ideen assets/social` verwerfen, nichts veröffentlichen, melden.
    WARNUNGEN zu Partner-ID und Impressum sind bekannt und blockieren nicht.
 6. Veröffentlichen: `git add -A`, `git commit -m "Bot: <kurze Zusammenfassung>"`, `git push`.
+6b. **Suchmaschinen benachrichtigen:** `python -I tools/indexnow.py` – wartet, bis die neuen Seiten online sind, und
+   meldet sie an Bing (und damit Ecosia, DuckDuckGo, ChatGPT-Suche). Ein Fehler hier ist kein Grund zum Zurücksetzen,
+   nur im Bericht erwähnen.
 7. **Texte zum Teilen (nur sonntags)** in `_entwuerfe/JJJJ-MM-TT.md` schreiben. Der Betreiber macht **kein
    Instagram, kein TikTok, keine Videos und teilt nichts über WhatsApp oder an Freunde/Familie** – schreib dafür
    nichts. Schreib nur 2 fertige Texte für **Facebook-Gruppen** (z. B. Eltern-, Hunde- oder Wichtel-Gruppen), die er
