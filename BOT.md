@@ -124,16 +124,17 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
    `git checkout -- . && git clean -fd ideen assets/social` verwerfen, nichts veröffentlichen, melden.
    WARNUNGEN zu Partner-ID und Impressum sind bekannt und blockieren nicht.
 6. Veröffentlichen: `git add -A`, `git commit -m "Bot: <kurze Zusammenfassung>"`, `git push`.
-7. **Social-Media-Entwürfe (nur sonntags)** in `_entwuerfe/JJJJ-MM-TT.md` schreiben: 5 Posts, passend zur Saison
-   und zu den Produkten auf der Seite. Pro Post:
-   - Plattform (Instagram/TikTok-Video, Pinterest-Pin oder Facebook)
-   - Hook (erste Zeile, die zum Weiterlesen bringt)
-   - Text (kurz, locker, Du-Form)
-   - Link: volle Adresse aus `siteUrl` plus passender Filter, z. B.
-     `…/ideen/wichtelgeschenke-unter-15-euro.html` oder `…/#fuer=teenager&budget=under15`
-   - Grafik: passende Datei aus `assets/social/` mit vollem Pfad
-     (`<slug>-pin.png` für Pinterest, `<slug>-story.png` für Stories/TikTok, `start-…` für die Startseite)
-   - Bei Videos: Idee in 3–5 Szenen (was man filmt)
-   - Hashtags (5–8), **immer mit `#werbung`**, weil die Links Provision bringen
+7. **Texte zum Teilen (nur sonntags)** in `_entwuerfe/JJJJ-MM-TT.md` schreiben. Der Betreiber macht **kein
+   Instagram und kein TikTok und keine Videos** – schreib dafür nichts. Er teilt die Seite von Hand in
+   WhatsApp und Facebook-Gruppen. Schreib 3 fertige Texte, die er nur kopieren und einfügen muss:
+   - **WhatsApp-Status:** 1–2 Sätze, locker, Du-Form, plus Link. Dazu die passende Story-Grafik
+     (`assets/social/<slug>-story.png`, voller Pfad), die er als Bild in den Status stellt.
+   - **Facebook-Gruppe (z. B. Eltern-, Hunde- oder Wichtel-Gruppen):** 3–4 Sätze, hilfsbereit statt werblich
+     („Falls noch jemand ein Wichtelgeschenk sucht …“), plus Link und am Ende „(Werbung: enthält Partnerlinks)“.
+     Nenne 2–3 Arten passender Gruppen, wo der Text gut ankommt. Hinweis anfügen: vorher die Gruppenregeln lesen,
+     viele Gruppen verbieten Werbelinks.
+   - **WhatsApp an Freunde/Familie:** kurze, persönliche Nachricht („Hab eine Seite mit Geschenkideen gebaut …“).
+   Links immer als volle Adresse aus `siteUrl` plus passender Seite oder Filter, z. B.
+   `…/ideen/wichtelgeschenke-unter-15-euro.html` oder `…/#fuer=teenager&budget=under15`.
    Die Entwürfe sind nicht im Git (stehen in `.gitignore`).
 8. Zum Schluss kurz melden: wichtigste Trends aus 2b, neue Seite(n), neue Produkte, neue Pins, Ergebnis von `check`, Commit, Datei mit den Entwürfen.
