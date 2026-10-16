@@ -17,7 +17,7 @@ window.CONFIG = {
   "partnerTag": "geschenkef0f0-21",
   "trackingIds": {},
   "amazonDomain": "www.amazon.de",
-  "siteUrl": "https://aaronoberrauch.github.io/geschenke-finder/",
+  "siteUrl": "https://geschenkidee-finden.com/",
   "pinterestBoards": {
     "geschenkideen": {"name": "Geschenkideen", "id": "376261812558071901"},
     "weihnachten": {"name": "Weihnachtsgeschenke Ideen", "id": "376261812558071907"},
