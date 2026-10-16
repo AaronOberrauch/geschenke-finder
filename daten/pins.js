@@ -185,5 +185,66 @@ window.PINS = [
       "Gaming-Headset",
       "Mini-Drohne für Kinder"
     ]
+  },
+  {
+    "id": "2026-10-17-adventskalender",
+    "datum": "2026-10-17",
+    "titel": "Adventskalender 2026: Ideen für Kinder, Erwachsene, Hund und Katze",
+    "beschreibung": "Du suchst einen Adventskalender für Kinder, für die Freundin oder sogar für Hund und Katze? Vom Spielzeug- und Beauty-Adventskalender über Tee und Grillgewürze bis zum Kalender zum Selbstbefüllen findest du hier Ideen für jedes Budget – rechtzeitig vor dem 1. Dezember. #adventskalender #weihnachten #advent #geschenkideen #werbung",
+    "emoji": "📅",
+    "seite": "adventskalender",
+    "filter": {},
+    "design": "d",
+    "foto": "adventskalender",
+    "board": "weihnachten",
+    "produkte": [
+      "Spielzeug-Adventskalender für Kinder",
+      "Beauty-Adventskalender",
+      "Tee-Adventskalender",
+      "Adventskalender für Hunde",
+      "Puzzle-Adventskalender",
+      "Adventskalender zum Befüllen"
+    ],
+    "foto_id": 3858327
+  },
+  {
+    "id": "2026-10-17-geschenke-maenner",
+    "datum": "2026-10-17",
+    "titel": "Geschenke für Männer, die angeblich nichts brauchen: Ideen für jedes Budget",
+    "beschreibung": "Was schenkt man Männern zum Geburtstag oder zu Weihnachten? Ein Multitool für Heimwerker, ein Grillthermometer für Grillfans oder Noise-Cancelling-Kopfhörer für Technik-Fans – praktische Geschenke für Männer in jedem Budget. Alle Ideen findest du auf der Seite. #geschenkefürmänner #geschenkideen #weihnachtsgeschenke #geschenkfürihn #werbung",
+    "emoji": "🧔",
+    "seite": "geschenke-fuer-maenner",
+    "filter": {},
+    "design": "d",
+    "foto": "werkzeug werkbank",
+    "produkte": [
+      "Multitool",
+      "Digitales Grillthermometer",
+      "Noise-Cancelling-Kopfhörer",
+      "Bestückter Werkzeugkoffer",
+      "Bartpflege-Set",
+      "Aufladbare LED-Taschenlampe"
+    ],
+    "foto_id": 7092687
+  },
+  {
+    "id": "2026-10-17-geschenke-frauen",
+    "datum": "2026-10-17",
+    "titel": "Geschenke für Frauen und die Freundin: Ideen zum Verwöhnen",
+    "beschreibung": "Du suchst ein Geschenk für die Freundin, die Partnerin oder die Schwester? Vom Duftkerzen-Set über den flauschigen Bademantel bis zum Schmuckkästchen sind das Ideen zum Verwöhnen und Wohlfühlen – für jedes Budget. Schau dir alle Geschenke auf der Seite an. #geschenkefürfrauen #geschenkfürsie #geschenkideen #weihnachtsgeschenke #werbung",
+    "emoji": "💐",
+    "seite": "geschenke-fuer-frauen",
+    "filter": {},
+    "design": "d",
+    "foto": "kerzen gemütlich",
+    "produkte": [
+      "Duftkerzen-Set",
+      "Flauschiger Bademantel",
+      "Schmuckkästchen",
+      "Seidenkissenbezug",
+      "Aroma-Diffuser",
+      "Sofortbildkamera"
+    ],
+    "foto_id": 8454262
   }
 ];

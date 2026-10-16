@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<!-- Diese Datei wird automatisch erzeugt (python tools/site.py build). Änderungen in tools/vorlage.html machen. -->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventskalender: Ideen für Kinder, Erwachsene und Haustiere – Geschenke-Finder</title>
+    <meta name="description" content="Adventskalender für Kinder, Erwachsene, Hunde und Katzen – vom Beauty- und Tee-Kalender bis zum Kalender zum Selbstbefüllen.">
+    <link rel="canonical" href="https://geschenkidee-finden.com/ideen/adventskalender.html">
+    <meta name="p:domain_verify" content="68f2a9b5e9c3a7a04b9eb48da15ce2cd">
+    <meta property="og:title" content="Adventskalender: Ideen für Kinder, Erwachsene und Haustiere – Geschenke-Finder">
+    <meta property="og:description" content="Adventskalender für Kinder, Erwachsene, Hunde und Katzen – vom Beauty- und Tee-Kalender bis zum Kalender zum Selbstbefüllen.">
+    <meta property="og:url" content="https://geschenkidee-finden.com/ideen/adventskalender.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://geschenkidee-finden.com/assets/social/adventskalender-og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
+    <link rel="stylesheet" href="../assets/style.css?v=67264b7a">
+</head>
+<body data-root="../" data-page="adventskalender">
+
+    <div class="config-warning" id="config-warning">
+        ⚠️ Partner-ID noch nicht eingetragen – trage sie in <code>daten/config.js</code> ein, sonst verdienst du nichts.
+    </div>
+
+    <header>
+        <a class="wrap header-inner" href="../index.html">
+            <div class="logo" aria-hidden="true">🎁</div>
+            <div>
+                <p class="name">Geschenke-Finder</p>
+                <p class="tagline">In 3 Klicks zur passenden Idee</p>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <div class="wrap">
+
+            <div class="hero hero-foto" style="--hero: url('../assets/hero/adventskalender.jpg?v=e9e21ec4')">
+                <span class="pill">📅 Geschenkideen</span>
+                <h1>Adventskalender: Ideen für Kinder, Erwachsene und Haustiere</h1>
+                <p>Rechtzeitig zum 1. Dezember: Adventskalender für Kinder, Beauty-Fans, Teetrinker, Grillfans und sogar für Hund und Katze.</p>
+                <span class="hero-credit">Foto: Pixabay</span>
+            </div>
+
+            <nav class="occasions" id="occasions" aria-label="Geschenkideen nach Anlass">
+                <h2>Weitere Anlässe</h2>
+                <div class="occasion-list">
+                    <a class="occasion" href="../ideen/weihnachtsgeschenke.html"><span aria-hidden="true">🎄</span> Weihnachten</a>
+                    <a class="occasion" href="../ideen/wichtelgeschenke-unter-15-euro.html"><span aria-hidden="true">🎅</span> Wichteln unter 15 €</a>
+                    <a class="occasion" href="../ideen/nikolausgeschenke.html"><span aria-hidden="true">🥾</span> Nikolaus</a>
+                    <a class="occasion" href="../ideen/geschenke-fuer-tierfreunde.html"><span aria-hidden="true">🐾</span> Für Tierfreunde</a>
+                    <a class="occasion" href="../ideen/home-training-geschenke.html"><span aria-hidden="true">🏋️</span> Home-Training</a>
+                    <a class="occasion" href="../ideen/geschenke-fuer-teenager.html"><span aria-hidden="true">🎧</span> Für Teenager</a>
+                    <a class="occasion" href="../ideen/geschenke-fuer-maenner.html"><span aria-hidden="true">🧔</span> Für Männer</a>
+                    <a class="occasion" href="../ideen/geschenke-fuer-frauen.html"><span aria-hidden="true">💐</span> Für Frauen</a></div>
+            </nav>
+
+            <section class="wizard" aria-label="Geschenke filtern">
+                <button type="button" class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="wizard-body">
+                    <span class="filter-toggle-label">🔎 Filter</span>
+                    <span class="filter-summary" id="filter-summary">Alle · Alle Preisklassen · Alle Bereiche</span>
+                    <span class="filter-chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="wizard-body" id="wizard-body">
+                <div class="steps">
+                    <div>
+                        <p class="step-title" id="t-recipient">1. Für wen suchst du?</p>
+                        <div class="options" role="group" aria-labelledby="t-recipient" data-filter="recipient"></div>
+                    </div>
+                    <div>
+                        <p class="step-title" id="t-budget">2. Welches Budget?</p>
+                        <div class="options" role="group" aria-labelledby="t-budget" data-filter="budget"></div>
+                    </div>
+                    <div>
+                        <p class="step-title" id="t-category">3. Welcher Bereich?</p>
+                        <div class="options" role="group" aria-labelledby="t-category" data-filter="category"></div>
+                    </div>
+                </div>
+
+                <div class="toolbar">
+                    <input type="search" id="search" class="search" placeholder="Suchen, z. B. Kopfhörer …" aria-label="Produkte durchsuchen">
+                    <div class="toolbar-right">
+                        <span class="count" id="count" aria-live="polite"></span>
+                        <button type="button" class="link-btn" id="share">Link zu dieser Auswahl kopieren</button>
+                        <button type="button" class="link-btn" id="reset">Filter zurücksetzen</button>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <p class="ad-note">* Werbelinks: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich der Preis nicht.</p>
+
+            <p class="notice" id="notice" role="status" hidden></p>
+
+            <section class="grid" id="grid" aria-label="Geschenkideen">
+            <article class="card">
+                <div class="card-visual cat-fun">
+                    <span aria-hidden="true">🧸</span>
+                    <span class="badge">24 Überraschungen</span>
+                </div>
+                <div class="card-body">
+                    <h3>Spielzeug-Adventskalender für Kinder</h3>
+                    <p class="for">Passt für: Kinder</p>
+                    <ul><li>Jeden Tag ein kleines Spielzeug</li><li>Verkürzt das Warten auf Weihnachten</li><li>Für Jungen und Mädchen</li></ul>
+                    <div class="card-foot">
+                        <div class="price-band">Preisklasse<strong>15–50 €</strong></div>
+                        <a class="cta" href="https://www.amazon.de/s?k=Adventskalender+Kinder+Spielzeug&amp;tag=geschenkef0f0-21" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-visual cat-pets">
+                    <span aria-hidden="true">🐕</span>
+                    <span class="badge">Für Vierbeiner</span>
+                </div>
+                <div class="card-body">
+                    <h3>Adventskalender für Hunde</h3>
+                    <p class="for">Passt für: Haushalt &amp; Familie, Eltern / Partner</p>
+                    <ul><li>24 Türchen für den Hund</li><li>Kleine Überraschungen</li><li>Spaß in der Adventszeit</li></ul>
+                    <div class="card-foot">
+                        <div class="price-band">Preisklasse<strong>unter 15 €</strong></div>
+                        <a class="cta" href="https://www.amazon.de/s?k=Adventskalender+Hund+Spielzeug&amp;tag=geschenkef0f0-21" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-visual cat-pets">
+                    <span aria-hidden="true">🐈</span>
+                    <span class="badge">Für Stubentiger</span>
+                </div>
+                <div class="card-body">
+                    <h3>Adventskalender für Katzen</h3>
+                    <p class="for">Passt für: Haushalt &amp; Familie, Eltern / Partner</p>
+                    <ul><li>24 Türchen für die Katze</li><li>Kleine Überraschungen</li><li>Spaß in der Adventszeit</li></ul>
+                    <div class="card-foot">
+                        <div class="price-band">Preisklasse<strong>unter 15 €</strong></div>
+                        <a class="cta" href="https://www.amazon.de/s?k=Adventskalender+Katze+Spielzeug&amp;tag=geschenkef0f0-21" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-visual cat-beauty">
+                    <span aria-hidden="true">💄</span>
+                    <span class="badge">Für Beauty-Fans</span>
+                </div>
+                <div class="card-body">
+                    <h3>Beauty-Adventskalender</h3>
+                    <p class="for">Passt für: Haushalt &amp; Familie, Teenager / Gaming, Eltern / Partner</p>
+                    <ul><li>Pflege und Kosmetik zum Ausprobieren</li><li>24 Türchen</li><li>Schön zum Verschenken</li></ul>
+                    <div class="card-foot">
+                        <div class="price-band">Preisklasse<strong>15–50 €</strong></div>
+                        <a class="cta" href="https://www.amazon.de/s?k=Beauty+Adventskalender&amp;tag=geschenkef0f0-21" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-visual cat-kitchen">
+                    <span aria-hidden="true">🍵</span>
+                    <span class="badge">Für Teetrinker</span>
+                </div>
+                <div class="card-body">
+                    <h3>Tee-Adventskalender</h3>
+                    <p class="for">Passt für: Haushalt &amp; Familie, Eltern / Partner</p>
+                    <ul><li>Verschiedene Teesorten</li><li>Für gemütliche Abende</li><li>Hübsch gestaltet</li></ul>
+                    <div class="card-foot">
+                        <div class="price-band">Preisklasse<strong>15–50 €</strong></div>
+                        <a class="cta" href="https://www.amazon.de/s?k=Tee+Adventskalender&amp;tag=geschenkef0f0-21" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-visual cat-fun">
+                    <span aria-hidden="true">🧩</span>
+                    <span class="badge">Jeden Tag ein Teil</span>
+                </div>
+                <div class="card-body">
+                    <h3>Puzzle-Adventskalender</h3>
+                    <p class="for">Passt für: Teenager / Gaming, Eltern / Partner, Haushalt &amp; Familie</p>
+                    <ul><li>Täglich ein Puzzle-Päckchen</li><li>Ergibt am Ende ein Bild</li><li>Für ruhige Adventsabende</li></ul>
+                    <div class="card-foot">
+                        <div class="price-band">Preisklasse<strong>15–50 €</strong></div>
+                        <a class="cta" href="https://www.amazon.de/s?k=Puzzle+Adventskalender&amp;tag=geschenkef0f0-21" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-visual cat-kitchen">
+                    <span aria-hidden="true">🌶️</span>
+                    <span class="badge">Für Grillfans</span>
+                </div>
+                <div class="card-body">
+                    <h3>Grillgewürz-Adventskalender</h3>
+                    <p class="for">Passt für: Eltern / Partner, Haushalt &amp; Familie</p>
+                    <ul><li>Verschiedene Gewürze</li><li>Für Grill und Küche</li><li>Jeden Tag etwas Neues</li></ul>
+                    <div class="card-foot">
+                        <div class="price-band">Preisklasse<strong>15–50 €</strong></div>
+                        <a class="cta" href="https://www.amazon.de/s?k=Grill+Gew%C3%BCrze+Adventskalender&amp;tag=geschenkef0f0-21" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-visual cat-home">
+                    <span aria-hidden="true">📅</span>
+                    <span class="badge">Selbst befüllen</span>
+                </div>
+                <div class="card-body">
+                    <h3>Adventskalender zum Befüllen</h3>
+                    <p class="for">Passt für: Haushalt &amp; Familie, Eltern / Partner</p>
+                    <ul><li>Wiederverwendbar</li><li>Mit eigenen Überraschungen füllen</li><li>Jedes Jahr wieder nutzbar</li></ul>
+                    <div class="card-foot">
+                        <div class="price-band">Preisklasse<strong>15–50 €</strong></div>
+                        <a class="cta" href="https://www.amazon.de/s?k=Adventskalender+zum+Bef%C3%BCllen+wiederverwendbar&amp;tag=geschenkef0f0-21" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>
+                    </div>
+                </div>
+            </article></section>
+
+            <div class="empty" id="empty">
+                <div style="font-size:40px" aria-hidden="true">🔍</div>
+                <h3>Keine passenden Ideen gefunden</h3>
+                <p>Lockere einen Filter oder leere das Suchfeld.</p>
+                <a class="btn btn-amazon" id="amazon-search" href="#" target="_blank" rel="sponsored noopener" hidden></a>
+                <button type="button" class="btn" id="reset-empty">Alle Filter zurücksetzen</button>
+            </div>
+
+
+            <p class="footnote">* Werbelink: Beim Kauf über diesen Link erhalte ich eine kleine Provision. Preisklassen sind ungefähre Richtwerte – der aktuelle Preis und die Verfügbarkeit stehen auf Amazon.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="foot-grid">
+                <div>
+                    <h4>🎁 Geschenke-Finder</h4>
+                    <p>Eine Sammlung nützlicher Alltags-Ideen und Geschenke für die ganze Familie.</p>
+                    <p>Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Links zu Amazon sind Werbelinks (*).</p>
+                    <p>Amazon und das Amazon-Logo sind Warenzeichen von Amazon.com, Inc. oder eines seiner verbundenen Unternehmen.</p>
+                </div>
+                <nav aria-label="Über die Seite und Rechtliches">
+                    <h4>Über die Seite</h4>
+                    <a href="../ueber.html">Über den Geschenke-Finder</a>
+                    <a href="../impressum.html">Impressum</a>
+                    <a href="../datenschutz.html">Datenschutzerklärung</a>
+                </nav>
+            </div>
+            <div class="copy">&copy; <span id="year"></span> Geschenke-Finder · A TEC des Aaron Oberrauch · MwSt.-Nr. / P.IVA IT03200350217</div>
+        </div>
+    </footer>
+
+    <script src="../daten/config.js?v=e74f3bd4"></script>
+    <script src="../daten/produkte.js?v=8d5e91ac"></script>
+    <script src="../daten/seiten.js?v=76ff72a0"></script>
+    <script src="../assets/app.js?v=55534d4f"></script>
+</body>
+</html>

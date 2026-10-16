@@ -187,5 +187,86 @@ window.PAGES = [
     },
     "foto": "teenager musik",
     "foto_id": 6981830
+  },
+  {
+    "slug": "adventskalender",
+    "titel": "Adventskalender: Ideen für Kinder, Erwachsene und Haustiere",
+    "kurztitel": "Adventskalender",
+    "emoji": "📅",
+    "anlass": "weihnachten",
+    "monate": [
+      9,
+      10,
+      11
+    ],
+    "beschreibung": "Adventskalender für Kinder, Erwachsene, Hunde und Katzen – vom Beauty- und Tee-Kalender bis zum Kalender zum Selbstbefüllen.",
+    "intro": "Rechtzeitig zum 1. Dezember: Adventskalender für Kinder, Beauty-Fans, Teetrinker, Grillfans und sogar für Hund und Katze.",
+    "filter": {},
+    "foto": "adventskalender",
+    "produkte": [
+      "Spielzeug-Adventskalender für Kinder",
+      "Adventskalender für Hunde",
+      "Adventskalender für Katzen",
+      "Beauty-Adventskalender",
+      "Tee-Adventskalender",
+      "Puzzle-Adventskalender",
+      "Grillgewürz-Adventskalender",
+      "Adventskalender zum Befüllen"
+    ],
+    "foto_id": 3858327
+  },
+  {
+    "slug": "geschenke-fuer-maenner",
+    "titel": "Geschenke für Männer: Ideen für Technik-, Sport- und Grillfans",
+    "kurztitel": "Für Männer",
+    "emoji": "🧔",
+    "anlass": "geburtstag",
+    "monate": [],
+    "beschreibung": "Geschenke für Männer zum Geburtstag oder zu Weihnachten: Technik, Werkzeug, Grill, Sport und Pflege – nach Budget filtern.",
+    "intro": "Was schenkt man Männern, die angeblich nichts brauchen? Hier sind praktische Ideen für Technik-Fans, Heimwerker, Grillmeister und Sportler.",
+    "filter": {},
+    "foto": "werkzeug werkbank",
+    "produkte": [
+      "Multitool",
+      "Bartpflege-Set",
+      "Digitales Grillthermometer",
+      "Aufladbare LED-Taschenlampe",
+      "Bestückter Werkzeugkoffer",
+      "Powerbank 20.000 mAh",
+      "Bluetooth-Lautsprecher wasserdicht",
+      "Noise-Cancelling-Kopfhörer",
+      "Massagepistole",
+      "Verstellbares Kurzhantel-Set",
+      "Kamera-Drohne für Einsteiger",
+      "Edelstahl-Thermobecher"
+    ],
+    "foto_id": 7092687
+  },
+  {
+    "slug": "geschenke-fuer-frauen",
+    "titel": "Geschenke für Frauen: Ideen zum Verwöhnen und Wohlfühlen",
+    "kurztitel": "Für Frauen",
+    "emoji": "💐",
+    "anlass": "geburtstag",
+    "monate": [],
+    "beschreibung": "Geschenke für Frauen und die Freundin: Wellness, Schönes für zu Hause, Pflege und kleine Alltagshelfer – nach Budget filtern.",
+    "intro": "Für die Freundin, die Partnerin, die Schwester oder die Mama: Ideen zum Verwöhnen, Entspannen und Genießen – für jedes Budget.",
+    "filter": {},
+    "foto": "kerzen gemütlich",
+    "produkte": [
+      "Seidenkissenbezug",
+      "Schmuckkästchen",
+      "Duftkerzen-Set",
+      "Flauschiger Bademantel",
+      "Warmluftbürste",
+      "Aroma-Diffuser",
+      "Shiatsu-Nackenmassagegerät",
+      "Gesichtsmasken-Set",
+      "Sofortbildkamera",
+      "Kuscheldecke mit Ärmeln",
+      "Elektrischer Milchaufschäumer",
+      "Yogamatte rutschfest"
+    ],
+    "foto_id": 8431871
   }
 ];
