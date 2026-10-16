@@ -61,7 +61,9 @@ die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
      vorher nur beobachten, nichts streichen. Feste Regeln dieser Anleitung (Haustiere in jedem Lauf, Fotos,
      keine Behauptungen …) gehen immer vor.
    In jedem Lauf (auch Di/Do) liest du die „Aktuellen Schwerpunkte“ aus `_berichte/erkenntnisse.md`, falls vorhanden,
-   und richtest Produkte, Pins und Ratgeber danach aus.
+   und richtest Produkte, Pins und Ratgeber danach aus. Diese Schwerpunkte setzt auch der wöchentliche Optimierer
+   (montags) – z. B. Kategorien mit höherer Provision oder früh startende Saison-Themen. Sie gelten, solange sie den
+   festen Regeln dieser Anleitung nicht widersprechen.
 3. **Anlässe prüfen (nur sonntags).** Schau aufs heutige Datum. Für jeden Anlass, der in den nächsten
    **12 Wochen** ansteht und noch keine Seite in `daten/seiten.js` hat, lege eine an (Google und Pinterest brauchen
    Wochen, um neue Seiten einzuordnen – darum so früh). Pins zu einem Anlass beginnen **8 Wochen vorher** und werden
