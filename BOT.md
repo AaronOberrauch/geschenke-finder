@@ -1,8 +1,22 @@
 # Anleitung für den Content-Bot
 
 Du pflegst die Website „Geschenke-Finder“ (Amazon-Partnerseite) in diesem Ordner.
-Du läufst einmal pro Woche ohne Aufsicht. Arbeite vorsichtig: Lieber eine kleine,
-fehlerfreie Änderung als eine große, die etwas kaputt macht.
+Du läufst **dreimal pro Woche ohne Aufsicht: Sonntag, Dienstag und Donnerstag um 17 Uhr** – kurz vor den
+Abendstunden (19–22 Uhr), in denen am meisten online eingekauft wird. Make.com veröffentlicht deine neuen Pins
+um 18 Uhr. Arbeite vorsichtig: Lieber eine kleine, fehlerfreie Änderung als eine große, die etwas kaputt macht.
+
+**Was in welchem Lauf passiert:**
+
+| | Sonntag | Dienstag | Donnerstag |
+|---|---|---|---|
+| Trend-Recherche (2b) | ausführlich (5–8 Suchen) | kurz (2–3 Suchen) | kurz (2–3 Suchen) |
+| Themen-Seite (3) | ja, max. 1 | nein | nein |
+| Produkte (4) | 2–3 | 2–3 | 2–3 |
+| Pins (4b) | 3 | 3 | 3 |
+| Social-Media-Entwürfe (7) | 5 für die Woche | nein | nein |
+
+Bei den kurzen Läufen liest du die letzte `_entwuerfe/trends-*.md` und ergänzt sie nur. Sonntagspins dürfen
+etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkrete Budget-Themen („unter 15 €“).
 
 ## Was du ändern darfst
 
@@ -19,7 +33,7 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
 
 1. `git pull --ff-only`. Wenn das scheitert: abbrechen und melden.
 2. `python -I tools/site.py check`. Wenn schon vorher Fehler da sind: nichts ändern, abbrechen und melden.
-2b. **Trend-Recherche (ca. 5–8 Suchen).** Finde heraus, welche Geschenke und Produktarten im deutschsprachigen
+2b. **Trend-Recherche (Umfang laut Tabelle oben).** Finde heraus, welche Geschenke und Produktarten im deutschsprachigen
    Raum gerade und in den nächsten Wochen gefragt sind. Gute Quellen:
    - Pinterest Trends (trends.pinterest.com, Region Deutschland) und Google Trends (Deutschland)
    - aktuelle Geschenk-Ratgeber und Trend-Artikel deutscher Medien und Blogs zur kommenden Saison
@@ -30,7 +44,7 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    Leute gerade suchen (z. B. „wichtelgeschenke für kollegen“, „geschenk für hundebesitzer“).
    Nutze diese Liste in den Schritten 3, 4 und 4b. Wenn keine Websuche möglich ist: Schritt überspringen,
    mit Saison und Anlässen weiterarbeiten und das im Bericht erwähnen.
-3. **Anlässe prüfen.** Schau aufs heutige Datum. Für jeden Anlass, der in den nächsten
+3. **Anlässe prüfen (nur sonntags).** Schau aufs heutige Datum. Für jeden Anlass, der in den nächsten
    **8 Wochen** ansteht und noch keine Seite in `daten/seiten.js` hat, lege eine an –
    **höchstens eine neue Seite pro Lauf**. Termine (Shop laut `amazonDomain` in `daten/config.js`):
 
@@ -52,7 +66,7 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    z. B. `muttertagsgeschenke`), `titel`, `kurztitel`, `emoji`, `anlass`, `monate` (Monate, in denen
    die Seite vorne angezeigt wird; `[]` = ganzjährige Seite, z. B. „Geschenke für Tierfreunde“ mit `anlass` geburtstag), `beschreibung` (50–160 Zeichen, für Google), `intro` (1–2 Sätze),
    `filter` (optional: `recipient`, `budget`, `category`).
-4. **Produkte ergänzen: 2 bis 4 neue pro Lauf.** Bevorzuge, in dieser Reihenfolge:
+4. **Produkte ergänzen: 2 bis 3 neue pro Lauf.** Bevorzuge, in dieser Reihenfolge:
    Trend-Produktarten aus Schritt 2b, Produkte für anstehende Anlässe (mit passenden `occasions`), dann Lücken, die `check`
    als WARNUNG meldet („Keine Produkte für Zielgruppe …“). Regeln:
    - Nur echte, gängige Produktarten, die es auf Amazon sicher gibt. Allgemein benennen
@@ -65,11 +79,11 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    - Keine Duplikate: prüfe, ob es das Produkt (auch unter anderem Namen) schon gibt.
    - Keine heiklen Produkte: nichts Medizinisches, keine Waffen, kein Alkohol/Tabak, nichts für Erwachsene,
      keine Nahrungsergänzungsmittel.
-   - **Haustiere fest einplanen: mindestens 1 der neuen Produkte jede Woche ist aus `pets`**, abwechselnd für
+   - **Haustiere fest einplanen: mindestens 1 der neuen Produkte in jedem Lauf ist aus `pets`**, abwechselnd für
      Hunde, Katzen und kleine Haustiere (Kaninchen, Meerschweinchen, Vögel, Aquarium), bis es etwa 40 Haustier-Produkte
      sind. Saisonale `occasions` setzen, wo es passt (z. B. wichteln für Kleinigkeiten unter 15 €).
-   - **Sport & Fitness (`sport`) regelmäßig ergänzen: jede zweite Woche mindestens 1 Home-Training-Produkt**
-     (Geräte und Zubehör fürs Training zu Hause), bis es etwa 30 sind. Im Dezember und Januar jede Woche
+   - **Sport & Fitness (`sport`) regelmäßig ergänzen: mindestens 1 Home-Training-Produkt pro Woche (im Sonntagslauf)**
+     (Geräte und Zubehör fürs Training zu Hause), bis es etwa 30 sind. Im Dezember und Januar in jedem Lauf
      (Neujahrsvorsätze). Keine Gesundheits- oder Abnehmversprechen („verbrennt Fett“, „heilt Rückenschmerzen“),
      keine Nahrungsergänzung oder Eiweißpulver.
    - Haustiere (`pets`): nur Zubehör und Spielzeug – kein Futter, keine Leckerlis mit Gesundheitsversprechen,
@@ -99,10 +113,10 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    - `produkte`: optional bis zu 6 Produkttitel (genau wie in `daten/produkte.js`), die auf dem Pin stehen sollen –
      nimm die überzeugendsten für das Thema
    Wähle Themen passend zur Saison (anstehende Anlässe zuerst) und wiederhole keine Kombination aus Seite und Filter
-   der letzten 8 Wochen. **Mindestens 1 der 3 Pins jede Woche ist zum Thema Haustiere** – am besten mit der Saison
+   der letzten 8 Wochen. **In jedem Lauf ist mindestens 1 der 3 Pins zum Thema Haustiere** – am besten mit der Saison
    verbunden, z. B. `seite` weihnachtsgeschenke + `filter` {"category": "pets"} („Weihnachtsgeschenke für Hundebesitzer“)
-   oder die Seite `geschenke-fuer-tierfreunde` mit `budget`-Filter. Jede zweite Woche (im Dezember und Januar jede
-   Woche) ist außerdem ein Pin zum Thema Home-Training dabei (Seite `home-training-geschenke` oder `filter` {"category": "sport"}). Gleiche Regeln wie bei Produkten: keine Preise einzelner Produkte, keine Bewertungen,
+   oder die Seite `geschenke-fuer-tierfreunde` mit `budget`-Filter. Einmal pro Woche (im Sonntagslauf, im Dezember
+   und Januar in jedem Lauf) ist außerdem ein Pin zum Thema Home-Training dabei (Seite `home-training-geschenke` oder `filter` {"category": "sport"}). Gleiche Regeln wie bei Produkten: keine Preise einzelner Produkte, keine Bewertungen,
    keine Behauptungen wie „Bestseller“. Budget-Angaben wie „unter 15 €“ sind erlaubt.
 5. `python -P tools/grafiken.py` (erzeugt die Social-Media-Grafiken in `assets/social/` neu),
    dann `python -I tools/site.py build`, dann `python -I tools/site.py check`.
@@ -110,7 +124,7 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    `git checkout -- . && git clean -fd ideen assets/social` verwerfen, nichts veröffentlichen, melden.
    WARNUNGEN zu Partner-ID und Impressum sind bekannt und blockieren nicht.
 6. Veröffentlichen: `git add -A`, `git commit -m "Bot: <kurze Zusammenfassung>"`, `git push`.
-7. **Social-Media-Entwürfe** in `_entwuerfe/JJJJ-MM-TT.md` schreiben: 5 Posts, passend zur Saison
+7. **Social-Media-Entwürfe (nur sonntags)** in `_entwuerfe/JJJJ-MM-TT.md` schreiben: 5 Posts, passend zur Saison
    und zu den Produkten auf der Seite. Pro Post:
    - Plattform (Instagram/TikTok-Video, Pinterest-Pin oder Facebook)
    - Hook (erste Zeile, die zum Weiterlesen bringt)
