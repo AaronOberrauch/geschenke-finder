@@ -48,7 +48,7 @@
 
             <nav class="occasions" id="occasions" aria-label="Geschenkideen nach Anlass">
                 <h2>{{OCC_HEADING}}</h2>
-                <div class="occasion-list"></div>
+                <div class="occasion-list">{{STATIC_OCCASIONS}}</div>
             </nav>
 
             <section class="wizard" aria-label="Geschenke filtern">
@@ -79,7 +79,7 @@
 
             <p class="notice" id="notice" role="status" hidden></p>
 
-            <section class="grid" id="grid" aria-label="Geschenkideen"></section>
+            <section class="grid" id="grid" aria-label="Geschenkideen">{{STATIC_GRID}}</section>
 
             <div class="empty" id="empty">
                 <div style="font-size:40px" aria-hidden="true">🔍</div>
@@ -88,6 +88,7 @@
                 <button type="button" class="btn" id="reset-empty">Alle Filter zurücksetzen</button>
             </div>
 
+{{RATGEBER}}
             <p class="footnote">* Werbelink: Beim Kauf über diesen Link erhalte ich eine kleine Provision. Preisklassen sind ungefähre Richtwerte – der aktuelle Preis und die Verfügbarkeit stehen auf Amazon.</p>
         </div>
     </main>

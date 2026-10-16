@@ -25,6 +25,13 @@ Amazon-Partnerseite mit Geschenkideen. Ein Bot pflegt sie jede Woche automatisch
 | `index.html`, `ideen/`, `sitemap.xml`, `robots.txt`, `pins.xml` | werden von `build` erzeugt – nicht von Hand ändern |
 | `_entwuerfe/` | Social-Media-Entwürfe vom Bot (nicht online) |
 
+## Themen-Seiten und Ratgeber
+
+Jede Seite in `daten/seiten.js` kann ein Feld `ratgeber` haben (Abschnitte, Texte zu einzelnen Produkten, häufige
+Fragen). Es erscheint unter den Produkten und hilft, bei Google gefunden zu werden. Nischen-Seiten wie
+„Geschenke für Hobbybäcker“ zeigen über das Feld `produkte` nur eine feste Auswahl. Produkte und Links stehen
+schon fertig im HTML, damit Suchmaschinen sie ohne JavaScript lesen.
+
 ## Felder eines Produkts
 
 | Feld | Bedeutung |

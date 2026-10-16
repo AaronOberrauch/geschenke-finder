@@ -73,6 +73,7 @@
     function matches(p, ignore = []) {
         const on = key => state[key] !== 'all' && !ignore.includes(key);
         if (PAGE && !fitsOccasion(p, PAGE.anlass)) return false;
+        if (PAGE && PAGE.produkte && PAGE.produkte.length && !PAGE.produkte.includes(p.title)) return false;
         if (on('recipient') && !p.recipients.includes(state.recipient)) return false;
         if (on('budget') && p.budget !== state.budget) return false;
         if (on('category') && p.category !== state.category) return false;

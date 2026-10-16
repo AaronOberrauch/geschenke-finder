@@ -13,6 +13,7 @@ import re
 import sys
 from datetime import date
 from pathlib import Path
+from urllib.parse import quote, urlencode
 
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / 'tools' / 'vorlage.html'
@@ -60,11 +61,91 @@ def load_js(name, var):
 VERSIONED = ['assets/style.css', 'assets/app.js', 'daten/config.js', 'daten/produkte.js', 'daten/seiten.js']
 
 
+# Platzhalter, die fertiges HTML enthalten (alle anderen werden als Text maskiert)
+RAW_KEYS = {'ROOT', 'STATIC_GRID', 'STATIC_OCCASIONS', 'RATGEBER'}
+
+# Wie in assets/app.js – für die Produktkarten, die schon im HTML stehen (Google liest sie so am besten)
+RECIPIENT_LABEL = {'household': 'Haushalt & Familie', 'teenager': 'Teenager / Gaming',
+                   'parents': 'Eltern / Partner', 'kids': 'Kinder'}
+BUDGET_LABEL = {'under15': 'unter 15 €', '15to50': '15–50 €', '50to150': '50–150 €', 'over150': 'über 150 €'}
+
+
+def amazon_url(prod, config):
+    base = f"https://{config.get('amazonDomain', 'www.amazon.de')}"
+    if prod.get('asin'):
+        url = f"{base}/dp/{quote(prod['asin'])}"
+        params = {}
+    else:
+        url = f'{base}/s'
+        params = {'k': prod['query']}
+    if config.get('partnerTag') and config['partnerTag'] != PLACEHOLDER_TAG:
+        params['tag'] = config['partnerTag']
+    return url + ('?' + urlencode(params) if params else '')
+
+
+def card_html(p, config):
+    esc = html.escape
+    return (
+        '\n            <article class="card">'
+        f'\n                <div class="card-visual cat-{p["category"]}">'
+        f'\n                    <span aria-hidden="true">{p["emoji"]}</span>'
+        f'\n                    <span class="badge">{esc(p["badge"])}</span>'
+        '\n                </div>'
+        '\n                <div class="card-body">'
+        f'\n                    <h3>{esc(p["title"])}</h3>'
+        f'\n                    <p class="for">Passt für: {", ".join(esc(RECIPIENT_LABEL[r]) for r in p["recipients"])}</p>'
+        f'\n                    <ul>{"".join(f"<li>{esc(h)}</li>" for h in p["highlights"])}</ul>'
+        '\n                    <div class="card-foot">'
+        f'\n                        <div class="price-band">Preisklasse<strong>{BUDGET_LABEL[p["budget"]]}</strong></div>'
+        f'\n                        <a class="cta" href="{esc(amazon_url(p, config))}" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>'
+        '\n                    </div>'
+        '\n                </div>'
+        '\n            </article>')
+
+
+def occasions_html(pages, current, root):
+    return ''.join(
+        f'\n                    <a class="occasion" href="{root}ideen/{quote(p["slug"])}.html">'
+        f'<span aria-hidden="true">{p["emoji"]}</span> {html.escape(p.get("kurztitel") or p["titel"])}</a>'
+        for p in pages if not current or p['slug'] != current['slug'])
+
+
+def paragraphs(text):
+    return ''.join(f'<p>{html.escape(t.strip())}</p>' for t in text.split('\n\n') if t.strip())
+
+
+def ratgeber_html(page, products, config):
+    """Ratgeber-Teil unter den Produkten einer Themen-Seite: Abschnitte, Produktideen mit Text, häufige Fragen."""
+    r = page.get('ratgeber')
+    if not r:
+        return ''
+    esc = html.escape
+    by_title = {p['title']: p for p in products}
+    out = ['\n            <section class="ratgeber" aria-labelledby="ratgeber-titel">',
+           f'\n                <h2 id="ratgeber-titel">{esc(r.get("titel") or "Ratgeber: " + page["kurztitel"])}</h2>']
+    for a in r.get('abschnitte', []):
+        out.append(f'\n                <h3>{esc(a["ueberschrift"])}</h3>{paragraphs(a["text"])}')
+    texts = r.get('produkttexte', {})
+    if texts:
+        out.append('\n                <h3>Unsere Ideen im Überblick</h3>')
+        for title, text in texts.items():
+            prod = by_title[title]
+            out.append(f'\n                <div class="idee"><h4><span aria-hidden="true">{prod["emoji"]}</span> {esc(title)}</h4>'
+                       f'<p>{esc(text)} <a href="{esc(amazon_url(prod, config))}" target="_blank" rel="sponsored noopener">'
+                       'Auf Amazon ansehen*</a></p></div>')
+    if r.get('faq'):
+        out.append('\n                <h3>Häufige Fragen</h3>')
+        for q in r['faq']:
+            out.append(f'\n                <details><summary>{esc(q["frage"])}</summary>{paragraphs(q["antwort"])}</details>')
+    out.append('\n            </section>')
+    return ''.join(out)
+
+
 def render(values, root):
     out = TEMPLATE.read_text(encoding='utf-8')
     values = dict(values, ROOT=root)
     for key, value in values.items():
-        out = out.replace('{{' + key + '}}', value if key == 'ROOT' else html.escape(value))
+        out = out.replace('{{' + key + '}}', value if key in RAW_KEYS else html.escape(value))
     leftover = re.findall(r'\{\{[A-Z_]+\}\}', out)
     if leftover:
         raise ValueError(f'Platzhalter ohne Wert in vorlage.html: {leftover}')
@@ -78,11 +159,17 @@ def expected_files():
     """Alle Dateien, die build erzeugt: {Pfad: Inhalt}."""
     config = load_js('config.js', 'CONFIG')
     pages = load_js('seiten.js', 'PAGES')
+    products = load_js('produkte.js', 'PRODUCTS')
     site = config['siteUrl']
-    files = {ROOT / 'index.html': render(dict(INDEX, CANONICAL=site, PAGE='',
-                                              OG_IMAGE=f'{site}assets/social/start-og.png'), '')}
+    files = {ROOT / 'index.html': render(dict(
+        INDEX, CANONICAL=site, PAGE='', OG_IMAGE=f'{site}assets/social/start-og.png',
+        STATIC_GRID=''.join(card_html(prod, config) for prod in products),
+        STATIC_OCCASIONS=occasions_html(pages, None, ''), RATGEBER=''), '')}
     for p in pages:
         files[PAGES_DIR / f"{p['slug']}.html"] = render({
+            'STATIC_GRID': ''.join(card_html(prod, config) for prod in products if product_fits(prod, p)),
+            'STATIC_OCCASIONS': occasions_html(pages, p, '../'),
+            'RATGEBER': ratgeber_html(p, products, config),
             'TITLE': f"{p['titel']} – Geschenke-Finder",
             'DESCRIPTION': p['beschreibung'],
             'CANONICAL': f"{site}ideen/{p['slug']}.html",
@@ -192,6 +279,8 @@ HASH_NAMES = {'recipient': 'fuer', 'budget': 'budget', 'category': 'bereich'}  #
 
 def product_fits(prod, page, extra_filter=None):
     """Passt das Produkt zur Themen-Seite (page=None: Startseite) plus optionalem Zusatzfilter?"""
+    if page and page.get('produkte') and prod['title'] not in page['produkte']:
+        return False
     if page:
         occ = page['anlass']
         if occ not in UNIVERSAL_OCCASIONS and occ not in prod.get('occasions', []):
@@ -204,6 +293,46 @@ def product_fits(prod, page, extra_filter=None):
     if 'category' in f and f['category'] != prod['category']:
         return False
     return True
+
+
+def check_ratgeber(page, products, where, err):
+    """Ratgeber-Teil: genug echter Text, passende Produkte, keine unbelegten Behauptungen."""
+    r = page.get('ratgeber')
+    if not r:
+        return
+    unknown = set(r) - {'titel', 'abschnitte', 'produkttexte', 'faq'}
+    if unknown:
+        err(f'{where}: ratgeber hat unbekannte Felder {sorted(unknown)}.')
+    abschnitte, texts, faq = r.get('abschnitte', []), r.get('produkttexte', {}), r.get('faq', [])
+    if len(abschnitte) < 2:
+        err(f'{where}: ratgeber braucht mindestens 2 abschnitte.')
+    if not 4 <= len(texts) <= 12:
+        err(f'{where}: ratgeber braucht 4 bis 12 produkttexte.')
+    if len(faq) < 3:
+        err(f'{where}: ratgeber braucht mindestens 3 Fragen (faq).')
+    fitting = {prod['title'] for prod in products if product_fits(prod, page)}
+    for t in texts:
+        if t not in fitting:
+            err(f'{where}: produkttexte "{t}" gibt es nicht oder es wird auf dieser Seite nicht angezeigt.')
+    all_text = [r.get('titel', '')]
+    for a in abschnitte:
+        if not a.get('ueberschrift') or len(a.get('text', '')) < 300:
+            err(f'{where}: jeder ratgeber-Abschnitt braucht eine ueberschrift und mindestens 300 Zeichen text.')
+        all_text += [a.get('ueberschrift', ''), a.get('text', '')]
+    for t, text in texts.items():
+        if not 80 <= len(text) <= 400:
+            err(f'{where}: produkttext für "{t}" sollte 80–400 Zeichen lang sein.')
+        all_text.append(text)
+    for q in faq:
+        if not q.get('frage') or len(q.get('antwort', '')) < 80:
+            err(f'{where}: jede faq braucht eine frage und eine antwort mit mindestens 80 Zeichen.')
+        all_text += [q.get('frage', ''), q.get('antwort', '')]
+    words = len(' '.join(all_text).split())
+    if words < 400:
+        err(f'{where}: ratgeber hat nur {words} Wörter – mindestens 400.')
+    for t in all_text:
+        if CLAIMS.search(t) or re.search(r'getestet|im test|testurteil|unser favorit|garantiert', t, re.I):
+            err(f'{where}: ratgeber-Text enthält eine unbelegte Behauptung: „{t[:50]}…“')
 
 
 def check():
@@ -295,10 +424,15 @@ def check():
                 err(f'{where}: ungültiger filter {k}={v}.')
         if not 50 <= len(p.get('beschreibung', '')) <= 160:
             warn(f'{where}: beschreibung sollte 50–160 Zeichen lang sein (für Google).')
+        titles_all = {prod['title'] for prod in products}
+        for t in p.get('produkte', []):
+            if t not in titles_all:
+                err(f'{where}: produkte "{t}" gibt es nicht in daten/produkte.js.')
         if not errors:
             n = sum(product_fits(prod, p) for prod in products)
             if n < 4:
-                err(f'{where}: nur {n} passende Produkte – mindestens 4 nötig (occasions ergänzen).')
+                err(f'{where}: nur {n} passende Produkte – mindestens 4 nötig (occasions oder produkte ergänzen).')
+            check_ratgeber(p, products, where, err)
 
     # --- Pinterest-Pins ---
     try:

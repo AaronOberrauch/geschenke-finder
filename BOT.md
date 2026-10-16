@@ -10,7 +10,8 @@ um 18 Uhr. Arbeite vorsichtig: Lieber eine kleine, fehlerfreie Änderung als ein
 | | Sonntag | Dienstag | Donnerstag |
 |---|---|---|---|
 | Trend-Recherche (2b) | ausführlich (5–8 Suchen) | kurz (2–3 Suchen) | kurz (2–3 Suchen) |
-| Themen-Seite (3) | ja, max. 1 | nein | nein |
+| Neue Themen- oder Nischen-Seite mit Ratgeber (3, 3b) | ja, max. 1 | nein | nein |
+| Ratgeber für 1 bestehende Seite ohne Ratgeber (3c) | ja | ja | ja |
 | Produkte (4) | 2–3 | 2–3 | 2–3 |
 | Pins (4b) | 3 | 3 | 3 |
 | Social-Media-Entwürfe (7) | 5 für die Woche | nein | nein |
@@ -66,6 +67,29 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
    z. B. `muttertagsgeschenke`), `titel`, `kurztitel`, `emoji`, `anlass`, `monate` (Monate, in denen
    die Seite vorne angezeigt wird; `[]` = ganzjährige Seite, z. B. „Geschenke für Tierfreunde“ mit `anlass` geburtstag), `beschreibung` (50–160 Zeichen, für Google), `intro` (1–2 Sätze),
    `filter` (optional: `recipient`, `budget`, `category`).
+3b. **Nischen-Seite (nur sonntags, nur wenn in Schritt 3 keine Anlass-Seite nötig war).** Damit Google die Seite
+   findet, sind spezielle Suchen die beste Chance für eine kleine Website („Geschenke für Hobbybäcker“,
+   „Geschenke für Gamer“, „Geschenke für Gartenfreunde“, „Geschenke für Katzenbesitzer“). Wähle ein Thema aus den
+   Suchbegriffen von Schritt 2b, für das es noch keine Seite gibt. Die Seite bekommt `anlass` geburtstag, `monate` `[]`
+   und das Feld **`produkte`**: eine Liste von 6–12 Produkttiteln aus `daten/produkte.js`, die genau zum Thema passen
+   (fehlende passende Produkte vorher in Schritt 4 anlegen). Jede neue Seite – Anlass oder Nische – bekommt sofort
+   einen **Ratgeber** (siehe 3c). Ein Titel wie „Geschenke für Hobbybäcker: Ideen für alle, die gerne backen“ ist gut;
+   „Die 5 besten …“ ist verboten.
+3c. **Ratgeber.** Jede Themen-Seite soll einen Ratgeber haben – er steht unter den Produkten und ist das, was Google
+   wirklich liest. In jedem Lauf ergänzt du **eine** bestehende Seite ohne `ratgeber` (bis alle einen haben).
+   Vorbilder: die Seiten `wichtelgeschenke-unter-15-euro` und `geschenke-fuer-tierfreunde` in `daten/seiten.js`.
+   Aufbau des Felds `ratgeber`:
+   - `titel`: „Ratgeber: …“
+   - `abschnitte`: 2–4 Einträge mit `ueberschrift` und `text` (je mindestens 300 Zeichen, Absätze mit Leerzeile
+     `\n\n` trennen). Inhalt: echte Hilfe bei der Auswahl – worauf man achten sollte, was zu wem passt, typische Fehler.
+   - `produkttexte`: 4–12 Einträge `"Produkttitel": "2–3 Sätze, für wen und warum"` (80–400 Zeichen). Nur Produkte,
+     die auf dieser Seite angezeigt werden.
+   - `faq`: 3–5 Fragen, die Leute wirklich suchen (aus Schritt 2b), mit Antworten von mindestens 80 Zeichen.
+   Schreibregeln: Du-Form, freundlich, konkret, insgesamt 400–900 Wörter. Ehrlich bleiben: **wir haben nichts
+   getestet** – keine Wörter wie „getestet“, „Testsieger“, „die besten“, „unser Favorit“, „garantiert“, keine
+   Bewertungen, keine Preise einzelner Produkte (Budget-Angaben wie „unter 15 €“ sind okay), keine Gesundheits-
+   versprechen. Keine Texte aus dem Internet übernehmen, nur eigene Formulierungen. Suchbegriffe natürlich im Text
+   verwenden, nicht aneinanderreihen. `tools/site.py check` prüft Länge, Produkte und verbotene Wörter.
 4. **Produkte ergänzen: 2 bis 3 neue pro Lauf.** Bevorzuge, in dieser Reihenfolge:
    Trend-Produktarten aus Schritt 2b, Produkte für anstehende Anlässe (mit passenden `occasions`), dann Lücken, die `check`
    als WARNUNG meldet („Keine Produkte für Zielgruppe …“). Regeln:
@@ -143,4 +167,4 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
    Links immer als volle Adresse aus `siteUrl` plus passender Seite oder Filter, z. B.
    `…/ideen/wichtelgeschenke-unter-15-euro.html` oder `…/#fuer=teenager&budget=under15`.
    Die Entwürfe sind nicht im Git (stehen in `.gitignore`).
-8. Zum Schluss kurz melden: wichtigste Trends aus 2b, neue Seite(n), neue Produkte, neue Pins, Ergebnis von `check`, Commit, Datei mit den Entwürfen.
+8. Zum Schluss kurz melden: wichtigste Trends aus 2b, neue Seite(n), ergänzte Ratgeber, neue Produkte, neue Pins, Ergebnis von `check`, Commit, Datei mit den Entwürfen.
