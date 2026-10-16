@@ -33,6 +33,7 @@
             { id: 'beauty',  label: 'Wellness & Pflege', icon: '🧖' },
             { id: 'home',    label: 'Wohnen & Ordnung',  icon: '🛋️' },
             { id: 'fun',     label: 'Spiel & Freizeit',  icon: '🎲' },
+            { id: 'sport',   label: 'Sport & Fitness',   icon: '🏋️' },
             { id: 'pets',    label: 'Haustiere',         icon: '🐾' }
         ]
     };

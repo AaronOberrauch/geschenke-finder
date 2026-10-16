@@ -57,9 +57,13 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    - **Haustiere fest einplanen: mindestens 1 der neuen Produkte jede Woche ist aus `pets`**, abwechselnd für
      Hunde, Katzen und kleine Haustiere (Kaninchen, Meerschweinchen, Vögel, Aquarium), bis es etwa 40 Haustier-Produkte
      sind. Saisonale `occasions` setzen, wo es passt (z. B. wichteln für Kleinigkeiten unter 15 €).
+   - **Sport & Fitness (`sport`) regelmäßig ergänzen: jede zweite Woche mindestens 1 Home-Training-Produkt**
+     (Geräte und Zubehör fürs Training zu Hause), bis es etwa 30 sind. Im Dezember und Januar jede Woche
+     (Neujahrsvorsätze). Keine Gesundheits- oder Abnehmversprechen („verbrennt Fett“, „heilt Rückenschmerzen“),
+     keine Nahrungsergänzung oder Eiweißpulver.
    - Haustiere (`pets`): nur Zubehör und Spielzeug – kein Futter, keine Leckerlis mit Gesundheitsversprechen,
      nichts Medizinisches (Flohmittel, Nahrungsergänzung).
-   - Gültige Werte: `category` kitchen | tech | beauty | home | fun | pets;
+   - Gültige Werte: `category` kitchen | tech | beauty | home | fun | sport | pets;
      `budget` under15 | 15to50 | 50to150 | over150;
      `recipients` household | teenager | parents | kids;
      `occasions` weihnachten | geburtstag | wichteln | nikolaus | valentinstag | ostern | muttertag | vatertag | schulanfang.
@@ -78,7 +82,8 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    Wähle Themen passend zur Saison (anstehende Anlässe zuerst) und wiederhole keine Kombination aus Seite und Filter
    der letzten 8 Wochen. **Mindestens 1 der 3 Pins jede Woche ist zum Thema Haustiere** – am besten mit der Saison
    verbunden, z. B. `seite` weihnachtsgeschenke + `filter` {"category": "pets"} („Weihnachtsgeschenke für Hundebesitzer“)
-   oder die Seite `geschenke-fuer-tierfreunde` mit `budget`-Filter. Gleiche Regeln wie bei Produkten: keine Preise einzelner Produkte, keine Bewertungen,
+   oder die Seite `geschenke-fuer-tierfreunde` mit `budget`-Filter. Jede zweite Woche (im Dezember und Januar jede
+   Woche) ist außerdem ein Pin zum Thema Home-Training dabei (Seite `home-training-geschenke` oder `filter` {"category": "sport"}). Gleiche Regeln wie bei Produkten: keine Preise einzelner Produkte, keine Bewertungen,
    keine Behauptungen wie „Bestseller“. Budget-Angaben wie „unter 15 €“ sind erlaubt.
 5. `python -P tools/grafiken.py` (erzeugt die Social-Media-Grafiken in `assets/social/` neu),
    dann `python -I tools/site.py build`, dann `python -I tools/site.py check`.

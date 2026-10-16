@@ -33,7 +33,7 @@ Amazon-Partnerseite mit Geschenkideen. Ein Bot pflegt sie jede Woche automatisch
 | `query` | Suchbegriff – der Link führt zur Amazon-Suche danach |
 | `asin` | optional: echte Amazon-Produktnummer (steht in der Produkt-URL nach `/dp/`); dann führt der Link direkt zum Produkt |
 | `emoji` | Bild auf der Karte |
-| `category` | `kitchen`, `tech`, `beauty`, `home`, `fun`, `pets` (Haustiere) |
+| `category` | `kitchen`, `tech`, `beauty`, `home`, `fun`, `sport` (Sport & Fitness), `pets` (Haustiere) |
 | `budget` | `under15`, `15to50`, `50to150`, `over150` |
 | `recipients` | `household`, `teenager`, `parents`, `kids` |
 | `occasions` | optional: `wichteln`, `nikolaus`, `valentinstag`, `ostern`, `muttertag`, `vatertag`, `schulanfang` (Weihnachten und Geburtstag passen immer) |

@@ -44,5 +44,16 @@ window.PAGES = [
     "beschreibung": "Geschenkideen für Hunde- und Katzenbesitzer: Spielzeug, Kuschelplätze und praktisches Zubehör für jedes Budget.",
     "intro": "Für alle, deren bester Freund vier Pfoten hat: Geschenke, über die sich Herrchen, Frauchen und Haustier gleichermaßen freuen.",
     "filter": {"category": "pets"}
+  },
+  {
+    "slug": "home-training-geschenke",
+    "titel": "Home-Training: Geschenke für Sportler und alle, die fit werden wollen",
+    "kurztitel": "Home-Training",
+    "emoji": "🏋️",
+    "anlass": "geburtstag",
+    "monate": [1],
+    "beschreibung": "Geschenkideen fürs Training zu Hause: von Yogamatte und Fitnessbändern bis zu Hantel-Set, Rudergerät und Walking Pad.",
+    "intro": "Ob gute Vorsätze fürs neue Jahr oder Sport-Fan: Mit diesen Geräten klappt das Training auch ohne Fitnessstudio – für jedes Budget.",
+    "filter": {"category": "sport"}
   }
 ];

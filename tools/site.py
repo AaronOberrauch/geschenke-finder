@@ -19,7 +19,7 @@ PAGES_DIR = ROOT / 'ideen'
 
 RECIPIENTS = {'household', 'teenager', 'parents', 'kids'}
 BUDGETS = {'under15', '15to50', '50to150', 'over150'}
-CATEGORIES = {'kitchen', 'tech', 'beauty', 'home', 'fun', 'pets'}
+CATEGORIES = {'kitchen', 'tech', 'beauty', 'home', 'fun', 'sport', 'pets'}
 OCCASIONS = {'weihnachten', 'geburtstag', 'wichteln', 'nikolaus', 'valentinstag',
              'ostern', 'muttertag', 'vatertag', 'schulanfang'}
 UNIVERSAL_OCCASIONS = {'geburtstag', 'weihnachten'}  # muss zu assets/app.js passen

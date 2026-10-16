@@ -39,5 +39,15 @@ window.PINS = [
     "seite": "geschenke-fuer-tierfreunde",
     "filter": {},
     "produkte": ["Intelligenzspielzeug für Hunde", "Katzen-Kratzbaum", "Schnüffelteppich für Hunde", "Interaktives Katzenspielzeug", "GPS-Tracker für Hunde", "Hundebett mit erhöhtem Rand"]
+  },
+  {
+    "id": "2026-10-16-home-training",
+    "datum": "2026-10-16",
+    "titel": "Home-Training: Geschenkideen für alle, die zu Hause fit bleiben wollen",
+    "beschreibung": "Kein Fitnessstudio nötig: Von Yogamatte und Fitnessbändern über Kettlebell und Hantel-Set bis zum Walking Pad fürs Homeoffice – Geschenke für Sportler und gute Vorsätze. #hometraining #homeworkout #fitnessgeschenk #geschenkideen #werbung",
+    "emoji": "🏋️",
+    "seite": "home-training-geschenke",
+    "filter": {},
+    "produkte": ["Yogamatte rutschfest", "Verstellbares Kurzhantel-Set", "Fitnessbänder-Set", "Kettlebell", "Walking Pad (Laufband klappbar)", "Klimmzugstange für den Türrahmen"]
   }
 ];
