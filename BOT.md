@@ -24,6 +24,8 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
 - `daten/produkte.js` – Produkte hinzufügen oder verbessern
 - `daten/seiten.js` – Themen-Seiten (Anlässe) hinzufügen
 - `daten/pins.js` – neue Pinterest-Pins hinzufügen (bestehende nie ändern oder löschen)
+- `daten/it/produkte.js`, `daten/it/seiten.js`, `daten/it/pins.js` – dasselbe für die italienische Seite
+  (nur wenn sie aktiv ist, siehe Abschnitt „Italienische Seite“ am Ende)
 - `_entwuerfe/` – Social-Media-Entwürfe (wird nicht veröffentlicht)
 - `_berichte/erkenntnisse.md` – deine Auswertung der Zahlen (wird nicht veröffentlicht; die Berichte selbst nie ändern)
 - Erzeugte Dateien über `python -I tools/site.py build` (nie von Hand)
@@ -208,3 +210,27 @@ die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
 8. Zum Schluss kurz melden: wichtigste Trends aus 2b, neue Erkenntnisse aus 2c,
    Seiten ohne eigene Tracking-ID (mit Vorschlag für den Namen, z. B. „geschenkef0f0va“ für Valentinstag –
    der Betreiber legt sie in PartnerNet an), neue Seite(n), ergänzte Ratgeber, neue Produkte, neue Pins, Ergebnis von `check`, Commit, Datei mit den Entwürfen.
+
+## Italienische Seite (nur wenn in `daten/config.js` `"it": {"aktiv": true}` steht)
+
+Die italienische Seite „Trova Regali“ liegt unter `/it/` und hat eigene Daten in `daten/it/` (`produkte.js`,
+`seiten.js`, `pins.js`) im gleichen Format wie die deutschen. Sie ist **kein Übersetzungsprojekt**: Suchbegriffe
+(`query`) sind italienische Begriffe, wie sie auf amazon.it gesucht werden, und die Anlässe sind italienisch.
+`tools/site.py check` prüft beide Sprachen.
+
+In **jedem Lauf** zusätzlich zur deutschen Arbeit:
+- **1–2 neue italienische Produkte** (gleiche Regeln wie oben; Titel, Badge und Highlights auf Italienisch,
+  keine „i migliori“, „il più venduto“, keine Bewertungen/Preise).
+- **2 italienische Pins** in `daten/it/pins.js` (Design d mit Foto bevorzugt; `beschreibung` endet mit Hashtags inkl.
+  **`#pubblicità`**; italienische Suchbegriffe im Fließtext). Pinnwand: Schlüssel aus `it.pinterestBoards` in
+  `daten/config.js`, sonst weglassen.
+- Sonntags: bei Bedarf **1 neue italienische Themen-Seite** für einen anstehenden italienischen Anlass (12 Wochen
+  Vorlauf) und **Ratgeber** für eine italienische Seite ohne Ratgeber (auf Italienisch, gleiche Regeln/Längen).
+  Gibt es dazu eine passende deutsche Seite, `gegenstueck` = deren slug setzen (für den Sprachumschalter).
+
+Italienische Anlässe (`anlass` / `occasions`): `natale` (25.12.), `babbo-natale-segreto` (Dezember, Wichteln),
+`befana` (6. Jänner – Calza della Befana, Kleinigkeiten für Kinder), `san-valentino` (14.2.), `festa-del-papa`
+(19. März), `pasqua`, `festa-della-mamma` (2. Sonntag im Mai), `inizio-scuola` (Mitte September),
+`compleanno` (ganzjährig). `natale` und `compleanno` passen automatisch zu allen Produkten.
+
+Ist `"it": {"aktiv": false}`, die italienischen Dateien nicht anfassen.

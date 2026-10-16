@@ -34,7 +34,6 @@ TILE = {
     'kitchen': (254, 215, 170), 'tech': (199, 210, 254), 'beauty': (251, 207, 232),
     'home': (187, 247, 208), 'fun': (253, 230, 138), 'pets': (231, 216, 195), 'sport': (153, 246, 228),
 }
-BUDGET_TEXT = {'under15': 'unter 15 €', '15to50': '15 bis 50 €', '50to150': '50 bis 150 €', 'over150': 'über 150 €'}
 
 
 def font(size, bold=False):
@@ -109,15 +108,16 @@ def pick_products(products, limit):
     return picked
 
 
-def short_url(config):
-    return config['siteUrl'].replace('https://', '').rstrip('/')
+def short_url(config, lang='de'):
+    return (config['siteUrl'] + sitetool.LANGS[lang]['out']).replace('https://', '').rstrip('/')
 
 
-def subtitle_for(page, count, extra_filter=None):
+def subtitle_for(page, count, extra_filter=None, lang='de'):
+    t = sitetool.T[lang]
     budget = dict(page.get('filter', {}) if page else {}, **(extra_filter or {})).get('budget')
     if budget:
-        return f'{count} Ideen {BUDGET_TEXT[budget]}'
-    return f'{count} Geschenkideen für jedes Budget'
+        return t['G_IDEAS'].format(n=count, budget=t['BUDGET_SUB'][budget])
+    return t['G_IDEAS_ALL'].format(n=count)
 
 
 def tall(info, size, list_count):
@@ -158,7 +158,7 @@ def tall(info, size, list_count):
 
     # Fuß: Button, Adresse, Werbehinweis
     cta_font = font(int(w * 0.05), bold=True)
-    cta = 'Alle Ideen ansehen  →'
+    cta = info['t']['G_CTA']
     cta_w = draw.textlength(cta, font=cta_font) + 2 * int(w * 0.06)
     cta_h = int(cta_font.size * 2.1)
     cta_y = int(h * 0.845)
@@ -166,23 +166,23 @@ def tall(info, size, list_count):
     centered(draw, cta_y + (cta_h - cta_font.size * 1.33) / 2, cta, cta_font, WHITE, w)
     url_font = font(int(w * 0.03))
     url_y = cta_y + cta_h + int(h * 0.015)
-    centered(draw, url_y, short_url(info['config']), url_font, MUTED, w)
-    centered(draw, url_y + int(url_font.size * 1.6), 'Anzeige · enthält Amazon-Partnerlinks', font(int(w * 0.024)), MUTED, w)
+    centered(draw, url_y, info['url'], url_font, MUTED, w)
+    centered(draw, url_y + int(url_font.size * 1.6), info['t']['G_AD'], font(int(w * 0.024)), MUTED, w)
     return img
 
 
 def footer(draw, info, w, h, cta_y, button=BRAND, text=WHITE, muted=MUTED, credit=''):
     """Button „Alle Ideen ansehen“, Adresse und Werbehinweis – gleich für alle Pin-Designs."""
     cta_font = font(int(w * 0.05), bold=True)
-    cta = 'Alle Ideen ansehen  →'
+    cta = info['t']['G_CTA']
     cta_w = draw.textlength(cta, font=cta_font) + 2 * int(w * 0.06)
     cta_h = int(cta_font.size * 2.1)
     draw.rounded_rectangle([(w - cta_w) / 2, cta_y, (w + cta_w) / 2, cta_y + cta_h], radius=cta_h // 2, fill=button)
     centered(draw, cta_y + (cta_h - cta_font.size * 1.33) / 2, cta, cta_font, text, w)
     url_font = font(int(w * 0.03))
     url_y = cta_y + cta_h + int(h * 0.015)
-    centered(draw, url_y, short_url(info['config']), url_font, muted, w)
-    centered(draw, url_y + int(url_font.size * 1.6), 'Anzeige · enthält Amazon-Partnerlinks' + credit,
+    centered(draw, url_y, info['url'], url_font, muted, w)
+    centered(draw, url_y + int(url_font.size * 1.6), info['t']['G_AD'] + credit,
              font(int(w * 0.024)), muted, w)
 
 
@@ -227,7 +227,7 @@ def photo_pin(info, size=(1000, 1500)):
         draw.ellipse([pad, cy - r, pad + 2 * r, cy + r], fill=BRAND)
         name = wrap(draw, p['title'], name_font, w - 2 * pad - 50)[0]
         draw.text((pad + 2 * r + 22, cy - name_font.size * 0.68), name, font=name_font, fill=INK)
-    footer(draw, info, w, h, int(h * 0.835), credit=' · Foto: Pixabay')
+    footer(draw, info, w, h, int(h * 0.835), credit=info['t']['G_PHOTO'])
     return img
 
 
@@ -330,37 +330,39 @@ def wide(info):
         draw.rounded_rectangle([x, 390, x + tile, 390 + tile], radius=34, fill=WHITE)
         emoji(draw, (x + tile / 2, 390 + tile / 2), p['emoji'], 84)
         x += tile + gap
-    centered(draw, 565, f"Geschenke-Finder · {short_url(info['config'])}", font(28, bold=True), WHITE, w)
+    centered(draw, 565, info['t']['G_OG_FOOT'].format(url=info['url']), font(28, bold=True), WHITE, w)
     return img
 
 
-def page_infos():
+def page_infos(lang='de'):
     config = sitetool.load_js('config.js', 'CONFIG')
-    products = sitetool.load_js('produkte.js', 'PRODUCTS')
-    pages = sitetool.load_js('seiten.js', 'PAGES')
+    products = sitetool.load_js('produkte.js', 'PRODUCTS', lang)
+    pages = sitetool.load_js('seiten.js', 'PAGES', lang)
+    t, url = sitetool.T[lang], short_url(config, lang)
     yield {
         'slug': 'start', 'emoji': '🎁', 'config': config,
-        'title': 'Geschenkideen für die ganze Familie',
-        'subtitle': f'{len(products)} Ideen – in 3 Klicks gefunden',
+        'title': t['G_START_TITLE'],
+        'subtitle': t['G_START_SUB'].format(n=len(products)), 't': t, 'url': url,
         'products': pick_products(products, 6),
     }
     for page in pages:
-        fitting = [p for p in products if sitetool.product_fits(p, page)]
+        fitting = [p for p in products if sitetool.product_fits(p, page, lang=lang)]
         yield {
             'slug': page['slug'], 'emoji': page['emoji'], 'config': config,
-            'title': page['titel'], 'subtitle': subtitle_for(page, len(fitting)),
+            'title': page['titel'], 'subtitle': subtitle_for(page, len(fitting), None, lang), 't': t, 'url': url,
             'products': pick_products(fitting, 6),
         }
 
 
-def pin_infos():
+def pin_infos(lang='de'):
     """Eine Grafik pro Eintrag in daten/pins.js (für den Pinterest-Feed)."""
     config = sitetool.load_js('config.js', 'CONFIG')
-    products = sitetool.load_js('produkte.js', 'PRODUCTS')
-    pages = {p['slug']: p for p in sitetool.load_js('seiten.js', 'PAGES')}
-    for pin in sitetool.load_js('pins.js', 'PINS'):
+    products = sitetool.load_js('produkte.js', 'PRODUCTS', lang)
+    pages = {p['slug']: p for p in sitetool.load_js('seiten.js', 'PAGES', lang)}
+    t, url = sitetool.T[lang], short_url(config, lang)
+    for pin in sitetool.load_js('pins.js', 'PINS', lang):
         page = pages.get(pin.get('seite', ''))
-        fitting = [p for p in products if sitetool.product_fits(p, page, pin.get('filter'))]
+        fitting = [p for p in products if sitetool.product_fits(p, page, pin.get('filter'), lang=lang)]
         # Vom Bot ausgewählte Produkte zuerst, Rest automatisch auffüllen
         chosen = [p for t in pin.get('produkte', []) for p in fitting if p['title'] == t]
         rest = pick_products([p for p in fitting if p not in chosen], 6)
@@ -372,20 +374,18 @@ def pin_infos():
                 print(f'WARNUNG: Foto für Pin {pin["id"]} fehlt im Zwischenspeicher – erst "python -I tools/fotos.py".')
         yield pin, {
             'emoji': pin['emoji'], 'config': config, 'title': pin['titel'],
-            'subtitle': subtitle_for(page, len(fitting), pin.get('filter')),
+            'subtitle': subtitle_for(page, len(fitting), pin.get('filter'), lang), 't': t, 'url': url,
             'products': (chosen + rest)[:6], 'photo': photo,
         }
 
 
-HERO_DIR = ROOT / 'assets' / 'hero'
-
-
-def hero_images():
+def hero_images(lang='de'):
     """Kopfbilder der Seiten (1600 x 700, JPEG) aus den Pixabay-Fotos: assets/hero/<slug>.jpg, Startseite = start.jpg."""
+    HERO_DIR = ROOT / sitetool.LANGS[lang]['hero']
     HERO_DIR.mkdir(parents=True, exist_ok=True)
     cache = Path.home() / '.geschenke-finder' / 'foto-cache'
     sources = {'start': sitetool.load_js('config.js', 'CONFIG').get('startFotoId')}
-    sources.update({p['slug']: p.get('foto_id') for p in sitetool.load_js('seiten.js', 'PAGES')})
+    sources.update({p['slug']: p.get('foto_id') for p in sitetool.load_js('seiten.js', 'PAGES', lang)})
     wanted = set()
     for slug, foto_id in sources.items():
         if not foto_id:
@@ -404,28 +404,34 @@ def hero_images():
     return len(wanted)
 
 
-def main():
-    OUT.mkdir(parents=True, exist_ok=True)
-    print(f'{hero_images()} Kopfbilder in assets/hero/ erzeugt.')
+def build_lang(lang):
+    out = ROOT / sitetool.LANGS[lang]['social']
+    out.mkdir(parents=True, exist_ok=True)
+    print(f'[{lang}] {hero_images(lang)} Kopfbilder erzeugt.')
     wanted = set()
-    for info in page_infos():
+    for info in page_infos(lang):
         for kind, img in (('pin', tall(info, (1000, 1500), 6)),
                           ('story', tall(info, (1080, 1920), 6)),
                           ('og', wide(info))):
-            path = OUT / f"{info['slug']}-{kind}.png"
+            path = out / f"{info['slug']}-{kind}.png"
             img.save(path, optimize=True)
             wanted.add(path)
-    for pin, info in pin_infos():
-        path = sitetool.pin_image(pin)
+    for pin, info in pin_infos(lang):
+        path = sitetool.pin_image(pin, lang)
         design = pin.get('design', 'a')
         if design == 'd' and not info['photo']:
             design = 'b'  # ohne Foto lieber ein anderes Design als gar kein Pin
         DESIGNS[design](info).save(path, optimize=True)
         wanted.add(path)
-    for old in OUT.glob('*.png'):
+    for old in out.glob('*.png'):
         if old not in wanted:
             old.unlink()
-    print(f'{len(wanted)} Grafiken in assets/social/ erzeugt.')
+    print(f'[{lang}] {len(wanted)} Grafiken in {sitetool.LANGS[lang]["social"]}/ erzeugt.')
+
+
+def main():
+    for lang in sitetool.active_langs(sitetool.load_js('config.js', 'CONFIG')):
+        build_lang(lang)
 
 
 if __name__ == '__main__':

@@ -12,6 +12,8 @@
 // startFotoId:      Pixabay-Foto (Nummer) für das Kopfbild der Startseite.
 // videoScenarioAktiv: false = Video-Pins gehen vorerst als normale Bild-Pins über pins.xml raus.
 //                   true  = sobald das zweite Make-Scenario (videos.xml → Video-Pin) läuft; dann nur noch als Video.
+// it:               italienische Seite unter /it/ (aktiv, eigene amazon.it-Partner-ID, eigene Tracking-IDs
+//                   und eigene Pinterest-Pinnwände). Erst "aktiv": true setzen, wenn partnerTag eingetragen ist.
 window.CONFIG = {
   "indexNowKey": "bb7c77ebce127199306bf33e2fbb169b",
   "videoScenarioAktiv": false,
@@ -28,12 +30,40 @@ window.CONFIG = {
   "siteUrl": "https://geschenkidee-finden.com/",
   "startFotoId": 6909090,
   "pinterestBoards": {
-    "geschenkideen": {"name": "Geschenkideen", "id": "376261812558071901"},
-    "weihnachten": {"name": "Weihnachtsgeschenke Ideen", "id": "376261812558071907"},
-    "wichteln": {"name": "Wichtelgeschenke unter 15 Euro", "id": "376261812558071910"},
-    "tiere": {"name": "Geschenke für Hundebesitzer und Katzenliebhaber", "id": "376261812558071911"},
-    "teenager": {"name": "Geschenke für Teenager", "id": "376261812558071912"},
-    "eltern": {"name": "Geschenke für Mama und Papa", "id": "376261812558071913"},
-    "workout": {"name": "Home Workout Geschenke", "id": "376261812558071914"}
+    "geschenkideen": {
+      "name": "Geschenkideen",
+      "id": "376261812558071901"
+    },
+    "weihnachten": {
+      "name": "Weihnachtsgeschenke Ideen",
+      "id": "376261812558071907"
+    },
+    "wichteln": {
+      "name": "Wichtelgeschenke unter 15 Euro",
+      "id": "376261812558071910"
+    },
+    "tiere": {
+      "name": "Geschenke für Hundebesitzer und Katzenliebhaber",
+      "id": "376261812558071911"
+    },
+    "teenager": {
+      "name": "Geschenke für Teenager",
+      "id": "376261812558071912"
+    },
+    "eltern": {
+      "name": "Geschenke für Mama und Papa",
+      "id": "376261812558071913"
+    },
+    "workout": {
+      "name": "Home Workout Geschenke",
+      "id": "376261812558071914"
+    }
+  },
+  "it": {
+    "aktiv": false,
+    "partnerTag": "",
+    "amazonDomain": "www.amazon.it",
+    "trackingIds": {},
+    "pinterestBoards": {}
   }
 };

@@ -3,45 +3,102 @@
 (function () {
     'use strict';
 
-    const CONFIG = window.CONFIG || {};
+    const LANG = document.documentElement.lang === 'it' ? 'it' : 'de';
+    // Einstellungen der Sprache: Italienisch steht im Abschnitt "it" von daten/config.js
+    const CONFIG = LANG === 'de' ? (window.CONFIG || {}) : Object.assign({}, window.CONFIG, (window.CONFIG || {})[LANG]);
     const PRODUCTS = window.PRODUCTS || [];
     const PAGES = window.PAGES || [];
-    const ROOT = document.body.dataset.root || '';
+    const HOME = document.body.dataset.home || '';
+    const PAGES_DIR = document.body.dataset.pagesDir || 'ideen';
     const PAGE = PAGES.find(p => p.slug === document.body.dataset.page) || null;
+
+    // --- Texte der Bedienoberfläche ---
+    const I18N = {
+        de: {
+            recipient: ['Alle', 'Haushalt & Familie', 'Teenager / Gaming', 'Eltern / Partner', 'Kinder'],
+            budget: ['Alle Preisklassen', 'Unter 15 €', '15 € bis 50 €', '50 € bis 150 €', 'Über 150 €'],
+            budgetHint: ['', 'Kleinigkeiten', 'Beliebt', '', 'Premium'],
+            category: ['Alle Bereiche', 'Küche', 'Technik & Gadgets', 'Wellness & Pflege', 'Wohnen & Ordnung',
+                       'Spiel & Freizeit', 'Sport & Fitness', 'Haustiere'],
+            budgetLabel: { under15: 'unter 15 €', '15to50': '15–50 €', '50to150': '50–150 €', over150: 'über 150 €' },
+            filterTitle: { recipient: 'Für wen', budget: 'Budget', category: 'Bereich' },
+            and: ' und ',
+            notice: (n, dropped) => `Für genau diese Auswahl haben wir noch nichts – hier sind <strong>${n} passende Ideen</strong>, wenn man ${dropped} weglässt.`,
+            found: n => `${n} ${n === 1 ? 'Idee' : 'Ideen'} gefunden`,
+            similar: n => `${n} ähnliche ${n === 1 ? 'Idee' : 'Ideen'}`,
+            amazonSearch: term => `Auf Amazon nach „${term}“ suchen*`,
+            emptyH: 'Keine passenden Ideen gefunden', emptyHSearch: 'Das haben wir noch nicht dabei',
+            emptyP: 'Lockere einen Filter oder leere das Suchfeld.',
+            emptyPSearch: 'Auf Amazon findest du bestimmt etwas Passendes – oder du schaust dir unsere anderen Ideen an.',
+            forLabel: 'Passt für', priceBand: 'Preisklasse', cta: 'Auf Amazon ansehen*',
+            copied: 'Link kopiert ✓', copyPrompt: 'Diesen Link kopieren:',
+            universal: ['geburtstag', 'weihnachten'],
+            hash: { recipient: 'fuer', budget: 'budget', category: 'bereich', search: 'suche' }
+        },
+        it: {
+            recipient: ['Tutti', 'Casa & famiglia', 'Ragazzi / gaming', 'Genitori / partner', 'Bambini'],
+            budget: ['Tutti i prezzi', 'Sotto 15 €', 'Da 15 a 50 €', 'Da 50 a 150 €', 'Oltre 150 €'],
+            budgetHint: ['', 'Pensierini', 'I più scelti', '', 'Premium'],
+            category: ['Tutte le categorie', 'Cucina', 'Tecnologia & gadget', 'Benessere & cura', 'Casa & ordine',
+                       'Gioco & tempo libero', 'Sport & fitness', 'Animali'],
+            budgetLabel: { under15: 'sotto 15 €', '15to50': '15–50 €', '50to150': '50–150 €', over150: 'oltre 150 €' },
+            filterTitle: { recipient: 'Per chi', budget: 'Budget', category: 'Categoria' },
+            and: ' e ',
+            notice: (n, dropped) => `Per questa selezione non abbiamo ancora nulla – ecco <strong>${n} idee simili</strong> senza ${dropped}.`,
+            found: n => `${n} ${n === 1 ? 'idea trovata' : 'idee trovate'}`,
+            similar: n => `${n} ${n === 1 ? 'idea simile' : 'idee simili'}`,
+            amazonSearch: term => `Cerca „${term}“ su Amazon*`,
+            emptyH: 'Nessuna idea trovata', emptyHSearch: 'Non lo abbiamo ancora',
+            emptyP: 'Allenta un filtro o svuota il campo di ricerca.',
+            emptyPSearch: 'Su Amazon troverai sicuramente qualcosa – oppure guarda le nostre altre idee.',
+            forLabel: 'Adatto a', priceBand: 'Fascia di prezzo', cta: 'Vedi su Amazon*',
+            copied: 'Link copiato ✓', copyPrompt: 'Copia questo link:',
+            universal: ['compleanno', 'natale'],
+            hash: { recipient: 'per', budget: 'budget', category: 'categoria', search: 'cerca' }
+        }
+    }[LANG];
 
     const PLACEHOLDER_TAG = 'DEINTAG-21';
 
     const FILTERS = {
         recipient: [
-            { id: 'all',       label: 'Alle',               icon: '👥' },
-            { id: 'household', label: 'Haushalt & Familie', icon: '🏡' },
-            { id: 'teenager',  label: 'Teenager / Gaming',  icon: '🎮' },
-            { id: 'parents',   label: 'Eltern / Partner',   icon: '❤️' },
-            { id: 'kids',      label: 'Kinder',             icon: '🧒' }
+            { id: 'all',       icon: '👥' },
+            { id: 'household', icon: '🏡' },
+            { id: 'teenager',  icon: '🎮' },
+            { id: 'parents',   icon: '❤️' },
+            { id: 'kids',      icon: '🧒' }
         ],
         budget: [
-            { id: 'all',     label: 'Alle Preisklassen', icon: '💶' },
-            { id: 'under15', label: 'Unter 15 €',        icon: '🐷', hint: 'Kleinigkeiten' },
-            { id: '15to50',  label: '15 € bis 50 €',     icon: '👛', hint: 'Beliebt' },
-            { id: '50to150', label: '50 € bis 150 €',    icon: '💳' },
-            { id: 'over150', label: 'Über 150 €',        icon: '💎', hint: 'Premium' }
+            { id: 'all',     icon: '💶' },
+            { id: 'under15', icon: '🐷' },
+            { id: '15to50',  icon: '👛' },
+            { id: '50to150', icon: '💳' },
+            { id: 'over150', icon: '💎' }
         ],
         category: [
-            { id: 'all',     label: 'Alle Bereiche',     icon: '🔲' },
-            { id: 'kitchen', label: 'Küche',             icon: '🍳' },
-            { id: 'tech',    label: 'Technik & Gadgets', icon: '🎧' },
-            { id: 'beauty',  label: 'Wellness & Pflege', icon: '🧖' },
-            { id: 'home',    label: 'Wohnen & Ordnung',  icon: '🛋️' },
-            { id: 'fun',     label: 'Spiel & Freizeit',  icon: '🎲' },
-            { id: 'sport',   label: 'Sport & Fitness',   icon: '🏋️' },
-            { id: 'pets',    label: 'Haustiere',         icon: '🐾' }
+            { id: 'all',     icon: '🔲' },
+            { id: 'kitchen', icon: '🍳' },
+            { id: 'tech',    icon: '🎧' },
+            { id: 'beauty',  icon: '🧖' },
+            { id: 'home',    icon: '🛋️' },
+            { id: 'fun',     icon: '🎲' },
+            { id: 'sport',   icon: '🏋️' },
+            { id: 'pets',    icon: '🐾' }
         ]
     };
 
-    const BUDGET_LABEL = { under15: 'unter 15 €', '15to50': '15–50 €', '50to150': '50–150 €', over150: 'über 150 €' };
+    // Beschriftungen in der Sprache der Seite (gleiche Reihenfolge wie oben)
+    for (const type of ['recipient', 'budget', 'category']) {
+        FILTERS[type].forEach((opt, i) => {
+            opt.label = I18N[type][i];
+            if (type === 'budget' && I18N.budgetHint[i]) opt.hint = I18N.budgetHint[i];
+        });
+    }
+
+    const BUDGET_LABEL = I18N.budgetLabel;
     const RECIPIENT_LABEL = Object.fromEntries(FILTERS.recipient.map(r => [r.id, r.label]));
     // Jedes Produkt passt zu diesen Anlässen, zusätzlich zu seinen eigenen "occasions"
-    const UNIVERSAL_OCCASIONS = ['geburtstag', 'weihnachten'];
+    const UNIVERSAL_OCCASIONS = I18N.universal;
 
     const defaults = Object.assign({ recipient: 'all', budget: 'all', category: 'all' }, PAGE ? PAGE.filter : {});
     const state = Object.assign({ search: '' }, defaults);
@@ -90,10 +147,12 @@
 
     // --- Tolerante Suche: Umlaute, einfache Mehrzahl, häufige englische Begriffe ---
     function normalize(text) {
-        return text.toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').trim();
+        text = text.toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
+        // italienische Akzente: "caffè" findet auch "caffe"
+        return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
     }
 
-    const ALIASES = {
+    const ALIASES = LANG !== 'de' ? {} : {
         drone: 'drohne', drones: 'drohne', headphones: 'kopfhoerer', earbuds: 'kopfhoerer', speaker: 'lautsprecher',
         lamp: 'lampe', light: 'licht', lights: 'led', camera: 'kamera', watch: 'uhr', tracker: 'tracker',
         dog: 'hund', dogs: 'hund', cat: 'katze', cats: 'katze', pet: 'haustier', toy: 'spielzeug', toys: 'spielzeug',
@@ -127,7 +186,7 @@
             .sort((a, b) => a.dist - b.dist);
         if (!list.length) { box.hidden = true; return; }
         box.querySelector('.occasion-list').innerHTML = list.map(({ page, dist }) => `
-            <a class="occasion${dist <= 1 ? ' soon' : ''}" href="${ROOT}ideen/${encodeURIComponent(page.slug)}.html">
+            <a class="occasion${dist <= 1 ? ' soon' : ''}" href="${HOME}${PAGES_DIR}/${encodeURIComponent(page.slug)}.html">
                 <span aria-hidden="true">${page.emoji}</span> ${escapeHtml(page.kurztitel || page.titel)}
             </a>`).join('');
     }
@@ -156,7 +215,7 @@
         }
     }
 
-    const FILTER_TITLE = { recipient: 'Für wen', budget: 'Budget', category: 'Bereich' };
+    const FILTER_TITLE = I18N.filterTitle;
 
     function filterLabel(key) {
         return FILTERS[key].find(o => o.id === state[key]).label;
@@ -186,14 +245,12 @@
             const alt = fallback();
             if (alt) {
                 list = alt.list;
-                const dropped = alt.ignore.map(k => `${FILTER_TITLE[k]}: „${escapeHtml(filterLabel(k))}“`).join(' und ');
-                notice.innerHTML = `Für genau diese Auswahl haben wir noch nichts – hier sind <strong>${list.length} passende Ideen</strong>, wenn man ${dropped} weglässt.`;
+                const dropped = alt.ignore.map(k => `${FILTER_TITLE[k]}: „${escapeHtml(filterLabel(k))}“`).join(I18N.and);
+                notice.innerHTML = I18N.notice(list.length, dropped);
                 notice.hidden = false;
             }
         }
-        $('#count').textContent = exact || !list.length
-            ? `${exact} ${exact === 1 ? 'Idee' : 'Ideen'} gefunden`
-            : `${list.length} ähnliche ${list.length === 1 ? 'Idee' : 'Ideen'}`;
+        $('#count').textContent = exact || !list.length ? I18N.found(exact) : I18N.similar(list.length);
         $('#empty').classList.toggle('show', list.length === 0);
         // Nichts gefunden, aber ein Suchbegriff? Dann direkt auf Amazon danach suchen lassen (mit Partner-ID).
         const amazonSearch = $('#amazon-search');
@@ -201,12 +258,10 @@
         if (!amazonSearch.hidden) {
             const term = $('#search').value.trim();
             amazonSearch.href = amazonUrl({ query: term });
-            amazonSearch.textContent = `Auf Amazon nach „${term}“ suchen*`;
+            amazonSearch.textContent = I18N.amazonSearch(term);
         }
-        $('#empty h3').textContent = amazonSearch.hidden ? 'Keine passenden Ideen gefunden' : 'Das haben wir noch nicht dabei';
-        $('#empty p').textContent = amazonSearch.hidden
-            ? 'Lockere einen Filter oder leere das Suchfeld.'
-            : 'Auf Amazon findest du bestimmt etwas Passendes – oder du schaust dir unsere anderen Ideen an.';
+        $('#empty h3').textContent = amazonSearch.hidden ? I18N.emptyH : I18N.emptyHSearch;
+        $('#empty p').textContent = amazonSearch.hidden ? I18N.emptyP : I18N.emptyPSearch;
 
         $('#grid').innerHTML = list.map(p => `
             <article class="card">
@@ -216,11 +271,11 @@
                 </div>
                 <div class="card-body">
                     <h3>${escapeHtml(p.title)}</h3>
-                    <p class="for">Passt für: ${p.recipients.map(r => escapeHtml(RECIPIENT_LABEL[r])).join(', ')}</p>
+                    <p class="for">${I18N.forLabel}: ${p.recipients.map(r => escapeHtml(RECIPIENT_LABEL[r])).join(', ')}</p>
                     <ul>${p.highlights.map(h => `<li>${escapeHtml(h)}</li>`).join('')}</ul>
                     <div class="card-foot">
-                        <div class="price-band">Preisklasse<strong>${BUDGET_LABEL[p.budget]}</strong></div>
-                        <a class="cta" href="${escapeHtml(amazonUrl(p))}" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>
+                        <div class="price-band">${I18N.priceBand}<strong>${BUDGET_LABEL[p.budget]}</strong></div>
+                        <a class="cta" href="${escapeHtml(amazonUrl(p))}" target="_blank" rel="sponsored noopener">${I18N.cta}</a>
                     </div>
                 </div>
             </article>`).join('');
@@ -228,7 +283,7 @@
 
     // Auswahl in der Adresse speichern, damit man Links wie
     // .../#fuer=teenager&budget=under15 teilen kann (z. B. auf Social Media)
-    const HASH_KEYS = { recipient: 'fuer', budget: 'budget', category: 'bereich', search: 'suche' };
+    const HASH_KEYS = I18N.hash;
 
     function writeHash() {
         const params = new URLSearchParams();
@@ -269,9 +324,9 @@
         const original = btn.textContent;
         try {
             await navigator.clipboard.writeText(location.href);
-            btn.textContent = 'Link kopiert ✓';
+            btn.textContent = I18N.copied;
         } catch {
-            window.prompt('Diesen Link kopieren:', location.href);
+            window.prompt(I18N.copyPrompt, location.href);
         }
         setTimeout(() => { btn.textContent = original; }, 2000);
     }

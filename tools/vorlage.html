@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!-- Diese Datei wird automatisch erzeugt (python tools/site.py build). Änderungen in tools/vorlage.html machen. -->
-<html lang="de">
+<html lang="{{LANG}}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{TITLE}}</title>
     <meta name="description" content="{{DESCRIPTION}}">
-    <link rel="canonical" href="{{CANONICAL}}">
+    <link rel="canonical" href="{{CANONICAL}}">{{HREFLANG}}
     <meta name="p:domain_verify" content="68f2a9b5e9c3a7a04b9eb48da15ce2cd">
     <meta property="og:title" content="{{TITLE}}">
     <meta property="og:description" content="{{DESCRIPTION}}">
@@ -19,20 +19,22 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
     <link rel="stylesheet" href="{{ROOT}}assets/style.css">
 </head>
-<body data-root="{{ROOT}}" data-page="{{PAGE}}">
+<body data-root="{{ROOT}}" data-home="{{HOME}}" data-pages-dir="{{PAGES_DIR}}" data-page="{{PAGE}}">
 
     <div class="config-warning" id="config-warning">
-        ⚠️ Partner-ID noch nicht eingetragen – trage sie in <code>daten/config.js</code> ein, sonst verdienst du nichts.
+        {{T_CONFIG_WARNING}}
     </div>
 
     <header>
-        <a class="wrap header-inner" href="{{ROOT}}index.html">
-            <div class="logo" aria-hidden="true">🎁</div>
-            <div>
-                <p class="name">Geschenke-Finder</p>
-                <p class="tagline">In 3 Klicks zur passenden Idee</p>
-            </div>
-        </a>
+        <div class="wrap header-bar">
+            <a class="header-inner" href="{{HOME}}index.html">
+                <div class="logo" aria-hidden="true">🎁</div>
+                <div>
+                    <p class="name">{{T_SITE_NAME}}</p>
+                    <p class="tagline">{{T_TAGLINE}}</p>
+                </div>
+            </a>{{LANG_SWITCH}}
+        </div>
     </header>
 
     <main>
@@ -45,60 +47,60 @@
                 {{HERO_CREDIT}}
             </div>
 
-            <nav class="occasions" id="occasions" aria-label="Geschenkideen nach Anlass">
+            <nav class="occasions" id="occasions" aria-label="{{T_OCC_ARIA}}">
                 <h2>{{OCC_HEADING}}</h2>
                 <div class="occasion-list">{{STATIC_OCCASIONS}}</div>
             </nav>
 
-            <section class="wizard" aria-label="Geschenke filtern">
+            <section class="wizard" aria-label="{{T_FILTER_ARIA}}">
                 <button type="button" class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="wizard-body">
                     <span class="filter-toggle-label">🔎 Filter</span>
-                    <span class="filter-summary" id="filter-summary">Alle · Alle Preisklassen · Alle Bereiche</span>
+                    <span class="filter-summary" id="filter-summary">{{T_FILTER_DEFAULT}}</span>
                     <span class="filter-chevron" aria-hidden="true">▾</span>
                 </button>
                 <div class="wizard-body" id="wizard-body">
                 <div class="steps">
                     <div>
-                        <p class="step-title" id="t-recipient">1. Für wen suchst du?</p>
+                        <p class="step-title" id="t-recipient">{{T_STEP1}}</p>
                         <div class="options" role="group" aria-labelledby="t-recipient" data-filter="recipient"></div>
                     </div>
                     <div>
-                        <p class="step-title" id="t-budget">2. Welches Budget?</p>
+                        <p class="step-title" id="t-budget">{{T_STEP2}}</p>
                         <div class="options" role="group" aria-labelledby="t-budget" data-filter="budget"></div>
                     </div>
                     <div>
-                        <p class="step-title" id="t-category">3. Welcher Bereich?</p>
+                        <p class="step-title" id="t-category">{{T_STEP3}}</p>
                         <div class="options" role="group" aria-labelledby="t-category" data-filter="category"></div>
                     </div>
                 </div>
 
                 <div class="toolbar">
-                    <input type="search" id="search" class="search" placeholder="Suchen, z. B. Kopfhörer …" aria-label="Produkte durchsuchen">
+                    <input type="search" id="search" class="search" placeholder="{{T_SEARCH_PH}}" aria-label="{{T_SEARCH_ARIA}}">
                     <div class="toolbar-right">
                         <span class="count" id="count" aria-live="polite"></span>
-                        <button type="button" class="link-btn" id="share">Link zu dieser Auswahl kopieren</button>
-                        <button type="button" class="link-btn" id="reset">Filter zurücksetzen</button>
+                        <button type="button" class="link-btn" id="share">{{T_SHARE}}</button>
+                        <button type="button" class="link-btn" id="reset">{{T_RESET}}</button>
                     </div>
                 </div>
                 </div>
             </section>
 
-            <p class="ad-note">* Werbelinks: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich der Preis nicht.</p>
+            <p class="ad-note">{{T_AD_NOTE}}</p>
 
             <p class="notice" id="notice" role="status" hidden></p>
 
-            <section class="grid" id="grid" aria-label="Geschenkideen">{{STATIC_GRID}}</section>
+            <section class="grid" id="grid" aria-label="{{T_GRID_ARIA}}">{{STATIC_GRID}}</section>
 
             <div class="empty" id="empty">
                 <div style="font-size:40px" aria-hidden="true">🔍</div>
-                <h3>Keine passenden Ideen gefunden</h3>
-                <p>Lockere einen Filter oder leere das Suchfeld.</p>
+                <h3>{{T_EMPTY_H}}</h3>
+                <p>{{T_EMPTY_P}}</p>
                 <a class="btn btn-amazon" id="amazon-search" href="#" target="_blank" rel="sponsored noopener" hidden></a>
-                <button type="button" class="btn" id="reset-empty">Alle Filter zurücksetzen</button>
+                <button type="button" class="btn" id="reset-empty">{{T_RESET_ALL}}</button>
             </div>
 
 {{RATGEBER}}
-            <p class="footnote">* Werbelink: Beim Kauf über diesen Link erhalte ich eine kleine Provision. Preisklassen sind ungefähre Richtwerte – der aktuelle Preis und die Verfügbarkeit stehen auf Amazon.</p>
+            <p class="footnote">{{T_FOOTNOTE}}</p>
         </div>
     </main>
 
@@ -106,25 +108,25 @@
         <div class="wrap">
             <div class="foot-grid">
                 <div>
-                    <h4>🎁 Geschenke-Finder</h4>
-                    <p>Eine Sammlung nützlicher Alltags-Ideen und Geschenke für die ganze Familie.</p>
-                    <p>Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Links zu Amazon sind Werbelinks (*).</p>
-                    <p>Amazon und das Amazon-Logo sind Warenzeichen von Amazon.com, Inc. oder eines seiner verbundenen Unternehmen.</p>
+                    <h4>🎁 {{T_SITE_NAME}}</h4>
+                    <p>{{T_FOOT_ABOUT}}</p>
+                    <p>{{T_FOOT_PARTNER}}</p>
+                    <p>{{T_FOOT_TM}}</p>
                 </div>
-                <nav aria-label="Über die Seite und Rechtliches">
-                    <h4>Über die Seite</h4>
-                    <a href="{{ROOT}}ueber.html">Über den Geschenke-Finder</a>
-                    <a href="{{ROOT}}impressum.html">Impressum</a>
-                    <a href="{{ROOT}}datenschutz.html">Datenschutzerklärung</a>
+                <nav aria-label="{{T_FOOT_NAV_ARIA}}">
+                    <h4>{{T_FOOT_NAV_H}}</h4>
+                    <a href="{{HOME}}{{T_FILE_ABOUT}}">{{T_LINK_ABOUT}}</a>
+                    <a href="{{HOME}}{{T_FILE_IMPRINT}}">{{T_LINK_IMPRINT}}</a>
+                    <a href="{{HOME}}{{T_FILE_PRIVACY}}">{{T_LINK_PRIVACY}}</a>
                 </nav>
             </div>
-            <div class="copy">&copy; <span id="year"></span> Geschenke-Finder · A TEC des Aaron Oberrauch · MwSt.-Nr. / P.IVA IT03200350217</div>
+            <div class="copy">&copy; <span id="year"></span> {{T_SITE_NAME}} · A TEC des Aaron Oberrauch · {{T_VAT}}</div>
         </div>
     </footer>
 
     <script src="{{ROOT}}daten/config.js"></script>
-    <script src="{{ROOT}}daten/produkte.js"></script>
-    <script src="{{ROOT}}daten/seiten.js"></script>
+    <script src="{{ROOT}}{{DATA}}/produkte.js"></script>
+    <script src="{{ROOT}}{{DATA}}/seiten.js"></script>
     <script src="{{ROOT}}assets/app.js"></script>
 </body>
 </html>
