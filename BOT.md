@@ -13,7 +13,7 @@ um 18 Uhr. Arbeite vorsichtig: Lieber eine kleine, fehlerfreie Änderung als ein
 | Neue Themen- oder Nischen-Seite mit Ratgeber (3, 3b) | ja, max. 1 | nein | nein |
 | Ratgeber für 1 bestehende Seite ohne Ratgeber (3c) | ja | ja | ja |
 | Produkte (4) | 2–3 | 2–3 | 2–3 |
-| Pins (4b), davon 1 Video-Pin | 5 | 5 | 5 |
+| Pins (4b), mind. 3 davon mit Foto (Design d) | 5 | 5 | 5 |
 | Social-Media-Entwürfe (7) | 5 für die Woche | nein | nein |
 
 Bei den kurzen Läufen liest du die letzte `_entwuerfe/trends-*.md` und ergänzt sie nur. Sonntagspins dürfen
@@ -150,8 +150,8 @@ die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
      Produktbezeichnungen suchen. Szenen drinnen/zu Hause passen meist besser als Landschaften. `tools/fotos.py`
      sucht das Foto (ohne KI-Bilder und Marken) und trägt `foto_id` selbst ein – `foto_id` nie von Hand setzen.
      Findet es nichts („kein passendes Foto“), einen anderen, allgemeineren Suchbegriff wählen und erneut ausführen.
-   - `video`: `true` bei **genau 1 der 5 Pins pro Lauf** – daraus macht `tools/videos.py` ein ~10-Sekunden-Video.
-     Nimm dafür ein Thema mit 6 überzeugenden Produkten.
+   - `video`: **zurzeit nicht verwenden** (Make.com kann keine Videos zu Pinterest hochladen). Erst wenn in
+     `daten/config.js` `"videoScenarioAktiv": true` steht, bei genau 1 der 5 Pins pro Lauf `true` setzen.
    - Dieselbe Seite darf wieder einen Pin bekommen, wenn seit dem letzten Pin dazu mindestens 2 Wochen vergangen sind
      **und** Titel, Design und Produktauswahl deutlich anders sind (Pinterest mag „frische“ Pins zum selben Thema).
    - `produkte`: optional bis zu 6 Produkttitel (genau wie in `daten/produkte.js`), die auf dem Pin stehen sollen –
