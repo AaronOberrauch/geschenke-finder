@@ -28,7 +28,8 @@ DOMAINS = {'www.amazon.de', 'www.amazon.it'}
 PLACEHOLDER_TAG = 'DEINTAG-21'
 
 # Behauptungen, die wir nicht belegen können, und Preisangaben sind verboten
-CLAIMS = re.compile(r'bestseller|testsieger|nr\.?\s*1\b|#\s*1\b|\d[.,]?\d*\s*sterne|bewertung|rezension', re.I)
+CLAIMS = re.compile(r'bestseller|testsieger|nr\.?\s*1\b|#\s*1\b|\d[.,]?\d*\s*sterne|bewertung|rezension'
+                    r'|beliebteste|die besten|top[\s-]*\d+', re.I)
 PRICE = re.compile(r'\d+[.,]?\d*\s*€|€\s*\d')
 PIN_ID = re.compile(r'^\d{4}-\d{2}-\d{2}-[a-z0-9]+(-[a-z0-9]+)*$')
 ASIN = re.compile(r'^(B0[A-Z0-9]{8}|\d{9}[\dX])$')

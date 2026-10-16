@@ -19,6 +19,17 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
 
 1. `git pull --ff-only`. Wenn das scheitert: abbrechen und melden.
 2. `python -I tools/site.py check`. Wenn schon vorher Fehler da sind: nichts ändern, abbrechen und melden.
+2b. **Trend-Recherche (ca. 5–8 Suchen).** Finde heraus, welche Geschenke und Produktarten im deutschsprachigen
+   Raum gerade und in den nächsten Wochen gefragt sind. Gute Quellen:
+   - Pinterest Trends (trends.pinterest.com, Region Deutschland) und Google Trends (Deutschland)
+   - aktuelle Geschenk-Ratgeber und Trend-Artikel deutscher Medien und Blogs zur kommenden Saison
+   - Suchen wie „Geschenkideen <Anlass> <Jahr>“, „Trend-Geschenke <Monat> <Jahr>“, „Geschenke für Hundebesitzer <Jahr>“
+   **Nicht verwenden:** Amazon-Seiten auslesen (Bestseller-Listen, Produktseiten) – das verbieten die Partner-Regeln.
+   Übernimm aus Artikeln nur Ideen und Suchbegriffe, nie Texte. Schreib die Ergebnisse kurz in
+   `_entwuerfe/trends-JJJJ-MM-TT.md`: 5–10 Trend-Produktarten mit Quelle, und 10–15 Suchbegriffe, nach denen
+   Leute gerade suchen (z. B. „wichtelgeschenke für kollegen“, „geschenk für hundebesitzer“).
+   Nutze diese Liste in den Schritten 3, 4 und 4b. Wenn keine Websuche möglich ist: Schritt überspringen,
+   mit Saison und Anlässen weiterarbeiten und das im Bericht erwähnen.
 3. **Anlässe prüfen.** Schau aufs heutige Datum. Für jeden Anlass, der in den nächsten
    **8 Wochen** ansteht und noch keine Seite in `daten/seiten.js` hat, lege eine an –
    **höchstens eine neue Seite pro Lauf**. Termine (Shop laut `amazonDomain` in `daten/config.js`):
@@ -42,7 +53,7 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    die Seite vorne angezeigt wird; `[]` = ganzjährige Seite, z. B. „Geschenke für Tierfreunde“ mit `anlass` geburtstag), `beschreibung` (50–160 Zeichen, für Google), `intro` (1–2 Sätze),
    `filter` (optional: `recipient`, `budget`, `category`).
 4. **Produkte ergänzen: 2 bis 4 neue pro Lauf.** Bevorzuge, in dieser Reihenfolge:
-   Produkte für anstehende Anlässe (mit passenden `occasions`), dann Lücken, die `check`
+   Trend-Produktarten aus Schritt 2b, Produkte für anstehende Anlässe (mit passenden `occasions`), dann Lücken, die `check`
    als WARNUNG meldet („Keine Produkte für Zielgruppe …“). Regeln:
    - Nur echte, gängige Produktarten, die es auf Amazon sicher gibt. Allgemein benennen
      („Kabellose Ohrhörer“), keine Fantasie-Produkte.
@@ -72,8 +83,16 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    Felder:
    - `id`: heutiges Datum + Stichwort, z. B. `2026-11-02-geschenke-fuer-papa` (einmalig, nie wiederverwenden)
    - `datum`: heutiges Datum (`JJJJ-MM-TT`)
-   - `titel`: max. 100 Zeichen, so formuliert, wie Leute auf Pinterest suchen („Geschenke für Papa unter 50 €“)
-   - `beschreibung`: 2–3 Sätze (max. 500 Zeichen), dann 4–6 Hashtags, **immer mit `#werbung`**
+   - `titel`: max. 100 Zeichen. Beginnt mit dem wichtigsten Suchbegriff aus Schritt 2b, so wie Leute auf
+     Pinterest suchen („Wichtelgeschenke für Kollegen: 8 Ideen unter 15 €“, „Geschenke für Papa unter 50 €“).
+     Konkret und klickstark, aber ehrlich – keine Superlative wie „die besten“, „Top 10“, „Nr. 1“.
+   - `beschreibung`: max. 500 Zeichen. Pinterest ist eine Suchmaschine, darum:
+     - 2–3 natürliche Sätze, in denen **2–4 Suchbegriffe aus Schritt 2b im Fließtext** vorkommen
+       (z. B. „Du suchst ein Wichtelgeschenk für Kollegen oder ein kleines Geschenk für die Freundin?“)
+     - mindestens 2 konkrete Produktarten vom Pin nennen
+     - eine Aufforderung am Schluss („Alle Ideen nach Budget sortiert findest du auf der Seite.“)
+     - danach 3–5 Hashtags, **immer mit `#werbung`**
+     - kein Aufzählen von Stichwörtern hintereinander (Keyword-Stuffing straft Pinterest ab)
    - `emoji`: großes Bild oben auf dem Pin
    - `seite`: slug einer Themen-Seite oder `""` für die Startseite
    - `filter`: optional `recipient`, `budget`, `category` – grenzt die Produkte ein, der Link öffnet die Seite mit diesem Filter
@@ -103,4 +122,4 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    - Bei Videos: Idee in 3–5 Szenen (was man filmt)
    - Hashtags (5–8), **immer mit `#werbung`**, weil die Links Provision bringen
    Die Entwürfe sind nicht im Git (stehen in `.gitignore`).
-8. Zum Schluss kurz melden: neue Seite(n), neue Produkte, neue Pins, Ergebnis von `check`, Commit, Datei mit den Entwürfen.
+8. Zum Schluss kurz melden: wichtigste Trends aus 2b, neue Seite(n), neue Produkte, neue Pins, Ergebnis von `check`, Commit, Datei mit den Entwürfen.
