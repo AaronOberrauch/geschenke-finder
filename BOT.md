@@ -155,15 +155,11 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
    WARNUNGEN zu Partner-ID und Impressum sind bekannt und blockieren nicht.
 6. Veröffentlichen: `git add -A`, `git commit -m "Bot: <kurze Zusammenfassung>"`, `git push`.
 7. **Texte zum Teilen (nur sonntags)** in `_entwuerfe/JJJJ-MM-TT.md` schreiben. Der Betreiber macht **kein
-   Instagram und kein TikTok und keine Videos** – schreib dafür nichts. Er teilt die Seite von Hand in
-   WhatsApp und Facebook-Gruppen. Schreib 3 fertige Texte, die er nur kopieren und einfügen muss:
-   - **WhatsApp-Status:** 1–2 Sätze, locker, Du-Form, plus Link. Dazu die passende Story-Grafik
-     (`assets/social/<slug>-story.png`, voller Pfad), die er als Bild in den Status stellt.
-   - **Facebook-Gruppe (z. B. Eltern-, Hunde- oder Wichtel-Gruppen):** 3–4 Sätze, hilfsbereit statt werblich
-     („Falls noch jemand ein Wichtelgeschenk sucht …“), plus Link und am Ende „(Werbung: enthält Partnerlinks)“.
-     Nenne 2–3 Arten passender Gruppen, wo der Text gut ankommt. Hinweis anfügen: vorher die Gruppenregeln lesen,
-     viele Gruppen verbieten Werbelinks.
-   - **WhatsApp an Freunde/Familie:** kurze, persönliche Nachricht („Hab eine Seite mit Geschenkideen gebaut …“).
+   Instagram, kein TikTok, keine Videos und teilt nichts über WhatsApp oder an Freunde/Familie** – schreib dafür
+   nichts. Schreib nur 2 fertige Texte für **Facebook-Gruppen** (z. B. Eltern-, Hunde- oder Wichtel-Gruppen), die er
+   bei Bedarf kopieren kann: je 3–4 Sätze, hilfsbereit statt werblich („Falls noch jemand ein Wichtelgeschenk
+   sucht …“), plus Link und am Ende „(Werbung: enthält Partnerlinks)“. Nenne 2–3 Arten passender Gruppen und füge
+   den Hinweis an: vorher die Gruppenregeln lesen, viele Gruppen verbieten Werbelinks.
    Links immer als volle Adresse aus `siteUrl` plus passender Seite oder Filter, z. B.
    `…/ideen/wichtelgeschenke-unter-15-euro.html` oder `…/#fuer=teenager&budget=under15`.
    Die Entwürfe sind nicht im Git (stehen in `.gitignore`).
