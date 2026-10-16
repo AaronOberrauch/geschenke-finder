@@ -62,7 +62,18 @@ VERSIONED = ['assets/style.css', 'assets/app.js', 'daten/config.js', 'daten/prod
 
 
 # Platzhalter, die fertiges HTML enthalten (alle anderen werden als Text maskiert)
-RAW_KEYS = {'ROOT', 'STATIC_GRID', 'STATIC_OCCASIONS', 'RATGEBER'}
+RAW_KEYS = {'ROOT', 'STATIC_GRID', 'STATIC_OCCASIONS', 'RATGEBER', 'HERO_CLASS', 'HERO_STYLE', 'HERO_CREDIT'}
+
+
+def hero_values(slug, root):
+    """Kopfbild der Seite (assets/hero/<slug>.jpg, erzeugt von tools/grafiken.py) – ohne Bild bleibt der schlichte Kopf."""
+    path = ROOT / 'assets' / 'hero' / f'{slug}.jpg'
+    if not path.exists():
+        return {'HERO_CLASS': '', 'HERO_STYLE': '', 'HERO_CREDIT': ''}
+    version = hashlib.sha1(path.read_bytes()).hexdigest()[:8]
+    return {'HERO_CLASS': ' hero-foto',
+            'HERO_STYLE': f' style="--hero: url(\'{root}assets/hero/{slug}.jpg?v={version}\')"',
+            'HERO_CREDIT': '<span class="hero-credit">Foto: Pixabay</span>'}
 
 # Wie in assets/app.js – für die Produktkarten, die schon im HTML stehen (Google liest sie so am besten)
 RECIPIENT_LABEL = {'household': 'Haushalt & Familie', 'teenager': 'Teenager / Gaming',
@@ -170,12 +181,13 @@ def expected_files():
     files = {ROOT / 'index.html': render(dict(
         INDEX, CANONICAL=site, PAGE='', OG_IMAGE=f'{site}assets/social/start-og.png',
         STATIC_GRID=''.join(card_html(prod, config) for prod in products),
-        STATIC_OCCASIONS=occasions_html(pages, None, ''), RATGEBER=''), '')}
+        STATIC_OCCASIONS=occasions_html(pages, None, ''), RATGEBER='', **hero_values('start', '')), '')}
     for p in pages:
         files[PAGES_DIR / f"{p['slug']}.html"] = render({
             'STATIC_GRID': ''.join(card_html(prod, config, p['slug']) for prod in products if product_fits(prod, p)),
             'STATIC_OCCASIONS': occasions_html(pages, p, '../'),
             'RATGEBER': ratgeber_html(p, products, config),
+            **hero_values(p['slug'], '../'),
             'TITLE': f"{p['titel']} – Geschenke-Finder",
             'DESCRIPTION': p['beschreibung'],
             'CANONICAL': f"{site}ideen/{p['slug']}.html",
@@ -186,7 +198,7 @@ def expected_files():
             'INTRO': p['intro'],
             'OCC_HEADING': 'Weitere Anlässe',
         }, '../')
-    urls = [site] + [f"{site}ideen/{p['slug']}.html" for p in pages]
+    urls = [site] + [f"{site}ideen/{p['slug']}.html" for p in pages] + [f'{site}ueber.html']
     files[ROOT / 'sitemap.xml'] = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -465,6 +477,12 @@ def check():
                 err(f'{where}: ungültiger filter {k}={v}.')
         if not 50 <= len(p.get('beschreibung', '')) <= 160:
             warn(f'{where}: beschreibung sollte 50–160 Zeichen lang sein (für Google).')
+        if p.get('foto') and not p.get('foto_id'):
+            err(f'{where}: Foto noch nicht gesucht – "python -I tools/fotos.py" ausführen (oder anderen Suchbegriff wählen).')
+        elif p.get('foto_id') and not (ROOT / 'assets' / 'hero' / f"{p.get('slug')}.jpg").exists():
+            err(f'{where}: Kopfbild fehlt – "python -P tools/grafiken.py" ausführen.')
+        elif not p.get('foto'):
+            warn(f'{where}: kein Kopfbild – Feld "foto" mit Suchbegriff setzen (z. B. „hund katze“).')
         titles_all = {prod['title'] for prod in products}
         for t in p.get('produkte', []):
             if t not in titles_all:

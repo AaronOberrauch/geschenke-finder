@@ -86,7 +86,9 @@ die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
    Felder einer Seite: `slug` (Kleinbuchstaben, Bindestriche, Suchbegriff den Leute googeln,
    z. B. `muttertagsgeschenke`), `titel`, `kurztitel`, `emoji`, `anlass`, `monate` (Monate, in denen
    die Seite vorne angezeigt wird; `[]` = ganzjährige Seite, z. B. „Geschenke für Tierfreunde“ mit `anlass` geburtstag), `beschreibung` (50–160 Zeichen, für Google), `intro` (1–2 Sätze),
-   `filter` (optional: `recipient`, `budget`, `category`).
+   `filter` (optional: `recipient`, `budget`, `category`), **`foto`** (Pflicht: deutscher Suchbegriff mit 2–3 Wörtern
+   für das große Kopfbild der Seite, z. B. „weihnachtsbaum geschenke“, „hund katze“ – `tools/fotos.py` sucht ein
+   Querformat-Foto und trägt `foto_id` selbst ein).
 3b. **Nischen-Seite (nur sonntags, nur wenn in Schritt 3 keine Anlass-Seite nötig war).** Damit Google die Seite
    findet, sind spezielle Suchen die beste Chance für eine kleine Website („Geschenke für Hobbybäcker“,
    „Geschenke für Gamer“, „Geschenke für Gartenfreunde“, „Geschenke für Katzenbesitzer“). Wähle ein Thema aus den
@@ -181,7 +183,7 @@ die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
    oder die Seite `geschenke-fuer-tierfreunde` mit `budget`-Filter. Einmal pro Woche (im Sonntagslauf, im Dezember
    und Januar in jedem Lauf) ist außerdem ein Pin zum Thema Home-Training dabei (Seite `home-training-geschenke` oder `filter` {"category": "sport"}). Gleiche Regeln wie bei Produkten: keine Preise einzelner Produkte, keine Bewertungen,
    keine Behauptungen wie „Bestseller“. Budget-Angaben wie „unter 15 €“ sind erlaubt.
-5. `python -I tools/fotos.py` (sucht und lädt die Fotos für neue Pins mit `foto`),
+5. `python -I tools/fotos.py` (sucht und lädt die Fotos für neue Pins und Seiten mit `foto`),
    `python -P tools/grafiken.py` (erzeugt die Social-Media-Grafiken in `assets/social/` neu),
    `python -P tools/videos.py` (erzeugt die neuen Video-Pins),
    dann `python -I tools/site.py build`, dann `python -I tools/site.py check`.

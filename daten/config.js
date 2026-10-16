@@ -9,6 +9,7 @@
 // trackingIds:      optionale eigene Amazon-Tracking-ID je Seite (in PartnerNet unter „Tracking-IDs verwalten“
 //                   angelegt). Schlüssel: "start" für die Startseite, sonst der slug der Themen-Seite.
 //                   Seiten ohne Eintrag nutzen partnerTag. So zeigt PartnerNet, welche Seite Klicks und Verkäufe bringt.
+// startFotoId:      Pixabay-Foto (Nummer) für das Kopfbild der Startseite.
 // videoScenarioAktiv: false = Video-Pins gehen vorerst als normale Bild-Pins über pins.xml raus.
 //                   true  = sobald das zweite Make-Scenario (videos.xml → Video-Pin) läuft; dann nur noch als Video.
 window.CONFIG = {
@@ -25,6 +26,7 @@ window.CONFIG = {
   },
   "amazonDomain": "www.amazon.de",
   "siteUrl": "https://geschenkidee-finden.com/",
+  "startFotoId": 6909090,
   "pinterestBoards": {
     "geschenkideen": {"name": "Geschenkideen", "id": "376261812558071901"},
     "weihnachten": {"name": "Weihnachtsgeschenke Ideen", "id": "376261812558071907"},

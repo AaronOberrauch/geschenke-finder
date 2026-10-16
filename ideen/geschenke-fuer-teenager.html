@@ -17,13 +17,10 @@
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
-    <link rel="stylesheet" href="../assets/style.css?v=bf8afd47">
+    <link rel="stylesheet" href="../assets/style.css?v=67264b7a">
 </head>
 <body data-root="../" data-page="geschenke-fuer-teenager">
 
-    <div class="disclosure">
-        <strong>Transparenz:</strong> Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich der Preis nicht.
-    </div>
     <div class="config-warning" id="config-warning">
         ⚠️ Partner-ID noch nicht eingetragen – trage sie in <code>daten/config.js</code> ein, sonst verdienst du nichts.
     </div>
@@ -41,10 +38,11 @@
     <main>
         <div class="wrap">
 
-            <div class="hero">
+            <div class="hero hero-foto" style="--hero: url('../assets/hero/geschenke-fuer-teenager.jpg?v=698b0ceb')">
                 <span class="pill">🎧 Geschenkideen</span>
                 <h1>Geschenke für Teenager: Ideen für Jugendliche</h1>
                 <p>Teenager zu beschenken ist nicht leicht. Hier findest du Ideen von Zimmer-Deko über Gaming bis Retro-Sound – sortiert nach Budget.</p>
+                <span class="hero-credit">Foto: Pixabay</span>
             </div>
 
             <nav class="occasions" id="occasions" aria-label="Geschenkideen nach Anlass">
@@ -58,6 +56,12 @@
             </nav>
 
             <section class="wizard" aria-label="Geschenke filtern">
+                <button type="button" class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="wizard-body">
+                    <span class="filter-toggle-label">🔎 Filter</span>
+                    <span class="filter-summary" id="filter-summary">Alle · Alle Preisklassen · Alle Bereiche</span>
+                    <span class="filter-chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="wizard-body" id="wizard-body">
                 <div class="steps">
                     <div>
                         <p class="step-title" id="t-recipient">1. Für wen suchst du?</p>
@@ -81,7 +85,10 @@
                         <button type="button" class="link-btn" id="reset">Filter zurücksetzen</button>
                     </div>
                 </div>
+                </div>
             </section>
+
+            <p class="ad-note">* Werbelinks: Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich der Preis nicht.</p>
 
             <p class="notice" id="notice" role="status" hidden></p>
 
@@ -631,10 +638,12 @@
                 <div>
                     <h4>🎁 Geschenke-Finder</h4>
                     <p>Eine Sammlung nützlicher Alltags-Ideen und Geschenke für die ganze Familie.</p>
+                    <p>Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Links zu Amazon sind Werbelinks (*).</p>
                     <p>Amazon und das Amazon-Logo sind Warenzeichen von Amazon.com, Inc. oder eines seiner verbundenen Unternehmen.</p>
                 </div>
-                <nav aria-label="Rechtliches">
-                    <h4>Rechtliches</h4>
+                <nav aria-label="Über die Seite und Rechtliches">
+                    <h4>Über die Seite</h4>
+                    <a href="../ueber.html">Über den Geschenke-Finder</a>
                     <a href="../impressum.html">Impressum</a>
                     <a href="../datenschutz.html">Datenschutzerklärung</a>
                 </nav>
@@ -643,9 +652,9 @@
         </div>
     </footer>
 
-    <script src="../daten/config.js?v=c8d4ccfc"></script>
+    <script src="../daten/config.js?v=e74f3bd4"></script>
     <script src="../daten/produkte.js?v=51984a0d"></script>
-    <script src="../daten/seiten.js?v=1cb0d77c"></script>
-    <script src="../assets/app.js?v=ccc687bf"></script>
+    <script src="../daten/seiten.js?v=800d1056"></script>
+    <script src="../assets/app.js?v=55534d4f"></script>
 </body>
 </html>

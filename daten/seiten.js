@@ -13,7 +13,9 @@ window.PAGES = [
     ],
     "beschreibung": "Weihnachtsgeschenke für Teenager, Eltern, Kinder und den Haushalt – nach Budget filtern und direkt auf Amazon ansehen.",
     "intro": "Noch keine Idee für Weihnachten? Wähle aus, für wen du suchst und wie viel du ausgeben willst – hier findest du passende Geschenke für alle unterm Baum.",
-    "filter": {}
+    "filter": {},
+    "foto": "weihnachtsbaum geschenke",
+    "foto_id": 6883858
   },
   {
     "slug": "wichtelgeschenke-unter-15-euro",
@@ -74,7 +76,9 @@ window.PAGES = [
           "antwort": "Das hängt vom Händler und vom Produkt ab. Schau kurz vor der Bestellung auf Amazon nach dem angegebenen Liefertermin und bestell in der Vorweihnachtszeit lieber ein paar Tage früher."
         }
       ]
-    }
+    },
+    "foto": "geschenk verpackung",
+    "foto_id": 1867323
   },
   {
     "slug": "nikolausgeschenke",
@@ -88,7 +92,9 @@ window.PAGES = [
     ],
     "beschreibung": "Kleine Nikolausgeschenke für den Stiefel – Ideen für Kinder und Teenager.",
     "intro": "Was passt in den Nikolausstiefel außer Schokolade? Hier sind kleine Ideen für Kinder und Teenager.",
-    "filter": {}
+    "filter": {},
+    "foto": "nikolaus stiefel",
+    "foto_id": 3009717
   },
   {
     "slug": "geschenke-fuer-tierfreunde",
@@ -146,7 +152,9 @@ window.PAGES = [
           "antwort": "Frag beiläufig nach Rasse oder Gewicht des Tieres oder schau dir Fotos an. Bei Halsbändern und Mänteln helfen verstellbare Modelle, beim Hundebett lieber eine Nummer größer wählen."
         }
       ]
-    }
+    },
+    "foto": "hund katze",
+    "foto_id": 7174266
   },
   {
     "slug": "home-training-geschenke",
@@ -161,7 +169,9 @@ window.PAGES = [
     "intro": "Ob gute Vorsätze fürs neue Jahr oder Sport-Fan: Mit diesen Geräten klappt das Training auch ohne Fitnessstudio – für jedes Budget.",
     "filter": {
       "category": "sport"
-    }
+    },
+    "foto": "hanteln training",
+    "foto_id": 6975177
   },
   {
     "slug": "geschenke-fuer-teenager",
@@ -174,6 +184,8 @@ window.PAGES = [
     "intro": "Teenager zu beschenken ist nicht leicht. Hier findest du Ideen von Zimmer-Deko über Gaming bis Retro-Sound – sortiert nach Budget.",
     "filter": {
       "recipient": "teenager"
-    }
+    },
+    "foto": "teenager musik",
+    "foto_id": 6981830
   }
 ];

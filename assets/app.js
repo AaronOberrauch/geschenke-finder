@@ -147,6 +147,13 @@
         document.querySelectorAll('.opt').forEach(btn => {
             btn.setAttribute('aria-pressed', String(state[btn.dataset.type] === btn.dataset.value));
         });
+        // Zusammenfassung für die kompakte Filterleiste am Handy
+        const summary = $('#filter-summary');
+        if (summary) {
+            const parts = ['recipient', 'budget', 'category'].map(k => filterLabel(k));
+            if (state.search) parts.push(`„${$('#search').value.trim()}“`);
+            summary.textContent = parts.join(' · ');
+        }
     }
 
     const FILTER_TITLE = { recipient: 'Für wen', budget: 'Budget', category: 'Bereich' };
@@ -285,6 +292,13 @@
         state.search = e.target.value.toLowerCase().trim();
         update();
     });
+    const toggle = $('#filter-toggle');
+    if (toggle) {
+        toggle.addEventListener('click', () => {
+            const open = $('.wizard').classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+    }
     $('#reset').addEventListener('click', reset);
     $('#reset-empty').addEventListener('click', reset);
     $('#share').addEventListener('click', copyShareLink);

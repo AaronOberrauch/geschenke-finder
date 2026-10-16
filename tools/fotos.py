@@ -43,10 +43,11 @@ def api(params):
         raise RuntimeError(f'Pixabay-Fehler {e.code}: {e.read()[:150].decode("utf-8", "replace").replace(key, "<KEY>")}')
 
 
-def search(term):
+def search(term, orientation='all'):
     """Bestes Foto zum Suchbegriff: muss zu allen Suchwörtern passen (Schlagwörter des Fotos), keine KI-Bilder,
-    keine schlechte Qualität, groß genug; unter den passenden gewinnt Pixabays Reihenfolge (beliebt + relevant)."""
-    data = api({'q': term, 'lang': 'de', 'per_page': 60, 'order': 'popular'})
+    keine schlechte Qualität, groß genug; unter den passenden gewinnt Pixabays Reihenfolge (beliebt + relevant).
+    orientation='horizontal' für Kopfbilder der Seiten."""
+    data = api({'q': term, 'lang': 'de', 'per_page': 60, 'order': 'popular', 'orientation': orientation})
     words = [w for w in term.lower().split() if len(w) > 2]
 
     def matches(hit):
@@ -82,11 +83,29 @@ def download(foto_id):
     return path
 
 
-def save_pins(pins):
-    path = sitetool.ROOT / 'daten' / 'pins.js'
-    head = path.read_text(encoding='utf-8').split('window.PINS =', 1)[0]
-    path.write_text(head + 'window.PINS = ' + json.dumps(pins, ensure_ascii=False, indent=2) + ';\n',
+def save_js(name, var, data):
+    path = sitetool.ROOT / 'daten' / name
+    head = path.read_text(encoding='utf-8').split(f'window.{var} =', 1)[0]
+    path.write_text(head + f'window.{var} = ' + json.dumps(data, ensure_ascii=False, indent=2) + ';\n',
                     encoding='utf-8', newline='\n')
+
+
+def resolve(entries, label, orientation='all'):
+    """Sucht für Einträge mit "foto" ohne "foto_id" ein Foto und lädt alle benötigten Fotos. True = etwas geändert."""
+    changed = False
+    for entry in entries:
+        if entry.get('foto') and not entry.get('foto_id'):
+            hit = search(entry['foto'], orientation)
+            if not hit:
+                print(f'WARNUNG: kein passendes Foto für „{entry["foto"]}“ ({label} {entry.get("id") or entry.get("slug")})'
+                      ' – anderen Suchbegriff wählen.')
+                continue
+            entry['foto_id'] = hit['id']
+            changed = True
+            print(f'{label} {entry.get("id") or entry.get("slug")}: Foto {hit["id"]} ({hit["tags"][:60]})')
+        if entry.get('foto_id'):
+            download(entry['foto_id'])
+    return changed
 
 
 def main():
@@ -94,20 +113,14 @@ def main():
         print(f'FEHLER: Pixabay-Schlüssel fehlt ({KEY_FILE}).')
         return 1
     pins = sitetool.load_js('pins.js', 'PINS')
-    changed = False
-    for pin in pins:
-        if pin.get('foto') and not pin.get('foto_id'):
-            hit = search(pin['foto'])
-            if not hit:
-                print(f'WARNUNG: kein passendes Foto für „{pin["foto"]}“ (Pin {pin["id"]}) – anderen Suchbegriff wählen.')
-                continue
-            pin['foto_id'] = hit['id']
-            changed = True
-            print(f'Pin {pin["id"]}: Foto {hit["id"]} ({hit["tags"][:60]})')
-        if pin.get('foto_id'):
-            download(pin['foto_id'])
-    if changed:
-        save_pins(pins)
+    if resolve(pins, 'Pin'):
+        save_js('pins.js', 'PINS', pins)
+    pages = sitetool.load_js('seiten.js', 'PAGES')
+    if resolve(pages, 'Seite', orientation='horizontal'):
+        save_js('seiten.js', 'PAGES', pages)
+    start_id = sitetool.load_js('config.js', 'CONFIG').get('startFotoId')
+    if start_id:
+        download(start_id)
     print('Fotos bereit.')
     return 0
 

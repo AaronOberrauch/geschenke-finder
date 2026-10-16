@@ -377,8 +377,36 @@ def pin_infos():
         }
 
 
+HERO_DIR = ROOT / 'assets' / 'hero'
+
+
+def hero_images():
+    """Kopfbilder der Seiten (1600 x 700, JPEG) aus den Pixabay-Fotos: assets/hero/<slug>.jpg, Startseite = start.jpg."""
+    HERO_DIR.mkdir(parents=True, exist_ok=True)
+    cache = Path.home() / '.geschenke-finder' / 'foto-cache'
+    sources = {'start': sitetool.load_js('config.js', 'CONFIG').get('startFotoId')}
+    sources.update({p['slug']: p.get('foto_id') for p in sitetool.load_js('seiten.js', 'PAGES')})
+    wanted = set()
+    for slug, foto_id in sources.items():
+        if not foto_id:
+            continue
+        src = cache / f'{foto_id}.jpg'
+        if not src.exists():
+            print(f'WARNUNG: Foto {foto_id} für Kopfbild „{slug}“ fehlt – erst "python -I tools/fotos.py".')
+            continue
+        out = HERO_DIR / f'{slug}.jpg'
+        ImageOps.fit(Image.open(src).convert('RGB'), (1600, 700), Image.LANCZOS, centering=(0.5, 0.45)) \
+            .save(out, quality=80, optimize=True, progressive=True)
+        wanted.add(out)
+    for old in HERO_DIR.glob('*.jpg'):
+        if old not in wanted:
+            old.unlink()
+    return len(wanted)
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
+    print(f'{hero_images()} Kopfbilder in assets/hero/ erzeugt.')
     wanted = set()
     for info in page_infos():
         for kind, img in (('pin', tall(info, (1000, 1500), 6)),
