@@ -25,6 +25,7 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
 - `daten/seiten.js` – Themen-Seiten (Anlässe) hinzufügen
 - `daten/pins.js` – neue Pinterest-Pins hinzufügen (bestehende nie ändern oder löschen)
 - `_entwuerfe/` – Social-Media-Entwürfe (wird nicht veröffentlicht)
+- `_berichte/erkenntnisse.md` – deine Auswertung der Zahlen (wird nicht veröffentlicht; die Berichte selbst nie ändern)
 - Erzeugte Dateien über `python -I tools/site.py build` (nie von Hand)
 
 **Nicht anfassen:** `daten/config.js`, `impressum.html`, `datenschutz.html`, `google*.html` (Google-Bestätigung),
@@ -46,8 +47,26 @@ die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
    Leute gerade suchen (z. B. „wichtelgeschenke für kollegen“, „geschenk für hundebesitzer“).
    Nutze diese Liste in den Schritten 3, 4 und 4b. Wenn keine Websuche möglich ist: Schritt überspringen,
    mit Saison und Anlässen weiterarbeiten und das im Bericht erwähnen.
+2c. **Zahlen auswerten (nur sonntags).** Der Betreiber legt ab und zu Berichte in den Ordner `_berichte/` (nicht
+   im Git, privat): Amazon-PartnerNet-Berichte (z. B. „Tracking-ID-Zusammenfassung“, „Bestellungen“ als CSV) und
+   Pinterest-Analytics-Exporte (CSV). Wenn dort Dateien liegen, die neuer sind als `_berichte/erkenntnisse.md`:
+   - Lies sie und schreib eine kurze Auswertung in `_berichte/erkenntnisse.md` (Datum oben, ältere Abschnitte
+     darunter stehen lassen): Welche Seiten/Tracking-IDs haben Klicks und Bestellungen? Welche Pins (Titel, Design,
+     Pinnwand) haben Impressionen und ausgehende Klicks? Was hat nichts gebracht?
+   - Tracking-IDs gehören laut `trackingIds` in `daten/config.js` zu Seiten (`start` = Startseite).
+   - **Leite daraus konkrete Regeln für die nächsten Läufe ab** und schreib sie unter „Aktuelle Schwerpunkte“
+     oben in die Datei, z. B. „Haustier-Pins mit Design d laufen am besten → 2 statt 1 pro Lauf“,
+     „Home-Training nach 6 Wochen ohne Klick → nur noch 1 Pin alle 2 Wochen“.
+   - Wichtig: Erst ab etwa 30 ausgehenden Klicks bzw. 6 Wochen Laufzeit pro Thema sind Schlüsse belastbar –
+     vorher nur beobachten, nichts streichen. Feste Regeln dieser Anleitung (Haustiere in jedem Lauf, Fotos,
+     keine Behauptungen …) gehen immer vor.
+   In jedem Lauf (auch Di/Do) liest du die „Aktuellen Schwerpunkte“ aus `_berichte/erkenntnisse.md`, falls vorhanden,
+   und richtest Produkte, Pins und Ratgeber danach aus.
 3. **Anlässe prüfen (nur sonntags).** Schau aufs heutige Datum. Für jeden Anlass, der in den nächsten
-   **8 Wochen** ansteht und noch keine Seite in `daten/seiten.js` hat, lege eine an –
+   **12 Wochen** ansteht und noch keine Seite in `daten/seiten.js` hat, lege eine an (Google und Pinterest brauchen
+   Wochen, um neue Seiten einzuordnen – darum so früh). Pins zu einem Anlass beginnen **8 Wochen vorher** und werden
+   bis 1 Woche vorher immer häufiger. Neue Anlass-Seiten bekommen in `monate` auch die 2 Monate davor, damit sie auf
+   der Startseite rechtzeitig vorne stehen. –
    **höchstens eine neue Seite pro Lauf**. Termine (Shop laut `amazonDomain` in `daten/config.js`):
 
    | Anlass (`anlass`) | Deutschland / Österreich (amazon.de) | Italien (amazon.it) |
@@ -182,4 +201,6 @@ die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
    Links immer als volle Adresse aus `siteUrl` plus passender Seite oder Filter, z. B.
    `…/ideen/wichtelgeschenke-unter-15-euro.html` oder `…/#fuer=teenager&budget=under15`.
    Die Entwürfe sind nicht im Git (stehen in `.gitignore`).
-8. Zum Schluss kurz melden: wichtigste Trends aus 2b, neue Seite(n), ergänzte Ratgeber, neue Produkte, neue Pins, Ergebnis von `check`, Commit, Datei mit den Entwürfen.
+8. Zum Schluss kurz melden: wichtigste Trends aus 2b, neue Erkenntnisse aus 2c,
+   Seiten ohne eigene Tracking-ID (mit Vorschlag für den Namen, z. B. „geschenkef0f0va“ für Valentinstag –
+   der Betreiber legt sie in PartnerNet an), neue Seite(n), ergänzte Ratgeber, neue Produkte, neue Pins, Ergebnis von `check`, Commit, Datei mit den Entwürfen.

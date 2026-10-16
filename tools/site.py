@@ -70,7 +70,12 @@ RECIPIENT_LABEL = {'household': 'Haushalt & Familie', 'teenager': 'Teenager / Ga
 BUDGET_LABEL = {'under15': 'unter 15 €', '15to50': '15–50 €', '50to150': '50–150 €', 'over150': 'über 150 €'}
 
 
-def amazon_url(prod, config):
+def page_tag(config, slug):
+    """Tracking-ID für eine Seite ("start" = Startseite); ohne eigene ID gilt die Haupt-Partner-ID."""
+    return config.get('trackingIds', {}).get(slug) or config.get('partnerTag')
+
+
+def amazon_url(prod, config, slug='start'):
     base = f"https://{config.get('amazonDomain', 'www.amazon.de')}"
     if prod.get('asin'):
         url = f"{base}/dp/{quote(prod['asin'])}"
@@ -78,12 +83,13 @@ def amazon_url(prod, config):
     else:
         url = f'{base}/s'
         params = {'k': prod['query']}
-    if config.get('partnerTag') and config['partnerTag'] != PLACEHOLDER_TAG:
-        params['tag'] = config['partnerTag']
+    tag = page_tag(config, slug)
+    if tag and tag != PLACEHOLDER_TAG:
+        params['tag'] = tag
     return url + ('?' + urlencode(params) if params else '')
 
 
-def card_html(p, config):
+def card_html(p, config, slug='start'):
     esc = html.escape
     return (
         '\n            <article class="card">'
@@ -97,7 +103,7 @@ def card_html(p, config):
         f'\n                    <ul>{"".join(f"<li>{esc(h)}</li>" for h in p["highlights"])}</ul>'
         '\n                    <div class="card-foot">'
         f'\n                        <div class="price-band">Preisklasse<strong>{BUDGET_LABEL[p["budget"]]}</strong></div>'
-        f'\n                        <a class="cta" href="{esc(amazon_url(p, config))}" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>'
+        f'\n                        <a class="cta" href="{esc(amazon_url(p, config, slug))}" target="_blank" rel="sponsored noopener">Auf Amazon ansehen*</a>'
         '\n                    </div>'
         '\n                </div>'
         '\n            </article>')
@@ -131,7 +137,7 @@ def ratgeber_html(page, products, config):
         for title, text in texts.items():
             prod = by_title[title]
             out.append(f'\n                <div class="idee"><h4><span aria-hidden="true">{prod["emoji"]}</span> {esc(title)}</h4>'
-                       f'<p>{esc(text)} <a href="{esc(amazon_url(prod, config))}" target="_blank" rel="sponsored noopener">'
+                       f'<p>{esc(text)} <a href="{esc(amazon_url(prod, config, page['slug']))}" target="_blank" rel="sponsored noopener">'
                        'Auf Amazon ansehen*</a></p></div>')
     if r.get('faq'):
         out.append('\n                <h3>Häufige Fragen</h3>')
@@ -167,7 +173,7 @@ def expected_files():
         STATIC_OCCASIONS=occasions_html(pages, None, ''), RATGEBER=''), '')}
     for p in pages:
         files[PAGES_DIR / f"{p['slug']}.html"] = render({
-            'STATIC_GRID': ''.join(card_html(prod, config) for prod in products if product_fits(prod, p)),
+            'STATIC_GRID': ''.join(card_html(prod, config, p['slug']) for prod in products if product_fits(prod, p)),
             'STATIC_OCCASIONS': occasions_html(pages, p, '../'),
             'RATGEBER': ratgeber_html(p, products, config),
             'TITLE': f"{p['titel']} – Geschenke-Finder",
@@ -376,6 +382,15 @@ def check():
         err(f"amazonDomain muss eines von {sorted(DOMAINS)} sein.")
     if not str(config.get('siteUrl', '')).startswith('https://') or not config['siteUrl'].endswith('/'):
         err('siteUrl muss mit https:// beginnen und mit / enden.')
+    page_slugs = {'start'} | {p.get('slug') for p in pages}
+    for slug, tag in config.get('trackingIds', {}).items():
+        if slug not in page_slugs:
+            err(f'trackingIds: "{slug}" ist keine Seite (erlaubt: start oder ein slug aus daten/seiten.js).')
+        if not re.fullmatch(r'[a-z0-9-]+-2[01]', str(tag)):
+            err(f'trackingIds: "{tag}" sieht nicht wie eine Amazon-Tracking-ID aus (z. B. "geschenkef0f0wi-21").')
+    missing_ids = sorted(page_slugs - set(config.get('trackingIds', {})))
+    if config.get('trackingIds') and missing_ids:
+        warn(f'Ohne eigene Tracking-ID (nutzen partnerTag): {", ".join(missing_ids)}')
     key = config.get('indexNowKey', '')
     key_file = ROOT / f'{key}.txt'
     if not re.fullmatch(r'[0-9a-f]{32}', key) or not key_file.exists() or key_file.read_text(encoding='utf-8').strip() != key:

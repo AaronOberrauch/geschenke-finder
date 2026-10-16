@@ -28,6 +28,14 @@ Amazon-Partnerseite mit Geschenkideen. Ein Bot pflegt sie jede Woche automatisch
 | `index.html`, `ideen/`, `sitemap.xml`, `robots.txt`, `pins.xml` | werden von `build` erzeugt – nicht von Hand ändern |
 | `_entwuerfe/` | Social-Media-Entwürfe vom Bot (nicht online) |
 
+## Zahlen und Auswertung
+
+- Jede Seite kann eine eigene Amazon-Tracking-ID haben (`trackingIds` in `daten/config.js`). In PartnerNet unter
+  Berichte → Tracking-ID siehst du dann, welche Seite Klicks und Verkäufe bringt.
+- Leg ab und zu Berichte als CSV in den Ordner `_berichte/` (PartnerNet: Berichte → Download; Pinterest:
+  Analytics → Exportieren). Der Bot wertet sie sonntags aus, schreibt `_berichte/erkenntnisse.md` und setzt
+  danach seine Schwerpunkte. Der Ordner ist privat und kommt nicht ins Internet.
+
 ## Themen-Seiten und Ratgeber
 
 Jede Seite in `daten/seiten.js` kann ein Feld `ratgeber` haben (Abschnitte, Texte zu einzelnen Produkten, häufige

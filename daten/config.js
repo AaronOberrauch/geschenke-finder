@@ -6,12 +6,16 @@
 //                   Der Schlüssel links (z. B. "tiere") wird in daten/pins.js als "board" verwendet.
 // indexNowKey:      Schlüssel, mit dem tools/indexnow.py neue Seiten an Bing, Ecosia, DuckDuckGo & Co. meldet
 //                   (die Datei <Schlüssel>.txt im Hauptordner muss genau diesen Text enthalten).
+// trackingIds:      optionale eigene Amazon-Tracking-ID je Seite (in PartnerNet unter „Tracking-IDs verwalten“
+//                   angelegt). Schlüssel: "start" für die Startseite, sonst der slug der Themen-Seite.
+//                   Seiten ohne Eintrag nutzen partnerTag. So zeigt PartnerNet, welche Seite Klicks und Verkäufe bringt.
 // videoScenarioAktiv: false = Video-Pins gehen vorerst als normale Bild-Pins über pins.xml raus.
 //                   true  = sobald das zweite Make-Scenario (videos.xml → Video-Pin) läuft; dann nur noch als Video.
 window.CONFIG = {
   "indexNowKey": "bb7c77ebce127199306bf33e2fbb169b",
   "videoScenarioAktiv": false,
   "partnerTag": "geschenkef0f0-21",
+  "trackingIds": {},
   "amazonDomain": "www.amazon.de",
   "siteUrl": "https://aaronoberrauch.github.io/geschenke-finder/",
   "pinterestBoards": {

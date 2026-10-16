@@ -58,8 +58,10 @@
             ? new URL(`/dp/${encodeURIComponent(product.asin)}`, base)
             : new URL('/s', base);
         if (!product.asin) url.searchParams.set('k', product.query);
-        if (CONFIG.partnerTag && CONFIG.partnerTag !== PLACEHOLDER_TAG) {
-            url.searchParams.set('tag', CONFIG.partnerTag);
+        // Eigene Tracking-ID je Seite (in PartnerNet angelegt) – so zeigen die Berichte, welche Seite verkauft
+        const tag = (CONFIG.trackingIds || {})[PAGE ? PAGE.slug : 'start'] || CONFIG.partnerTag;
+        if (tag && tag !== PLACEHOLDER_TAG) {
+            url.searchParams.set('tag', tag);
         }
         return url.toString();
     }
