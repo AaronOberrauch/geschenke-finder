@@ -54,6 +54,9 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    - Keine Duplikate: prüfe, ob es das Produkt (auch unter anderem Namen) schon gibt.
    - Keine heiklen Produkte: nichts Medizinisches, keine Waffen, kein Alkohol/Tabak, nichts für Erwachsene,
      keine Nahrungsergänzungsmittel.
+   - **Haustiere fest einplanen: mindestens 1 der neuen Produkte jede Woche ist aus `pets`**, abwechselnd für
+     Hunde, Katzen und kleine Haustiere (Kaninchen, Meerschweinchen, Vögel, Aquarium), bis es etwa 40 Haustier-Produkte
+     sind. Saisonale `occasions` setzen, wo es passt (z. B. wichteln für Kleinigkeiten unter 15 €).
    - Haustiere (`pets`): nur Zubehör und Spielzeug – kein Futter, keine Leckerlis mit Gesundheitsversprechen,
      nichts Medizinisches (Flohmittel, Nahrungsergänzung).
    - Gültige Werte: `category` kitchen | tech | beauty | home | fun | pets;
@@ -73,7 +76,9 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    - `produkte`: optional bis zu 6 Produkttitel (genau wie in `daten/produkte.js`), die auf dem Pin stehen sollen –
      nimm die überzeugendsten für das Thema
    Wähle Themen passend zur Saison (anstehende Anlässe zuerst) und wiederhole keine Kombination aus Seite und Filter
-   der letzten 8 Wochen. Gleiche Regeln wie bei Produkten: keine Preise einzelner Produkte, keine Bewertungen,
+   der letzten 8 Wochen. **Mindestens 1 der 3 Pins jede Woche ist zum Thema Haustiere** – am besten mit der Saison
+   verbunden, z. B. `seite` weihnachtsgeschenke + `filter` {"category": "pets"} („Weihnachtsgeschenke für Hundebesitzer“)
+   oder die Seite `geschenke-fuer-tierfreunde` mit `budget`-Filter. Gleiche Regeln wie bei Produkten: keine Preise einzelner Produkte, keine Bewertungen,
    keine Behauptungen wie „Bestseller“. Budget-Angaben wie „unter 15 €“ sind erlaubt.
 5. `python -P tools/grafiken.py` (erzeugt die Social-Media-Grafiken in `assets/social/` neu),
    dann `python -I tools/site.py build`, dann `python -I tools/site.py check`.
