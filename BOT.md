@@ -110,6 +110,12 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
    - `emoji`: großes Bild oben auf dem Pin
    - `seite`: slug einer Themen-Seite oder `""` für die Startseite
    - `filter`: optional `recipient`, `budget`, `category` – grenzt die Produkte ein, der Link öffnet die Seite mit diesem Filter
+   - `board`: optional – Pinterest-Pinnwand, einer der Schlüssel aus `pinterestBoards` in `daten/config.js`
+     (geschenkideen, weihnachten, wichteln, tiere, teenager, eltern, workout). Weglassen ist meist richtig:
+     Dann wählt `tools/site.py` die Pinnwand automatisch aus Seite und Filter (z. B. Haustier-Pins → tiere).
+     Setze es nur, wenn die automatische Wahl offensichtlich schlechter passt.
+     Für neue Anlässe ohne eigene Pinnwand (z. B. Valentinstag) passt automatisch „geschenkideen“ –
+     schlag im Bericht vor, dafür eine eigene Pinnwand anzulegen.
    - `produkte`: optional bis zu 6 Produkttitel (genau wie in `daten/produkte.js`), die auf dem Pin stehen sollen –
      nimm die überzeugendsten für das Thema
    Wähle Themen passend zur Saison (anstehende Anlässe zuerst) und wiederhole keine Kombination aus Seite und Filter

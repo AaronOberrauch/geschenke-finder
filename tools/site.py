@@ -114,6 +114,31 @@ def pin_image(pin):
     return ROOT / 'assets' / 'social' / f"pin-{pin['id']}.png"
 
 
+def pin_board(pin):
+    """Schlüssel der Pinterest-Pinnwand für einen Pin: ausdrücklich gesetzt oder aus Seite und Filter abgeleitet."""
+    if pin.get('board'):
+        return pin['board']
+    seite, f = pin.get('seite', ''), pin.get('filter', {})
+    by_page = {'wichtelgeschenke-unter-15-euro': 'wichteln', 'geschenke-fuer-tierfreunde': 'tiere',
+               'geschenke-fuer-teenager': 'teenager', 'home-training-geschenke': 'workout'}
+    if seite in by_page:
+        return by_page[seite]
+    if f.get('category') in ('pets', 'sport'):
+        return {'pets': 'tiere', 'sport': 'workout'}[f['category']]
+    if f.get('recipient') in ('teenager', 'parents'):
+        return {'teenager': 'teenager', 'parents': 'eltern'}[f['recipient']]
+    if seite in ('weihnachtsgeschenke', 'nikolausgeschenke'):
+        return 'weihnachten'
+    return 'geschenkideen'
+
+
+def board_id(config, pin):
+    """Interne Pinterest-ID der Pinnwand (Make.com liest sie aus <category>); Rückfall: allgemeine Pinnwand."""
+    boards = config.get('pinterestBoards', {})
+    board = boards.get(pin_board(pin)) or boards.get('geschenkideen') or {}
+    return board.get('id', '')
+
+
 def pin_feed(config, pins):
     """RSS-Feed mit den neuesten 50 Pins – Make.com liest ihn und postet neue Einträge auf Pinterest."""
     site = config['siteUrl']
@@ -131,6 +156,7 @@ def pin_feed(config, pins):
             f'      <title>{esc(pin["titel"])}</title>\n'
             f'      <link>{esc(pin_link(pin, site))}</link>\n'
             f'      <guid isPermaLink="false">{esc(pin["id"])}</guid>\n'
+            f'      <category>{esc(board_id(config, pin))}</category>\n'
             f'      <pubDate>{weekday}, {d:02d} {month} {y} 08:00:00 +0000</pubDate>\n'
             f'      <description>{esc(pin["beschreibung"])}</description>\n'
             f'      <enclosure url="{esc(image_url)}" length="{size}" type="image/png"/>\n'
@@ -199,6 +225,12 @@ def check():
         err(f"amazonDomain muss eines von {sorted(DOMAINS)} sein.")
     if not str(config.get('siteUrl', '')).startswith('https://') or not config['siteUrl'].endswith('/'):
         err('siteUrl muss mit https:// beginnen und mit / enden.')
+    boards = config.get('pinterestBoards', {})
+    if 'geschenkideen' not in boards:
+        err('pinterestBoards braucht die allgemeine Pinnwand "geschenkideen" (Rückfall für alle Pins).')
+    for key, b in boards.items():
+        if not re.fullmatch(r'\d{6,25}', str(b.get('id', ''))):
+            err(f'pinterestBoards "{key}": id muss die Zahl aus Make → Pinterest → List Boards sein.')
 
     # --- Produkte ---
     titles = set()
@@ -299,6 +331,8 @@ def check():
         for t in (pin.get('titel', ''), pin.get('beschreibung', '')):
             if CLAIMS.search(t):
                 err(f'{where}: "{t[:40]}…" enthält eine unbelegte Behauptung (Bestseller, Testsieger …).')
+        if pin.get('board') and pin['board'] not in boards:
+            err(f'{where}: board "{pin["board"]}" gibt es nicht – erlaubt: {sorted(boards)}.')
         seite = pin.get('seite', '')
         if seite and seite not in pages_by_slug:
             err(f'{where}: seite "{seite}" gibt es nicht in daten/seiten.js.')

@@ -14,7 +14,7 @@ Amazon-Partnerseite mit Geschenkideen. Ein Bot pflegt sie jede Woche automatisch
 
 | Datei | Inhalt |
 |---|---|
-| `daten/config.js` | Partner-ID, Amazon-Shop, Adresse der Seite |
+| `daten/config.js` | Partner-ID, Amazon-Shop, Adresse der Seite, Pinterest-Pinnwände (Name + ID) |
 | `daten/produkte.js` | alle Produkte |
 | `daten/seiten.js` | Themen-Seiten (Weihnachten, Muttertag …) |
 | `daten/pins.js` | Pinterest-Pins; daraus entsteht `pins.xml`, den Make.com auf Pinterest postet |
