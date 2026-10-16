@@ -29,5 +29,15 @@ window.PINS = [
     "emoji": "🥾",
     "seite": "nikolausgeschenke",
     "filter": {}
+  },
+  {
+    "id": "2026-10-16-tierfreunde",
+    "datum": "2026-10-16",
+    "titel": "Geschenke für Hunde- und Katzenbesitzer, über die sich auch das Tier freut",
+    "beschreibung": "Vom Schnüffelteppich über den Kratzbaum bis zum GPS-Tracker für den Hund: Geschenkideen für alle, deren bester Freund vier Pfoten hat. #hundeliebe #katzenliebe #geschenkideen #hundezubehör #werbung",
+    "emoji": "🐾",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {},
+    "produkte": ["Intelligenzspielzeug für Hunde", "Katzen-Kratzbaum", "Schnüffelteppich für Hunde", "Interaktives Katzenspielzeug", "GPS-Tracker für Hunde", "Hundebett mit erhöhtem Rand"]
   }
 ];

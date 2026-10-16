@@ -19,7 +19,7 @@ PAGES_DIR = ROOT / 'ideen'
 
 RECIPIENTS = {'household', 'teenager', 'parents', 'kids'}
 BUDGETS = {'under15', '15to50', '50to150', 'over150'}
-CATEGORIES = {'kitchen', 'tech', 'beauty', 'home', 'fun'}
+CATEGORIES = {'kitchen', 'tech', 'beauty', 'home', 'fun', 'pets'}
 OCCASIONS = {'weihnachten', 'geburtstag', 'wichteln', 'nikolaus', 'valentinstag',
              'ostern', 'muttertag', 'vatertag', 'schulanfang'}
 UNIVERSAL_OCCASIONS = {'geburtstag', 'weihnachten'}  # muss zu assets/app.js passen
@@ -233,9 +233,11 @@ def check():
     slugs = set()
     for p in pages:
         where = f"Seite {p.get('slug', '?')}"
-        for key in ('slug', 'titel', 'kurztitel', 'emoji', 'anlass', 'monate', 'beschreibung', 'intro'):
+        for key in ('slug', 'titel', 'kurztitel', 'emoji', 'anlass', 'beschreibung', 'intro'):
             if not p.get(key):
                 err(f'{where}: Feld "{key}" fehlt.')
+        if not isinstance(p.get('monate'), list):
+            err(f'{where}: Feld "monate" fehlt (Liste, leer = ganzjährig).')
         if not SLUG.match(p.get('slug', '')):
             err(f'{where}: slug nur aus Kleinbuchstaben, Ziffern und Bindestrichen.')
         if p.get('slug') in slugs:

@@ -39,7 +39,7 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
 
    Felder einer Seite: `slug` (Kleinbuchstaben, Bindestriche, Suchbegriff den Leute googeln,
    z. B. `muttertagsgeschenke`), `titel`, `kurztitel`, `emoji`, `anlass`, `monate` (Monate, in denen
-   die Seite vorne angezeigt wird), `beschreibung` (50–160 Zeichen, für Google), `intro` (1–2 Sätze),
+   die Seite vorne angezeigt wird; `[]` = ganzjährige Seite, z. B. „Geschenke für Tierfreunde“ mit `anlass` geburtstag), `beschreibung` (50–160 Zeichen, für Google), `intro` (1–2 Sätze),
    `filter` (optional: `recipient`, `budget`, `category`).
 4. **Produkte ergänzen: 2 bis 4 neue pro Lauf.** Bevorzuge, in dieser Reihenfolge:
    Produkte für anstehende Anlässe (mit passenden `occasions`), dann Lücken, die `check`
@@ -54,7 +54,9 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    - Keine Duplikate: prüfe, ob es das Produkt (auch unter anderem Namen) schon gibt.
    - Keine heiklen Produkte: nichts Medizinisches, keine Waffen, kein Alkohol/Tabak, nichts für Erwachsene,
      keine Nahrungsergänzungsmittel.
-   - Gültige Werte: `category` kitchen | tech | beauty | home | fun;
+   - Haustiere (`pets`): nur Zubehör und Spielzeug – kein Futter, keine Leckerlis mit Gesundheitsversprechen,
+     nichts Medizinisches (Flohmittel, Nahrungsergänzung).
+   - Gültige Werte: `category` kitchen | tech | beauty | home | fun | pets;
      `budget` under15 | 15to50 | 50to150 | over150;
      `recipients` household | teenager | parents | kids;
      `occasions` weihnachten | geburtstag | wichteln | nikolaus | valentinstag | ostern | muttertag | vatertag | schulanfang.

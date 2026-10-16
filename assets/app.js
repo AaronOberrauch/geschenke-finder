@@ -32,7 +32,8 @@
             { id: 'tech',    label: 'Technik & Gadgets', icon: '🎧' },
             { id: 'beauty',  label: 'Wellness & Pflege', icon: '🧖' },
             { id: 'home',    label: 'Wohnen & Ordnung',  icon: '🛋️' },
-            { id: 'fun',     label: 'Spiel & Freizeit',  icon: '🎲' }
+            { id: 'fun',     label: 'Spiel & Freizeit',  icon: '🎲' },
+            { id: 'pets',    label: 'Haustiere',         icon: '🐾' }
         ]
     };
 

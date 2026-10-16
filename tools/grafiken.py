@@ -32,7 +32,7 @@ CREAM = (255, 247, 237)
 WHITE = (255, 255, 255)
 TILE = {
     'kitchen': (254, 215, 170), 'tech': (199, 210, 254), 'beauty': (251, 207, 232),
-    'home': (187, 247, 208), 'fun': (253, 230, 138),
+    'home': (187, 247, 208), 'fun': (253, 230, 138), 'pets': (231, 216, 195),
 }
 BUDGET_TEXT = {'under15': 'unter 15 €', '15to50': '15 bis 50 €', '50to150': '50 bis 150 €', 'over150': 'über 150 €'}
 
@@ -90,6 +90,7 @@ def centered(draw, y, text, fnt, fill, width):
 def emoji(draw, center, char, size):
     """Emoji mittig um den Punkt `center` zeichnen."""
     fnt = emoji_font(size)
+    char = char.replace('️', '')  # Variantenzeichen verschiebt sonst die Breite (z. B. 🛏️)
     x0, y0, x1, y1 = draw.textbbox((0, 0), char, font=fnt, embedded_color=True)
     cx, cy = center
     draw.text((cx - (x1 - x0) / 2 - x0, cy - (y1 - y0) / 2 - y0), char, font=fnt, embedded_color=True)

@@ -33,5 +33,16 @@ window.PAGES = [
     "beschreibung": "Kleine Nikolausgeschenke für den Stiefel – Ideen für Kinder und Teenager.",
     "intro": "Was passt in den Nikolausstiefel außer Schokolade? Hier sind kleine Ideen für Kinder und Teenager.",
     "filter": {}
+  },
+  {
+    "slug": "geschenke-fuer-tierfreunde",
+    "titel": "Geschenke für Hunde- und Katzenbesitzer",
+    "kurztitel": "Für Tierfreunde",
+    "emoji": "🐾",
+    "anlass": "geburtstag",
+    "monate": [],
+    "beschreibung": "Geschenkideen für Hunde- und Katzenbesitzer: Spielzeug, Kuschelplätze und praktisches Zubehör für jedes Budget.",
+    "intro": "Für alle, deren bester Freund vier Pfoten hat: Geschenke, über die sich Herrchen, Frauchen und Haustier gleichermaßen freuen.",
+    "filter": {"category": "pets"}
   }
 ];
