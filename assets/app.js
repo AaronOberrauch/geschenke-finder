@@ -78,10 +78,35 @@
         if (on('budget') && p.budget !== state.budget) return false;
         if (on('category') && p.category !== state.category) return false;
         if (state.search) {
-            const haystack = [p.title, p.query, p.badge, ...p.highlights].join(' ').toLowerCase();
-            if (!state.search.split(/\s+/).every(word => haystack.includes(word))) return false;
+            const text = [p.title, p.query, p.badge, ...p.highlights].join(' ');
+            // beide Schreibweisen: "kopfhoerer" und "kopfhorer" finden "Kopfhörer"
+            const haystack = normalize(text) + ' ' + text.toLowerCase().replace(/ä/g, 'a').replace(/ö/g, 'o').replace(/ü/g, 'u');
+            if (!normalize(state.search).split(/\s+/).every(word => wordMatches(word, haystack))) return false;
         }
         return true;
+    }
+
+    // --- Tolerante Suche: Umlaute, einfache Mehrzahl, häufige englische Begriffe ---
+    function normalize(text) {
+        return text.toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').trim();
+    }
+
+    const ALIASES = {
+        drone: 'drohne', drones: 'drohne', headphones: 'kopfhoerer', earbuds: 'kopfhoerer', speaker: 'lautsprecher',
+        lamp: 'lampe', light: 'licht', lights: 'led', camera: 'kamera', watch: 'uhr', tracker: 'tracker',
+        dog: 'hund', dogs: 'hund', cat: 'katze', cats: 'katze', pet: 'haustier', toy: 'spielzeug', toys: 'spielzeug',
+        game: 'spiel', games: 'spiel', gaming: 'gaming', mouse: 'maus', keyboard: 'tastatur', console: 'konsole',
+        kitchen: 'kueche', coffee: 'kaffee', cup: 'becher', mug: 'becher', blanket: 'decke', massage: 'massage',
+        fitness: 'fitness', workout: 'training', yoga: 'yoga', weights: 'hantel', dumbbell: 'hantel',
+        book: 'buch', notebook: 'notizbuch', puzzle: 'puzzle', garden: 'garten', plant: 'pflanze', gift: 'geschenk'
+    };
+
+    function wordMatches(word, haystack) {
+        if (!word) return true;
+        const candidates = [word, ALIASES[word]];
+        // einfache Mehrzahl/Endungen: "drohnen" findet "drohne", "lampen" findet "lampe"
+        if (word.length > 4) candidates.push(word.replace(/(en|n|e|s)$/, ''));
+        return candidates.some(c => c && haystack.includes(c));
     }
 
     // --- Anlässe: die nächsten zuerst, bald anstehende hervorgehoben ---
@@ -161,6 +186,18 @@
             ? `${exact} ${exact === 1 ? 'Idee' : 'Ideen'} gefunden`
             : `${list.length} ähnliche ${list.length === 1 ? 'Idee' : 'Ideen'}`;
         $('#empty').classList.toggle('show', list.length === 0);
+        // Nichts gefunden, aber ein Suchbegriff? Dann direkt auf Amazon danach suchen lassen (mit Partner-ID).
+        const amazonSearch = $('#amazon-search');
+        amazonSearch.hidden = !(list.length === 0 && state.search);
+        if (!amazonSearch.hidden) {
+            const term = $('#search').value.trim();
+            amazonSearch.href = amazonUrl({ query: term });
+            amazonSearch.textContent = `Auf Amazon nach „${term}“ suchen*`;
+        }
+        $('#empty h3').textContent = amazonSearch.hidden ? 'Keine passenden Ideen gefunden' : 'Das haben wir noch nicht dabei';
+        $('#empty p').textContent = amazonSearch.hidden
+            ? 'Lockere einen Filter oder leere das Suchfeld.'
+            : 'Auf Amazon findest du bestimmt etwas Passendes – oder du schaust dir unsere anderen Ideen an.';
 
         $('#grid').innerHTML = list.map(p => `
             <article class="card">

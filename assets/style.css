@@ -197,6 +197,12 @@ main { flex: 1; padding: 32px 0 16px; }
     padding: 10px 18px; font-weight: 600;
 }
 .btn:hover { background: var(--brand-dark); }
+.btn-amazon {
+    display: inline-block; background: var(--amazon); color: #111; text-decoration: none;
+    margin: 0 8px 10px; font-weight: 700;
+}
+.btn-amazon:hover { background: var(--amazon-hover); }
+.btn-amazon[hidden] { display: none; }
 
 /* Ratgeber-Teil der Themen-Seiten */
 .ratgeber {
