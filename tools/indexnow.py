@@ -27,6 +27,7 @@ def page_urls(site):
     pages = {ROOT / 'index.html': site}
     for f in sorted((ROOT / 'ideen').glob('*.html')):
         pages[f] = f'{site}ideen/{f.name}'
+    pages[ROOT / 'ueber.html'] = f'{site}ueber.html'
     return pages
 
 
