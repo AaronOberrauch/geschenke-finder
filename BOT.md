@@ -27,7 +27,7 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
 - `_entwuerfe/` – Social-Media-Entwürfe (wird nicht veröffentlicht)
 - Erzeugte Dateien über `python -I tools/site.py build` (nie von Hand)
 
-**Nicht anfassen:** `daten/config.js`, `impressum.html`, `datenschutz.html`,
+**Nicht anfassen:** `daten/config.js`, `impressum.html`, `datenschutz.html`, `google*.html` (Google-Bestätigung),
 `assets/`, `tools/`, `BOT.md`, `README.md`. Nie `git push --force`, nie Historie umschreiben.
 
 ## Ablauf
