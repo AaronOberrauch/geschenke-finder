@@ -6,6 +6,7 @@
 Der Bot (siehe BOT.md) ändert nur daten/*.js, ruft danach build und check auf
 und veröffentlicht nur, wenn check fehlerfrei ist.
 """
+import hashlib
 import html
 import json
 import re
@@ -53,6 +54,11 @@ def load_js(name, var):
     return json.loads(body)
 
 
+# Diese Dateien bekommen eine Versionsnummer (?v=…), die sich mit dem Inhalt ändert –
+# so laden Browser nach einem Update sofort die neue Fassung statt einer alten aus dem Cache.
+VERSIONED = ['assets/style.css', 'assets/app.js', 'daten/config.js', 'daten/produkte.js', 'daten/seiten.js']
+
+
 def render(values, root):
     out = TEMPLATE.read_text(encoding='utf-8')
     values = dict(values, ROOT=root)
@@ -61,6 +67,9 @@ def render(values, root):
     leftover = re.findall(r'\{\{[A-Z_]+\}\}', out)
     if leftover:
         raise ValueError(f'Platzhalter ohne Wert in vorlage.html: {leftover}')
+    for rel in VERSIONED:
+        version = hashlib.sha1((ROOT / rel).read_bytes()).hexdigest()[:8]
+        out = out.replace(f'"{root}{rel}"', f'"{root}{rel}?v={version}"')
     return out
 
 

@@ -69,11 +69,13 @@
         return UNIVERSAL_OCCASIONS.includes(occasion) || (p.occasions || []).includes(occasion);
     }
 
-    function matches(p) {
+    // ignore: Filter, die beim Suchen nach Ersatz-Vorschlägen weggelassen werden
+    function matches(p, ignore = []) {
+        const on = key => state[key] !== 'all' && !ignore.includes(key);
         if (PAGE && !fitsOccasion(p, PAGE.anlass)) return false;
-        if (state.recipient !== 'all' && !p.recipients.includes(state.recipient)) return false;
-        if (state.budget !== 'all' && p.budget !== state.budget) return false;
-        if (state.category !== 'all' && p.category !== state.category) return false;
+        if (on('recipient') && !p.recipients.includes(state.recipient)) return false;
+        if (on('budget') && p.budget !== state.budget) return false;
+        if (on('category') && p.category !== state.category) return false;
         if (state.search) {
             const haystack = [p.title, p.query, p.badge, ...p.highlights].join(' ').toLowerCase();
             if (!state.search.split(/\s+/).every(word => haystack.includes(word))) return false;
@@ -119,9 +121,44 @@
         });
     }
 
+    const FILTER_TITLE = { recipient: 'Für wen', budget: 'Budget', category: 'Bereich' };
+
+    function filterLabel(key) {
+        return FILTERS[key].find(o => o.id === state[key]).label;
+    }
+
+    // Keine exakten Treffer? Erst einzelne Filter weglassen (Bereich, dann Budget, dann Empfänger),
+    // dann zwei, damit der Besucher nie in einer Sackgasse landet.
+    function fallback() {
+        const active = ['category', 'budget', 'recipient'].filter(k => state[k] !== 'all');
+        const tries = active.map(k => [k]);
+        for (let i = 0; i < active.length; i++) {
+            for (let j = i + 1; j < active.length; j++) tries.push([active[i], active[j]]);
+        }
+        for (const ignore of tries) {
+            const list = PRODUCTS.filter(p => matches(p, ignore));
+            if (list.length) return { list, ignore };
+        }
+        return null;
+    }
+
     function renderProducts() {
-        const list = PRODUCTS.filter(matches);
-        $('#count').textContent = `${list.length} ${list.length === 1 ? 'Idee' : 'Ideen'} gefunden`;
+        let list = PRODUCTS.filter(p => matches(p));
+        const exact = list.length;
+        const notice = $('#notice');
+        notice.hidden = true;
+        if (!exact) {
+            const alt = fallback();
+            if (alt) {
+                list = alt.list;
+                const dropped = alt.ignore.map(k => `${FILTER_TITLE[k]}: „${escapeHtml(filterLabel(k))}“`).join(' und ');
+                notice.innerHTML = `Für genau diese Auswahl haben wir noch nichts – hier sind <strong>${list.length} passende Ideen</strong>, wenn man ${dropped} weglässt.`;
+                notice.hidden = false;
+            }
+        }
+        $('#count').textContent = exact || !list.length
+            ? `${exact} ${exact === 1 ? 'Idee' : 'Ideen'} gefunden`
+            : `${list.length} ähnliche ${list.length === 1 ? 'Idee' : 'Ideen'}`;
         $('#empty').classList.toggle('show', list.length === 0);
 
         $('#grid').innerHTML = list.map(p => `
