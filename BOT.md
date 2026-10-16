@@ -1,0 +1,75 @@
+# Anleitung für den Content-Bot
+
+Du pflegst die Website „Geschenke-Finder“ (Amazon-Partnerseite) in diesem Ordner.
+Du läufst einmal pro Woche ohne Aufsicht. Arbeite vorsichtig: Lieber eine kleine,
+fehlerfreie Änderung als eine große, die etwas kaputt macht.
+
+## Was du ändern darfst
+
+- `daten/produkte.js` – Produkte hinzufügen oder verbessern
+- `daten/seiten.js` – Themen-Seiten (Anlässe) hinzufügen
+- `_entwuerfe/` – Social-Media-Entwürfe (wird nicht veröffentlicht)
+- Erzeugte Dateien über `python -I tools/site.py build` (nie von Hand)
+
+**Nicht anfassen:** `daten/config.js`, `impressum.html`, `datenschutz.html`,
+`assets/`, `tools/`, `BOT.md`, `README.md`. Nie `git push --force`, nie Historie umschreiben.
+
+## Ablauf
+
+1. `git pull --ff-only`. Wenn das scheitert: abbrechen und melden.
+2. `python -I tools/site.py check`. Wenn schon vorher Fehler da sind: nichts ändern, abbrechen und melden.
+3. **Anlässe prüfen.** Schau aufs heutige Datum. Für jeden Anlass, der in den nächsten
+   **8 Wochen** ansteht und noch keine Seite in `daten/seiten.js` hat, lege eine an –
+   **höchstens eine neue Seite pro Lauf**. Termine (Shop laut `amazonDomain` in `daten/config.js`):
+
+   | Anlass (`anlass`) | Deutschland / Österreich (amazon.de) | Italien (amazon.it) |
+   |---|---|---|
+   | valentinstag | 14. Februar | 14. Februar |
+   | ostern | Ostersonntag (beweglich) | Ostersonntag |
+   | muttertag | 2. Sonntag im Mai | 2. Sonntag im Mai |
+   | vatertag | DE: Christi Himmelfahrt, AT: 2. Sonntag im Juni | 19. März |
+   | schulanfang | August/September | September |
+   | nikolaus | 6. Dezember | 6. Dezember |
+   | wichteln | Dezember | Dezember |
+   | weihnachten | 24. Dezember | 25. Dezember |
+   | geburtstag | ganzjährig – darf jederzeit, z. B. „Geschenke für Teenager“ | |
+
+   Alle Texte auf Deutsch (die Seite ist deutschsprachig, auch bei amazon.it).
+
+   Felder einer Seite: `slug` (Kleinbuchstaben, Bindestriche, Suchbegriff den Leute googeln,
+   z. B. `muttertagsgeschenke`), `titel`, `kurztitel`, `emoji`, `anlass`, `monate` (Monate, in denen
+   die Seite vorne angezeigt wird), `beschreibung` (50–160 Zeichen, für Google), `intro` (1–2 Sätze),
+   `filter` (optional: `recipient`, `budget`, `category`).
+4. **Produkte ergänzen: 2 bis 4 neue pro Lauf.** Bevorzuge, in dieser Reihenfolge:
+   Produkte für anstehende Anlässe (mit passenden `occasions`), dann Lücken, die `check`
+   als WARNUNG meldet („Keine Produkte für Zielgruppe …“). Regeln:
+   - Nur echte, gängige Produktarten, die es auf Amazon sicher gibt. Allgemein benennen
+     („Kabellose Ohrhörer“), keine Fantasie-Produkte.
+   - `query` = deutscher Suchbegriff, der auf Amazon gute Treffer bringt (2–5 Wörter).
+   - **Keine `asin` erfinden.** Das Feld nur setzen, wenn der Nutzer dir eine echte Nummer gegeben hat.
+   - **Keine Preise, keine Bewertungen, keine Behauptungen** wie „Bestseller“, „Testsieger“,
+     „Nr. 1“, „beliebteste“. `badge` ist ein neutraler Anlass oder Nutzen („Für Gamer“, „Zum Entspannen“).
+   - `highlights`: 2–4 kurze, allgemeine Eigenschaften, die auf praktisch jedes Produkt dieser Art zutreffen.
+   - Keine Duplikate: prüfe, ob es das Produkt (auch unter anderem Namen) schon gibt.
+   - Keine heiklen Produkte: nichts Medizinisches, keine Waffen, kein Alkohol/Tabak, nichts für Erwachsene,
+     keine Nahrungsergänzungsmittel.
+   - Gültige Werte: `category` kitchen | tech | beauty | home | fun;
+     `budget` under15 | 15to50 | 50to150 | over150;
+     `recipients` household | teenager | parents | kids;
+     `occasions` weihnachten | geburtstag | wichteln | nikolaus | valentinstag | ostern | muttertag | vatertag | schulanfang.
+5. `python -I tools/site.py build`, dann `python -I tools/site.py check`.
+   Bei FEHLER: bis zu zwei Korrekturversuche. Klappt es nicht: alle Änderungen mit
+   `git checkout -- . && git clean -fd ideen` verwerfen, nichts veröffentlichen, melden.
+   WARNUNGEN zu Partner-ID und Impressum sind bekannt und blockieren nicht.
+6. Veröffentlichen: `git add -A`, `git commit -m "Bot: <kurze Zusammenfassung>"`, `git push`.
+7. **Social-Media-Entwürfe** in `_entwuerfe/JJJJ-MM-TT.md` schreiben: 5 Posts, passend zur Saison
+   und zu den Produkten auf der Seite. Pro Post:
+   - Plattform (Instagram/TikTok-Video, Pinterest-Pin oder Facebook)
+   - Hook (erste Zeile, die zum Weiterlesen bringt)
+   - Text (kurz, locker, Du-Form)
+   - Link: volle Adresse aus `siteUrl` plus passender Filter, z. B.
+     `…/ideen/wichtelgeschenke-unter-15-euro.html` oder `…/#fuer=teenager&budget=under15`
+   - Bei Videos: Idee in 3–5 Szenen (was man filmt)
+   - Hashtags (5–8), **immer mit `#werbung`**, weil die Links Provision bringen
+   Die Entwürfe sind nicht im Git (stehen in `.gitignore`).
+8. Zum Schluss kurz melden: neue Seite(n), neue Produkte, Ergebnis von `check`, Commit, Datei mit den Entwürfen.

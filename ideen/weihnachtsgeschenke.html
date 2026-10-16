@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Diese Datei wird automatisch erzeugt (python tools/site.py build). Änderungen in tools/vorlage.html machen. -->
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weihnachtsgeschenke für die ganze Familie – Geschenke-Finder</title>
+    <meta name="description" content="Weihnachtsgeschenke für Teenager, Eltern, Kinder und den Haushalt – nach Budget filtern und direkt auf Amazon ansehen.">
+    <link rel="canonical" href="https://aaronoberrauch.github.io/geschenke-finder/ideen/weihnachtsgeschenke.html">
+    <meta property="og:title" content="Weihnachtsgeschenke für die ganze Familie – Geschenke-Finder">
+    <meta property="og:description" content="Weihnachtsgeschenke für Teenager, Eltern, Kinder und den Haushalt – nach Budget filtern und direkt auf Amazon ansehen.">
+    <meta property="og:url" content="https://aaronoberrauch.github.io/geschenke-finder/ideen/weihnachtsgeschenke.html">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎁</text></svg>">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body data-root="../" data-page="weihnachtsgeschenke">
+
+    <div class="disclosure">
+        <strong>Transparenz:</strong> Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich der Preis nicht.
+    </div>
+    <div class="config-warning" id="config-warning">
+        ⚠️ Partner-ID noch nicht eingetragen – trage sie in <code>daten/config.js</code> ein, sonst verdienst du nichts.
+    </div>
+
+    <header>
+        <a class="wrap header-inner" href="../index.html">
+            <div class="logo" aria-hidden="true">🎁</div>
+            <div>
+                <p class="name">Geschenke-Finder</p>
+                <p class="tagline">In 3 Klicks zur passenden Idee</p>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <div class="wrap">
+
+            <div class="hero">
+                <span class="pill">🎄 Geschenkideen</span>
+                <h1>Weihnachtsgeschenke für die ganze Familie</h1>
+                <p>Noch keine Idee für Weihnachten? Wähle aus, für wen du suchst und wie viel du ausgeben willst – hier findest du passende Geschenke für alle unterm Baum.</p>
+            </div>
+
+            <nav class="occasions" id="occasions" aria-label="Geschenkideen nach Anlass">
+                <h2>Weitere Anlässe</h2>
+                <div class="occasion-list"></div>
+            </nav>
+
+            <section class="wizard" aria-label="Geschenke filtern">
+                <div class="steps">
+                    <div>
+                        <p class="step-title" id="t-recipient">1. Für wen suchst du?</p>
+                        <div class="options" role="group" aria-labelledby="t-recipient" data-filter="recipient"></div>
+                    </div>
+                    <div>
+                        <p class="step-title" id="t-budget">2. Welches Budget?</p>
+                        <div class="options" role="group" aria-labelledby="t-budget" data-filter="budget"></div>
+                    </div>
+                    <div>
+                        <p class="step-title" id="t-category">3. Welcher Bereich?</p>
+                        <div class="options" role="group" aria-labelledby="t-category" data-filter="category"></div>
+                    </div>
+                </div>
+
+                <div class="toolbar">
+                    <input type="search" id="search" class="search" placeholder="Suchen, z. B. Kopfhörer …" aria-label="Produkte durchsuchen">
+                    <div class="toolbar-right">
+                        <span class="count" id="count" aria-live="polite"></span>
+                        <button type="button" class="link-btn" id="share">Link zu dieser Auswahl kopieren</button>
+                        <button type="button" class="link-btn" id="reset">Filter zurücksetzen</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="grid" id="grid" aria-label="Geschenkideen"></section>
+
+            <div class="empty" id="empty">
+                <div style="font-size:40px" aria-hidden="true">🔍</div>
+                <h3>Keine passenden Ideen gefunden</h3>
+                <p>Lockere einen Filter oder leere das Suchfeld.</p>
+                <button type="button" class="btn" id="reset-empty">Alle Filter zurücksetzen</button>
+            </div>
+
+            <p class="footnote">* Werbelink: Beim Kauf über diesen Link erhalte ich eine kleine Provision. Preisklassen sind ungefähre Richtwerte – der aktuelle Preis und die Verfügbarkeit stehen auf Amazon.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="foot-grid">
+                <div>
+                    <h4>🎁 Geschenke-Finder</h4>
+                    <p>Eine Sammlung nützlicher Alltags-Ideen und Geschenke für die ganze Familie.</p>
+                    <p>Amazon und das Amazon-Logo sind Warenzeichen von Amazon.com, Inc. oder eines seiner verbundenen Unternehmen.</p>
+                </div>
+                <nav aria-label="Rechtliches">
+                    <h4>Rechtliches</h4>
+                    <a href="../impressum.html">Impressum</a>
+                    <a href="../datenschutz.html">Datenschutzerklärung</a>
+                </nav>
+            </div>
+            <div class="copy">&copy; <span id="year"></span> Geschenke-Finder</div>
+        </div>
+    </footer>
+
+    <script src="../daten/config.js"></script>
+    <script src="../daten/produkte.js"></script>
+    <script src="../daten/seiten.js"></script>
+    <script src="../assets/app.js"></script>
+</body>
+</html>
