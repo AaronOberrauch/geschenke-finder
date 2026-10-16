@@ -238,7 +238,14 @@ window.PAGES = [
       "Massagepistole",
       "Verstellbares Kurzhantel-Set",
       "Kamera-Drohne für Einsteiger",
-      "Edelstahl-Thermobecher"
+      "Edelstahl-Thermobecher",
+      "Grillbesteck-Set im Koffer",
+      "Dashcam fürs Auto",
+      "Akku-Autostaubsauger",
+      "Uhrenbox aus Holz",
+      "Schlüsselfinder-Set",
+      "Beheizbare Weste",
+      "Retro-Spielkonsole mit Klassikern"
     ],
     "foto_id": 7092687
   },
@@ -265,7 +272,15 @@ window.PAGES = [
       "Sofortbildkamera",
       "Kuscheldecke mit Ärmeln",
       "Elektrischer Milchaufschäumer",
-      "Yogamatte rutschfest"
+      "Yogamatte rutschfest",
+      "Mani- und Pediküre-Set",
+      "Wellness-Geschenkset",
+      "Lockenstab",
+      "Tee-Geschenkset",
+      "Wärmflasche mit Strickbezug",
+      "Hängesessel",
+      "Briefpapier-Set",
+      "Diamond-Painting-Set"
     ],
     "foto_id": 8431871
   }

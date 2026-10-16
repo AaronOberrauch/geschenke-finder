@@ -1690,5 +1690,731 @@ window.PRODUCTS = [
       "Mehrere Stufen",
       "Für verschiedene Haarlängen"
     ]
+  },
+  {
+    "title": "Experimentierkasten für Kinder",
+    "query": "Experimentierkasten Kinder",
+    "emoji": "🔬",
+    "category": "fun",
+    "budget": "15to50",
+    "recipients": [
+      "kids"
+    ],
+    "occasions": [
+      "schulanfang",
+      "ostern"
+    ],
+    "badge": "Forschen und staunen",
+    "highlights": [
+      "Spannende Versuche zu Hause",
+      "Mit Anleitung",
+      "Fördert Neugier"
+    ]
+  },
+  {
+    "title": "Holzspielzeug-Set für Kleinkinder",
+    "query": "Holzspielzeug Kleinkind",
+    "emoji": "🪀",
+    "category": "fun",
+    "budget": "15to50",
+    "recipients": [
+      "kids"
+    ],
+    "occasions": [
+      "ostern"
+    ],
+    "badge": "Für die Kleinsten",
+    "highlights": [
+      "Aus Holz",
+      "Für kleine Hände gemacht",
+      "Fördert Motorik"
+    ]
+  },
+  {
+    "title": "Malset im Koffer",
+    "query": "Malset Kinder Koffer",
+    "emoji": "🖍️",
+    "category": "fun",
+    "budget": "15to50",
+    "recipients": [
+      "kids",
+      "teenager"
+    ],
+    "occasions": [
+      "nikolaus",
+      "schulanfang"
+    ],
+    "badge": "Für kleine Künstler",
+    "highlights": [
+      "Stifte, Kreiden und Farben",
+      "Alles in einem Koffer",
+      "Für unterwegs"
+    ]
+  },
+  {
+    "title": "Walkie-Talkies für Kinder",
+    "query": "Walkie Talkie Kinder",
+    "emoji": "📻",
+    "category": "tech",
+    "budget": "15to50",
+    "recipients": [
+      "kids"
+    ],
+    "occasions": [
+      "ostern"
+    ],
+    "badge": "Abenteuer im Garten",
+    "highlights": [
+      "Große Reichweite",
+      "Einfache Bedienung",
+      "Für Spiele drinnen und draußen"
+    ]
+  },
+  {
+    "title": "Kinder-Laufrad",
+    "query": "Laufrad Kinder",
+    "emoji": "🚲",
+    "category": "fun",
+    "budget": "50to150",
+    "recipients": [
+      "kids"
+    ],
+    "occasions": [
+      "ostern"
+    ],
+    "badge": "Erste Fahrten",
+    "highlights": [
+      "Lernen ohne Pedale",
+      "Höhenverstellbarer Sattel",
+      "Leicht"
+    ]
+  },
+  {
+    "title": "Vorlese-Bilderbuch zu Weihnachten",
+    "query": "Bilderbuch Weihnachten Kinder",
+    "emoji": "📖",
+    "category": "fun",
+    "budget": "under15",
+    "recipients": [
+      "kids"
+    ],
+    "occasions": [
+      "nikolaus"
+    ],
+    "badge": "Zum Vorlesen",
+    "highlights": [
+      "Gemütliche Vorlesezeit",
+      "Liebevoll illustriert",
+      "Für die Adventszeit"
+    ]
+  },
+  {
+    "title": "Kinder-Taschenlampe als Projektor",
+    "query": "Taschenlampe Projektor Kinder",
+    "emoji": "🔦",
+    "category": "tech",
+    "budget": "under15",
+    "recipients": [
+      "kids"
+    ],
+    "occasions": [
+      "nikolaus"
+    ],
+    "badge": "Gute-Nacht-Geschichten",
+    "highlights": [
+      "Bilder an die Wand werfen",
+      "Für das Kinderzimmer",
+      "Kleines Geschenk"
+    ]
+  },
+  {
+    "title": "Ringlicht mit Handyhalter",
+    "query": "Ringlicht mit Stativ Handy",
+    "emoji": "💡",
+    "category": "tech",
+    "budget": "15to50",
+    "recipients": [
+      "teenager"
+    ],
+    "badge": "Für Fotos und Videos",
+    "highlights": [
+      "Gleichmäßiges Licht",
+      "Mit Stativ",
+      "Für Videocalls und Selfies"
+    ]
+  },
+  {
+    "title": "Retro-Spielkonsole mit Klassikern",
+    "query": "Retro Konsole HDMI",
+    "emoji": "👾",
+    "category": "tech",
+    "budget": "50to150",
+    "recipients": [
+      "teenager",
+      "parents"
+    ],
+    "badge": "Retro-Trend",
+    "highlights": [
+      "Alte Spiele neu entdecken",
+      "Am Fernseher spielen",
+      "Für Nostalgiker"
+    ]
+  },
+  {
+    "title": "Kabellose In-Ear-Kopfhörer",
+    "query": "Bluetooth Kopfhörer In Ear",
+    "emoji": "🎵",
+    "category": "tech",
+    "budget": "15to50",
+    "recipients": [
+      "teenager",
+      "parents"
+    ],
+    "occasions": [
+      "valentinstag"
+    ],
+    "badge": "Musik unterwegs",
+    "highlights": [
+      "Mit Ladecase",
+      "Kabellos",
+      "Für Sport und Alltag"
+    ]
+  },
+  {
+    "title": "LED-Neonschild fürs Zimmer",
+    "query": "LED Neon Schild Wand",
+    "emoji": "🌈",
+    "category": "home",
+    "budget": "15to50",
+    "recipients": [
+      "teenager"
+    ],
+    "badge": "Zimmer-Deko",
+    "highlights": [
+      "Leuchtet in Neonfarben",
+      "Für Wand oder Regal",
+      "Per USB betrieben"
+    ]
+  },
+  {
+    "title": "USB-Mikrofon für Streaming",
+    "query": "USB Mikrofon Streaming",
+    "emoji": "🎙️",
+    "category": "tech",
+    "budget": "15to50",
+    "recipients": [
+      "teenager"
+    ],
+    "badge": "Für Creator",
+    "highlights": [
+      "Für Podcasts und Streams",
+      "Einfach anschließen",
+      "Mit Ständer"
+    ]
+  },
+  {
+    "title": "Handy-Gimbal für Videos",
+    "query": "Gimbal Smartphone",
+    "emoji": "🤳",
+    "category": "tech",
+    "budget": "50to150",
+    "recipients": [
+      "teenager"
+    ],
+    "badge": "Ruhige Aufnahmen",
+    "highlights": [
+      "Gleicht Wackler aus",
+      "Für Handyvideos",
+      "Faltbar"
+    ]
+  },
+  {
+    "title": "Grillbesteck-Set im Koffer",
+    "query": "Grillbesteck Set Koffer",
+    "emoji": "🍖",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "parents",
+      "household"
+    ],
+    "occasions": [
+      "vatertag"
+    ],
+    "badge": "Für Grillfans",
+    "highlights": [
+      "Zange, Wender und Gabel",
+      "Im Koffer verstaut",
+      "Robustes Edelstahl"
+    ]
+  },
+  {
+    "title": "Dashcam fürs Auto",
+    "query": "Dashcam Auto",
+    "emoji": "🚗",
+    "category": "tech",
+    "budget": "50to150",
+    "recipients": [
+      "parents"
+    ],
+    "occasions": [
+      "vatertag"
+    ],
+    "badge": "Für Autofahrer",
+    "highlights": [
+      "Nimmt während der Fahrt auf",
+      "Einfache Montage",
+      "Mit Speicherkarte"
+    ]
+  },
+  {
+    "title": "Akku-Autostaubsauger",
+    "query": "Autostaubsauger akku",
+    "emoji": "🧽",
+    "category": "tech",
+    "budget": "15to50",
+    "recipients": [
+      "parents",
+      "household"
+    ],
+    "badge": "Sauberes Auto",
+    "highlights": [
+      "Kabellos",
+      "Handlich",
+      "Für Polster und Fußraum"
+    ]
+  },
+  {
+    "title": "Uhrenbox aus Holz",
+    "query": "Uhrenbox Holz",
+    "emoji": "⌚",
+    "category": "home",
+    "budget": "15to50",
+    "recipients": [
+      "parents"
+    ],
+    "badge": "Ordnung für Uhren",
+    "highlights": [
+      "Mehrere Fächer",
+      "Mit Sichtfenster",
+      "Schön auf der Kommode"
+    ]
+  },
+  {
+    "title": "Schlüsselfinder-Set",
+    "query": "Schlüsselfinder",
+    "emoji": "🔑",
+    "category": "tech",
+    "budget": "15to50",
+    "recipients": [
+      "parents",
+      "household"
+    ],
+    "badge": "Nie mehr suchen",
+    "highlights": [
+      "Per App oder Fernbedienung",
+      "Am Schlüssel befestigt",
+      "Für Vergessliche"
+    ]
+  },
+  {
+    "title": "Beheizbare Weste",
+    "query": "beheizbare Weste",
+    "emoji": "🧥",
+    "category": "sport",
+    "budget": "50to150",
+    "recipients": [
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "vatertag"
+    ],
+    "badge": "Für kalte Tage",
+    "highlights": [
+      "Mehrere Wärmestufen",
+      "Mit Powerbank betrieben",
+      "Für draußen"
+    ]
+  },
+  {
+    "title": "Mani- und Pediküre-Set",
+    "query": "Maniküre Set Pediküre",
+    "emoji": "💅",
+    "category": "beauty",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "teenager",
+      "parents"
+    ],
+    "occasions": [
+      "muttertag"
+    ],
+    "badge": "Für gepflegte Hände",
+    "highlights": [
+      "Viele Werkzeuge",
+      "Im Etui",
+      "Für zu Hause"
+    ]
+  },
+  {
+    "title": "Wellness-Geschenkset",
+    "query": "Wellness Geschenkset Frauen",
+    "emoji": "🛀",
+    "category": "beauty",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "muttertag",
+      "valentinstag"
+    ],
+    "badge": "Zum Verwöhnen",
+    "highlights": [
+      "Pflege für Bad und Haut",
+      "Schön verpackt",
+      "Für einen Spa-Abend"
+    ]
+  },
+  {
+    "title": "Lockenstab",
+    "query": "Lockenstab",
+    "emoji": "💁",
+    "category": "beauty",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "teenager"
+    ],
+    "badge": "Für Styling",
+    "highlights": [
+      "Für Locken und Wellen",
+      "Mehrere Temperaturen",
+      "Heizt schnell auf"
+    ]
+  },
+  {
+    "title": "Tee-Geschenkset",
+    "query": "Tee Geschenkset",
+    "emoji": "🫖",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "muttertag",
+      "wichteln"
+    ],
+    "badge": "Für Teetrinker",
+    "highlights": [
+      "Verschiedene Sorten",
+      "Schön verpackt",
+      "Für gemütliche Stunden"
+    ]
+  },
+  {
+    "title": "Wärmflasche mit Strickbezug",
+    "query": "Wärmflasche mit Bezug",
+    "emoji": "♨️",
+    "category": "home",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "wichteln",
+      "nikolaus"
+    ],
+    "badge": "Für kalte Abende",
+    "highlights": [
+      "Weicher Bezug",
+      "Wohlige Wärme",
+      "Kleines Geschenk"
+    ]
+  },
+  {
+    "title": "Hängesessel",
+    "query": "Hängesessel",
+    "emoji": "🪑",
+    "category": "home",
+    "budget": "50to150",
+    "recipients": [
+      "household",
+      "teenager"
+    ],
+    "badge": "Gemütliche Leseecke",
+    "highlights": [
+      "Für drinnen und draußen",
+      "Mit Kissen",
+      "Zum Entspannen"
+    ]
+  },
+  {
+    "title": "Briefpapier-Set",
+    "query": "Briefpapier Set",
+    "emoji": "✉️",
+    "category": "fun",
+    "budget": "under15",
+    "recipients": [
+      "teenager",
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "wichteln",
+      "valentinstag"
+    ],
+    "badge": "Briefe schreiben",
+    "highlights": [
+      "Papier und Umschläge",
+      "Für persönliche Grüße",
+      "Trend 2026"
+    ]
+  },
+  {
+    "title": "Füller-Set mit Tinte",
+    "query": "Füller Set Geschenk",
+    "emoji": "🖋️",
+    "category": "fun",
+    "budget": "15to50",
+    "recipients": [
+      "teenager",
+      "parents"
+    ],
+    "occasions": [
+      "schulanfang"
+    ],
+    "badge": "Schön schreiben",
+    "highlights": [
+      "Füller mit Patronen",
+      "In Geschenkbox",
+      "Für Schule und Büro"
+    ]
+  },
+  {
+    "title": "Handlettering-Set",
+    "query": "Handlettering Set",
+    "emoji": "✍️",
+    "category": "fun",
+    "budget": "15to50",
+    "recipients": [
+      "teenager",
+      "household"
+    ],
+    "badge": "Für Kreative",
+    "highlights": [
+      "Stifte und Übungsheft",
+      "Für Anfänger",
+      "Schöne Schrift lernen"
+    ]
+  },
+  {
+    "title": "Diamond-Painting-Set",
+    "query": "Diamond Painting Set",
+    "emoji": "💎",
+    "category": "fun",
+    "budget": "15to50",
+    "recipients": [
+      "teenager",
+      "household",
+      "parents"
+    ],
+    "badge": "Zum Entspannen",
+    "highlights": [
+      "Mit allen Zubehörteilen",
+      "Viele Motive",
+      "Für ruhige Abende"
+    ]
+  },
+  {
+    "title": "Raclette-Grill",
+    "query": "Raclette Grill",
+    "emoji": "🧀",
+    "category": "kitchen",
+    "budget": "50to150",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "badge": "Für gesellige Abende",
+    "highlights": [
+      "Für mehrere Personen",
+      "Mit Grillplatte",
+      "Ideal für Silvester"
+    ]
+  },
+  {
+    "title": "Fondue-Set",
+    "query": "Fondue Set",
+    "emoji": "🫕",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "valentinstag"
+    ],
+    "badge": "Gemeinsam genießen",
+    "highlights": [
+      "Mit Gabeln",
+      "Für Käse oder Schokolade",
+      "Für gemütliche Runden"
+    ]
+  },
+  {
+    "title": "Pizzastein für den Backofen",
+    "query": "Pizzastein Backofen",
+    "emoji": "🍕",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "badge": "Pizza wie beim Italiener",
+    "highlights": [
+      "Knuspriger Boden",
+      "Für Backofen und Grill",
+      "Mit Pizzaschieber"
+    ]
+  },
+  {
+    "title": "Nudelmaschine",
+    "query": "Nudelmaschine manuell",
+    "emoji": "🍝",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "badge": "Pasta selbst machen",
+    "highlights": [
+      "Verschiedene Nudelformen",
+      "Einfach zu bedienen",
+      "Aus Edelstahl"
+    ]
+  },
+  {
+    "title": "Smoothie-Mixer to go",
+    "query": "Smoothie Maker to go",
+    "emoji": "🥤",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "teenager",
+      "household"
+    ],
+    "badge": "Für gesunde Drinks",
+    "highlights": [
+      "Mixen und mitnehmen",
+      "Mit Trinkflasche",
+      "Kompakt"
+    ]
+  },
+  {
+    "title": "Katzentunnel",
+    "query": "Katzentunnel",
+    "emoji": "🐈",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "kids"
+    ],
+    "occasions": [
+      "wichteln"
+    ],
+    "badge": "Zum Verstecken",
+    "highlights": [
+      "Faltbar",
+      "Raschelt beim Spielen",
+      "Für Wohnungskatzen"
+    ]
+  },
+  {
+    "title": "Robustes Kauspielzeug für Hunde",
+    "query": "Hundespielzeug robust Kauspielzeug",
+    "emoji": "🦴",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "wichteln"
+    ],
+    "badge": "Für Kauer",
+    "highlights": [
+      "Robustes Material",
+      "Beschäftigt lange",
+      "Für mittelgroße Hunde"
+    ]
+  },
+  {
+    "title": "Hundedecke fürs Auto",
+    "query": "Hundedecke Auto Rückbank",
+    "emoji": "🚙",
+    "category": "pets",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "badge": "Saubere Rückbank",
+    "highlights": [
+      "Schützt die Sitze",
+      "Wasserabweisend",
+      "Einfach zu befestigen"
+    ]
+  },
+  {
+    "title": "Leckerli-Beutel für Spaziergänge",
+    "query": "Leckerlibeutel Hund",
+    "emoji": "👝",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "wichteln"
+    ],
+    "badge": "Für Gassi-Runden",
+    "highlights": [
+      "Mit Clip für den Gürtel",
+      "Schnell geöffnet",
+      "Waschbar"
+    ]
+  },
+  {
+    "title": "Isolierte Trinkflasche",
+    "query": "Trinkflasche Edelstahl isoliert",
+    "emoji": "🍶",
+    "category": "sport",
+    "budget": "15to50",
+    "recipients": [
+      "teenager",
+      "parents",
+      "household"
+    ],
+    "badge": "Für Sport und Alltag",
+    "highlights": [
+      "Hält kalt und warm",
+      "Auslaufsicher",
+      "Wiederverwendbar"
+    ]
   }
 ];
