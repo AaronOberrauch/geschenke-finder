@@ -49,5 +49,60 @@ window.PINS = [
     "seite": "home-training-geschenke",
     "filter": {},
     "produkte": ["Yogamatte rutschfest", "Verstellbares Kurzhantel-Set", "Fitnessbänder-Set", "Kettlebell", "Walking Pad (Laufband klappbar)", "Klimmzugstange für den Türrahmen"]
+  },
+  {
+    "id": "2026-10-16-weihnachten-hundebesitzer",
+    "datum": "2026-10-16",
+    "titel": "Weihnachtsgeschenke für Hundebesitzer und Katzenfans: Ideen mit Herz",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Hundebesitzer oder ein Geschenk für Katzenliebhaber? Vom LED-Leuchthalsband für dunkle Gassi-Runden über die Katzenhöhle bis zum Schnüffelteppich ist für jedes Budget etwas dabei. Alle Ideen für Tierfreunde findest du auf der Seite. #weihnachtsgeschenke #hundebesitzer #katzenliebe #geschenkideen #werbung",
+    "emoji": "🐶",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "category": "pets"
+    },
+    "produkte": [
+      "LED-Leuchthalsband für Hunde",
+      "Katzenhöhle zum Kuscheln",
+      "Schnüffelteppich für Hunde",
+      "Katzen-Kratzbaum",
+      "Hunde-Regenmantel",
+      "Katzen-Trinkbrunnen"
+    ]
+  },
+  {
+    "id": "2026-10-16-geschenke-fuer-teenager",
+    "datum": "2026-10-16",
+    "titel": "Geschenke für Teenager: Ideen von Retro-Sound bis Zimmer-Deko",
+    "beschreibung": "Was schenkt man Teenagern zum Geburtstag oder zu Weihnachten? Ob Plattenspieler für Vinyl-Fans, Sunset-Lampe fürs Zimmer oder Bullet-Journal für Kreative – hier findest du Geschenke für Jugendliche, die wirklich ankommen. Alle Ideen nach Budget sortiert findest du auf der Seite. #geschenkefürteenager #geschenkideen #teenager #weihnachtsgeschenke #werbung",
+    "emoji": "🎧",
+    "seite": "geschenke-fuer-teenager",
+    "filter": {},
+    "produkte": [
+      "Plattenspieler mit Lautsprechern",
+      "Sunset-Lampe",
+      "Bullet-Journal-Notizbuch",
+      "Sofortbildkamera",
+      "LED-Strip mit App-Steuerung",
+      "Noise-Cancelling-Kopfhörer"
+    ]
+  },
+  {
+    "id": "2026-10-16-weihnachten-eltern",
+    "datum": "2026-10-16",
+    "titel": "Weihnachtsgeschenke für Eltern: Ideen zum Entspannen und Genießen",
+    "beschreibung": "Du suchst Weihnachtsgeschenke für Eltern oder ein Geschenk für Mama und Papa, das wirklich genutzt wird? Vom Milchaufschäumer für Kaffee-Fans über das Nackenmassagegerät bis zum digitalen Bilderrahmen mit Familienfotos gibt es hier Ideen für jedes Budget. Schau dir alle Geschenke auf der Seite an. #weihnachtsgeschenke #geschenkfürmama #geschenkfürpapa #geschenkideen #werbung",
+    "emoji": "🎁",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "recipient": "parents"
+    },
+    "produkte": [
+      "Digitaler Bilderrahmen mit WLAN",
+      "Shiatsu-Nackenmassagegerät",
+      "Elektrischer Milchaufschäumer",
+      "Kuscheldecke mit Ärmeln",
+      "Elektrische Heizdecke",
+      "Aroma-Diffuser"
+    ]
   }
 ];

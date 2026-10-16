@@ -55,5 +55,18 @@ window.PAGES = [
     "beschreibung": "Geschenkideen fürs Training zu Hause: von Yogamatte und Fitnessbändern bis zu Hantel-Set, Rudergerät und Walking Pad.",
     "intro": "Ob gute Vorsätze fürs neue Jahr oder Sport-Fan: Mit diesen Geräten klappt das Training auch ohne Fitnessstudio – für jedes Budget.",
     "filter": {"category": "sport"}
+  },
+  {
+    "slug": "geschenke-fuer-teenager",
+    "titel": "Geschenke für Teenager: Ideen für Jugendliche",
+    "kurztitel": "Für Teenager",
+    "emoji": "🎧",
+    "anlass": "geburtstag",
+    "monate": [],
+    "beschreibung": "Geschenke für Teenager zum Geburtstag oder zu Weihnachten: Zimmer-Deko, Gaming, Musik und Kreatives – nach Budget filtern.",
+    "intro": "Teenager zu beschenken ist nicht leicht. Hier findest du Ideen von Zimmer-Deko über Gaming bis Retro-Sound – sortiert nach Budget.",
+    "filter": {
+      "recipient": "teenager"
+    }
   }
 ];
