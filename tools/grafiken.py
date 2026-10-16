@@ -13,7 +13,7 @@ import importlib.util
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 
 # tools/site.py laden (der Name "site" ist in Python schon belegt, daher über den Pfad)
 _spec = importlib.util.spec_from_file_location('sitetool', Path(__file__).resolve().parent / 'site.py')
@@ -171,7 +171,7 @@ def tall(info, size, list_count):
     return img
 
 
-def footer(draw, info, w, h, cta_y, button=BRAND, text=WHITE, muted=MUTED):
+def footer(draw, info, w, h, cta_y, button=BRAND, text=WHITE, muted=MUTED, credit=''):
     """Button „Alle Ideen ansehen“, Adresse und Werbehinweis – gleich für alle Pin-Designs."""
     cta_font = font(int(w * 0.05), bold=True)
     cta = 'Alle Ideen ansehen  →'
@@ -182,7 +182,53 @@ def footer(draw, info, w, h, cta_y, button=BRAND, text=WHITE, muted=MUTED):
     url_font = font(int(w * 0.03))
     url_y = cta_y + cta_h + int(h * 0.015)
     centered(draw, url_y, short_url(info['config']), url_font, muted, w)
-    centered(draw, url_y + int(url_font.size * 1.6), 'Anzeige · enthält Amazon-Partnerlinks', font(int(w * 0.024)), muted, w)
+    centered(draw, url_y + int(url_font.size * 1.6), 'Anzeige · enthält Amazon-Partnerlinks' + credit,
+             font(int(w * 0.024)), muted, w)
+
+
+def photo_pin(info, size=(1000, 1500)):
+    """Design D: großes Stimmungsfoto oben mit Titel darauf, darunter eine schlichte Liste der Ideen."""
+    w, h = size
+    photo_h = int(h * 0.6)
+    img = Image.new('RGB', size, CREAM)
+    photo = ImageOps.fit(Image.open(info['photo']).convert('RGB'), (w, photo_h), Image.LANCZOS, centering=(0.5, 0.45))
+    img.paste(photo, (0, 0))
+    # dunkler Verlauf im unteren Teil des Fotos, damit der weiße Titel gut lesbar ist
+    shade = Image.new('L', (1, photo_h))
+    for y in range(photo_h):
+        t = max(0.0, (y - photo_h * 0.35) / (photo_h * 0.65))
+        shade.putpixel((0, y), int(215 * t ** 1.3))
+    black = Image.new('RGB', (w, photo_h), (10, 10, 20))
+    img.paste(black, (0, 0), shade.resize((w, photo_h)))
+    draw = ImageDraw.Draw(img)
+    pad = int(w * 0.07)
+    title_font, lines = fit_title(draw, info['title'], w - 2 * pad, 3, int(w * 0.08), int(w * 0.052),
+                                  max_height=int(photo_h * 0.42))
+    block = len(lines) * title_font.size * 1.15
+    y = photo_h - block - int(h * 0.035)
+    pill_font = font(int(w * 0.03), bold=True)
+    pill = info['subtitle']
+    pw = draw.textlength(pill, font=pill_font) + 36
+    py = y - pill_font.size * 2.3
+    draw.rounded_rectangle([pad, py, pad + pw, py + pill_font.size * 1.6], radius=24, fill=BRAND)
+    draw.text((pad + 18, py + pill_font.size * 0.22), pill, font=pill_font, fill=WHITE)
+    for line in lines:
+        draw.text((pad, y), line, font=title_font, fill=WHITE)
+        y += title_font.size * 1.15
+    # Liste der Ideen
+    items = info['products'][:5]
+    top = photo_h + int(h * 0.035)
+    row_h = (int(h * 0.82) - top) / max(1, len(items))
+    name_font = font(int(min(row_h * 0.6, w * 0.043)), bold=True)
+    for i, p in enumerate(items):
+        ry = top + i * row_h
+        cy = ry + row_h / 2
+        r = int(name_font.size * 0.28)
+        draw.ellipse([pad, cy - r, pad + 2 * r, cy + r], fill=BRAND)
+        name = wrap(draw, p['title'], name_font, w - 2 * pad - 50)[0]
+        draw.text((pad + 2 * r + 22, cy - name_font.size * 0.68), name, font=name_font, fill=INK)
+    footer(draw, info, w, h, int(h * 0.835), credit=' · Foto: Pixabay')
+    return img
 
 
 def grid_pin(info, size=(1000, 1500)):
@@ -260,7 +306,7 @@ def list_pin(info, size=(1000, 1500)):
     return img
 
 
-DESIGNS = {'a': lambda info: tall(info, (1000, 1500), 6), 'b': grid_pin, 'c': list_pin}
+DESIGNS = {'a': lambda info: tall(info, (1000, 1500), 6), 'b': grid_pin, 'c': list_pin, 'd': photo_pin}
 
 
 def wide(info):
@@ -318,10 +364,16 @@ def pin_infos():
         # Vom Bot ausgewählte Produkte zuerst, Rest automatisch auffüllen
         chosen = [p for t in pin.get('produkte', []) for p in fitting if p['title'] == t]
         rest = pick_products([p for p in fitting if p not in chosen], 6)
+        photo = None
+        if pin.get('foto_id'):
+            photo = Path.home() / '.geschenke-finder' / 'foto-cache' / f"{pin['foto_id']}.jpg"
+            if not photo.exists():
+                photo = None
+                print(f'WARNUNG: Foto für Pin {pin["id"]} fehlt im Zwischenspeicher – erst "python -I tools/fotos.py".')
         yield pin, {
             'emoji': pin['emoji'], 'config': config, 'title': pin['titel'],
             'subtitle': subtitle_for(page, len(fitting), pin.get('filter')),
-            'products': (chosen + rest)[:6],
+            'products': (chosen + rest)[:6], 'photo': photo,
         }
 
 
@@ -337,7 +389,10 @@ def main():
             wanted.add(path)
     for pin, info in pin_infos():
         path = sitetool.pin_image(pin)
-        DESIGNS[pin.get('design', 'a')](info).save(path, optimize=True)
+        design = pin.get('design', 'a')
+        if design == 'd' and not info['photo']:
+            design = 'b'  # ohne Foto lieber ein anderes Design als gar kein Pin
+        DESIGNS[design](info).save(path, optimize=True)
         wanted.add(path)
     for old in OUT.glob('*.png'):
         if old not in wanted:

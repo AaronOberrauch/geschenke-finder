@@ -141,8 +141,15 @@ die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
      Setze es nur, wenn die automatische Wahl offensichtlich schlechter passt.
      Für neue Anlässe ohne eigene Pinnwand (z. B. Valentinstag) passt automatisch „geschenkideen“ –
      schlag im Bericht vor, dafür eine eigene Pinnwand anzulegen.
-   - `design`: `"a"` (Liste mit Kacheln, orange), `"b"` (2 × 3 große Kacheln) oder `"c"` (dunkel, nummerierte
-     Liste). **Wechsle ab**, damit das Profil abwechslungsreich aussieht – nicht zwei gleiche hintereinander.
+   - `design`: **`"d"` (großes Stimmungsfoto mit Titel) ist das Haupt-Design – mindestens 3 der 5 Pins pro Lauf.**
+     Für Abwechslung die übrigen mit `"b"` (2 × 3 große Kacheln) oder `"c"` (dunkel, nummerierte Liste);
+     `"a"` nicht mehr verwenden.
+   - `foto` (Pflicht bei Design d): **deutscher Suchbegriff mit 2–3 Wörtern** für ein Stimmungsfoto von Pixabay,
+     z. B. „hund sofa“, „katze decke“, „weihnachtsbaum geschenke“, „wohnzimmer weihnachten kamin“,
+     „kaffee tasse gemütlich“, „hanteln zuhause“. Das Foto zeigt eine **Stimmung, nicht das Produkt** – also keine
+     Produktbezeichnungen suchen. Szenen drinnen/zu Hause passen meist besser als Landschaften. `tools/fotos.py`
+     sucht das Foto (ohne KI-Bilder und Marken) und trägt `foto_id` selbst ein – `foto_id` nie von Hand setzen.
+     Findet es nichts („kein passendes Foto“), einen anderen, allgemeineren Suchbegriff wählen und erneut ausführen.
    - `video`: `true` bei **genau 1 der 5 Pins pro Lauf** – daraus macht `tools/videos.py` ein ~10-Sekunden-Video.
      Nimm dafür ein Thema mit 6 überzeugenden Produkten.
    - Dieselbe Seite darf wieder einen Pin bekommen, wenn seit dem letzten Pin dazu mindestens 2 Wochen vergangen sind
@@ -155,7 +162,8 @@ die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
    oder die Seite `geschenke-fuer-tierfreunde` mit `budget`-Filter. Einmal pro Woche (im Sonntagslauf, im Dezember
    und Januar in jedem Lauf) ist außerdem ein Pin zum Thema Home-Training dabei (Seite `home-training-geschenke` oder `filter` {"category": "sport"}). Gleiche Regeln wie bei Produkten: keine Preise einzelner Produkte, keine Bewertungen,
    keine Behauptungen wie „Bestseller“. Budget-Angaben wie „unter 15 €“ sind erlaubt.
-5. `python -P tools/grafiken.py` (erzeugt die Social-Media-Grafiken in `assets/social/` neu),
+5. `python -I tools/fotos.py` (sucht und lädt die Fotos für neue Pins mit `foto`),
+   `python -P tools/grafiken.py` (erzeugt die Social-Media-Grafiken in `assets/social/` neu),
    `python -P tools/videos.py` (erzeugt die neuen Video-Pins),
    dann `python -I tools/site.py build`, dann `python -I tools/site.py check`.
    Bei FEHLER: bis zu zwei Korrekturversuche. Klappt es nicht: alle Änderungen mit

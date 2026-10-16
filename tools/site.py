@@ -494,8 +494,12 @@ def check():
         if pin.get('video') and date.fromisoformat(pin.get('datum', '2000-01-01')) >= date.today() - timedelta(days=60) \
                 and not video_file(pin).exists():
             err(f'{where}: Video fehlt – "python -P tools/videos.py" ausführen.')
-        if pin.get('design', 'a') not in ('a', 'b', 'c'):
-            err(f'{where}: design muss "a", "b" oder "c" sein.')
+        if pin.get('design', 'a') not in ('a', 'b', 'c', 'd'):
+            err(f'{where}: design muss "a", "b", "c" oder "d" sein.')
+        if pin.get('design') == 'd' and not pin.get('foto'):
+            err(f'{where}: design "d" braucht einen Foto-Suchbegriff im Feld "foto".')
+        if pin.get('foto') and not pin.get('foto_id'):
+            err(f'{where}: Foto noch nicht gesucht – "python -I tools/fotos.py" ausführen (oder anderen Suchbegriff wählen).')
         if pin.get('board') and pin['board'] not in boards:
             err(f'{where}: board "{pin["board"]}" gibt es nicht – erlaubt: {sorted(boards)}.')
         seite = pin.get('seite', '')

@@ -18,8 +18,17 @@ window.PINS = [
     "beschreibung": "Was schenkt man Teenagern zu Weihnachten? Von LED-Strips fürs Zimmer über Gaming-Headsets bis zur Sofortbildkamera – Ideen für jedes Budget. #geschenkefürteenager #weihnachtsgeschenke #geschenkideen #gaming #werbung",
     "emoji": "🎮",
     "seite": "weihnachtsgeschenke",
-    "filter": {"recipient": "teenager"},
-    "produkte": ["LED-Strip mit App-Steuerung", "Gaming-Headset", "Sofortbildkamera", "Bluetooth-Lautsprecher wasserdicht", "Powerbank 20.000 mAh", "Spielkonsole"]
+    "filter": {
+      "recipient": "teenager"
+    },
+    "produkte": [
+      "LED-Strip mit App-Steuerung",
+      "Gaming-Headset",
+      "Sofortbildkamera",
+      "Bluetooth-Lautsprecher wasserdicht",
+      "Powerbank 20.000 mAh",
+      "Spielkonsole"
+    ]
   },
   {
     "id": "2026-10-16-nikolaus-kinder",
@@ -38,7 +47,14 @@ window.PINS = [
     "emoji": "🐾",
     "seite": "geschenke-fuer-tierfreunde",
     "filter": {},
-    "produkte": ["Intelligenzspielzeug für Hunde", "Katzen-Kratzbaum", "Schnüffelteppich für Hunde", "Interaktives Katzenspielzeug", "GPS-Tracker für Hunde", "Hundebett mit erhöhtem Rand"]
+    "produkte": [
+      "Intelligenzspielzeug für Hunde",
+      "Katzen-Kratzbaum",
+      "Schnüffelteppich für Hunde",
+      "Interaktives Katzenspielzeug",
+      "GPS-Tracker für Hunde",
+      "Hundebett mit erhöhtem Rand"
+    ]
   },
   {
     "id": "2026-10-16-home-training",
@@ -48,7 +64,14 @@ window.PINS = [
     "emoji": "🏋️",
     "seite": "home-training-geschenke",
     "filter": {},
-    "produkte": ["Yogamatte rutschfest", "Verstellbares Kurzhantel-Set", "Fitnessbänder-Set", "Kettlebell", "Walking Pad (Laufband klappbar)", "Klimmzugstange für den Türrahmen"]
+    "produkte": [
+      "Yogamatte rutschfest",
+      "Verstellbares Kurzhantel-Set",
+      "Fitnessbänder-Set",
+      "Kettlebell",
+      "Walking Pad (Laufband klappbar)",
+      "Klimmzugstange für den Türrahmen"
+    ]
   },
   {
     "id": "2026-10-16-weihnachten-hundebesitzer",
@@ -114,7 +137,14 @@ window.PINS = [
     "seite": "wichtelgeschenke-unter-15-euro",
     "filter": {},
     "design": "b",
-    "produkte": ["Edelstahl-Thermobecher", "Bullet-Journal-Notizbuch", "Kartenspiel für Partys", "Kräutergarten-Anzuchtset", "Puzzle 1000 Teile", "Sunset-Lampe"]
+    "produkte": [
+      "Edelstahl-Thermobecher",
+      "Bullet-Journal-Notizbuch",
+      "Kartenspiel für Partys",
+      "Kräutergarten-Anzuchtset",
+      "Puzzle 1000 Teile",
+      "Sunset-Lampe"
+    ]
   },
   {
     "id": "2026-10-16-geschenk-hundebesitzer",
@@ -124,8 +154,17 @@ window.PINS = [
     "emoji": "🐕",
     "seite": "geschenke-fuer-tierfreunde",
     "filter": {},
-    "design": "c",
-    "produkte": ["LED-Leuchthalsband für Hunde", "Schnüffelteppich für Hunde", "Intelligenzspielzeug für Hunde", "Hundebett mit erhöhtem Rand", "Hunde-Regenmantel", "GPS-Tracker für Hunde"]
+    "design": "d",
+    "produkte": [
+      "LED-Leuchthalsband für Hunde",
+      "Schnüffelteppich für Hunde",
+      "Intelligenzspielzeug für Hunde",
+      "Hundebett mit erhöhtem Rand",
+      "Hunde-Regenmantel",
+      "GPS-Tracker für Hunde"
+    ],
+    "foto": "hund sofa",
+    "foto_id": 2561134
   },
   {
     "id": "2026-10-16-technik-teenager-video",
@@ -134,8 +173,17 @@ window.PINS = [
     "beschreibung": "Du suchst Technik-Geschenke für Teenager? Eine Kamera-Drohne für Fotos von oben, ein Plattenspieler für Vinyl-Fans oder eine Sofortbildkamera für Erinnerungen zum Anfassen – Ideen für Jugendliche in jedem Budget. Alle Geschenke für Teenager findest du auf der Seite. #geschenkefürteenager #technikgeschenke #drohne #geschenkideen #werbung",
     "emoji": "🚁",
     "seite": "geschenke-fuer-teenager",
-    "filter": {"category": "tech"},
+    "filter": {
+      "category": "tech"
+    },
     "video": true,
-    "produkte": ["Kamera-Drohne für Einsteiger", "Plattenspieler mit Lautsprechern", "Sofortbildkamera", "LED-Strip mit App-Steuerung", "Gaming-Headset", "Mini-Drohne für Kinder"]
+    "produkte": [
+      "Kamera-Drohne für Einsteiger",
+      "Plattenspieler mit Lautsprechern",
+      "Sofortbildkamera",
+      "LED-Strip mit App-Steuerung",
+      "Gaming-Headset",
+      "Mini-Drohne für Kinder"
+    ]
   }
 ];
