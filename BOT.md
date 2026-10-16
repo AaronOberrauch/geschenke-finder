@@ -57,9 +57,10 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
      `budget` under15 | 15to50 | 50to150 | over150;
      `recipients` household | teenager | parents | kids;
      `occasions` weihnachten | geburtstag | wichteln | nikolaus | valentinstag | ostern | muttertag | vatertag | schulanfang.
-5. `python -I tools/site.py build`, dann `python -I tools/site.py check`.
+5. `python -P tools/grafiken.py` (erzeugt die Social-Media-Grafiken in `assets/social/` neu),
+   dann `python -I tools/site.py build`, dann `python -I tools/site.py check`.
    Bei FEHLER: bis zu zwei Korrekturversuche. Klappt es nicht: alle Änderungen mit
-   `git checkout -- . && git clean -fd ideen` verwerfen, nichts veröffentlichen, melden.
+   `git checkout -- . && git clean -fd ideen assets/social` verwerfen, nichts veröffentlichen, melden.
    WARNUNGEN zu Partner-ID und Impressum sind bekannt und blockieren nicht.
 6. Veröffentlichen: `git add -A`, `git commit -m "Bot: <kurze Zusammenfassung>"`, `git push`.
 7. **Social-Media-Entwürfe** in `_entwuerfe/JJJJ-MM-TT.md` schreiben: 5 Posts, passend zur Saison
@@ -69,6 +70,8 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    - Text (kurz, locker, Du-Form)
    - Link: volle Adresse aus `siteUrl` plus passender Filter, z. B.
      `…/ideen/wichtelgeschenke-unter-15-euro.html` oder `…/#fuer=teenager&budget=under15`
+   - Grafik: passende Datei aus `assets/social/` mit vollem Pfad
+     (`<slug>-pin.png` für Pinterest, `<slug>-story.png` für Stories/TikTok, `start-…` für die Startseite)
    - Bei Videos: Idee in 3–5 Szenen (was man filmt)
    - Hashtags (5–8), **immer mit `#werbung`**, weil die Links Provision bringen
    Die Entwürfe sind nicht im Git (stehen in `.gitignore`).

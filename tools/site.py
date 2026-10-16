@@ -66,12 +66,14 @@ def expected_files():
     config = load_js('config.js', 'CONFIG')
     pages = load_js('seiten.js', 'PAGES')
     site = config['siteUrl']
-    files = {ROOT / 'index.html': render(dict(INDEX, CANONICAL=site, PAGE=''), '')}
+    files = {ROOT / 'index.html': render(dict(INDEX, CANONICAL=site, PAGE='',
+                                              OG_IMAGE=f'{site}assets/social/start-og.png'), '')}
     for p in pages:
         files[PAGES_DIR / f"{p['slug']}.html"] = render({
             'TITLE': f"{p['titel']} – Geschenke-Finder",
             'DESCRIPTION': p['beschreibung'],
             'CANONICAL': f"{site}ideen/{p['slug']}.html",
+            'OG_IMAGE': f"{site}assets/social/{p['slug']}-og.png",
             'PAGE': p['slug'],
             'PILL': f"{p['emoji']} Geschenkideen",
             'H1': p['titel'],
@@ -209,6 +211,11 @@ def check():
         for f in PAGES_DIR.glob('*.html'):
             if f not in files:
                 err(f'{f.relative_to(ROOT)} gehört zu keiner Seite in daten/seiten.js.')
+        social = ROOT / 'assets' / 'social'
+        for slug in ['start'] + [p['slug'] for p in pages]:
+            for kind in ('pin', 'story', 'og'):
+                if not (social / f'{slug}-{kind}.png').exists():
+                    err(f'Grafik assets/social/{slug}-{kind}.png fehlt – "python -P tools/grafiken.py" ausführen.')
 
     # --- Rechtliches ---
     for legal in ('impressum.html', 'datenschutz.html'):

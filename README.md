@@ -20,6 +20,7 @@ Amazon-Partnerseite mit Geschenkideen. Ein Bot pflegt sie jede Woche automatisch
 | `assets/` | Aussehen (`style.css`) und Logik (`app.js`) |
 | `tools/vorlage.html` | Vorlage für alle Seiten |
 | `tools/site.py` | `build` erzeugt die Seiten, `check` prüft alles |
+| `tools/grafiken.py` | erzeugt Pinterest-Pins, Stories und Vorschaubilder in `assets/social/` |
 | `index.html`, `ideen/`, `sitemap.xml`, `robots.txt` | werden von `build` erzeugt – nicht von Hand ändern |
 | `_entwuerfe/` | Social-Media-Entwürfe vom Bot (nicht online) |
 
