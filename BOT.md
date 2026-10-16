@@ -28,7 +28,7 @@ etwas allgemeiner sein (Wochenend-Stöbern), Dienstag und Donnerstag eher konkre
 - `_berichte/erkenntnisse.md` – deine Auswertung der Zahlen (wird nicht veröffentlicht; die Berichte selbst nie ändern)
 - Erzeugte Dateien über `python -I tools/site.py build` (nie von Hand)
 
-**Nicht anfassen:** `daten/config.js`, `impressum.html`, `datenschutz.html`, `google*.html` (Google-Bestätigung),
+**Nicht anfassen:** `daten/config.js`, `CNAME` (eigene Domain), `impressum.html`, `datenschutz.html`, `google*.html` (Google-Bestätigung),
 die IndexNow-Schlüsseldatei `<32 Zeichen>.txt`,
 `assets/`, `tools/`, `BOT.md`, `README.md`. Nie `git push --force`, nie Historie umschreiben.
 
