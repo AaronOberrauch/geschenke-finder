@@ -8,6 +8,7 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
 
 - `daten/produkte.js` – Produkte hinzufügen oder verbessern
 - `daten/seiten.js` – Themen-Seiten (Anlässe) hinzufügen
+- `daten/pins.js` – neue Pinterest-Pins hinzufügen (bestehende nie ändern oder löschen)
 - `_entwuerfe/` – Social-Media-Entwürfe (wird nicht veröffentlicht)
 - Erzeugte Dateien über `python -I tools/site.py build` (nie von Hand)
 
@@ -57,6 +58,21 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
      `budget` under15 | 15to50 | 50to150 | over150;
      `recipients` household | teenager | parents | kids;
      `occasions` weihnachten | geburtstag | wichteln | nikolaus | valentinstag | ostern | muttertag | vatertag | schulanfang.
+4b. **Pinterest-Pins: 3 neue pro Lauf** am Ende von `daten/pins.js` anhängen. Make.com holt sie über
+   `pins.xml` ab und veröffentlicht sie automatisch – was du hier schreibst, geht **ohne weitere Kontrolle live**.
+   Felder:
+   - `id`: heutiges Datum + Stichwort, z. B. `2026-11-02-geschenke-fuer-papa` (einmalig, nie wiederverwenden)
+   - `datum`: heutiges Datum (`JJJJ-MM-TT`)
+   - `titel`: max. 100 Zeichen, so formuliert, wie Leute auf Pinterest suchen („Geschenke für Papa unter 50 €“)
+   - `beschreibung`: 2–3 Sätze (max. 500 Zeichen), dann 4–6 Hashtags, **immer mit `#werbung`**
+   - `emoji`: großes Bild oben auf dem Pin
+   - `seite`: slug einer Themen-Seite oder `""` für die Startseite
+   - `filter`: optional `recipient`, `budget`, `category` – grenzt die Produkte ein, der Link öffnet die Seite mit diesem Filter
+   - `produkte`: optional bis zu 6 Produkttitel (genau wie in `daten/produkte.js`), die auf dem Pin stehen sollen –
+     nimm die überzeugendsten für das Thema
+   Wähle Themen passend zur Saison (anstehende Anlässe zuerst) und wiederhole keine Kombination aus Seite und Filter
+   der letzten 8 Wochen. Gleiche Regeln wie bei Produkten: keine Preise einzelner Produkte, keine Bewertungen,
+   keine Behauptungen wie „Bestseller“. Budget-Angaben wie „unter 15 €“ sind erlaubt.
 5. `python -P tools/grafiken.py` (erzeugt die Social-Media-Grafiken in `assets/social/` neu),
    dann `python -I tools/site.py build`, dann `python -I tools/site.py check`.
    Bei FEHLER: bis zu zwei Korrekturversuche. Klappt es nicht: alle Änderungen mit
@@ -75,4 +91,4 @@ fehlerfreie Änderung als eine große, die etwas kaputt macht.
    - Bei Videos: Idee in 3–5 Szenen (was man filmt)
    - Hashtags (5–8), **immer mit `#werbung`**, weil die Links Provision bringen
    Die Entwürfe sind nicht im Git (stehen in `.gitignore`).
-8. Zum Schluss kurz melden: neue Seite(n), neue Produkte, Ergebnis von `check`, Commit, Datei mit den Entwürfen.
+8. Zum Schluss kurz melden: neue Seite(n), neue Produkte, neue Pins, Ergebnis von `check`, Commit, Datei mit den Entwürfen.

@@ -17,11 +17,12 @@ Amazon-Partnerseite mit Geschenkideen. Ein Bot pflegt sie jede Woche automatisch
 | `daten/config.js` | Partner-ID, Amazon-Shop, Adresse der Seite |
 | `daten/produkte.js` | alle Produkte |
 | `daten/seiten.js` | Themen-Seiten (Weihnachten, Muttertag …) |
+| `daten/pins.js` | Pinterest-Pins; daraus entsteht `pins.xml`, den Make.com auf Pinterest postet |
 | `assets/` | Aussehen (`style.css`) und Logik (`app.js`) |
 | `tools/vorlage.html` | Vorlage für alle Seiten |
 | `tools/site.py` | `build` erzeugt die Seiten, `check` prüft alles |
 | `tools/grafiken.py` | erzeugt Pinterest-Pins, Stories und Vorschaubilder in `assets/social/` |
-| `index.html`, `ideen/`, `sitemap.xml`, `robots.txt` | werden von `build` erzeugt – nicht von Hand ändern |
+| `index.html`, `ideen/`, `sitemap.xml`, `robots.txt`, `pins.xml` | werden von `build` erzeugt – nicht von Hand ändern |
 | `_entwuerfe/` | Social-Media-Entwürfe vom Bot (nicht online) |
 
 ## Felder eines Produkts

@@ -112,8 +112,8 @@ def short_url(config):
     return config['siteUrl'].replace('https://', '').rstrip('/')
 
 
-def subtitle_for(page, count):
-    budget = page.get('filter', {}).get('budget') if page else None
+def subtitle_for(page, count, extra_filter=None):
+    budget = dict(page.get('filter', {}) if page else {}, **(extra_filter or {})).get('budget')
     if budget:
         return f'{count} Ideen {BUDGET_TEXT[budget]}'
     return f'{count} Geschenkideen für jedes Budget'
@@ -214,6 +214,24 @@ def page_infos():
         }
 
 
+def pin_infos():
+    """Eine Grafik pro Eintrag in daten/pins.js (für den Pinterest-Feed)."""
+    config = sitetool.load_js('config.js', 'CONFIG')
+    products = sitetool.load_js('produkte.js', 'PRODUCTS')
+    pages = {p['slug']: p for p in sitetool.load_js('seiten.js', 'PAGES')}
+    for pin in sitetool.load_js('pins.js', 'PINS'):
+        page = pages.get(pin.get('seite', ''))
+        fitting = [p for p in products if sitetool.product_fits(p, page, pin.get('filter'))]
+        # Vom Bot ausgewählte Produkte zuerst, Rest automatisch auffüllen
+        chosen = [p for t in pin.get('produkte', []) for p in fitting if p['title'] == t]
+        rest = pick_products([p for p in fitting if p not in chosen], 6)
+        yield pin, {
+            'emoji': pin['emoji'], 'config': config, 'title': pin['titel'],
+            'subtitle': subtitle_for(page, len(fitting), pin.get('filter')),
+            'products': (chosen + rest)[:6],
+        }
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     wanted = set()
@@ -224,6 +242,10 @@ def main():
             path = OUT / f"{info['slug']}-{kind}.png"
             img.save(path, optimize=True)
             wanted.add(path)
+    for pin, info in pin_infos():
+        path = sitetool.pin_image(pin)
+        tall(info, (1000, 1500), 6).save(path, optimize=True)
+        wanted.add(path)
     for old in OUT.glob('*.png'):
         if old not in wanted:
             old.unlink()
