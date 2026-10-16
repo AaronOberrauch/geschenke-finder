@@ -15,7 +15,14 @@ window.CONFIG = {
   "indexNowKey": "bb7c77ebce127199306bf33e2fbb169b",
   "videoScenarioAktiv": false,
   "partnerTag": "geschenkef0f0-21",
-  "trackingIds": {},
+  "trackingIds": {
+    "start": "geschenkef0f0st-21",
+    "weihnachtsgeschenke": "geschenkef0f0we-21",
+    "wichtelgeschenke-unter-15-euro": "geschenkef0f0wi-21",
+    "nikolausgeschenke": "geschenkef0f0ni-21",
+    "geschenke-fuer-tierfreunde": "geschenkef0f0ti-21",
+    "home-training-geschenke": "geschenkef0f0ht-21"
+  },
   "amazonDomain": "www.amazon.de",
   "siteUrl": "https://geschenkidee-finden.com/",
   "pinterestBoards": {
