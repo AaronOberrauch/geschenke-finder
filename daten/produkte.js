@@ -2416,5 +2416,66 @@ window.PRODUCTS = [
       "Auslaufsicher",
       "Wiederverwendbar"
     ]
+  },
+  {
+    "title": "Gaming-Mauspad XXL",
+    "query": "gaming mauspad xxl",
+    "emoji": "🖱️",
+    "category": "tech",
+    "budget": "under15",
+    "recipients": [
+      "teenager",
+      "parents"
+    ],
+    "occasions": [
+      "wichteln",
+      "nikolaus",
+      "weihnachten"
+    ],
+    "badge": "Für Gamer",
+    "highlights": [
+      "Platz für Maus und Tastatur",
+      "Rutschfeste Unterseite",
+      "Glatte Oberfläche"
+    ]
+  },
+  {
+    "title": "Kuschelhaus für Meerschweinchen und Kaninchen",
+    "query": "kuschelhaus meerschweinchen",
+    "emoji": "🐹",
+    "category": "pets",
+    "budget": "15to50",
+    "recipients": [
+      "kids",
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten"
+    ],
+    "badge": "Für kleine Haustiere",
+    "highlights": [
+      "Rückzugsort im Gehege",
+      "Weich und gemütlich",
+      "Leicht zu reinigen"
+    ]
+  },
+  {
+    "title": "Aerobic-Stepper höhenverstellbar",
+    "query": "aerobic stepper höhenverstellbar",
+    "emoji": "🪜",
+    "category": "sport",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "badge": "Fürs Training zu Hause",
+    "highlights": [
+      "Höhe in Stufen einstellbar",
+      "Rutschfeste Trittfläche",
+      "Platzsparend zu verstauen"
+    ]
   }
 ];

@@ -246,5 +246,110 @@ window.PINS = [
       "Sofortbildkamera"
     ],
     "foto_id": 8454262
+  },
+  {
+    "id": "2026-10-18-adventskalender-erwachsene",
+    "datum": "2026-10-18",
+    "titel": "Adventskalender für Erwachsene: Ideen mit Tee, Beauty, Puzzle und Grillgewürzen",
+    "beschreibung": "Du suchst einen Adventskalender für Erwachsene, für die Freundin oder für Mama und Papa? Vom Tee-Adventskalender für gemütliche Abende über den Beauty-Adventskalender bis zum Grillgewürz-Kalender für Grillfans ist für jeden Geschmack etwas dabei. Alle Adventskalender-Ideen findest du rechtzeitig vor dem 1. Dezember auf der Seite. #adventskalender #adventskalenderfürerwachsene #advent #geschenkideen #werbung",
+    "emoji": "📅",
+    "seite": "adventskalender",
+    "filter": {
+      "recipient": "parents"
+    },
+    "design": "d",
+    "foto": "tee kerze gemütlich",
+    "board": "weihnachten",
+    "produkte": [
+      "Tee-Adventskalender",
+      "Beauty-Adventskalender",
+      "Grillgewürz-Adventskalender",
+      "Puzzle-Adventskalender",
+      "Adventskalender zum Befüllen",
+      "Adventskalender für Katzen"
+    ],
+    "foto_id": 7968441
+  },
+  {
+    "id": "2026-10-18-geschenke-fuer-gamer",
+    "datum": "2026-10-18",
+    "titel": "Geschenke für Gamer: Ideen von Headset bis Retro-Konsole",
+    "beschreibung": "Du suchst Geschenke für Gamer oder ein Weihnachtsgeschenk für Zocker? Ein Gaming-Headset für Online-Runden, eine Retro-Spielkonsole mit Klassikern oder LED-Licht fürs Gaming-Zimmer kommen bei PC- und Konsolenfans gut an. Alle Ideen nach Budget sortiert findest du auf der Seite. #gamer #geschenkefürgamer #gaming #geschenkideen #werbung",
+    "emoji": "🎮",
+    "seite": "geschenke-fuer-gamer",
+    "filter": {},
+    "design": "d",
+    "foto": "videospiel controller",
+    "produkte": [
+      "Gaming-Headset",
+      "Retro-Spielkonsole mit Klassikern",
+      "Gaming-Maus",
+      "LED-Strip mit App-Steuerung",
+      "Gaming-Mauspad XXL",
+      "USB-Mikrofon für Streaming"
+    ],
+    "foto_id": 3597331
+  },
+  {
+    "id": "2026-10-18-home-workout-15-50",
+    "datum": "2026-10-18",
+    "titel": "Home-Workout-Geschenke unter 50 €: Ideen fürs Training im Wohnzimmer",
+    "beschreibung": "Du suchst ein Fitness-Geschenk für jemanden, der zu Hause trainiert? Eine rutschfeste Yogamatte, eine Kettlebell oder ein höhenverstellbarer Aerobic-Stepper bringen Abwechslung ins Home-Workout – ganz ohne Fitnessstudio. Alle Ideen fürs Home-Training findest du auf der Seite. #hometraining #homeworkout #fitnessgeschenk #geschenkideen #werbung",
+    "emoji": "🧘",
+    "seite": "home-training-geschenke",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "yoga matte",
+    "produkte": [
+      "Yogamatte rutschfest",
+      "Kettlebell",
+      "Aerobic-Stepper höhenverstellbar",
+      "Klimmzugstange für den Türrahmen",
+      "Gymnastikball",
+      "Isolierte Trinkflasche"
+    ],
+    "foto_id": 3053487
+  },
+  {
+    "id": "2026-10-18-tierfreunde-unter-15",
+    "datum": "2026-10-18",
+    "titel": "Kleine Geschenke für Hundebesitzer und Katzenliebhaber unter 15 €",
+    "beschreibung": "Du suchst ein kleines Geschenk für Hundebesitzer oder ein Wichtelgeschenk für Katzenliebhaber? Ein Schnüffelteppich, ein LED-Leuchthalsband für dunkle Gassi-Runden oder ein Katzentunnel machen Tier und Mensch Freude – alles unter 15 €. Alle Ideen für Tierfreunde findest du auf der Seite. #hundebesitzer #katzenliebe #wichtelgeschenk #geschenkideen #werbung",
+    "emoji": "🐾",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {
+      "budget": "under15"
+    },
+    "design": "b",
+    "produkte": [
+      "Schnüffelteppich für Hunde",
+      "LED-Leuchthalsband für Hunde",
+      "Katzentunnel",
+      "Interaktives Katzenspielzeug",
+      "Leckerli-Beutel für Spaziergänge",
+      "Robustes Kauspielzeug für Hunde"
+    ]
+  },
+  {
+    "id": "2026-10-18-geschenk-fuer-ihn-15-50",
+    "datum": "2026-10-18",
+    "titel": "Geschenk für ihn unter 50 €: 6 praktische Ideen für Männer",
+    "beschreibung": "Du suchst ein Geschenk für den Freund, den Papa oder den Bruder, das nicht im Schrank verstaubt? Ein Multitool, ein digitales Grillthermometer oder ein Bartpflege-Set sind praktische Geschenke für Männer unter 50 €. Alle Geschenkideen für ihn findest du auf der Seite. #geschenkfürihn #geschenkefürmänner #weihnachtsgeschenke #geschenkideen #werbung",
+    "emoji": "🧔",
+    "seite": "geschenke-fuer-maenner",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "c",
+    "produkte": [
+      "Multitool",
+      "Digitales Grillthermometer",
+      "Bartpflege-Set",
+      "Schlüsselfinder-Set",
+      "Aufladbare LED-Taschenlampe",
+      "Uhrenbox aus Holz"
+    ]
   }
 ];

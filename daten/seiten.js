@@ -245,9 +245,56 @@ window.PAGES = [
       "Uhrenbox aus Holz",
       "Schlüsselfinder-Set",
       "Beheizbare Weste",
-      "Retro-Spielkonsole mit Klassikern"
+      "Retro-Spielkonsole mit Klassikern",
+      "Gaming-Mauspad XXL"
     ],
-    "foto_id": 7092687
+    "foto_id": 7092687,
+    "ratgeber": {
+      "titel": "Ratgeber: Geschenke für Männer, die angeblich nichts brauchen",
+      "abschnitte": [
+        {
+          "ueberschrift": "Erst das Hobby, dann das Geschenk",
+          "text": "Der Satz „Ich brauche nichts“ heißt meistens nur, dass ihm gerade nichts einfällt. Am leichtesten findest du ein Geschenk für Männer, wenn du vom Alltag und den Hobbys ausgehst: Was macht er am Wochenende, worüber erzählt er gerne, was nervt ihn regelmäßig? Wer gerne grillt, freut sich über ein Grillthermometer oder ordentliches Grillbesteck. Wer viel unterwegs ist, nutzt eine Powerbank oder einen Thermobecher jeden Tag.\n\nHör in den Wochen vor Geburtstag oder Weihnachten einfach genauer hin. Oft fallen Sätze wie „Meine Taschenlampe ist schon wieder leer“ – daraus wird ein Geschenk, das wirklich gebraucht wird."
+        },
+        {
+          "ueberschrift": "Praktisch schlägt Deko",
+          "text": "Viele Männer freuen sich über Dinge, die sie benutzen können, mehr als über reine Deko. Ein Multitool für die Hosentasche, ein bestückter Werkzeugkoffer für die erste eigene Wohnung oder eine Dashcam fürs Auto lösen ein konkretes Problem. Das heißt nicht, dass es langweilig sein muss: Eine Retro-Spielkonsole mit Klassikern oder eine Kamera-Drohne verbinden Technik mit Spaß.\n\nWenn du etwas Persönliches suchst, ist eine Uhrenbox aus Holz oder ein Bartpflege-Set eine gute Mitte zwischen nützlich und besonders. Achte bei Pflegeprodukten darauf, ob er überhaupt Bart trägt und welche Düfte er mag."
+        },
+        {
+          "ueberschrift": "Typische Fehler beim Geschenk für ihn",
+          "text": "Der häufigste Fehler ist ein Geschenk, das eher zu dir passt als zu ihm – etwa ein Fitnessgerät, obwohl er nie Sport macht. Das wirkt schnell wie ein Wink mit dem Zaunpfahl. Auch bei Technik lohnt ein kurzer Blick, was schon da ist: Ein zweiter Bluetooth-Lautsprecher ist selten eine Überraschung.\n\nBeim Budget musst du nicht übertreiben. Gerade Kleinigkeiten unter 50 € wie ein Schlüsselfinder-Set oder eine aufladbare LED-Taschenlampe kommen oft besser an als teure Geräte, die dann im Schrank liegen. Und wenn du gar nicht weiterweißt, filtere oben nach Budget und lass dich von der Liste inspirieren."
+        }
+      ],
+      "produkttexte": {
+        "Multitool": "Zange, Messer, Schraubendreher und mehr in einem Werkzeug für die Hosentasche oder das Handschuhfach. Passt zu Heimwerkern, Campern und allen, die gerne selbst anpacken.",
+        "Digitales Grillthermometer": "Zeigt die Kerntemperatur von Steak, Braten oder Pulled Pork an, damit das Fleisch genau richtig wird. Ein Geschenk für Grillfans, die schon alles andere haben.",
+        "Bartpflege-Set": "Öl, Bürste und Kamm für Männer mit Bart, die ihn gepflegt halten wollen. Schön verpackt eignet es sich gut zum Geburtstag oder als Weihnachtsgeschenk.",
+        "Bestückter Werkzeugkoffer": "Ein Koffer mit den wichtigsten Werkzeugen ist ideal für die erste eigene Wohnung oder für alle, die ihr Werkzeug ständig suchen müssen.",
+        "Dashcam fürs Auto": "Zeichnet die Fahrt auf und kann nach einem Unfall helfen, den Hergang zu klären. Passt zu Vielfahrern und Pendlern, die gerne Technik im Auto haben.",
+        "Retro-Spielkonsole mit Klassikern": "Bringt die Spiele aus der Kindheit zurück auf den Fernseher. Ein Geschenk mit Nostalgie-Faktor, das auch gemeinsam mit Freunden oder Kindern Spaß macht.",
+        "Uhrenbox aus Holz": "Ordnet Uhren und kleine Accessoires an einem Platz. Ein stilvolles Geschenk für Männer, die gerne Uhr tragen oder mehrere besitzen.",
+        "Aufladbare LED-Taschenlampe": "Hell, handlich und per USB aufladbar – für Keller, Auto, Camping oder den Hundespaziergang im Dunkeln. Ein kleines Geschenk, das oft gebraucht wird.",
+        "Gaming-Mauspad XXL": "Ein großes Mauspad bietet Platz für Maus und Tastatur und schont den Schreibtisch. Eine günstige Idee für Gamer und alle, die viel am PC sitzen."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man einem Mann, der angeblich nichts braucht?",
+          "antwort": "Geh von seinen Hobbys und kleinen Alltagsproblemen aus. Praktische Dinge wie ein Multitool, eine aufladbare Taschenlampe oder ein Grillthermometer werden genutzt, auch wenn er sie sich selbst nie kaufen würde."
+        },
+        {
+          "frage": "Welche Geschenke für Männer gibt es unter 50 €?",
+          "antwort": "Viele: Multitool, Bartpflege-Set, Schlüsselfinder-Set, Thermobecher, Grillbesteck oder ein Gaming-Mauspad. Mit dem Budget-Filter oben auf der Seite siehst du alle Ideen in deiner Preisklasse."
+        },
+        {
+          "frage": "Was ist ein gutes Weihnachtsgeschenk für den Freund oder Partner?",
+          "antwort": "Etwas, das zu seinem Hobby passt und ihr gemeinsame Zeit schenkt – zum Beispiel eine Retro-Spielkonsole für Spieleabende oder Grillzubehör für den nächsten Sommer. Persönlicher wird es mit einer kleinen Karte dazu."
+        },
+        {
+          "frage": "Sind Technik-Geschenke für Männer eine sichere Wahl?",
+          "antwort": "Oft ja, aber frag vorher vorsichtig nach, was er schon hat. Kopfhörer, Lautsprecher und Powerbanks besitzen viele bereits. Speziellere Ideen wie Dashcam, Drohne oder Retro-Konsole sind seltener doppelt."
+        }
+      ]
+    }
   },
   {
     "slug": "geschenke-fuer-frauen",
@@ -283,5 +330,74 @@ window.PAGES = [
       "Diamond-Painting-Set"
     ],
     "foto_id": 8431871
+  },
+  {
+    "slug": "geschenke-fuer-gamer",
+    "titel": "Geschenke für Gamer: Ideen für PC-, Konsolen- und Retro-Fans",
+    "kurztitel": "Für Gamer",
+    "emoji": "🎮",
+    "anlass": "geburtstag",
+    "monate": [],
+    "beschreibung": "Geschenke für Gamer zum Geburtstag oder zu Weihnachten: Headset, Maus, Konsole, Retro-Spiele und Licht fürs Gaming-Zimmer.",
+    "intro": "Für Zocker jeden Alters: Geschenkideen vom Headset über das Mauspad bis zur Retro-Konsole und Zimmer-Beleuchtung – für jedes Budget.",
+    "filter": {},
+    "foto": "videospiel controller",
+    "produkte": [
+      "Gaming-Headset",
+      "Gaming-Maus",
+      "Gaming-Mauspad XXL",
+      "Spielkonsole",
+      "Retro-Spielkonsole mit Klassikern",
+      "USB-Mikrofon für Streaming",
+      "LED-Strip mit App-Steuerung",
+      "LED-Neonschild fürs Zimmer",
+      "Ringlicht mit Handyhalter"
+    ],
+    "ratgeber": {
+      "titel": "Ratgeber: Geschenke für Gamer",
+      "abschnitte": [
+        {
+          "ueberschrift": "PC, Konsole oder Handy – das musst du vorher wissen",
+          "text": "Bevor du ein Geschenk für Gamer kaufst, lohnt sich eine einfache Frage: Worauf wird gespielt? Wer am PC zockt, freut sich über Zubehör wie Gaming-Maus, großes Mauspad oder ein Headset mit Mikrofon. Konsolenspieler brauchen eher ein Headset, das mit ihrer Konsole funktioniert, oder Dinge rund ums Zimmer.\n\nAchte bei Technik auf die Anschlüsse. Viele Headsets laufen über USB oder Klinke, manche nur kabellos. Wenn du unsicher bist, schau unauffällig nach, was bisher benutzt wird, oder frag Freunde und Geschwister. So vermeidest du ein Geschenk, das nicht passt."
+        },
+        {
+          "ueberschrift": "Geschenke rund ums Gaming-Zimmer",
+          "text": "Nicht jedes Geschenk für Gamer muss ein Gerät sein. Viele Spieler gestalten ihr Zimmer oder ihren Schreibtisch gerne selbst: Ein LED-Strip mit App-Steuerung oder ein Neonschild sorgt für die passende Stimmung beim Zocken. Wer streamt oder Videos aufnimmt, kann ein USB-Mikrofon oder ein Ringlicht gut gebrauchen.\n\nDiese Ideen sind oft günstiger als neue Spiele oder Hardware und eignen sich auch für Wichteln oder den Nikolausstiefel. Ein großes Mauspad ist zum Beispiel eine kleine Freude, die jeden Tag benutzt wird."
+        },
+        {
+          "ueberschrift": "Retro-Gaming: Ein Geschenk für Groß und Klein",
+          "text": "Retro ist bei Gamern seit einiger Zeit ein großes Thema. Eine Retro-Spielkonsole mit vorinstallierten Klassikern begeistert Erwachsene, die damit ihre Kindheit zurückholen, genauso wie Kinder, die die alten Spiele zum ersten Mal entdecken. Das macht sie zu einem schönen Familiengeschenk für Weihnachten.\n\nTypischer Fehler bei Gaming-Geschenken: einfach ein beliebiges Spiel kaufen. Ohne die Wunschliste zu kennen, landest du schnell bei einem Titel, der schon im Regal steht oder nicht gefällt. Zubehör und Retro-Konsolen sind deshalb die entspanntere Wahl."
+        }
+      ],
+      "produkttexte": {
+        "Gaming-Headset": "Ein Headset mit Mikrofon ist für Online-Spiele mit Freunden fast unverzichtbar. Achte darauf, dass es zur Plattform passt – PC, Konsole oder beides.",
+        "Gaming-Maus": "Eine Maus mit zusätzlichen Tasten und einstellbarer Empfindlichkeit macht PC-Spiele angenehmer. Ein gutes Geschenk für alle, die noch mit einer Büromaus zocken.",
+        "Gaming-Mauspad XXL": "Bietet Platz für Maus und Tastatur und schützt den Schreibtisch. Eine günstige Kleinigkeit für Gamer, die gut zum Wichteln oder in den Nikolausstiefel passt.",
+        "Retro-Spielkonsole mit Klassikern": "Die Klassiker von früher sind schon vorinstalliert, einfach an den Fernseher anschließen. Ideal für gemeinsame Spieleabende mit Familie oder Freunden.",
+        "USB-Mikrofon für Streaming": "Für alle, die streamen, Videos aufnehmen oder im Voice-Chat klar zu hören sein wollen. Wird einfach per USB an den Computer angeschlossen.",
+        "LED-Strip mit App-Steuerung": "Farbiges Licht hinter dem Bildschirm oder unter dem Schreibtisch sorgt für Gaming-Stimmung. Farben und Effekte lassen sich bequem per App einstellen.",
+        "LED-Neonschild fürs Zimmer": "Ein leuchtendes Motiv an der Wand macht das Gaming-Zimmer gemütlicher und sieht auch im Hintergrund von Streams gut aus.",
+        "Spielkonsole": "Das große Geschenk für Weihnachten oder einen runden Geburtstag. Kläre vorher, welche Konsole Freunde haben, damit gemeinsam online gespielt werden kann."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man einem Gamer, der schon alles hat?",
+          "antwort": "Zubehör fürs Zimmer ist selten doppelt: LED-Strip, Neonschild oder ein großes Mauspad. Auch eine Retro-Spielkonsole mit Klassikern ist eine gute Idee für Gamer, die technisch schon gut ausgestattet sind."
+        },
+        {
+          "frage": "Welche Geschenke für Gamer gibt es unter 15 €?",
+          "antwort": "Ein Gaming-Mauspad XXL oder ein LED-Strip mit App-Steuerung sind kleine Geschenke für Gamer, die gut zum Wichteln, zum Nikolaus oder als Mitbringsel passen. Mit dem Budget-Filter siehst du alle passenden Ideen."
+        },
+        {
+          "frage": "Soll ich einem Gamer ein Spiel schenken?",
+          "antwort": "Nur, wenn du die Wunschliste kennst. Sonst ist die Gefahr groß, dass das Spiel schon vorhanden ist oder nicht gefällt. Zubehör, Licht fürs Zimmer oder eine Retro-Konsole sind sicherere Geschenkideen."
+        },
+        {
+          "frage": "Was ist ein gutes Geschenk für Gamer-Teenager?",
+          "antwort": "Teenager freuen sich über alles, was ihr Zimmer und ihr Setup aufwertet: Headset mit Mikrofon für Online-Spiele, LED-Beleuchtung oder ein USB-Mikrofon, falls sie streamen oder Videos drehen möchten."
+        }
+      ]
+    },
+    "foto_id": 3597331
   }
 ];
