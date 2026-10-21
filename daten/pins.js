@@ -351,5 +351,109 @@ window.PINS = [
       "Aufladbare LED-Taschenlampe",
       "Uhrenbox aus Holz"
     ]
+  },
+  {
+    "id": "2026-10-21-adventskalender-hund-katze",
+    "datum": "2026-10-21",
+    "titel": "Adventskalender für Hunde und Katzen: 24 Türchen für Fellnasen",
+    "beschreibung": "Du suchst einen Adventskalender für Hunde oder einen Adventskalender für Katzen? Mit Spielzeug-Türchen wird die Adventszeit auch für Fellnasen spannend – und für Frauchen und Herrchen gibt es Tee- oder Beauty-Adventskalender dazu. Alle Adventskalender-Ideen findest du auf der Seite. #adventskalender #hundeliebe #katzenliebe #weihnachten #werbung",
+    "emoji": "🐶",
+    "seite": "adventskalender",
+    "filter": {
+      "recipient": "household"
+    },
+    "design": "d",
+    "foto": "hund weihnachten",
+    "produkte": [
+      "Adventskalender für Hunde",
+      "Adventskalender für Katzen",
+      "Tee-Adventskalender",
+      "Beauty-Adventskalender",
+      "Adventskalender zum Befüllen"
+    ],
+    "foto_id": 5793625
+  },
+  {
+    "id": "2026-10-21-geschenk-fuer-sie-15-50",
+    "datum": "2026-10-21",
+    "titel": "Geschenk für sie unter 50 €: 6 Ideen zum Verwöhnen für die Freundin",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für die Freundin oder ein kleines Geschenk für sie, das von Herzen kommt? Ein Seidenkissenbezug, ein flauschiger Bademantel oder ein Tee-Geschenkset machen gemütliche Winterabende noch schöner. Alle Geschenke für Frauen nach Budget findest du auf der Seite. #geschenkfürsie #geschenkfürfreundin #weihnachtsgeschenke #geschenkideen #werbung",
+    "emoji": "💐",
+    "seite": "geschenke-fuer-frauen",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "c",
+    "produkte": [
+      "Seidenkissenbezug",
+      "Flauschiger Bademantel",
+      "Tee-Geschenkset",
+      "Schmuckkästchen",
+      "Duftkerzen-Set",
+      "Wellness-Geschenkset"
+    ]
+  },
+  {
+    "id": "2026-10-21-weihnachtsgeschenke-kaffeeliebhaber",
+    "datum": "2026-10-21",
+    "titel": "Weihnachtsgeschenke für Kaffeeliebhaber: Ideen von Handmühle bis Milchschaum",
+    "beschreibung": "Du suchst Geschenke für Kaffeeliebhaber zu Weihnachten? Eine Handkaffeemühle für frisch gemahlene Bohnen, ein elektrischer Milchaufschäumer für Cappuccino zu Hause oder ein Thermobecher für unterwegs machen jeden Kaffeefan glücklich. Alle Küchen-Ideen findest du auf der Seite. #kaffeeliebe #kaffeeliebhaber #weihnachtsgeschenke #geschenkideen #werbung",
+    "emoji": "☕",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "category": "kitchen"
+    },
+    "design": "d",
+    "foto": "kaffee tasse gemütlich",
+    "produkte": [
+      "Handkaffeemühle",
+      "Elektrischer Milchaufschäumer",
+      "Edelstahl-Thermobecher",
+      "Kaffeevollautomat",
+      "Tee-Geschenkset",
+      "Waffeleisen"
+    ],
+    "foto_id": 1974841
+  },
+  {
+    "id": "2026-10-21-nikolausstiefel-kinder-unter-15",
+    "datum": "2026-10-21",
+    "titel": "Nikolausstiefel füllen: kleine Nikolausgeschenke für Kinder unter 15 €",
+    "beschreibung": "Du willst den Nikolausstiefel füllen und suchst neben Nüssen und Schokolade noch eine Kleinigkeit? Nikolausgeschenke für Kinder wie Knete, ein Vorlese-Bilderbuch oder eine Taschenlampe mit Projektor passen genau in den Stiefel. Alle kleinen Ideen für den 6. Dezember findest du auf der Seite. #nikolaus #nikolausstiefel #nikolausgeschenk #kinder #werbung",
+    "emoji": "🥾",
+    "seite": "nikolausgeschenke",
+    "filter": {
+      "recipient": "kids",
+      "budget": "under15"
+    },
+    "design": "b",
+    "produkte": [
+      "Knete-Set für Kinder",
+      "Vorlese-Bilderbuch zu Weihnachten",
+      "Kinder-Taschenlampe als Projektor",
+      "Springseil mit Zähler"
+    ]
+  },
+  {
+    "id": "2026-10-21-tierfreunde-15-50-katze",
+    "datum": "2026-10-21",
+    "titel": "Weihnachtsgeschenke für Katzenliebhaber und Hundebesitzer unter 50 €",
+    "beschreibung": "Du suchst ein Geschenk für Katzenliebhaber oder Weihnachtsgeschenke für Hundebesitzer? Eine Katzen-Fensterliege zum Sonnen, eine Katzenhöhle zum Kuscheln oder ein Intelligenzspielzeug für Hunde machen Tier und Mensch Freude. Alle Ideen für Tierfreunde nach Budget findest du auf der Seite. #katzenliebe #hundebesitzer #weihnachtsgeschenke #geschenkideen #werbung",
+    "emoji": "🐈",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "katze decke",
+    "produkte": [
+      "Katzen-Fensterliege",
+      "Katzenhöhle zum Kuscheln",
+      "Katzen-Trinkbrunnen",
+      "Intelligenzspielzeug für Hunde",
+      "Hundedecke fürs Auto",
+      "Kuschelhaus für Meerschweinchen und Kaninchen"
+    ],
+    "foto_id": 7139626
   }
 ];

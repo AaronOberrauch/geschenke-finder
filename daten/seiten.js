@@ -327,9 +327,55 @@ window.PAGES = [
       "Wärmflasche mit Strickbezug",
       "Hängesessel",
       "Briefpapier-Set",
-      "Diamond-Painting-Set"
+      "Diamond-Painting-Set",
+      "Badebomben-Set"
     ],
-    "foto_id": 8431871
+    "foto_id": 8431871,
+    "ratgeber": {
+      "titel": "Ratgeber: Geschenke für Frauen und die Freundin finden",
+      "abschnitte": [
+        {
+          "ueberschrift": "Vom Alltag ausgehen statt vom Klischee",
+          "text": "Das beste Geschenk für Frauen ergibt sich selten aus einer Liste, sondern aus ihrem Alltag. Überleg kurz: Wie verbringt sie einen freien Abend? Trinkt sie morgens Kaffee oder lieber Tee? Schreibt sie gerne, bastelt sie, oder liegt sie am liebsten mit einer Decke auf dem Sofa? Aus solchen Beobachtungen entsteht eine Idee, die zeigt, dass du zugehört hast.\n\nDas gilt für die Freundin genauso wie für die Mama, die Schwester oder die Kollegin. Ein Geschenk für sie muss nicht teuer sein – es muss passen. Ein Briefpapier-Set für jemanden, der gerne Karten schreibt, kommt oft besser an als ein teures Gerät, das sie nie benutzt."
+        },
+        {
+          "ueberschrift": "Verwöhnen, Entspannen, Genießen",
+          "text": "Viele Geschenkideen für Frauen drehen sich um kleine Auszeiten – und das hat einen Grund: Zeit für sich ist im Alltag oft knapp. Ein flauschiger Bademantel, eine Kuscheldecke mit Ärmeln oder eine Wärmflasche mit Strickbezug machen kalte Winterabende gemütlicher. Badebomben, ein Wellness-Geschenkset oder ein Tee-Geschenkset laden dazu ein, sich bewusst eine Pause zu nehmen.\n\nWenn du ein Weihnachtsgeschenk für die Freundin suchst, kannst du mehrere kleine Dinge zu einem eigenen Verwöhn-Set kombinieren: etwa Duftkerzen, eine Gesichtsmaske und einen Tee. So entsteht ein persönliches Geschenk, das nach Mühe aussieht und trotzdem im Budget bleibt."
+        },
+        {
+          "ueberschrift": "Typische Fehler beim Geschenk für sie",
+          "text": "Ein häufiger Fehler sind Geschenke mit versteckter Botschaft: Eine Waage, Diätbücher oder Fitnessgeräte für jemanden, der nicht danach gefragt hat, kommen fast nie gut an. Auch Haushaltsgeräte sind heikel – ein Saugroboter ist eher etwas für den gemeinsamen Haushalt als ein Geschenk zum Geburtstag.\n\nVorsicht auch bei Pflegeprodukten und Düften: Geschmäcker und Hauttypen sind sehr verschieden. Wenn du dir unsicher bist, greif lieber zu neutralen Dingen wie einem Seidenkissenbezug, einem Schmuckkästchen oder einem kreativen Set. Und: Eine handgeschriebene Karte dazu macht fast jedes Geschenk persönlicher."
+        }
+      ],
+      "produkttexte": {
+        "Seidenkissenbezug": "Fühlt sich glatt und kühl an und ist ein kleiner Luxus für jede Nacht. Passt zu Frauen, die sich gerne etwas Schönes gönnen, aber selten selbst kaufen würden.",
+        "Flauschiger Bademantel": "Weich und warm für den Morgen oder nach dem Baden. Ein Geschenk für sie, das im Winter fast jeden Tag benutzt wird.",
+        "Badebomben-Set": "Mehrere Düfte für entspannte Badeabende – eine kleine Idee für den Nikolausstiefel, zum Wichteln oder als Ergänzung zu einem größeren Geschenk.",
+        "Duftkerzen-Set": "Sorgt an dunklen Abenden für gemütliches Licht und angenehmen Duft. Ein schönes Mitbringsel für die Freundin, die Schwester oder die Kollegin.",
+        "Schmuckkästchen": "Bringt Ordnung in Ketten, Ringe und Ohrringe und sieht dabei hübsch aus. Passt zu allen, deren Schmuck sonst in einer Schale durcheinanderliegt.",
+        "Tee-Geschenkset": "Verschiedene Sorten zum Probieren, ideal für Teetrinkerinnen und gemütliche Nachmittage. Lässt sich gut mit einer Tasse oder Kerze kombinieren.",
+        "Briefpapier-Set": "Für alle, die gerne Karten und Briefe schreiben – Briefe schreiben ist gerade wieder im Trend. Ein persönliches kleines Geschenk mit Stil.",
+        "Kuscheldecke mit Ärmeln": "Hält auf dem Sofa warm, und die Hände bleiben frei für Buch, Handy oder Tee. Ein gemütliches Weihnachtsgeschenk für Frauen, die schnell frieren."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man einer Frau, die schon alles hat?",
+          "antwort": "Etwas, das sie sich selbst selten kauft: kleine Luxusmomente wie ein Seidenkissenbezug, ein flauschiger Bademantel oder ein Wellness-Set. Auch kreative Sets wie Handlettering oder Diamond Painting bringen Abwechslung, ohne Platz wegzunehmen."
+        },
+        {
+          "frage": "Was ist ein gutes Weihnachtsgeschenk für die Freundin?",
+          "antwort": "Etwas, das zu ihren Gewohnheiten passt und gemeinsame Zeit schafft – etwa eine Sofortbildkamera für gemeinsame Erinnerungen oder ein selbst zusammengestelltes Verwöhn-Set aus Kerzen, Tee und Badebomben. Eine persönliche Karte dazu ist oft das Wichtigste."
+        },
+        {
+          "frage": "Welche kleinen Geschenke für sie gibt es unter 15 €?",
+          "antwort": "Zum Beispiel ein Badebomben-Set, ein Gesichtsmasken-Set, eine Wärmflasche mit Strickbezug oder ein Briefpapier-Set. Mit dem Budget-Filter oben auf der Seite siehst du alle Ideen in dieser Preisklasse auf einen Blick."
+        },
+        {
+          "frage": "Sind Pflegeprodukte als Geschenk für Frauen eine gute Idee?",
+          "antwort": "Ja, wenn du ihre Vorlieben kennst. Bist du unsicher, nimm eher neutrale Sets mit mehreren Sorten oder Dinge wie einen Bademantel oder ein Mani- und Pediküre-Set, bei denen Duft und Hauttyp keine große Rolle spielen."
+        }
+      ]
+    }
   },
   {
     "slug": "geschenke-fuer-gamer",

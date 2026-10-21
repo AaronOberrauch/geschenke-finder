@@ -2477,5 +2477,72 @@ window.PRODUCTS = [
       "Rutschfeste Trittfläche",
       "Platzsparend zu verstauen"
     ]
+  },
+  {
+    "title": "Handkaffeemühle",
+    "query": "handkaffeemühle keramikmahlwerk",
+    "emoji": "☕",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "vatertag",
+      "muttertag"
+    ],
+    "badge": "Für Kaffeeliebhaber",
+    "highlights": [
+      "Mahlgrad einstellbar",
+      "Frisch gemahlen fürs volle Aroma",
+      "Ohne Strom nutzbar"
+    ]
+  },
+  {
+    "title": "Katzen-Fensterliege",
+    "query": "katzen fensterliege saugnapf",
+    "emoji": "🐈",
+    "category": "pets",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents",
+      "kids"
+    ],
+    "occasions": [
+      "weihnachten"
+    ],
+    "badge": "Für Katzen",
+    "highlights": [
+      "Hält mit Saugnäpfen am Fenster",
+      "Platz zum Sonnen und Beobachten",
+      "Spart Platz in der Wohnung"
+    ]
+  },
+  {
+    "title": "Badebomben-Set",
+    "query": "badebomben set geschenk",
+    "emoji": "🛁",
+    "category": "beauty",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "teenager",
+      "parents"
+    ],
+    "occasions": [
+      "nikolaus",
+      "wichteln",
+      "valentinstag",
+      "muttertag"
+    ],
+    "badge": "Zum Entspannen",
+    "highlights": [
+      "Mehrere Düfte im Set",
+      "Sprudelt im warmen Badewasser",
+      "Schön zum Verschenken"
+    ]
   }
 ];
