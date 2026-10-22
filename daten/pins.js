@@ -455,5 +455,108 @@ window.PINS = [
       "Kuschelhaus für Meerschweinchen und Kaninchen"
     ],
     "foto_id": 7139626
+  },
+  {
+    "id": "2026-10-22-adventskalender-maenner",
+    "datum": "2026-10-22",
+    "titel": "Adventskalender für Männer: Ideen mit Werkzeug, Grillgewürzen und Puzzle",
+    "beschreibung": "Du suchst einen Adventskalender für Männer, der mehr ist als Schokolade? Ein Werkzeug-Adventskalender für Heimwerker oder ein Grillgewürz-Kalender für Grillfans macht 24 Tage lang Freude – und auch als Adventskalender für Erwachsene zum Selbstbefüllen gibt es schöne Ideen. Alle Kalender findest du auf der Seite. #adventskalender #adventskalenderfürmänner #weihnachten #geschenkideen #werbung",
+    "emoji": "🔧",
+    "seite": "adventskalender",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "advent kerzen holz",
+    "produkte": [
+      "Werkzeug-Adventskalender",
+      "Grillgewürz-Adventskalender",
+      "Puzzle-Adventskalender",
+      "Adventskalender zum Befüllen"
+    ],
+    "foto_id": 4673311
+  },
+  {
+    "id": "2026-10-22-weihnachtsgeschenke-maenner-150",
+    "datum": "2026-10-22",
+    "titel": "Weihnachtsgeschenke für Männer bis 150 €: Ideen für Technik, Werkstatt und Sport",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für ihn, das richtig genutzt wird? Ob Noise-Cancelling-Kopfhörer für den Pendler, ein bestückter Werkzeugkoffer für den Heimwerker oder eine Retro-Spielkonsole für Zocker – hier findest du Geschenke für Männer, die angeblich schon alles haben. Alle Ideen nach Budget sortiert findest du auf der Seite. #geschenkefürmänner #geschenkfürihn #weihnachtsgeschenke #werbung",
+    "emoji": "🎁",
+    "seite": "geschenke-fuer-maenner",
+    "filter": {
+      "budget": "50to150"
+    },
+    "design": "d",
+    "foto": "kamin sessel winter",
+    "produkte": [
+      "Noise-Cancelling-Kopfhörer",
+      "Bestückter Werkzeugkoffer",
+      "Retro-Spielkonsole mit Klassikern",
+      "Beheizbare Weste",
+      "Verstellbares Kurzhantel-Set",
+      "Dashcam fürs Auto"
+    ],
+    "foto_id": 3950679
+  },
+  {
+    "id": "2026-10-22-wichteln-tierfreunde-unter-15",
+    "datum": "2026-10-22",
+    "titel": "Wichtelgeschenke für Hundebesitzer und Katzenliebhaber unter 15 €",
+    "beschreibung": "Beim Wichteln einen Hundebesitzer oder Katzenfreund gezogen? Ein Schnüffelteppich für Hunde, ein Katzentunnel oder ein LED-Leuchthalsband für dunkle Gassi-Runden sind kleine Geschenke für Hundebesitzer und Katzenliebhaber, über die sich Mensch und Tier freuen. Alle Wichtelideen unter 15 € findest du auf der Seite. #wichteln #hundebesitzer #katzenliebe #wichtelgeschenk #werbung",
+    "emoji": "🐾",
+    "seite": "wichtelgeschenke-unter-15-euro",
+    "filter": {
+      "category": "pets"
+    },
+    "design": "d",
+    "foto": "hund geschenk",
+    "produkte": [
+      "Schnüffelteppich für Hunde",
+      "Katzentunnel",
+      "LED-Leuchthalsband für Hunde",
+      "Interaktives Katzenspielzeug",
+      "Robustes Kauspielzeug für Hunde",
+      "Leckerli-Beutel für Spaziergänge"
+    ],
+    "foto_id": 4712928
+  },
+  {
+    "id": "2026-10-22-wichteln-kollegen-unter-15",
+    "datum": "2026-10-22",
+    "titel": "Wichtelgeschenke für Kollegen unter 15 €: kleine Ideen fürs Büro",
+    "beschreibung": "Wichteln im Büro steht an und du hast keine Idee? Kleine Wichtelgeschenke für Kollegen wie ein Thermobecher für den Arbeitsweg, ein Bullet-Journal-Notizbuch oder eine Wärmflasche mit Strickbezug passen fast immer. Alle Ideen unter 15 € findest du auf der Seite. #wichteln #wichtelgeschenk #büro #weihnachten #werbung",
+    "emoji": "🎅",
+    "seite": "wichtelgeschenke-unter-15-euro",
+    "filter": {
+      "recipient": "household"
+    },
+    "design": "b",
+    "produkte": [
+      "Edelstahl-Thermobecher",
+      "Bullet-Journal-Notizbuch",
+      "Wärmflasche mit Strickbezug",
+      "Kräutergarten-Anzuchtset",
+      "Puzzle 1000 Teile",
+      "Badebomben-Set"
+    ]
+  },
+  {
+    "id": "2026-10-22-nikolaus-erwachsene-unter-15",
+    "datum": "2026-10-22",
+    "titel": "Nikolausgeschenke für Erwachsene unter 15 €: kleine Ideen für den Stiefel",
+    "beschreibung": "Nicht nur Kinder freuen sich am 6. Dezember: Nikolausgeschenke für Erwachsene wie ein Badebomben-Set, ein Bullet-Journal-Notizbuch oder eine Wärmflasche mit Strickbezug machen den Nikolausstiefel auch für Partner, Eltern oder Freunde besonders. Alle kleinen Ideen findest du auf der Seite. #nikolaus #nikolausgeschenk #nikolausstiefel #geschenkideen #werbung",
+    "emoji": "🥾",
+    "seite": "nikolausgeschenke",
+    "filter": {
+      "recipient": "parents",
+      "budget": "under15"
+    },
+    "design": "c",
+    "produkte": [
+      "Badebomben-Set",
+      "Bullet-Journal-Notizbuch",
+      "Wärmflasche mit Strickbezug",
+      "Schnüffelteppich für Hunde"
+    ]
   }
 ];

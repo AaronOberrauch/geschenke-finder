@@ -211,9 +211,56 @@ window.PAGES = [
       "Tee-Adventskalender",
       "Puzzle-Adventskalender",
       "Grillgewürz-Adventskalender",
-      "Adventskalender zum Befüllen"
+      "Adventskalender zum Befüllen",
+      "Werkzeug-Adventskalender"
     ],
-    "foto_id": 3858327
+    "foto_id": 3858327,
+    "ratgeber": {
+      "titel": "Ratgeber: Den passenden Adventskalender finden",
+      "abschnitte": [
+        {
+          "ueberschrift": "Für wen ist der Kalender gedacht?",
+          "text": "Ein Adventskalender macht 24 Tage lang Freude – vorausgesetzt, der Inhalt passt zur Person. Überleg dir zuerst, womit sich die Beschenkte oder der Beschenkte gerne beschäftigt: Wer abends gerne Tee trinkt, freut sich über einen Tee-Adventskalender, wer am Wochenende an der Werkbank steht, über kleine Werkzeuge und Bits.\n\nBei Kindern zählt vor allem das Auspacken selbst. Kleine Spielfiguren oder Bausteine, die sich nach und nach zu einer Szene zusammensetzen, halten die Spannung bis Heiligabend. Bei Erwachsenen darf der Kalender ruhig einem Hobby folgen – Grillen, Puzzeln, Pflege oder Heimwerken."
+        },
+        {
+          "ueberschrift": "Fertig kaufen oder selbst befüllen?",
+          "text": "Fertige Kalender sind bequem und schön verpackt, du musst dich um nichts kümmern. Ein Kalender zum Selbstbefüllen ist dagegen persönlicher: Du kannst kleine Lieblingsdinge, Gutscheine für gemeinsame Zeit oder handgeschriebene Zettel hineinlegen.\n\nRechne beim Befüllen mit etwas Zeit und einem kleinen Betrag pro Türchen. Sehr billige Kleinigkeiten wirken schnell beliebig – lieber ein paar Türchen mit einem Zettel („Heute koche ich für dich“) füllen und dafür bei den anderen etwas Schönes aussuchen. Wiederverwendbare Kalender aus Stoff oder Holz kannst du jedes Jahr neu bestücken."
+        },
+        {
+          "ueberschrift": "Rechtzeitig planen",
+          "text": "Viele Adventskalender gibt es schon ab Oktober, und gerade beliebte Motive sind im November oft vergriffen. Wer bis Ende November wartet, hat weniger Auswahl und muss beim Versand mitzittern – der Kalender sollte ja spätestens am 30. November bereitstehen.\n\nAuch Haustiere bekommen inzwischen eigene Kalender. Achte bei Hund und Katze darauf, dass Spielzeug und Inhalt zur Größe des Tieres passen, und verteile die Türchen über den Tag, statt alles auf einmal zu geben. So bleibt es für alle eine schöne Vorweihnachtszeit."
+        }
+      ],
+      "produkttexte": {
+        "Spielzeug-Adventskalender für Kinder": "Jeden Tag eine kleine Figur oder ein Baustein – am Ende entsteht oft eine ganze Spielwelt. Ideal für Kinder, die das morgendliche Türchen kaum erwarten können.",
+        "Beauty-Adventskalender": "Für alle, die gerne neue Pflegeprodukte ausprobieren. Masken, Cremes und kleine Pflegehelfer machen aus jedem Abend im Advent eine kleine Auszeit.",
+        "Tee-Adventskalender": "Für Teetrinker eine schöne Begleitung durch den Dezember: jeden Tag eine andere Sorte, gemütlich auf dem Sofa getrunken. Passt auch gut für Kolleginnen und Kollegen.",
+        "Grillgewürz-Adventskalender": "Für Grillfans und Hobbyköche, die gerne Neues würzen. Die Gewürze halten weit über den Advent hinaus und landen spätestens im Frühjahr auf dem Grill.",
+        "Werkzeug-Adventskalender": "Eine Idee für Männer, die gerne schrauben und basteln: Hinter den Türchen stecken Bits, Schlüssel und kleines Werkzeug, das in jeder Werkstatt gebraucht wird.",
+        "Puzzle-Adventskalender": "Jeden Tag ein Beutel mit Puzzleteilen – erst an Heiligabend ist das ganze Motiv zu sehen. Schön für Erwachsene und Familien, die abends gerne gemeinsam puzzeln.",
+        "Adventskalender für Hunde": "Damit der Vierbeiner nicht leer ausgeht: Ein eigener Kalender sorgt jeden Morgen für Aufregung. Gut für Hundebesitzer, die ihr Tier in die Adventszeit einbinden möchten.",
+        "Adventskalender für Katzen": "Katzen lieben Rascheln und Neues. Ein Katzen-Adventskalender bringt jeden Tag etwas Abwechslung – eine nette Idee für Katzenliebhaber.",
+        "Adventskalender zum Befüllen": "Die persönlichste Variante: Du entscheidest selbst, was hinter den Türchen steckt. Wiederverwendbar und für Partner, Kinder oder Freundinnen geeignet."
+      },
+      "faq": [
+        {
+          "frage": "Ab wann sollte man einen Adventskalender kaufen?",
+          "antwort": "Am entspanntesten ist es im Oktober oder Anfang November. Dann ist die Auswahl noch groß, und der Kalender kommt sicher vor dem 1. Dezember an."
+        },
+        {
+          "frage": "Welcher Adventskalender passt für Männer?",
+          "antwort": "Das hängt vom Hobby ab: Für Heimwerker passt ein Werkzeug-Adventskalender, für Grillfans einer mit Gewürzen, für Ruhige ein Puzzle-Kalender. Auch Pflegeprodukte kommen bei vielen gut an."
+        },
+        {
+          "frage": "Gibt es Adventskalender für Hunde und Katzen?",
+          "antwort": "Ja, es gibt eigene Kalender für Hunde und Katzen. Achte darauf, dass der Inhalt zur Größe deines Tieres passt, und gib die Türchen in Ruhe, damit es nicht zu viel auf einmal wird."
+        },
+        {
+          "frage": "Was kann man in einen Adventskalender zum Befüllen tun?",
+          "antwort": "Kleine Süßigkeiten, Tee, Pflegeprodukte, Haarspangen oder Sticker – und zwischendurch Zettel mit kleinen Versprechen wie einem gemeinsamen Spieleabend. Die Mischung macht es persönlich."
+        }
+      ]
+    }
   },
   {
     "slug": "geschenke-fuer-maenner",
@@ -246,7 +293,8 @@ window.PAGES = [
       "Schlüsselfinder-Set",
       "Beheizbare Weste",
       "Retro-Spielkonsole mit Klassikern",
-      "Gaming-Mauspad XXL"
+      "Gaming-Mauspad XXL",
+      "Werkzeug-Adventskalender"
     ],
     "foto_id": 7092687,
     "ratgeber": {

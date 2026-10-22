@@ -2544,5 +2544,63 @@ window.PRODUCTS = [
       "Sprudelt im warmen Badewasser",
       "Schön zum Verschenken"
     ]
+  },
+  {
+    "title": "Werkzeug-Adventskalender",
+    "query": "werkzeug adventskalender männer",
+    "emoji": "🔧",
+    "category": "home",
+    "budget": "15to50",
+    "recipients": [
+      "parents",
+      "household"
+    ],
+    "badge": "Für Heimwerker",
+    "highlights": [
+      "24 Türchen mit Werkzeug und Zubehör",
+      "Nützlich über den Advent hinaus",
+      "Für Werkstatt und Haushalt"
+    ]
+  },
+  {
+    "title": "Gepolstertes Hundegeschirr",
+    "query": "hundegeschirr gepolstert",
+    "emoji": "🐕",
+    "category": "pets",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten"
+    ],
+    "badge": "Für Gassi-Runden",
+    "highlights": [
+      "Gepolsterte Brustplatte",
+      "Verstellbare Riemen",
+      "In mehreren Größen erhältlich"
+    ]
+  },
+  {
+    "title": "French Press",
+    "query": "french press kaffeebereiter",
+    "emoji": "☕",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln"
+    ],
+    "badge": "Für Kaffeefans",
+    "highlights": [
+      "Kaffee ohne Strom und Filterpapier",
+      "Einfach zu reinigen",
+      "Auch für Tee geeignet"
+    ]
   }
 ];
