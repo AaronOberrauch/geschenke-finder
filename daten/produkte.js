@@ -2602,5 +2602,73 @@ window.PRODUCTS = [
       "Einfach zu reinigen",
       "Auch für Tee geeignet"
     ]
+  },
+  {
+    "title": "Milchkännchen für Latte Art",
+    "query": "milchkännchen latte art edelstahl",
+    "emoji": "🥛",
+    "category": "kitchen",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "nikolaus"
+    ],
+    "badge": "Für Hobby-Baristas",
+    "highlights": [
+      "Spitzer Ausguss zum Gießen von Mustern",
+      "Aus Edelstahl",
+      "Passt zum Milchaufschäumer"
+    ]
+  },
+  {
+    "title": "Knabberspielzeug für Kleintiere",
+    "query": "knabberspielzeug holz kaninchen meerschweinchen",
+    "emoji": "🐇",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "kids",
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "nikolaus"
+    ],
+    "badge": "Für kleine Haustiere",
+    "highlights": [
+      "Aus naturbelassenem Holz",
+      "Beschäftigung im Gehege",
+      "Mehrere Teile im Set"
+    ]
+  },
+  {
+    "title": "Pilates-Ring",
+    "query": "pilates ring",
+    "emoji": "⭕",
+    "category": "sport",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln"
+    ],
+    "badge": "Fürs Training zu Hause",
+    "highlights": [
+      "Leicht und platzsparend",
+      "Gepolsterte Griffe",
+      "Für Übungen auf der Matte"
+    ]
   }
 ];

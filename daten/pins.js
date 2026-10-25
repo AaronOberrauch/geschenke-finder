@@ -558,5 +558,108 @@ window.PINS = [
       "Wärmflasche mit Strickbezug",
       "Schnüffelteppich für Hunde"
     ]
+  },
+  {
+    "id": "2026-10-25-geschenke-fuer-kaffeeliebhaber",
+    "datum": "2026-10-25",
+    "titel": "Geschenke für Kaffeeliebhaber: Ideen von der Handkaffeemühle bis Latte Art",
+    "beschreibung": "Du suchst ein Geschenk für Kaffeeliebhaber oder Kaffeetrinker, die schon eine Maschine haben? Eine Handkaffeemühle für frisch gemahlene Bohnen, eine French Press fürs Wochenend-Frühstück oder ein Milchkännchen für Latte Art kommen bei Hobby-Baristas gut an. Alle Ideen nach Budget sortiert findest du auf der Seite. #kaffeeliebhaber #kaffee #geschenkideen #weihnachtsgeschenke #werbung",
+    "emoji": "☕",
+    "seite": "geschenke-fuer-kaffeeliebhaber",
+    "filter": {},
+    "design": "d",
+    "foto": "kaffee tasse morgen",
+    "produkte": [
+      "Handkaffeemühle",
+      "French Press",
+      "Milchkännchen für Latte Art",
+      "Elektrischer Milchaufschäumer",
+      "Edelstahl-Thermobecher",
+      "Kaffeevollautomat"
+    ],
+    "foto_id": 2714970
+  },
+  {
+    "id": "2026-10-25-adventskalender-frauen-tee",
+    "datum": "2026-10-25",
+    "titel": "Adventskalender für Frauen: Ideen mit Beauty, Tee und Puzzle",
+    "beschreibung": "Du suchst einen Adventskalender für Frauen oder einen Adventskalender für Erwachsene, der nicht nur Schokolade enthält? Ein Beauty-Adventskalender für kleine Wellness-Momente, ein Tee-Adventskalender für gemütliche Abende oder ein Puzzle-Adventskalender machen die Adventszeit für die Freundin, Mama oder Schwester besonders. Alle Kalender findest du auf der Seite. #adventskalender #adventskalenderfürfrauen #weihnachten #selfcare #werbung",
+    "emoji": "📅",
+    "seite": "adventskalender",
+    "filter": {
+      "recipient": "household",
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "adventskranz kerzen",
+    "produkte": [
+      "Beauty-Adventskalender",
+      "Tee-Adventskalender",
+      "Puzzle-Adventskalender",
+      "Adventskalender zum Befüllen"
+    ],
+    "foto_id": 7660345
+  },
+  {
+    "id": "2026-10-25-weihnachten-haustiere-unter-15",
+    "datum": "2026-10-25",
+    "titel": "Weihnachtsgeschenke für Haustiere unter 15 €: Hund, Katze und Kaninchen",
+    "beschreibung": "Auch Hund, Katze und Kaninchen dürfen sich auf Weihnachten freuen: Ein Schnüffelteppich für Hunde, ein Katzentunnel oder Knabberspielzeug für Kleintiere sind kleine Weihnachtsgeschenke für Haustiere, über die sich auch die Besitzer freuen. Alle Ideen unter 15 € findest du auf der Seite. #haustiere #weihnachten #hundeliebe #kaninchen #werbung",
+    "emoji": "🐾",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "category": "pets",
+      "budget": "under15"
+    },
+    "design": "d",
+    "foto": "katze weihnachtsbaum",
+    "produkte": [
+      "Knabberspielzeug für Kleintiere",
+      "Schnüffelteppich für Hunde",
+      "Katzentunnel",
+      "Interaktives Katzenspielzeug",
+      "LED-Leuchthalsband für Hunde",
+      "Robustes Kauspielzeug für Hunde"
+    ],
+    "foto_id": 6894854
+  },
+  {
+    "id": "2026-10-25-fitness-geschenke-unter-15",
+    "datum": "2026-10-25",
+    "titel": "Fitness Geschenke unter 15 €: kleine Ideen fürs Home-Workout",
+    "beschreibung": "Du suchst ein kleines Fitness-Geschenk für zu Hause? Ein Pilates-Ring, ein Fitnessbänder-Set oder ein Springseil mit Zähler brauchen kaum Platz und passen gut zum Wichteln oder als Geschenk für alle, die im neuen Jahr mehr Sport machen wollen. Alle Ideen unter 15 € findest du auf der Seite. #homeworkout #fitness #pilates #wichteln #werbung",
+    "emoji": "🏋️",
+    "seite": "home-training-geschenke",
+    "filter": {
+      "budget": "under15"
+    },
+    "design": "b",
+    "produkte": [
+      "Pilates-Ring",
+      "Fitnessbänder-Set",
+      "Springseil mit Zähler",
+      "Faszienrolle",
+      "Bauchroller"
+    ]
+  },
+  {
+    "id": "2026-10-25-kleine-geschenke-fuer-sie",
+    "datum": "2026-10-25",
+    "titel": "Kleine Geschenke für sie unter 15 €: Ideen für Freundin, Schwester und Kollegin",
+    "beschreibung": "Du suchst ein kleines Geschenk für die Freundin oder ein Wichtelgeschenk für die Kollegin? Ein Badebomben-Set für den Wellness-Abend, Briefpapier zum Schreiben oder ein Gesichtsmasken-Set sind kleine Geschenke für sie, die von Herzen kommen. Alle Ideen findest du auf der Seite. #geschenkfürsie #geschenkefürfrauen #selfcare #wichteln #werbung",
+    "emoji": "💝",
+    "seite": "geschenke-fuer-frauen",
+    "filter": {
+      "budget": "under15"
+    },
+    "design": "d",
+    "foto": "kerzen handtuch wellness",
+    "produkte": [
+      "Badebomben-Set",
+      "Gesichtsmasken-Set",
+      "Briefpapier-Set",
+      "Wärmflasche mit Strickbezug"
+    ],
+    "foto_id": 7313380
   }
 ];

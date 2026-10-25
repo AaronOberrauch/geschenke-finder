@@ -15,7 +15,52 @@ window.PAGES = [
     "intro": "Noch keine Idee für Weihnachten? Wähle aus, für wen du suchst und wie viel du ausgeben willst – hier findest du passende Geschenke für alle unterm Baum.",
     "filter": {},
     "foto": "weihnachtsbaum geschenke",
-    "foto_id": 6883858
+    "foto_id": 6883858,
+    "ratgeber": {
+      "titel": "Ratgeber: Weihnachtsgeschenke für die ganze Familie finden",
+      "abschnitte": [
+        {
+          "ueberschrift": "Früh anfangen und eine kleine Liste schreiben",
+          "text": "Die meisten Weihnachtsgeschenke werden im November gekauft – wer schon Ende Oktober eine Liste anlegt, hat weniger Stress und mehr Auswahl. Schreib dir alle Personen auf, die du beschenken möchtest, und notiere daneben ein Budget. So siehst du sofort, wo ein großes Geschenk geplant ist und wo eine Kleinigkeit reicht.\n\nHilfreich ist auch eine zweite Spalte mit Hobbys und Dingen, die im Alltag gerade fehlen. Wer im Gespräch nebenbei erwähnt, dass der Kaffee nie richtig heiß bleibt oder die Gassi-Runden im Dunkeln unangenehm sind, liefert dir schon die Geschenkidee."
+        },
+        {
+          "ueberschrift": "Was zu wem passt: Eltern, Teenager, Kinder und Tierfreunde",
+          "text": "Eltern und Großeltern freuen sich meist über Dinge, die den Alltag schöner machen: eine Kuscheldecke mit Ärmeln für Fernsehabende, ein digitaler Bilderrahmen mit Familienfotos oder ein Tee-Geschenkset. Persönliches zählt hier oft mehr als Technik.\n\nTeenager wünschen sich eher Dinge für ihr Zimmer und ihr Handy: LED-Beleuchtung, Kopfhörer oder eine Sofortbildkamera. Für jüngere Kinder sind Spielzeug zum Bauen, Malen und Experimentieren schöne Weihnachtsgeschenke, die auch nach den Feiertagen noch genutzt werden. Und wer einen Hund oder eine Katze hat, freut sich über Spielzeug oder einen gemütlichen Schlafplatz fürs Tier."
+        },
+        {
+          "ueberschrift": "Typische Fehler bei Weihnachtsgeschenken",
+          "text": "Der häufigste Fehler ist, zu spät anzufangen – dann landet man schnell beim Gutschein oder bei etwas, das man nur kauft, weil es noch da ist. Ein zweiter Fehler: Geschenke nach dem eigenen Geschmack auszuwählen statt nach dem der beschenkten Person.\n\nAchte außerdem auf die Lieferzeit. Kurz vor Weihnachten dauert der Versand oft länger, deshalb lohnt es sich, größere Geschenke bis Mitte Dezember zu bestellen. Und denk an Batterien oder Ladekabel, damit Technik-Geschenke am Heiligabend auch gleich funktionieren."
+        }
+      ],
+      "produkttexte": {
+        "Kuscheldecke mit Ärmeln": "Ein Wohlfühl-Geschenk für Eltern, Großeltern oder Teenager. Die Ärmel halten die Arme warm, und die Hände bleiben frei für Buch, Tasse oder Fernbedienung.",
+        "Digitaler Bilderrahmen mit WLAN": "Fotos lassen sich per App direkt auf den Rahmen schicken – so sehen Großeltern neue Bilder der Enkel, ohne selbst etwas einrichten zu müssen.",
+        "Sofortbildkamera": "Das Foto kommt sofort aus der Kamera und kann aufgehängt oder verschenkt werden. Bei Teenagern und Erwachsenen mit Sinn für Retro gleichermaßen gern gesehen.",
+        "Tee-Geschenkset": "Verschiedene Teesorten zum Probieren sind ein schönes Geschenk für gemütliche Winterabende und passen zu Eltern, Kolleginnen oder der besten Freundin.",
+        "Experimentierkasten für Kinder": "Hält Kinder in den Weihnachtsferien beschäftigt und weckt Neugier. Achte auf die Altersangabe, damit die Versuche weder zu leicht noch zu schwer sind.",
+        "Handkaffeemühle": "Für alle, die ihren Kaffee lieben: Frisch gemahlene Bohnen machen am Morgen einen spürbaren Unterschied. Funktioniert ohne Strom und ist leise.",
+        "Katzenhöhle zum Kuscheln": "Ein Weihnachtsgeschenk für die Katze und damit auch für ihre Besitzer. Viele Katzen lieben geschützte Rückzugsorte, gerade wenn an den Feiertagen Besuch kommt.",
+        "Retro-Spielkonsole mit Klassikern": "Bringt Eltern und Kinder an den Feiertagen zusammen vor den Fernseher. Die Spiele sind schon vorinstalliert, einfach anschließen und loslegen."
+      },
+      "faq": [
+        {
+          "frage": "Wann sollte ich Weihnachtsgeschenke kaufen?",
+          "antwort": "Am entspanntesten im November. Dann ist die Auswahl groß und die Lieferzeiten sind kurz. Größere Geschenke solltest du spätestens Mitte Dezember bestellen, damit sie sicher rechtzeitig ankommen."
+        },
+        {
+          "frage": "Was schenke ich meinen Eltern zu Weihnachten?",
+          "antwort": "Eltern freuen sich über Dinge, die den Alltag gemütlicher machen oder Erinnerungen wecken: eine Kuscheldecke, ein digitaler Bilderrahmen mit Familienfotos oder ein Tee-Geschenkset für ruhige Abende."
+        },
+        {
+          "frage": "Was sind gute Weihnachtsgeschenke unter 15 €?",
+          "antwort": "Mit dem Budget-Filter findest du viele kleine Ideen, etwa Badebomben, ein Notizbuch, eine Wärmflasche mit Strickbezug oder Spielzeug für Hund und Katze. Sie eignen sich auch gut zum Wichteln."
+        },
+        {
+          "frage": "Was schenke ich jemandem, der schon alles hat?",
+          "antwort": "Dann helfen Dinge, die man sich selten selbst kauft, oder gemeinsame Zeit: eine Retro-Konsole für Spieleabende, ein Puzzle oder ein persönliches Geschenk wie ein Bilderrahmen mit eigenen Fotos."
+        }
+      ]
+    }
   },
   {
     "slug": "wichtelgeschenke-unter-15-euro",
@@ -493,5 +538,69 @@ window.PAGES = [
       ]
     },
     "foto_id": 3597331
+  },
+  {
+    "slug": "geschenke-fuer-kaffeeliebhaber",
+    "titel": "Geschenke für Kaffeeliebhaber: Ideen für Kaffeetrinker und Hobby-Baristas",
+    "kurztitel": "Für Kaffeeliebhaber",
+    "emoji": "☕",
+    "anlass": "geburtstag",
+    "monate": [],
+    "beschreibung": "Geschenke für Kaffeeliebhaber: Handkaffeemühle, French Press, Milchaufschäumer, Latte-Art-Zubehör und Thermobecher für jedes Budget.",
+    "intro": "Für alle, die ohne Kaffee nicht in den Tag starten: Geschenkideen von der Handkaffeemühle über die French Press bis zum Zubehör für Latte Art.",
+    "filter": {},
+    "foto": "kaffee tasse morgen",
+    "produkte": [
+      "Handkaffeemühle",
+      "French Press",
+      "Elektrischer Milchaufschäumer",
+      "Milchkännchen für Latte Art",
+      "Edelstahl-Thermobecher",
+      "Kaffeevollautomat"
+    ],
+    "ratgeber": {
+      "titel": "Ratgeber: Geschenke für Kaffeeliebhaber",
+      "abschnitte": [
+        {
+          "ueberschrift": "Kaffeetrinker oder Hobby-Barista?",
+          "text": "Bevor du ein Geschenk für Kaffeeliebhaber aussuchst, lohnt sich ein Blick in die Küche. Wer morgens einfach einen guten Kaffee möchte, freut sich über Dinge, die den Alltag leichter machen: einen Thermobecher für den Weg zur Arbeit oder eine French Press für den Kaffee am Wochenende.\n\nHobby-Baristas haben oft schon eine Maschine und experimentieren gerne. Für sie sind kleine Extras wie ein Milchkännchen für Latte Art oder eine Handkaffeemühle spannender als ein weiteres Gerät. Schau unauffällig, was schon da ist, damit du nichts doppelt verschenkst."
+        },
+        {
+          "ueberschrift": "Frisch gemahlen und gut aufgeschäumt",
+          "text": "Viele Kaffeefans sagen, dass frisch gemahlene Bohnen den größten Unterschied machen. Eine Handkaffeemühle ist deshalb ein Geschenk, das täglich benutzt wird – sie braucht keinen Strom und passt auch in kleine Küchen oder ins Reisegepäck.\n\nWer Cappuccino und Latte macchiato liebt, freut sich über einen elektrischen Milchaufschäumer. Zusammen mit einem Milchkännchen aus Edelstahl lassen sich damit sogar erste Muster auf den Milchschaum gießen. Das ist ein schönes Geschenkset, das du auch selbst zusammenstellen kannst."
+        },
+        {
+          "ueberschrift": "Ideen nach Budget und Anlass",
+          "text": "Für Wichteln, Nikolaus oder als Mitbringsel reichen kleine Geschenke für Kaffeetrinker wie ein Thermobecher oder ein Milchkännchen. Im mittleren Budget passen French Press, Handkaffeemühle oder Milchaufschäumer – gute Weihnachtsgeschenke für Kaffeeliebhaber, die nicht viel Platz brauchen.\n\nEin Kaffeevollautomat ist ein großes Geschenk, etwa für einen runden Geburtstag oder als gemeinsames Familiengeschenk. Kläre vorher, wie viel Platz in der Küche ist und ob eher Espresso oder Milchgetränke getrunken werden. Eine Packung frisch gerösteter Bohnen dazu macht jedes Kaffee-Geschenk komplett."
+        }
+      ],
+      "produkttexte": {
+        "Handkaffeemühle": "Mahlt die Bohnen kurz vor dem Aufbrühen frisch, der Mahlgrad lässt sich für Espresso oder French Press einstellen. Ein Geschenk für alle, die ihren Kaffee bewusst genießen.",
+        "French Press": "Einfache Zubereitung ohne Strom und ohne Filter: Kaffeepulver, heißes Wasser, ein paar Minuten warten, Stempel drücken. Schön für gemütliche Wochenend-Frühstücke.",
+        "Elektrischer Milchaufschäumer": "Macht aus Milch auf Knopfdruck cremigen Schaum für Cappuccino, Latte macchiato oder Kakao. Ideal für Kaffeefans ohne Siebträgermaschine.",
+        "Milchkännchen für Latte Art": "Mit dem spitzen Ausguss lassen sich Herzen und andere Muster auf den Milchschaum gießen. Eine kleine Idee für Hobby-Baristas, die gerne Neues ausprobieren.",
+        "Edelstahl-Thermobecher": "Hält den Kaffee auf dem Weg zur Arbeit oder beim Spaziergang warm. Ein praktisches kleines Geschenk für Kaffeetrinker und gut zum Wichteln.",
+        "Kaffeevollautomat": "Mahlt, brüht und schäumt auf Knopfdruck. Ein großes Geschenk für Familien oder Paare, die täglich mehrere Tassen trinken und es bequem mögen."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man einem Kaffeeliebhaber, der schon alles hat?",
+          "antwort": "Zubehör, das man sich selten selbst kauft: ein Milchkännchen für Latte Art, eine Handkaffeemühle für unterwegs oder eine French Press als zweite Zubereitungsart. Dazu passt eine Packung Bohnen von einer kleinen Rösterei."
+        },
+        {
+          "frage": "Welche Geschenke für Kaffeetrinker gibt es unter 15 €?",
+          "antwort": "Ein Thermobecher aus Edelstahl oder ein Milchkännchen für Latte Art sind kleine Geschenke für Kaffeetrinker, die gut zum Wichteln oder in den Nikolausstiefel passen."
+        },
+        {
+          "frage": "Ist eine Handkaffeemühle ein gutes Geschenk?",
+          "antwort": "Für alle, die Wert auf Geschmack legen, ja: Frisch gemahlene Bohnen duften intensiver. Die Mühle funktioniert ohne Strom und lässt sich auf verschiedene Zubereitungsarten einstellen."
+        },
+        {
+          "frage": "Was kann ich zu Kaffeebohnen dazuschenken?",
+          "antwort": "Eine French Press, ein Milchaufschäumer oder ein Thermobecher machen aus einer Packung Bohnen ein komplettes Geschenk für Kaffeeliebhaber zu Weihnachten oder zum Geburtstag."
+        }
+      ]
+    },
+    "foto_id": 2714970
   }
 ];
