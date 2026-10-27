@@ -1446,7 +1446,8 @@ window.PRODUCTS = [
     "recipients": [
       "teenager",
       "parents",
-      "household"
+      "household",
+      "kids"
     ],
     "badge": "Jeden Tag ein Teil",
     "highlights": [
@@ -1480,7 +1481,8 @@ window.PRODUCTS = [
     "budget": "15to50",
     "recipients": [
       "household",
-      "parents"
+      "parents",
+      "kids"
     ],
     "badge": "Selbst befüllen",
     "highlights": [
@@ -2669,6 +2671,75 @@ window.PRODUCTS = [
       "Leicht und platzsparend",
       "Gepolsterte Griffe",
       "Für Übungen auf der Matte"
+    ]
+  },
+  {
+    "title": "Kratzbrett aus Wellpappe",
+    "query": "Kratzbrett Katze Wellpappe",
+    "emoji": "🐈",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "kids"
+    ],
+    "occasions": [
+      "nikolaus",
+      "wichteln",
+      "weihnachten"
+    ],
+    "badge": "Für Katzen",
+    "highlights": [
+      "Zum Kratzen und Liegen",
+      "Schont Sofa und Teppich",
+      "Leicht und platzsparend"
+    ]
+  },
+  {
+    "title": "Plätzchen-Ausstecher-Set",
+    "query": "Ausstecher Set Weihnachten Edelstahl",
+    "emoji": "🍪",
+    "category": "kitchen",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "kids"
+    ],
+    "occasions": [
+      "nikolaus",
+      "wichteln",
+      "weihnachten"
+    ],
+    "badge": "Für die Weihnachtsbäckerei",
+    "highlights": [
+      "Viele weihnachtliche Formen",
+      "Für Plätzchen und Lebkuchen",
+      "Gemeinsam mit Kindern backen"
+    ]
+  },
+  {
+    "title": "Handcreme-Set",
+    "query": "Handcreme Geschenkset",
+    "emoji": "🧴",
+    "category": "beauty",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "nikolaus",
+      "wichteln",
+      "muttertag"
+    ],
+    "badge": "Für kalte Tage",
+    "highlights": [
+      "Mehrere kleine Tuben",
+      "Passt in jede Handtasche",
+      "Schön verpackt"
     ]
   }
 ];

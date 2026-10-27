@@ -139,7 +139,53 @@ window.PAGES = [
     "intro": "Was passt in den Nikolausstiefel außer Schokolade? Hier sind kleine Ideen für Kinder und Teenager.",
     "filter": {},
     "foto": "nikolaus stiefel",
-    "foto_id": 3009717
+    "foto_id": 3009717,
+    "ratgeber": {
+      "titel": "Ratgeber: Nikolausgeschenke für den Stiefel",
+      "abschnitte": [
+        {
+          "ueberschrift": "Was gehört in den Nikolausstiefel?",
+          "text": "Der Nikolaus bringt traditionell Kleinigkeiten: Nüsse, Mandarinen, ein Schoko-Nikolaus und dazu oft ein kleines Geschenk. Genau das ist der Reiz am 6. Dezember – es geht nicht um große Geschenke, sondern um eine Überraschung am Morgen, die Vorfreude auf Weihnachten macht.\n\nEine gute Faustregel: Das Geschenk sollte in einen Stiefel passen oder zumindest daneben stehen können. Viele Familien legen ein Budget von etwa 10 bis 15 € pro Kind fest. So bleibt Weihnachten das große Fest, und der Nikolaus ist der kleine Vorbote."
+        },
+        {
+          "ueberschrift": "Ideen für Kinder, Teenager und Erwachsene",
+          "text": "Für kleinere Kinder eignen sich Dinge, mit denen sie gleich loslegen können: Knete, ein Malset, ein weihnachtliches Bilderbuch zum Vorlesen oder eine Taschenlampe, die Bilder an die Wand wirft. Bei mehreren Kindern im ähnlichen Alter kannst du ein größeres Set kaufen und aufteilen – das spart Geld und vermeidet Streit.\n\nTeenager freuen sich eher über etwas fürs eigene Zimmer, zum Beispiel eine Sunset-Lampe oder LED-Lichter, oder über ein Notizbuch zum Planen und Zeichnen. Auch Erwachsene darf der Nikolaus besuchen: Eine Wärmflasche mit Strickbezug, ein Handcreme-Set für kalte Tage oder Ausstecher für die Weihnachtsbäckerei sind kleine Gesten, die im Dezember gut ankommen."
+        },
+        {
+          "ueberschrift": "Typische Fehler und kleine Tipps",
+          "text": "Der häufigste Fehler ist, dass der Nikolaus zu groß ausfällt. Wenn der Stiefel schon wie ein zweites Weihnachten wirkt, steigen die Erwartungen für den 24. Dezember. Lieber eine Kleinigkeit, die Spaß macht, plus etwas Süßes und Obst.\n\nPraktisch ist auch, an Dinge für die Adventszeit zu denken: Ausstecher für das gemeinsame Plätzchenbacken oder ein Vorlesebuch machen aus dem Geschenk ein Erlebnis für die ganzen Wochen bis Weihnachten. Und vergiss die Haustiere nicht – ein kleines Spielzeug für Hund oder Katze neben dem Stiefel sorgt bei Kindern oft für viel Freude."
+        }
+      ],
+      "produkttexte": {
+        "Knete-Set für Kinder": "Für Kindergarten- und Grundschulkinder, die gerne mit den Händen basteln. Ein Set mit mehreren Farben und Förmchen passt gut in den Stiefel und sorgt gleich am Nikolausmorgen für Beschäftigung.",
+        "Vorlese-Bilderbuch zu Weihnachten": "Ein Buch, das die ganze Adventszeit begleitet: Abends gemeinsam vorlesen schafft Weihnachtsstimmung. Besonders schön für kleine Kinder, die die Bilder selbst entdecken möchten.",
+        "Kinder-Taschenlampe als Projektor": "Diese Taschenlampe wirft Bilder an die Wand – ideal für Kinder, die gerne im Dunkeln Geschichten erfinden. Klein genug für den Stiefel und ein lustiger Begleiter zur Schlafenszeit.",
+        "Sunset-Lampe": "Für Teenager, die ihr Zimmer gemütlich machen möchten. Das warme Licht passt gut zu langen Dezemberabenden und eignet sich auch für Fotos.",
+        "Bullet-Journal-Notizbuch": "Für Teenager und Erwachsene, die gerne planen, Listen schreiben oder zeichnen. Ein neutrales Nikolausgeschenk, das trotzdem persönlich wirkt.",
+        "Wärmflasche mit Strickbezug": "Ein kuscheliges Geschenk für kalte Tage, das bei Erwachsenen und Teenagern gleichermaßen gut ankommt. Der Strickbezug sieht schön aus und macht die Wärmflasche angenehm weich.",
+        "Handcreme-Set": "Im Winter werden die Hände schnell trocken – ein Set mit mehreren kleinen Tuben passt in jede Tasche. Eine nette Aufmerksamkeit für Mama, Oma, die Kollegin oder die beste Freundin.",
+        "Plätzchen-Ausstecher-Set": "Für alle, die in der Adventszeit gerne backen – allein oder mit Kindern. Mit dem Set wird aus dem Nikolausgeschenk gleich ein gemeinsamer Backnachmittag.",
+        "Kratzbrett aus Wellpappe": "Für Familien mit Katze: Das Kratzbrett ist klein, leicht und wird von vielen Katzen auch gerne als Liegeplatz genutzt. Eine schöne Idee, wenn die Kinder das Haustier am Nikolaus mitbeschenken möchten."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man zum Nikolaus?",
+          "antwort": "Klassisch sind Nüsse, Mandarinen und Schokolade, dazu eine Kleinigkeit wie ein Buch, ein Malset, Knete oder etwas Gemütliches für den Winter. Wichtig ist, dass das Geschenk klein bleibt und in oder neben den Stiefel passt."
+        },
+        {
+          "frage": "Wie viel gibt man für ein Nikolausgeschenk aus?",
+          "antwort": "Viele Familien bleiben bei etwa 10 bis 15 € pro Person. So bleibt der Nikolaus eine kleine Überraschung, und Weihnachten ist weiterhin das große Fest. Für Kollegen oder Nachbarn reicht oft auch weniger."
+        },
+        {
+          "frage": "Was kann man Erwachsenen zum Nikolaus schenken?",
+          "antwort": "Für Erwachsene eignen sich kleine Wohlfühl-Geschenke wie ein Handcreme-Set, eine Wärmflasche oder ein Badebomben-Set. Wer gerne backt, freut sich über Ausstecher für die Weihnachtsplätzchen."
+        },
+        {
+          "frage": "Was schenkt man Teenagern zum Nikolaus?",
+          "antwort": "Teenager mögen Dinge fürs eigene Zimmer oder für ihre Hobbys, zum Beispiel eine Sunset-Lampe, LED-Lichter, ein Notizbuch oder ein großes Mauspad. Süßigkeiten im Stiefel dürfen trotzdem nicht fehlen."
+        }
+      ]
+    }
   },
   {
     "slug": "geschenke-fuer-tierfreunde",

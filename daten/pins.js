@@ -661,5 +661,106 @@ window.PINS = [
       "Wärmflasche mit Strickbezug"
     ],
     "foto_id": 7313380
+  },
+  {
+    "id": "2026-10-27-adventskalender-fuer-kinder",
+    "datum": "2026-10-27",
+    "titel": "Adventskalender für Kinder: Ideen zum Öffnen und Befüllen",
+    "beschreibung": "Du suchst einen Adventskalender für Kinder, der nicht nur aus Schokolade besteht? Ein Spielzeug-Adventskalender oder ein Kalender zum Befüllen mit kleinen Überraschungen macht die 24 Tage bis Weihnachten spannend. Alle Ideen findest du auf der Seite. #adventskalender #adventskalenderkinder #weihnachten #werbung",
+    "emoji": "🎁",
+    "seite": "adventskalender",
+    "filter": {
+      "recipient": "kids"
+    },
+    "design": "d",
+    "foto": "kinder weihnachten fenster",
+    "foto_id": 1053463,
+    "produkte": [
+      "Spielzeug-Adventskalender für Kinder",
+      "Adventskalender zum Befüllen",
+      "Puzzle-Adventskalender"
+    ]
+  },
+  {
+    "id": "2026-10-27-nikolaus-hund-katze-unter-15",
+    "datum": "2026-10-27",
+    "titel": "Nikolausgeschenke für Hund und Katze unter 15 €",
+    "beschreibung": "Der Nikolaus darf auch an die Haustiere denken: Ein Schnüffelteppich für Hunde, ein Kratzbrett aus Wellpappe oder interaktives Katzenspielzeug passen gut neben den Stiefel. Kleine Geschenke für Hundebesitzer und Katzenfreunde unter 15 € findest du auf der Seite. #nikolaus #hund #katze #haustiere #werbung",
+    "emoji": "🐾",
+    "seite": "nikolausgeschenke",
+    "filter": {
+      "category": "pets",
+      "budget": "under15"
+    },
+    "design": "d",
+    "foto": "hund decke winter",
+    "produkte": [
+      "Kratzbrett aus Wellpappe",
+      "Schnüffelteppich für Hunde",
+      "Interaktives Katzenspielzeug",
+      "Knabberspielzeug für Kleintiere"
+    ],
+    "foto_id": 10024592
+  },
+  {
+    "id": "2026-10-27-weihnachtsgeschenke-fuer-papa",
+    "datum": "2026-10-27",
+    "titel": "Weihnachtsgeschenke für Papa: Ideen für Werkstatt, Grill und Auto",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Papa, das nicht im Schrank verschwindet? Ein bestückter Werkzeugkoffer, ein digitales Grillthermometer oder eine Uhrenbox aus Holz sind Geschenke für Männer, die man wirklich nutzt. Alle Geschenkideen für ihn findest du auf der Seite. #geschenkfürpapa #geschenkefürmänner #weihnachtsgeschenke #werbung",
+    "emoji": "🎁",
+    "seite": "geschenke-fuer-maenner",
+    "filter": {
+      "recipient": "parents"
+    },
+    "design": "d",
+    "foto": "werkzeug werkbank",
+    "produkte": [
+      "Bestückter Werkzeugkoffer",
+      "Digitales Grillthermometer",
+      "Multitool",
+      "Uhrenbox aus Holz",
+      "Grillbesteck-Set im Koffer",
+      "Dashcam fürs Auto"
+    ],
+    "foto_id": 7092687
+  },
+  {
+    "id": "2026-10-27-nikolausgeschenke-teenager-unter-15",
+    "datum": "2026-10-27",
+    "titel": "Nikolausgeschenke für Teenager unter 15 €: kleine Ideen fürs Zimmer",
+    "beschreibung": "Was passt für Teenager in den Nikolausstiefel? Eine Sunset-Lampe, LED-Lichter fürs Zimmer oder ein Notizbuch zum Planen sind kleine Nikolausgeschenke, die nicht nach Kinderkram aussehen. Alle Ideen unter 15 € findest du auf der Seite. #nikolaus #nikolausgeschenke #teenager #werbung",
+    "emoji": "🥾",
+    "seite": "nikolausgeschenke",
+    "filter": {
+      "recipient": "teenager",
+      "budget": "under15"
+    },
+    "design": "b",
+    "produkte": [
+      "Sunset-Lampe",
+      "LED-Strip mit App-Steuerung",
+      "Bullet-Journal-Notizbuch",
+      "Handcreme-Set",
+      "Springseil mit Zähler",
+      "Gaming-Mauspad XXL"
+    ]
+  },
+  {
+    "id": "2026-10-27-wichteln-kollegen-kueche-unter-15",
+    "datum": "2026-10-27",
+    "titel": "Wichtelgeschenke für Kollegen unter 15 €: Ideen für Küche und Kaffeepause",
+    "beschreibung": "Du suchst ein Wichtelgeschenk für Kollegen, das wirklich genutzt wird? Ein Thermobecher für den Weg zur Arbeit, ein Milchkännchen für Latte Art oder Ausstecher für die Weihnachtsbäckerei sind praktische Wichtelgeschenke unter 15 €. Alle Ideen findest du auf der Seite. #wichteln #wichtelgeschenke #büro #werbung",
+    "emoji": "☕",
+    "seite": "wichtelgeschenke-unter-15-euro",
+    "filter": {
+      "category": "kitchen"
+    },
+    "design": "c",
+    "produkte": [
+      "Edelstahl-Thermobecher",
+      "Milchkännchen für Latte Art",
+      "Plätzchen-Ausstecher-Set",
+      "Silikon-Backmatten-Set"
+    ]
   }
 ];
