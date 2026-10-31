@@ -762,5 +762,112 @@ window.PINS = [
       "Plätzchen-Ausstecher-Set",
       "Silikon-Backmatten-Set"
     ]
+  },
+  {
+    "id": "2026-10-31-adventskalender-geniesser",
+    "datum": "2026-10-31",
+    "titel": "Adventskalender für Erwachsene unter 50 €: Tee, Grillgewürze und Werkzeug",
+    "beschreibung": "Du suchst einen Adventskalender für Erwachsene, der nicht nur aus Schokolade besteht? Ein Tee-Adventskalender für gemütliche Abende, ein Grillgewürz-Adventskalender oder ein Werkzeug-Adventskalender für Bastler bringt jeden Tag eine kleine Überraschung. Alle Adventskalender unter 50 € findest du auf der Seite. #adventskalender #adventskalenderfürerwachsene #advent #werbung",
+    "emoji": "📅",
+    "seite": "adventskalender",
+    "filter": {
+      "recipient": "parents",
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "tee kekse winter",
+    "produkte": [
+      "Tee-Adventskalender",
+      "Grillgewürz-Adventskalender",
+      "Werkzeug-Adventskalender",
+      "Beauty-Adventskalender",
+      "Puzzle-Adventskalender"
+    ],
+    "foto_id": 8020912
+  },
+  {
+    "id": "2026-10-31-weihnachtsgeschenke-hundebesitzer-unter-50",
+    "datum": "2026-10-31",
+    "titel": "Weihnachtsgeschenke für Hundebesitzer unter 50 €: Ideen für Hund und Katze",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Hundebesitzer oder eine Hundemama? Ein gepolstertes Hundegeschirr für die Winterspaziergänge, eine Hundedecke fürs Auto oder eine Katzen-Fensterliege sind Geschenke für Tierfreunde, die im Alltag benutzt werden. Alle Ideen unter 50 € findest du auf der Seite. #hundebesitzer #weihnachtsgeschenke #hund #katze #werbung",
+    "emoji": "🐶",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "category": "pets",
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "hund weihnachtsbaum",
+    "produkte": [
+      "Gepolstertes Hundegeschirr",
+      "Hundedecke fürs Auto",
+      "Intelligenzspielzeug für Hunde",
+      "Katzen-Fensterliege",
+      "Katzenhöhle zum Kuscheln",
+      "Kuschelhaus für Meerschweinchen und Kaninchen"
+    ],
+    "foto_id": 5932577
+  },
+  {
+    "id": "2026-10-31-fitness-geschenke-zuhause-eltern",
+    "datum": "2026-10-31",
+    "titel": "Fitness-Geschenke für zu Hause: Ideen für Eltern, die aktiv bleiben wollen",
+    "beschreibung": "Mama oder Papa trainiert gerne zu Hause? Verstellbare Kurzhanteln, eine Kettlebell oder ein klappbares Walking Pad sind Home-Workout-Geschenke, die ohne Fitnessstudio auskommen. Im Ratgeber auf der Seite erfährst du, was zu wem passt und worauf du bei wenig Platz achten solltest. #homeworkout #fitnessgeschenke #geschenkefürsportler #werbung",
+    "emoji": "🏋️",
+    "seite": "home-training-geschenke",
+    "filter": {
+      "recipient": "parents"
+    },
+    "design": "d",
+    "foto": "fitness training",
+    "produkte": [
+      "Verstellbares Kurzhantel-Set",
+      "Kettlebell",
+      "Walking Pad (Laufband klappbar)",
+      "Rudergerät",
+      "Gymnastikball",
+      "Faszienrolle"
+    ],
+    "foto_id": 2604149
+  },
+  {
+    "id": "2026-10-31-self-care-geschenke-frauen",
+    "datum": "2026-10-31",
+    "titel": "Self-Care-Geschenke für Frauen: Ideen zum Verwöhnen an Winterabenden",
+    "beschreibung": "Du suchst ein Self-Care-Geschenk für die Freundin, Schwester oder Mama? Ein Wellness-Geschenkset, ein Seidenkissenbezug oder ein Mani- und Pediküre-Set sind Weihnachtsgeschenke für Frauen, die sich eine Pause gönnen möchten. Alle Geschenkideen für sie findest du auf der Seite. #selfcare #geschenkfürsie #weihnachtsgeschenke #werbung",
+    "emoji": "💆",
+    "seite": "geschenke-fuer-frauen",
+    "filter": {
+      "category": "beauty"
+    },
+    "design": "b",
+    "produkte": [
+      "Wellness-Geschenkset",
+      "Seidenkissenbezug",
+      "Mani- und Pediküre-Set",
+      "Flauschiger Bademantel",
+      "Gesichtsmasken-Set",
+      "Badebomben-Set"
+    ]
+  },
+  {
+    "id": "2026-10-31-weihnachtsgeschenke-unter-50",
+    "datum": "2026-10-31",
+    "titel": "Weihnachtsgeschenke unter 50 €: Ideen für die ganze Familie zum Merken",
+    "beschreibung": "Du willst die Weihnachtsgeschenke 2026 dieses Jahr früh erledigen? Ein Nadelfilz-Set für kreative Abende, eine Handkaffeemühle, eine Kuscheldecke mit Ärmeln oder ein Familien-Brettspiel sind Geschenke unter 50 € für Eltern, Freunde und Familie. Alle Ideen nach Empfänger sortiert findest du auf der Seite. #weihnachtsgeschenke #geschenkideen #weihnachten #werbung",
+    "emoji": "🎄",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "c",
+    "produkte": [
+      "Nadelfilz-Set für Anfänger",
+      "Handkaffeemühle",
+      "Kuscheldecke mit Ärmeln",
+      "Familien-Brettspiel",
+      "Duftkerzen-Set",
+      "Multitool"
+    ]
   }
 ];

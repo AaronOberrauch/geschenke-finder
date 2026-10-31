@@ -2741,5 +2741,72 @@ window.PRODUCTS = [
       "Passt in jede Handtasche",
       "Schön verpackt"
     ]
+  },
+  {
+    "title": "Fellpflegebürste für Hunde",
+    "query": "Hundebürste Fellpflege Unterwolle",
+    "emoji": "🐕",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "nikolaus"
+    ],
+    "badge": "Für Hundebesitzer",
+    "highlights": [
+      "Entfernt lose Haare",
+      "Ergonomischer Griff",
+      "Für die tägliche Fellpflege"
+    ]
+  },
+  {
+    "title": "Liegestützgriffe",
+    "query": "Liegestützgriffe rutschfest",
+    "emoji": "💪",
+    "category": "sport",
+    "budget": "under15",
+    "recipients": [
+      "teenager",
+      "parents",
+      "household"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln"
+    ],
+    "badge": "Fürs Training zu Hause",
+    "highlights": [
+      "Rutschfeste Unterseite",
+      "Gepolsterte Griffe",
+      "Klein und leicht zu verstauen"
+    ]
+  },
+  {
+    "title": "Nadelfilz-Set für Anfänger",
+    "query": "Nadelfilz Set Anfänger",
+    "emoji": "🧶",
+    "category": "fun",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "teenager",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag"
+    ],
+    "badge": "Kreatives Hobby",
+    "highlights": [
+      "Wolle in vielen Farben",
+      "Mit Filznadeln und Unterlage",
+      "Für gemütliche Abende"
+    ]
   }
 ];

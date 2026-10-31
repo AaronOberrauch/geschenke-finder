@@ -262,7 +262,54 @@ window.PAGES = [
       "category": "sport"
     },
     "foto": "hanteln training",
-    "foto_id": 6975177
+    "foto_id": 6975177,
+    "ratgeber": {
+      "titel": "Ratgeber: Fitness-Geschenke für zu Hause",
+      "abschnitte": [
+        {
+          "ueberschrift": "Erst überlegen: Einsteiger oder schon sportlich?",
+          "text": "Bevor du ein Fitness-Geschenk für zu Hause aussuchst, lohnt sich ein kurzer Blick auf die Person. Wer gerade erst anfangen möchte, freut sich über einfache, vielseitige Dinge wie eine rutschfeste Yogamatte, ein Fitnessbänder-Set oder ein Springseil. Damit lassen sich viele Übungen ausprobieren, ohne dass gleich ein großes Gerät im Wohnzimmer steht.\n\nWer schon regelmäßig trainiert, hat die Grundausstattung meist zu Hause. Hier passen eher Ergänzungen, die das Training abwechslungsreicher machen: eine Kettlebell, verstellbare Kurzhanteln, eine Klimmzugstange für den Türrahmen oder Liegestützgriffe. Hör beiläufig hin, welche Übungen die Person gerne macht – das ist der beste Hinweis."
+        },
+        {
+          "ueberschrift": "Platz und Lautstärke nicht vergessen",
+          "text": "Der häufigste Fehler bei Home-Training-Geschenken ist ein Gerät, das zu groß für die Wohnung ist. Ein Rudergerät, ein Heimtrainer-Fahrrad oder ein Walking Pad sind tolle Geschenke, brauchen aber eine feste Ecke oder zumindest Platz zum Verstauen. Klappbare Modelle sind in kleinen Wohnungen meist die bessere Wahl.\n\nIn Mietwohnungen spielt auch die Lautstärke eine Rolle: Springen, Hanteln absetzen oder ein laufendes Band hören die Nachbarn unten oft mit. Eine dicke Matte als Unterlage hilft. Wer leise trainieren möchte, ist mit Pilates-Ring, Gymnastikball oder Fitnessbändern gut bedient."
+        },
+        {
+          "ueberschrift": "Kleine Fitness-Geschenke unter 15 €",
+          "text": "Nicht jedes Sport-Geschenk muss teuer sein. Für Wichteln, den Nikolausstiefel oder als Ergänzung zum großen Geschenk eignen sich Faszienrolle, Springseil mit Zähler, Pilates-Ring, Bauchroller oder Liegestützgriffe. Diese Dinge sind klein, leicht zu verpacken und werden beim Training tatsächlich benutzt.\n\nSchön ist es, ein kleines Geschenk mit einer Idee zu verbinden – zum Beispiel ein Fitnessband zusammen mit dem Angebot, einmal pro Woche gemeinsam zu trainieren. Gerade rund um Neujahr, wenn viele sich mehr Bewegung vornehmen, kommt so ein Geschenk gut an."
+        }
+      ],
+      "produkttexte": {
+        "Yogamatte rutschfest": "Die Grundausstattung für fast jedes Training zu Hause: Yoga, Pilates, Dehnen oder Bauchübungen. Eine rutschfeste Unterseite und genug Dicke machen das Üben auf hartem Boden angenehmer.",
+        "Fitnessbänder-Set": "Mehrere Bänder mit unterschiedlichem Widerstand ersetzen für viele Übungen ganze Geräte. Passt für Einsteiger und Fortgeschrittene und lässt sich auch auf Reisen mitnehmen.",
+        "Verstellbares Kurzhantel-Set": "Für alle, die zu Hause mit Gewichten trainieren möchten. Weil sich das Gewicht anpassen lässt, wächst das Set mit – und es braucht weniger Platz als viele einzelne Hanteln.",
+        "Kettlebell": "Ein kompaktes Gewicht für Schwung- und Kraftübungen. Passt gut zu Leuten, die schon etwas Erfahrung haben und Abwechslung ins Training bringen möchten.",
+        "Klimmzugstange für den Türrahmen": "Wird ohne Bohren in den Türrahmen geklemmt und lässt sich nach dem Training wieder abnehmen. Vorher kurz prüfen, ob Breite und Rahmen der Tür passen.",
+        "Liegestützgriffe": "Kleines Zubehör für Liegestütze und Übungen auf dem Boden. Ein günstiges Geschenk für Sportler, das in jeder Schublade Platz findet und sich gut mit einer Matte kombinieren lässt.",
+        "Pilates-Ring": "Leicht, leise und platzsparend – ideal für Pilates-Fans, die zu Hause auf der Matte üben. Ein schönes kleines Geschenk unter 15 €.",
+        "Walking Pad (Laufband klappbar)": "Ein flaches Laufband zum Gehen, das sich nach dem Benutzen verstauen lässt. Passt zu Leuten, die viel im Homeoffice sitzen und nebenbei mehr gehen möchten.",
+        "Rudergerät": "Ein großes Geschenk für alle, die regelmäßig zu Hause trainieren wollen. Vorher klären, ob genug Platz da ist – viele Modelle lassen sich hochkant abstellen.",
+        "Faszienrolle": "Wird vor oder nach dem Training zum Ausrollen der Muskeln genutzt. Klein, günstig und eine gute Ergänzung zu fast jedem anderen Fitness-Geschenk."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man jemandem, der zu Hause trainieren möchte?",
+          "antwort": "Für den Anfang reichen eine rutschfeste Yogamatte und ein Fitnessbänder-Set. Damit lassen sich viele Übungen machen, ohne viel Platz zu brauchen. Wer schon trainiert, freut sich eher über Kettlebell, Kurzhanteln oder eine Klimmzugstange."
+        },
+        {
+          "frage": "Welche Fitness-Geschenke gibt es unter 15 €?",
+          "antwort": "Faszienrolle, Springseil mit Zähler, Pilates-Ring, Bauchroller und Liegestützgriffe gibt es meist unter 15 €. Sie eignen sich gut zum Wichteln, für den Nikolaus oder als Ergänzung zu einem größeren Geschenk."
+        },
+        {
+          "frage": "Was passt in eine kleine Wohnung?",
+          "antwort": "Alles, was sich zusammenlegen oder in einer Schublade verstauen lässt: Fitnessbänder, Pilates-Ring, Liegestützgriffe oder eine Matte zum Aufrollen. Bei großen Geräten wie Walking Pad oder Rudergerät auf klappbare Modelle achten."
+        },
+        {
+          "frage": "Ist ein Fitness-Geschenk nicht zu persönlich?",
+          "antwort": "Es kommt darauf an, ob die Person selbst gerne Sport macht oder sich mehr Bewegung vorgenommen hat. Dann ist es ein aufmerksames Geschenk. Ohne diesen Hinweis wirkt es schnell wie ein Wink mit dem Zaunpfahl – dann lieber etwas anderes wählen."
+        }
+      ]
+    }
   },
   {
     "slug": "geschenke-fuer-teenager",
@@ -467,7 +514,8 @@ window.PAGES = [
       "Hängesessel",
       "Briefpapier-Set",
       "Diamond-Painting-Set",
-      "Badebomben-Set"
+      "Badebomben-Set",
+      "Nadelfilz-Set für Anfänger"
     ],
     "foto_id": 8431871,
     "ratgeber": {
