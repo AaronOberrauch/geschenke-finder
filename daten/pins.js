@@ -869,5 +869,106 @@ window.PINS = [
       "Duftkerzen-Set",
       "Multitool"
     ]
+  },
+  {
+    "id": "2026-11-01-geschenke-fuer-kinder-bauen-basteln",
+    "datum": "2026-11-01",
+    "titel": "Geschenke für Kinder: Ideen zum Bauen, Basteln und Entdecken",
+    "beschreibung": "Du suchst Weihnachtsgeschenke für Kinder oder ein Geschenk zum Kindergeburtstag? Ein Experimentierkasten, Klemmbausteine, Bügelperlen oder Walkie-Talkies beschäftigen Kinder auch ohne Bildschirm. Alle Ideen vom Kleinkind bis zum Schulkind findest du auf der Seite. #geschenkefürkinder #weihnachtsgeschenke #kindergeburtstag #werbung",
+    "emoji": "🧸",
+    "seite": "geschenke-fuer-kinder",
+    "filter": {},
+    "design": "d",
+    "foto": "kinder spielen zimmer",
+    "produkte": [
+      "Experimentierkasten für Kinder",
+      "Klemmbaustein-Set",
+      "Bügelperlen-Set",
+      "Walkie-Talkies für Kinder",
+      "Malset im Koffer",
+      "Balance Board aus Holz"
+    ],
+    "foto_id": 5022349
+  },
+  {
+    "id": "2026-11-01-adventskalender-zum-befuellen-familie",
+    "datum": "2026-11-01",
+    "titel": "Adventskalender zum Befüllen: Ideen für Kinder und die ganze Familie",
+    "beschreibung": "Du möchtest dieses Jahr einen Adventskalender zum Befüllen statt Schokolade? Mit Leerkalender, Puzzle-Adventskalender oder Spielzeug-Adventskalender findest du für Kinder und Familie etwas Passendes. Jetzt ist noch Zeit, die 24 Türchen entspannt vorzubereiten – alle Ideen stehen auf der Seite. #adventskalender #adventskalenderbefüllen #weihnachten #werbung",
+    "emoji": "🎁",
+    "seite": "adventskalender",
+    "filter": {
+      "recipient": "kids",
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "weihnachten basteln",
+    "produkte": [
+      "Adventskalender zum Befüllen",
+      "Puzzle-Adventskalender",
+      "Spielzeug-Adventskalender für Kinder"
+    ],
+    "foto_id": 7649621
+  },
+  {
+    "id": "2026-11-01-geschenke-tierliebe-kinder",
+    "datum": "2026-11-01",
+    "titel": "Geschenke für tierliebe Kinder: Ideen für Katze, Kaninchen und Meerschweinchen",
+    "beschreibung": "Dein Kind liebt sein Haustier? Ein Katzentunnel, ein Kuschelhaus für Meerschweinchen oder ein Pfotenabdruck-Set sind schöne Geschenke für Tierfreunde. So werden Weihnachtsgeschenke für Katzenliebhaber und kleine Tierfans zum gemeinsamen Erlebnis. Alle Ideen findest du auf der Seite. #geschenkefürtierfreunde #haustiere #geschenkefürkinder #werbung",
+    "emoji": "🐱",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {
+      "recipient": "kids"
+    },
+    "design": "d",
+    "foto": "kind katze",
+    "produkte": [
+      "Katzentunnel",
+      "Kuschelhaus für Meerschweinchen und Kaninchen",
+      "Pfotenabdruck-Set",
+      "Interaktives Katzenspielzeug",
+      "Knabberspielzeug für Kleintiere",
+      "Katzenhöhle zum Kuscheln"
+    ],
+    "foto_id": 4097327
+  },
+  {
+    "id": "2026-11-01-sportgeschenke-maenner-zuhause",
+    "datum": "2026-11-01",
+    "titel": "Geschenke für Männer, die zu Hause trainieren: Ideen fürs Home-Workout",
+    "beschreibung": "Du suchst ein Geschenk für ihn, der gern zu Hause trainiert? Ein verstellbares Kurzhantel-Set, eine Massagepistole oder eine beheizbare Weste sind Sportgeschenke für Männer, die auch im Winter genutzt werden. Mehr Weihnachtsgeschenke für Männer findest du auf der Seite. #homeworkout #geschenkefürmänner #geschenkefürsportler #werbung",
+    "emoji": "🏋️",
+    "seite": "geschenke-fuer-maenner",
+    "filter": {
+      "category": "sport"
+    },
+    "design": "d",
+    "foto": "hantel gewichte",
+    "produkte": [
+      "Verstellbares Kurzhantel-Set",
+      "Massagepistole",
+      "Beheizbare Weste"
+    ],
+    "foto_id": 595529
+  },
+  {
+    "id": "2026-11-01-geschenke-teenager-unter-15-euro",
+    "datum": "2026-11-01",
+    "titel": "Geschenke für Teenager unter 15 €: kleine Ideen fürs Zimmer und für Freunde",
+    "beschreibung": "Du suchst kleine Geschenke für Teenager oder Nikolausgeschenke für Jugendliche? Eine Sunset-Lampe, ein Bullet-Journal-Notizbuch oder ein Kartenspiel für Partys passen zu vielen Interessen. Im Ratgeber auf der Seite erfährst du, was zu wem passt und welche Fehler du vermeiden kannst. #geschenkefürteenager #kleinegeschenke #nikolaus #werbung",
+    "emoji": "🎧",
+    "seite": "geschenke-fuer-teenager",
+    "filter": {
+      "budget": "under15"
+    },
+    "design": "b",
+    "produkte": [
+      "Sunset-Lampe",
+      "Bullet-Journal-Notizbuch",
+      "Kartenspiel für Partys",
+      "LED-Strip mit App-Steuerung",
+      "Gaming-Mauspad XXL",
+      "Badebomben-Set"
+    ]
   }
 ];

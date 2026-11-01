@@ -324,7 +324,53 @@ window.PAGES = [
       "recipient": "teenager"
     },
     "foto": "teenager musik",
-    "foto_id": 6981830
+    "foto_id": 6981830,
+    "ratgeber": {
+      "titel": "Ratgeber: Geschenke für Teenager finden",
+      "abschnitte": [
+        {
+          "ueberschrift": "Erst hinschauen, dann schenken",
+          "text": "Geschenke für Teenager sind schwierig, weil sich Interessen in diesem Alter schnell ändern. Was vor einem halben Jahr noch spannend war, kann heute schon peinlich sein. Schau dir deshalb an, womit sich der oder die Jugendliche gerade wirklich beschäftigt: Musik, Gaming, Zeichnen, Sport oder das eigene Zimmer.\n\nFrag ruhig Geschwister, Eltern oder Freunde. Ein kurzer Blick in die Runde verrät oft mehr als die direkte Frage, auf die meist nur „weiß nicht“ kommt. Spielzeug-Motive und Sprüche, die witzig gemeint sind, kommen dagegen selten gut an. Lieber etwas Schlichtes aussuchen, das wirklich benutzt wird."
+        },
+        {
+          "ueberschrift": "Was zu wem passt",
+          "text": "Fürs eigene Zimmer eignen sich eine Sunset-Lampe oder ein LED-Neonschild: Beides verändert die Stimmung, ohne dass umgeräumt werden muss. Wer gern schreibt oder zeichnet, freut sich über ein Bullet-Journal-Notizbuch oder ein Handlettering-Set.\n\nFür Musikfans passen kabellose In-Ear-Kopfhörer, und wer Fotos lieber anfasst als scrollt, hat mit einer Sofortbildkamera viel Spaß. Beim Gaming gilt: Eine Konsole oder ein neues Spiel sollte man vorher absprechen. Zubehör wie ein großes Mauspad ist die einfachere Wahl, weil es zu fast jeder Ausstattung passt."
+        },
+        {
+          "ueberschrift": "Typische Fehler und Ideen fürs Budget",
+          "text": "Der häufigste Fehler ist, etwas zu schenken, das eigentlich den Eltern gefällt, etwa Lernmaterial oder Dinge, die „mal nützlich sein werden“. Ein Teenager-Geschenk darf einfach Spaß machen. Prüfe bei Technik außerdem vorher, ob das Gerät zum vorhandenen Handy oder PC passt.\n\nKleine Geschenke für Teenager unter 15 € passen gut zum Nikolaus oder zum Wichteln, zum Beispiel ein Kartenspiel für Partys oder ein Badebomben-Set. Unter 50 € bleibt für Weihnachten oder den Geburtstag viel Auswahl. Bei größeren Wünschen können mehrere Verwandte zusammenlegen – das ist oft besser als drei halbherzige Kleinigkeiten."
+        }
+      ],
+      "produkttexte": {
+        "Sunset-Lampe": "Eine kleine Lampe, die warmes Licht an die Wand wirft und das Zimmer abends gemütlich macht. Passt für Teenager, die ihr Zimmer gerne gestalten und auch mal Fotos oder Videos machen.",
+        "LED-Neonschild fürs Zimmer": "Ein auffälliges Deko-Stück für die Wand oder den Schreibtisch. Schön für Jugendliche, die ihr Kinderzimmer langsam in ein eigenes Reich verwandeln wollen.",
+        "Bullet-Journal-Notizbuch": "Für alle, die gerne schreiben, planen oder zeichnen. Ein kleines Geschenk, das sich gut mit bunten Stiften kombinieren lässt und auch zum Nikolaus passt.",
+        "Handlettering-Set": "Für Teenager mit kreativer Ader, die schöne Schrift für Karten, Hefte oder das Journal ausprobieren wollen. Auch für Einsteiger geeignet, weil man einfach loslegen kann.",
+        "Kabellose In-Ear-Kopfhörer": "Passen für den Schulweg und zum Musikhören unterwegs. Prüfe vorher, ob schon Kopfhörer da sind – sonst lohnt sich eher ein anderes Geschenk.",
+        "Sofortbildkamera": "Für Jugendliche, die Erinnerungen gern in der Hand halten und Fotos an die Wand hängen. Denk daran, gleich ein paar Packungen Film dazuzulegen.",
+        "Gaming-Mauspad XXL": "Ein großes Mauspad passt zu fast jedem PC-Platz und ist ein unkompliziertes Geschenk für Gamer, wenn du die Ausstattung nicht genau kennst.",
+        "Kartenspiel für Partys": "Eine Kleinigkeit für Treffen mit Freunden, die kaum Platz braucht. Gut als Wichtelgeschenk oder als Extra zu einem größeren Geschenk.",
+        "Kuscheldecke mit Ärmeln": "Für Teenager, die Winterabende gern auf dem Sofa oder am Schreibtisch verbringen. Praktisch beim Zocken und Lesen, weil die Hände frei bleiben."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man Teenagern, die schon alles haben?",
+          "antwort": "Dann passen Dinge, die man verbraucht oder gemeinsam erlebt, gut: ein Kartenspiel für Treffen mit Freunden, Film für die Sofortbildkamera oder ein kreatives Set zum Ausprobieren."
+        },
+        {
+          "frage": "Was sind gute Geschenke für Teenager unter 15 Euro?",
+          "antwort": "Kleine Geschenke für Teenager unter 15 € sind zum Beispiel eine Sunset-Lampe, ein Notizbuch fürs Bullet Journal, ein Kartenspiel oder ein Gaming-Mauspad. Sie passen gut zum Nikolaus und zum Wichteln."
+        },
+        {
+          "frage": "Welche Geschenke passen für Mädchen und Jungen im Teenageralter?",
+          "antwort": "Am besten orientierst du dich am Hobby statt am Geschlecht. Zimmer-Deko, Kopfhörer, Kartenspiele und kreative Sets kommen bei vielen Jugendlichen an, wenn sie zu den aktuellen Interessen passen."
+        },
+        {
+          "frage": "Soll ich einem Teenager lieber Geld schenken?",
+          "antwort": "Geld ist praktisch, wirkt aber schnell unpersönlich. Eine kleine Idee, die zum Hobby passt, zusammen mit einem Geldbetrag für einen größeren Wunsch, ist oft die schönere Lösung."
+        }
+      ]
+    }
   },
   {
     "slug": "adventskalender",
@@ -696,5 +742,77 @@ window.PAGES = [
       ]
     },
     "foto_id": 2714970
+  },
+  {
+    "slug": "geschenke-fuer-kinder",
+    "titel": "Geschenke für Kinder: Ideen zum Bauen, Basteln und Entdecken",
+    "kurztitel": "Für Kinder",
+    "emoji": "🧸",
+    "anlass": "geburtstag",
+    "monate": [],
+    "beschreibung": "Geschenke für Kinder zu Weihnachten und zum Geburtstag: Ideen zum Bauen, Basteln, Forschen und Bewegen, vom Kleinkind bis zum Schulkind.",
+    "intro": "Vom Holzspielzeug fürs Kleinkind bis zum Experimentierkasten fürs Schulkind: Geschenkideen für Kinder, die zum Bauen, Basteln und Entdecken einladen.",
+    "filter": {},
+    "foto": "kinder bausteine",
+    "produkte": [
+      "Holzspielzeug-Set für Kleinkinder",
+      "Kinder-Laufrad",
+      "Knete-Set für Kinder",
+      "Bügelperlen-Set",
+      "Malset im Koffer",
+      "Klemmbaustein-Set",
+      "Experimentierkasten für Kinder",
+      "Walkie-Talkies für Kinder",
+      "Kinderkamera digital",
+      "Programmierbarer Lernroboter",
+      "Familien-Brettspiel",
+      "Balance Board aus Holz"
+    ],
+    "ratgeber": {
+      "titel": "Ratgeber: Das passende Geschenk für Kinder finden",
+      "abschnitte": [
+        {
+          "ueberschrift": "Nach Alter auswählen",
+          "text": "Bei Geschenken für Kinder ist das Alter der wichtigste Anhaltspunkt. Kleinkinder wollen greifen, stapeln und ausprobieren, dafür passen Holzspielzeug oder ein Laufrad. Achte auf die Altersangabe auf der Verpackung, besonders bei Kleinteilen wie Bügelperlen oder Bausteinen, die für die Jüngsten nicht geeignet sind.\n\nIm Kindergartenalter stehen Rollenspiele, Kneten und Malen im Vordergrund. Grundschulkinder wollen dagegen verstehen, wie etwas funktioniert: Ein Experimentierkasten oder ein programmierbarer Lernroboter trifft dann eher den Nerv. Lieber etwas wählen, das leicht fordert, statt ein Geschenk, das nach zwei Tagen langweilig oder zu schwer ist."
+        },
+        {
+          "ueberschrift": "Bauen, basteln, bewegen",
+          "text": "Kreative Beschäftigung ohne Bildschirm ist gerade ein großes Thema, auch auf der Spielwarenmesse. Ein Malset im Koffer, Bügelperlen oder Knete bieten viele ruhige Nachmittage. Klemmbausteine verbinden Geduld und Fantasie, und die Sammlung lässt sich später erweitern.\n\nFür Kinder mit viel Energie passen Dinge, die Bewegung ins Haus bringen. Ein Balance Board ist auch bei schlechtem Wetter nutzbar, Walkie-Talkies machen aus dem Garten oder der Wohnung ein Abenteuer. Überlege auch, wie viel Platz im Kinderzimmer noch da ist und wer das Spielzeug am Ende aufräumen muss."
+        },
+        {
+          "ueberschrift": "Typische Fehler beim Schenken",
+          "text": "Oft bekommen Kinder an Weihnachten von allen Seiten zu viel. Sprich dich mit Eltern, Großeltern und Paten ab, damit nichts doppelt unter dem Baum liegt und nicht fünf Geschenke gleichzeitig ausgepackt werden. Ein großes Geschenk von mehreren ist oft schöner als viele Kleinigkeiten.\n\nFrag bei Technik wie Kamera oder Roboter vorher nach, ob die Eltern das möchten, und prüfe, ob Batterien gebraucht werden. Nichts ist am Heiligabend enttäuschender als ein Spielzeug, das nicht startet. Und ein Familien-Brettspiel schenkt zusätzlich gemeinsame Zeit, die für Kinder oft genauso viel zählt wie das Spielzeug selbst."
+        }
+      ],
+      "produkttexte": {
+        "Holzspielzeug-Set für Kleinkinder": "Für die Jüngsten, die stapeln, sortieren und greifen wollen. Holz ist robust und übersteht auch wildere Spielphasen. Achte auf die Altersangabe, damit das Set zum Kind passt.",
+        "Kinder-Laufrad": "Ein größeres Geschenk für Kinder, die gerade sicher laufen und mobiler werden wollen. Eignet sich gut als gemeinsames Geschenk von Eltern und Großeltern, ein Helm gehört am besten gleich dazu.",
+        "Bügelperlen-Set": "Für Kinder im Kindergarten- und Grundschulalter, die gerne ruhig basteln. Beim Bügeln hilft ein Erwachsener, die fertigen Bilder können danach ans Fenster oder als kleines Geschenk an Oma und Opa.",
+        "Malset im Koffer": "Hält alles an einem Ort zusammen und lässt sich auch zu den Großeltern oder in den Urlaub mitnehmen. Passt für Kinder, die gerne malen, und ist ein gutes Geschenk zum Geburtstag.",
+        "Klemmbaustein-Set": "Für geduldige Baumeister, die nach Anleitung bauen oder eigene Ideen umsetzen möchten. Wähle die Größe nach Alter und Erfahrung, kleinere Sets eignen sich gut für den Einstieg.",
+        "Experimentierkasten für Kinder": "Für neugierige Grundschulkinder, die wissen wollen, warum etwas passiert. Viele Versuche klappen am besten gemeinsam mit einem Erwachsenen, das schenkt auch Zeit zu zweit.",
+        "Walkie-Talkies für Kinder": "Für Geschwister oder Freunde, die zusammen Abenteuer erleben. Funktioniert im Garten, beim Camping und in der Wohnung, und braucht weder Handy noch Bildschirm.",
+        "Balance Board aus Holz": "Für Kinder mit Bewegungsdrang, gerade an Regentagen. Das Brett lässt sich im Spiel auch als Brücke oder Wippe nutzen und kann danach platzsparend verstaut werden."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man Kindern zu Weihnachten, die schon alles haben?",
+          "antwort": "Dann lohnen sich Geschenke, die beschäftigen statt nur herumzustehen: Bastelsets zum Verbrauchen, ein Experimentierkasten oder ein Familien-Brettspiel für gemeinsame Abende."
+        },
+        {
+          "frage": "Was sind gute Geschenke für Kinder unter 15 Euro?",
+          "antwort": "Kleine Geschenke für Kinder unter 15 € sind zum Beispiel ein Bügelperlen-Set oder ein Knete-Set. Sie eignen sich auch gut für den Nikolausstiefel oder als Mitbringsel zum Kindergeburtstag."
+        },
+        {
+          "frage": "Welches Geschenk passt für Kinder ab 3 Jahren?",
+          "antwort": "Ab etwa drei Jahren passen Knete, Holzspielzeug und einfache Spiele oft gut. Prüfe immer die Altersangabe auf der Verpackung, weil manche Sets Kleinteile enthalten, die für jüngere Kinder ungeeignet sind."
+        },
+        {
+          "frage": "Was schenkt man einem Schulkind?",
+          "antwort": "Für Schulkinder passen Geschenke, bei denen sie etwas herausfinden oder selbst bauen: Experimentierkästen, Klemmbausteine, ein programmierbarer Lernroboter oder eine einfache Kinderkamera."
+        }
+      ]
+    },
+    "foto_id": 1864718
   }
 ];

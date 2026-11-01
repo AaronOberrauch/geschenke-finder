@@ -2808,5 +2808,70 @@ window.PRODUCTS = [
       "Mit Filznadeln und Unterlage",
       "Für gemütliche Abende"
     ]
+  },
+  {
+    "title": "Bügelperlen-Set",
+    "query": "Bügelperlen Set Kinder",
+    "emoji": "🎨",
+    "category": "fun",
+    "budget": "under15",
+    "recipients": [
+      "kids"
+    ],
+    "occasions": [
+      "weihnachten",
+      "nikolaus",
+      "geburtstag"
+    ],
+    "badge": "Zum Basteln",
+    "highlights": [
+      "Perlen in vielen Farben",
+      "Mit Steckplatten zum Gestalten",
+      "Für ruhige Nachmittage zu Hause"
+    ]
+  },
+  {
+    "title": "Vogelspielzeug-Set für Wellensittiche",
+    "query": "Vogelspielzeug Wellensittich Set",
+    "emoji": "🦜",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "nikolaus"
+    ],
+    "badge": "Für Vogelfreunde",
+    "highlights": [
+      "Mehrere Teile zur Abwechslung",
+      "Zum Aufhängen im Käfig",
+      "Für die Beschäftigung im Alltag"
+    ]
+  },
+  {
+    "title": "Balance Board aus Holz",
+    "query": "Balance Board Holz",
+    "emoji": "🛹",
+    "category": "sport",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "teenager",
+      "kids"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag"
+    ],
+    "badge": "Für zu Hause",
+    "highlights": [
+      "Braucht wenig Platz",
+      "Für Gleichgewichtsübungen und Spiel",
+      "Leicht zu verstauen"
+    ]
   }
 ];
