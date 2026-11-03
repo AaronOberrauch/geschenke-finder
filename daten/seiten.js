@@ -478,7 +478,8 @@ window.PAGES = [
       "Beheizbare Weste",
       "Retro-Spielkonsole mit Klassikern",
       "Gaming-Mauspad XXL",
-      "Werkzeug-Adventskalender"
+      "Werkzeug-Adventskalender",
+      "Gusseisentopf mit Deckel"
     ],
     "foto_id": 7092687,
     "ratgeber": {
@@ -561,7 +562,8 @@ window.PAGES = [
       "Briefpapier-Set",
       "Diamond-Painting-Set",
       "Badebomben-Set",
-      "Nadelfilz-Set für Anfänger"
+      "Nadelfilz-Set für Anfänger",
+      "Windlicht-Set aus Glas"
     ],
     "foto_id": 8431871,
     "ratgeber": {

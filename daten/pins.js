@@ -970,5 +970,102 @@ window.PINS = [
       "Gaming-Mauspad XXL",
       "Badebomben-Set"
     ]
+  },
+  {
+    "id": "2026-11-03-geschenke-fuer-gamer-unter-50",
+    "datum": "2026-11-03",
+    "titel": "Geschenke für Gamer unter 50 €: Ideen von Headset bis Neonschild",
+    "beschreibung": "Du suchst Geschenke für Gamer unter 50 Euro oder ein Geschenk für Zocker zu Weihnachten? Ein Gaming-Headset, eine Gaming-Maus oder ein USB-Mikrofon fürs Streaming passen zu vielen, die gern am PC oder an der Konsole spielen. Alle Ideen findest du auf der Seite. #geschenkefürgamer #gaming #weihnachtsgeschenke #werbung",
+    "emoji": "🎮",
+    "seite": "geschenke-fuer-gamer",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "gaming zimmer",
+    "produkte": [
+      "Gaming-Headset",
+      "Gaming-Maus",
+      "USB-Mikrofon für Streaming",
+      "LED-Neonschild fürs Zimmer",
+      "Ringlicht mit Handyhalter"
+    ],
+    "foto_id": 3264751
+  },
+  {
+    "id": "2026-11-03-kaffeeliebhaber-unter-50",
+    "datum": "2026-11-03",
+    "titel": "Geschenke für Kaffeeliebhaber unter 50 €: Handmühle, French Press und mehr",
+    "beschreibung": "Du suchst Geschenke für Kaffeeliebhaber oder ein kleines Weihnachtsgeschenk für alle, die morgens nicht ohne Tasse starten? Eine Handkaffeemühle, eine French Press oder ein Milchaufschäumer machen die Kaffeepause zu Hause schöner. Alle Ideen unter 50 € findest du auf der Seite. #kaffeeliebe #geschenkefürkaffeeliebhaber #weihnachtsgeschenke #werbung",
+    "emoji": "☕",
+    "seite": "geschenke-fuer-kaffeeliebhaber",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "kaffee tasse bohnen",
+    "produkte": [
+      "Handkaffeemühle",
+      "French Press",
+      "Elektrischer Milchaufschäumer"
+    ],
+    "foto_id": 2714970
+  },
+  {
+    "id": "2026-11-03-wichtelgeschenke-zuhause-unter-15",
+    "datum": "2026-11-03",
+    "titel": "Wichtelgeschenke fürs Zuhause unter 15 €: Ideen für gemütliche Winterabende",
+    "beschreibung": "Du suchst Wichtelgeschenke unter 15 Euro, die nicht im Schrank verschwinden? Ein Windlicht-Set aus Glas, eine Wärmflasche mit Strickbezug oder ein Kräutergarten-Anzuchtset sind kleine Geschenke für Kollegen und Freunde, die zu Hause gern genutzt werden. Alle Ideen nach Budget findest du auf der Seite. #wichtelgeschenke #wichteln #kleinegeschenke #werbung",
+    "emoji": "🕯️",
+    "seite": "wichtelgeschenke-unter-15-euro",
+    "filter": {
+      "category": "home"
+    },
+    "design": "d",
+    "produkte": [
+      "Windlicht-Set aus Glas",
+      "Wärmflasche mit Strickbezug",
+      "Kräutergarten-Anzuchtset"
+    ],
+    "foto": "kerzen winter gemütlich",
+    "foto_id": 8512488
+  },
+  {
+    "id": "2026-11-03-nikolausgeschenke-unter-50",
+    "datum": "2026-11-03",
+    "titel": "Nikolausgeschenke unter 50 €: Ideen für Kinder und Erwachsene",
+    "beschreibung": "Darf es zum Nikolaus etwas mehr sein als Schokolade? Eine Kuscheldecke mit Ärmeln, ein Sternenhimmel-Projektor oder ein Malset im Koffer sind Nikolausgeschenke für Kinder und Erwachsene, die auch nach dem 6. Dezember Freude machen. Alle Ideen findest du auf der Seite. #nikolaus #nikolausgeschenke #geschenkideen #werbung",
+    "emoji": "🎅",
+    "seite": "nikolausgeschenke",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "nikolaus stiefel",
+    "produkte": [
+      "Kuscheldecke mit Ärmeln",
+      "Sternenhimmel-Projektor",
+      "Malset im Koffer"
+    ],
+    "foto_id": 3009717
+  },
+  {
+    "id": "2026-11-03-katzenbesitzer-hundebesitzer-bis-150",
+    "datum": "2026-11-03",
+    "titel": "Geschenke für Katzenbesitzer und Hundebesitzer bis 150 €: größere Ideen",
+    "beschreibung": "Du suchst ein größeres Geschenk für Katzenbesitzer oder Hundebesitzer? Ein Katzen-Kratzbaum, ein Hundebett mit erhöhtem Rand oder ein automatischer Futterspender sind Weihnachtsgeschenke für Katzenliebhaber und Hundefans, die im Alltag gebraucht werden. Alle Ideen findest du auf der Seite. #geschenkefürtierfreunde #katzenliebe #hundeliebe #werbung",
+    "emoji": "🐱",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {
+      "budget": "50to150"
+    },
+    "design": "d",
+    "foto": "katze fenster",
+    "produkte": [
+      "Katzen-Kratzbaum",
+      "Hundebett mit erhöhtem Rand",
+      "Automatischer Futterspender"
+    ],
+    "foto_id": 10110760
   }
 ];

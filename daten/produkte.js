@@ -2873,5 +2873,72 @@ window.PRODUCTS = [
       "Für Gleichgewichtsübungen und Spiel",
       "Leicht zu verstauen"
     ]
+  },
+  {
+    "title": "Erhöhter Katzennapf aus Keramik",
+    "query": "Katzennapf erhöht Keramik",
+    "emoji": "🐾",
+    "category": "pets",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag"
+    ],
+    "badge": "Für Katzenfans",
+    "highlights": [
+      "Erhöhte Position beim Fressen",
+      "Glatte, leicht zu reinigende Oberfläche",
+      "Steht fest auf dem Boden"
+    ]
+  },
+  {
+    "title": "Gusseisentopf mit Deckel",
+    "query": "Gusseisen Topf emailliert Deckel",
+    "emoji": "🍲",
+    "category": "kitchen",
+    "budget": "50to150",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag",
+      "muttertag",
+      "vatertag"
+    ],
+    "badge": "Für Hobbyköche",
+    "highlights": [
+      "Für Schmorgerichte, Suppen und Brot",
+      "Hält die Wärme lange",
+      "Passt in den Backofen"
+    ]
+  },
+  {
+    "title": "Windlicht-Set aus Glas",
+    "query": "Windlicht Set Glas Teelicht",
+    "emoji": "🕯️",
+    "category": "home",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "nikolaus",
+      "geburtstag"
+    ],
+    "badge": "Für gemütliche Abende",
+    "highlights": [
+      "Für Teelichter geeignet",
+      "Mehrere Stück im Set",
+      "Passt auf Tisch und Fensterbank"
+    ]
   }
 ];
