@@ -563,7 +563,9 @@ window.PAGES = [
       "Diamond-Painting-Set",
       "Badebomben-Set",
       "Nadelfilz-Set für Anfänger",
-      "Windlicht-Set aus Glas"
+      "Windlicht-Set aus Glas",
+      "Teekanne aus Glas mit Stövchen",
+      "Fotoalbum zum Einkleben"
     ],
     "foto_id": 8431871,
     "ratgeber": {

@@ -2940,5 +2940,73 @@ window.PRODUCTS = [
       "Mehrere Stück im Set",
       "Passt auf Tisch und Fensterbank"
     ]
+  },
+  {
+    "title": "Hundepullover für den Winter",
+    "query": "Hundepullover Winter warm",
+    "emoji": "🐕",
+    "category": "pets",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "nikolaus",
+      "geburtstag"
+    ],
+    "badge": "Für kalte Spaziergänge",
+    "highlights": [
+      "Weiches, wärmendes Material",
+      "In vielen Größen erhältlich",
+      "Für kalte Tage draußen"
+    ]
+  },
+  {
+    "title": "Teekanne aus Glas mit Stövchen",
+    "query": "Teekanne Glas Stövchen Teesieb",
+    "emoji": "🫖",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "muttertag",
+      "geburtstag"
+    ],
+    "badge": "Für Teeliebhaber",
+    "highlights": [
+      "Mit Sieb für losen Tee",
+      "Stövchen hält den Tee warm",
+      "Schön auf dem Tisch"
+    ]
+  },
+  {
+    "title": "Fotoalbum zum Einkleben",
+    "query": "Fotoalbum zum Einkleben Leinen",
+    "emoji": "📖",
+    "category": "home",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "muttertag",
+      "vatertag",
+      "valentinstag",
+      "geburtstag"
+    ],
+    "badge": "Für Erinnerungen",
+    "highlights": [
+      "Platz für eigene Fotos",
+      "Seiten frei gestaltbar",
+      "Persönliches Geschenk"
+    ]
   }
 ];

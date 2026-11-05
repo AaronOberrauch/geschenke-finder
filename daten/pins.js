@@ -1067,5 +1067,112 @@ window.PINS = [
       "Automatischer Futterspender"
     ],
     "foto_id": 10110760
+  },
+  {
+    "id": "2026-11-05-weihnachtsgeschenke-eltern-bis-150",
+    "datum": "2026-11-05",
+    "titel": "Weihnachtsgeschenke für Eltern bis 150 €: Ideen zum Merken vor der Black Week",
+    "beschreibung": "Du suchst Weihnachtsgeschenke für Eltern und willst dich mit den Geschwistern zusammentun? Ein digitaler Bilderrahmen, eine Heißluftfritteuse oder ein Gusseisentopf sind größere Geschenke für Mama und Papa, die im Alltag wirklich benutzt werden. Merk dir die Ideen schon vor dem Black Friday – alle findest du nach Budget sortiert auf der Seite. #weihnachtsgeschenke #geschenkefüreltern #blackweek #werbung",
+    "emoji": "🎄",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "recipient": "parents",
+      "budget": "50to150"
+    },
+    "design": "d",
+    "foto": "wohnzimmer weihnachtsbaum sofa",
+    "produkte": [
+      "Digitaler Bilderrahmen mit WLAN",
+      "Heißluftfritteuse",
+      "Gusseisentopf mit Deckel",
+      "Elektrische Heizdecke"
+    ],
+    "foto_id": 6905872
+  },
+  {
+    "id": "2026-11-05-geschenke-fuer-mama-unter-50",
+    "datum": "2026-11-05",
+    "titel": "Geschenke für Mama unter 50 €: Teekanne, Fotoalbum und Kuscheldecke",
+    "beschreibung": "Du suchst ein Geschenk für Mama oder ein Weihnachtsgeschenk für die Oma? Eine Teekanne aus Glas mit Stövchen, ein Fotoalbum zum Einkleben oder eine Kuscheldecke mit Ärmeln sind persönliche Geschenke für gemütliche Winterabende. Alle Ideen unter 50 Euro findest du auf der Seite. #geschenkefürmama #geschenkefürfrauen #weihnachtsgeschenke #werbung",
+    "emoji": "🫖",
+    "seite": "geschenke-fuer-frauen",
+    "filter": {
+      "recipient": "parents",
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "tee buch gemütlich",
+    "produkte": [
+      "Teekanne aus Glas mit Stövchen",
+      "Fotoalbum zum Einkleben",
+      "Kuscheldecke mit Ärmeln",
+      "Duftkerzen-Set",
+      "Tee-Geschenkset"
+    ],
+    "foto_id": 8295812
+  },
+  {
+    "id": "2026-11-05-geschenke-fuer-papa-black-friday",
+    "datum": "2026-11-05",
+    "titel": "Geschenke für Papa unter 50 €: Ideen für Grill und Werkstatt vor dem Black Friday",
+    "beschreibung": "Du brauchst noch ein Geschenk für Papa oder ein Weihnachtsgeschenk für den Opa? Ein Multitool, ein digitales Grillthermometer oder ein Grillbesteck-Set im Koffer sind Geschenke für Männer, die gern anpacken. Merk dir die Ideen schon vor dem Black Friday. Alle findest du auf der Seite. #geschenkefürpapa #geschenkefürmänner #blackfriday #werbung",
+    "emoji": "🔧",
+    "seite": "geschenke-fuer-maenner",
+    "filter": {
+      "recipient": "parents",
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "werkzeug holz tisch",
+    "produkte": [
+      "Multitool",
+      "Digitales Grillthermometer",
+      "Grillbesteck-Set im Koffer",
+      "Aufladbare LED-Taschenlampe",
+      "Uhrenbox aus Holz"
+    ],
+    "foto_id": 4070631
+  },
+  {
+    "id": "2026-11-05-geschenke-fuer-hundebesitzer-unter-50",
+    "datum": "2026-11-05",
+    "titel": "Geschenke für Hundebesitzer unter 50 €: Pullover, Geschirr und Decke fürs Auto",
+    "beschreibung": "Du suchst ein Geschenk für Hundebesitzer, das auch im Winter gebraucht wird? Ein Hundepullover, ein gepolstertes Hundegeschirr oder eine Hundedecke fürs Auto passen zu kalten Spaziergängen und sind schöne Weihnachtsgeschenke für Tierfreunde. Alle Ideen für Hund und Katze findest du auf der Seite. #geschenkefürhundebesitzer #hundeliebe #tierfreunde #werbung",
+    "emoji": "🐕",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {
+      "recipient": "household",
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "hund winter spaziergang",
+    "produkte": [
+      "Hundepullover für den Winter",
+      "Gepolstertes Hundegeschirr",
+      "Hundedecke fürs Auto",
+      "Hunde-Regenmantel",
+      "Intelligenzspielzeug für Hunde"
+    ],
+    "foto_id": 6884916
+  },
+  {
+    "id": "2026-11-05-fitness-geschenke-unter-50",
+    "datum": "2026-11-05",
+    "titel": "Fitness-Geschenke für Eltern unter 50 €: Yogamatte, Kettlebell und Stepper",
+    "beschreibung": "Du suchst Fitness-Geschenke für Mama und Papa, die zu Hause trainieren? Eine rutschfeste Yogamatte, eine Kettlebell oder ein Aerobic-Stepper sind Geschenke fürs Home-Workout, die wenig Platz brauchen. Alle Ideen für das Training zu Hause findest du auf der Seite. #fitnessgeschenke #homeworkout #geschenkideen #werbung",
+    "emoji": "🏋️",
+    "seite": "home-training-geschenke",
+    "filter": {
+      "recipient": "parents",
+      "budget": "15to50"
+    },
+    "design": "c",
+    "produkte": [
+      "Yogamatte rutschfest",
+      "Kettlebell",
+      "Gymnastikball",
+      "Klimmzugstange für den Türrahmen",
+      "Aerobic-Stepper höhenverstellbar"
+    ]
   }
 ];
