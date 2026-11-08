@@ -3008,5 +3008,73 @@ window.PRODUCTS = [
       "Seiten frei gestaltbar",
       "Persönliches Geschenk"
     ]
+  },
+  {
+    "title": "Rezeptbuch zum Selbstschreiben",
+    "query": "Rezeptbuch zum Selberschreiben",
+    "emoji": "📔",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "muttertag",
+      "geburtstag"
+    ],
+    "badge": "Für Familienrezepte",
+    "highlights": [
+      "Seiten zum Selbstausfüllen",
+      "Platz für eigene Rezepte",
+      "Persönliches Geschenk"
+    ]
+  },
+  {
+    "title": "Heuraufe für Kaninchen und Meerschweinchen",
+    "query": "Heuraufe Kaninchen Meerschweinchen",
+    "emoji": "🐰",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "kids",
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "nikolaus",
+      "geburtstag"
+    ],
+    "badge": "Für kleine Haustiere",
+    "highlights": [
+      "Hält das Heu vom Boden fern",
+      "Für Stall oder Gehege",
+      "Praktisch im Alltag"
+    ]
+  },
+  {
+    "title": "Klappbare Hantelbank",
+    "query": "Hantelbank klappbar",
+    "emoji": "🏋️",
+    "category": "sport",
+    "budget": "50to150",
+    "recipients": [
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "vatertag",
+      "geburtstag"
+    ],
+    "badge": "Fürs Home-Gym",
+    "highlights": [
+      "Lässt sich zusammenklappen",
+      "Für Übungen mit Kurzhanteln",
+      "Platzsparend zu verstauen"
+    ]
   }
 ];

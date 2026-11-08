@@ -479,7 +479,8 @@ window.PAGES = [
       "Retro-Spielkonsole mit Klassikern",
       "Gaming-Mauspad XXL",
       "Werkzeug-Adventskalender",
-      "Gusseisentopf mit Deckel"
+      "Gusseisentopf mit Deckel",
+      "Klappbare Hantelbank"
     ],
     "foto_id": 7092687,
     "ratgeber": {
@@ -565,7 +566,8 @@ window.PAGES = [
       "Nadelfilz-Set für Anfänger",
       "Windlicht-Set aus Glas",
       "Teekanne aus Glas mit Stövchen",
-      "Fotoalbum zum Einkleben"
+      "Fotoalbum zum Einkleben",
+      "Rezeptbuch zum Selbstschreiben"
     ],
     "foto_id": 8431871,
     "ratgeber": {
@@ -818,5 +820,82 @@ window.PAGES = [
       ]
     },
     "foto_id": 1864718
+  },
+  {
+    "slug": "geschenke-fuer-eltern-und-grosseltern",
+    "titel": "Geschenke für Eltern und Großeltern: Ideen für Mama, Papa, Oma und Opa",
+    "kurztitel": "Für Eltern und Großeltern",
+    "emoji": "👵",
+    "anlass": "geburtstag",
+    "monate": [],
+    "beschreibung": "Geschenke für Eltern, Oma und Opa: Fotoalbum, Rezeptbuch, Teekanne, Kuscheldecke und Spiele für gemeinsame Stunden, nach Budget sortiert.",
+    "intro": "Für alle, die sagen: „Wir brauchen doch nichts.“ Hier findest du Ideen für Mama, Papa, Oma und Opa, die Erinnerungen festhalten, den Alltag gemütlicher machen oder die Familie an einen Tisch bringen.",
+    "filter": {},
+    "foto": "großmutter enkelin",
+    "produkte": [
+      "Fotoalbum zum Einkleben",
+      "Digitaler Bilderrahmen mit WLAN",
+      "Rezeptbuch zum Selbstschreiben",
+      "Teekanne aus Glas mit Stövchen",
+      "Tee-Geschenkset",
+      "Kuscheldecke mit Ärmeln",
+      "Elektrische Heizdecke",
+      "Wärmflasche mit Strickbezug",
+      "Kräutergarten-Anzuchtset",
+      "Puzzle 1000 Teile",
+      "Familien-Brettspiel",
+      "Briefpapier-Set"
+    ],
+    "ratgeber": {
+      "titel": "Ratgeber: Geschenke für Eltern und Großeltern",
+      "abschnitte": [
+        {
+          "ueberschrift": "„Wir brauchen nichts“: So findest du trotzdem etwas",
+          "text": "Den Satz kennt fast jede Familie, und bei Eltern und Großeltern stimmt er oft sogar: Der Haushalt ist über Jahrzehnte gewachsen, Geschirr und Deko sind längst da. Darum hilft es wenig, nach dem nächsten Gegenstand zu suchen. Frag dich lieber, wie ein ganz normaler Nachmittag bei Mama und Papa oder bei Oma und Opa aussieht.\n\nWer jeden Tag Tee trinkt, freut sich über eine schöne Kanne. Wer gern puzzelt oder Karten spielt, hat für neuen Nachschub immer einen Platz. Und wer viel im Garten oder auf dem Balkon ist, kann mit Kräutern fürs Fensterbrett auch im Winter etwas anfangen. Ein Geschenk, das zu einer festen Gewohnheit passt, wird eher benutzt als eines, das nur schön aussieht."
+        },
+        {
+          "ueberschrift": "Erinnerungen schenken: persönlich statt teuer",
+          "text": "Für viele Großeltern zählt weniger, was ein Geschenk gekostet hat, als die Mühe, die drinsteckt. Ein Fotoalbum zum Einkleben wirkt erst dann persönlich, wenn du es vorher füllst: Such zwanzig Bilder aus dem letzten Jahr heraus und schreib zu jedem einen Satz. Das geht auch an einem einzigen Abend.\n\nÄhnlich funktioniert ein Rezeptbuch zum Selbstschreiben, in das du die ersten zwei oder drei Familienrezepte einträgst. Die übrigen Seiten können Oma und Opa nach und nach selbst füllen, und ihr habt einen Anlass, gemeinsam zu kochen. Ein digitaler Bilderrahmen lohnt sich vor allem, wenn die Enkel weiter weg wohnen: Richte ihn vor dem Verschenken ein, lade die ersten Fotos hoch und zeig kurz, wie er funktioniert."
+        },
+        {
+          "ueberschrift": "Typische Fehler und wie du sie vermeidest",
+          "text": "Der häufigste Fehler ist Technik, die zu Hause niemand einrichten mag. Überleg dir vorher, wer bei Fragen hilft, und wähle lieber ein Gerät mit wenigen Knöpfen. Ebenso heikel sind Geschenke, die ständig ans Älterwerden erinnern: Was gut gemeint ist, kann schnell wie ein Kommentar wirken. Frag im Zweifel lieber vorher nach, statt zu überraschen.\n\nAuch Deko ist oft schwierig, weil Geschmack sehr persönlich ist und in vielen Wohnungen schon alles seinen festen Platz hat. Sicherer sind Dinge, die benutzt oder verbraucht werden, also Tee, Briefpapier oder eine Decke fürs Sofa. Bei Elektrogeräten wie einer Heizdecke lohnt sich ein Blick auf die Bedienung: Große Tasten und eine Abschaltautomatik machen den Alltag leichter."
+        },
+        {
+          "ueberschrift": "Gemeinsam schenken: als Geschwister zusammenlegen",
+          "text": "Wenn mehrere Kinder oder Enkel zusammenlegen, wird aus vielen kleinen Beträgen ein Geschenk, das sich einer allein nicht vorgenommen hätte, etwa der Bilderrahmen. Klärt früh, wer das Geschenk bestellt und wer die Fotos oder Rezepte sammelt, sonst bleibt am Ende alles an einer Person hängen.\n\nAuch ein kleines Budget reicht: Ein Puzzle oder ein Brettspiel wird schöner, wenn du dazuschreibst, dass ihr es beim nächsten Besuch gemeinsam spielt. So verschenkst du neben der Schachtel auch einen Nachmittag zusammen. Das ist für viele Eltern und Großeltern ohnehin der eigentliche Wunsch."
+        }
+      ],
+      "produkttexte": {
+        "Fotoalbum zum Einkleben": "Für alle, die Bilder lieber in der Hand halten als am Handy anzusehen. Fülle die ersten Seiten vorab und schreib kurze Notizen dazu, dann ist es schon beim Auspacken ein persönliches Geschenk.",
+        "Digitaler Bilderrahmen mit WLAN": "Passt zu Großeltern, deren Enkel weiter weg wohnen: Neue Fotos lassen sich aus der Ferne schicken. Am besten vor dem Verschenken einrichten und kurz zusammen ausprobieren.",
+        "Rezeptbuch zum Selbstschreiben": "Ein schöner Rahmen für die Familienrezepte, die sonst nur auf losen Zetteln existieren. Trag die ersten Rezepte selbst ein und lass den Rest gemeinsam mit Oma, Opa oder den Eltern entstehen.",
+        "Teekanne aus Glas mit Stövchen": "Für Teetrinker, die sich am Nachmittag gern Zeit nehmen. Das Stövchen hält die Kanne warm, und zusammen mit einer Sorte Tee ist das Geschenk direkt komplett.",
+        "Kuscheldecke mit Ärmeln": "Für lange Abende auf dem Sofa, bei denen man beim Lesen oder Stricken die Hände frei haben möchte. Unkompliziert und auch für alle geeignet, die sich sonst nichts wünschen.",
+        "Elektrische Heizdecke": "Für alle, die abends schnell kalte Füße bekommen und das Sofa gern vorwärmen. Achte auf eine einfache Bedienung mit gut lesbaren Tasten und auf eine Abschaltautomatik.",
+        "Wärmflasche mit Strickbezug": "Eine kleine Aufmerksamkeit für den Winter, die ohne Stecker und ohne Anleitung auskommt. Passt auch gut als Mitbringsel oder als Beigabe zu einem größeren Geschenk.",
+        "Kräutergarten-Anzuchtset": "Für Hobbygärtner, denen im Winter etwas fehlt. Auf dem Fensterbrett wachsen frische Kräuter für die Küche, und es gibt immer etwas zu tun und zu beobachten.",
+        "Familien-Brettspiel": "Ein Grund, dass sich alle an einen Tisch setzen. Schau auf einfache Regeln und eine kurze Spieldauer, damit auch Enkel und Großeltern gut zusammen spielen können."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man Eltern, die schon alles haben?",
+          "antwort": "Am ehesten etwas, das benutzt wird oder Erinnerungen festhält: ein selbst gefülltes Fotoalbum, ein Rezeptbuch mit Familienrezepten oder guten Tee. Auch ein Spiel mit dem Versprechen, es gemeinsam zu spielen, kommt ohne weiteren Staubfänger aus."
+        },
+        {
+          "frage": "Was schenkt man Oma und Opa zu Weihnachten?",
+          "antwort": "Großeltern freuen sich oft über alles, was mit den Enkeln zu tun hat: Fotos im Album oder auf einem digitalen Bilderrahmen, ein gemeinsam geschriebenes Rezeptbuch oder ein Brief auf schönem Papier. Für gemütliche Winterabende passen eine Decke oder eine Teekanne."
+        },
+        {
+          "frage": "Welches kleine Geschenk für Großeltern gibt es unter 15 €?",
+          "antwort": "Im Budget unter 15 € passen zum Beispiel ein Puzzle, eine Wärmflasche mit Strickbezug, ein Briefpapier-Set oder ein Kräutergarten-Anzuchtset. Mit ein paar handgeschriebenen Zeilen oder einem Foto dazu wirkt auch ein kleines Geschenk persönlich."
+        },
+        {
+          "frage": "Was können Geschwister ihren Eltern gemeinsam schenken?",
+          "antwort": "Zusammengelegt wird oft ein digitaler Bilderrahmen, auf den alle ihre Fotos schicken. Genauso gut passt ein Album oder Rezeptbuch, zu dem jedes Kind ein paar Seiten beisteuert. Sprecht früh ab, wer was übernimmt, damit nicht alles an einer Person hängen bleibt."
+        }
+      ]
+    },
+    "foto_id": 10487963
   }
 ];

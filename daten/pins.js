@@ -1174,5 +1174,109 @@ window.PINS = [
       "Klimmzugstange für den Türrahmen",
       "Aerobic-Stepper höhenverstellbar"
     ]
+  },
+  {
+    "id": "2026-11-09-geschenke-fuer-eltern-oma-opa",
+    "datum": "2026-11-09",
+    "titel": "Geschenke für Eltern, Oma und Opa: Fotoalbum, Rezeptbuch und mehr zu Weihnachten",
+    "beschreibung": "Du suchst Weihnachtsgeschenke für Eltern oder ein persönliches Geschenk für Oma und Opa? Ein Fotoalbum zum Einkleben, ein digitaler Bilderrahmen oder ein Rezeptbuch zum Selbstschreiben halten Erinnerungen fest und passen auch zu Großeltern, die schon alles haben. Alle Ideen nach Budget sortiert findest du auf der Seite. #geschenkefüreltern #geschenkefüromaundopa #weihnachtsgeschenke #werbung",
+    "emoji": "👵",
+    "seite": "geschenke-fuer-eltern-und-grosseltern",
+    "filter": {},
+    "board": "eltern",
+    "design": "d",
+    "foto": "großeltern enkel",
+    "produkte": [
+      "Fotoalbum zum Einkleben",
+      "Digitaler Bilderrahmen mit WLAN",
+      "Rezeptbuch zum Selbstschreiben",
+      "Teekanne aus Glas mit Stövchen",
+      "Kuscheldecke mit Ärmeln",
+      "Familien-Brettspiel"
+    ],
+    "foto_id": 373441
+  },
+  {
+    "id": "2026-11-09-kaffeeliebhaber-eltern",
+    "datum": "2026-11-09",
+    "titel": "Geschenke für Kaffeeliebhaber: Ideen für Mama, Papa und alle, die morgens Kaffee brauchen",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Kaffeeliebhaber oder ein Geschenk für Eltern, die ohne Kaffee nicht in den Tag starten? Eine French Press, ein elektrischer Milchaufschäumer oder eine Handkaffeemühle bringen Abwechslung ins Frühstück. Alle Ideen für Kaffeetrinker findest du auf der Seite. #geschenkefürkaffeeliebhaber #kaffeeliebe #weihnachtsgeschenke #werbung",
+    "emoji": "☕",
+    "seite": "geschenke-fuer-kaffeeliebhaber",
+    "filter": {
+      "recipient": "parents"
+    },
+    "design": "d",
+    "foto": "kaffee kekse weihnachten",
+    "produkte": [
+      "French Press",
+      "Elektrischer Milchaufschäumer",
+      "Handkaffeemühle",
+      "Milchkännchen für Latte Art",
+      "Edelstahl-Thermobecher",
+      "Kaffeevollautomat"
+    ],
+    "foto_id": 1891445
+  },
+  {
+    "id": "2026-11-09-geschenke-oma-opa-mit-haustier",
+    "datum": "2026-11-09",
+    "titel": "Geschenke für Hundebesitzer und Katzenfreunde: Ideen für Eltern, Oma und Opa mit Haustier",
+    "beschreibung": "Du suchst ein Geschenk für Hundebesitzer oder ein Geschenk für Katzenbesitzer in der Familie? Für Eltern, Oma und Opa mit Haustier passen eine Hundedecke fürs Auto, ein Schnüffelteppich oder eine Katzen-Fensterliege, und für Kaninchen und Meerschweinchen eine Heuraufe. Alle Ideen für Tierfreunde findest du auf der Seite. #geschenkefürhundebesitzer #geschenkefürkatzenbesitzer #tierfreunde #werbung",
+    "emoji": "🐶",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {
+      "recipient": "parents"
+    },
+    "design": "d",
+    "foto": "senior hund sofa",
+    "produkte": [
+      "Hundedecke fürs Auto",
+      "Schnüffelteppich für Hunde",
+      "Katzen-Fensterliege",
+      "Katzenhöhle zum Kuscheln",
+      "Fellpflegebürste für Hunde",
+      "Heuraufe für Kaninchen und Meerschweinchen"
+    ],
+    "foto_id": 2579885
+  },
+  {
+    "id": "2026-11-09-home-workout-geschenke-bis-150",
+    "datum": "2026-11-09",
+    "titel": "Home-Workout Geschenke bis 150 €: Ideen fürs Training zu Hause vor dem Black Friday",
+    "beschreibung": "Du suchst Fitness-Geschenke für alle, die lieber zu Hause trainieren? Eine klappbare Hantelbank oder ein verstellbares Kurzhantel-Set brauchen wenig Platz und passen gut in die Ecke im Wohnzimmer oder Keller. Merk dir die Ideen schon vor dem Black Friday. Alle Geschenke fürs Home-Workout findest du auf der Seite. #homeworkout #fitnessgeschenke #homegym #werbung",
+    "emoji": "🏋️",
+    "seite": "home-training-geschenke",
+    "filter": {
+      "budget": "50to150"
+    },
+    "design": "d",
+    "foto": "gewichte sport",
+    "produkte": [
+      "Klappbare Hantelbank",
+      "Verstellbares Kurzhantel-Set",
+      "Massagepistole"
+    ],
+    "foto_id": 3324977
+  },
+  {
+    "id": "2026-11-09-geschenke-teenager-unter-50",
+    "datum": "2026-11-09",
+    "titel": "Geschenke für Teenager unter 50 €: Ideen zum Merken vor dem Black Friday",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Teenager, das nicht nur im Regal steht? Ein Sternenhimmel-Projektor, ein LED-Neonschild fürs Zimmer oder ein Handlettering-Set sind Geschenke für Jugendliche, die zu Hause wirklich genutzt werden. Alle Ideen unter 50 € findest du auf der Seite. #geschenkefürteenager #geschenkefürjugendliche #weihnachtsgeschenke #werbung",
+    "emoji": "🎧",
+    "seite": "geschenke-fuer-teenager",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "b",
+    "produkte": [
+      "Sternenhimmel-Projektor",
+      "LED-Neonschild fürs Zimmer",
+      "Handlettering-Set",
+      "Bluetooth-Lautsprecher wasserdicht",
+      "Klemmbaustein-Set",
+      "Kuscheldecke mit Ärmeln"
+    ]
   }
 ];
