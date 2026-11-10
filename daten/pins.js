@@ -1278,5 +1278,108 @@ window.PINS = [
       "Klemmbaustein-Set",
       "Kuscheldecke mit Ärmeln"
     ]
+  },
+  {
+    "id": "2026-11-10-geschenke-fuer-kinder-15-bis-50",
+    "datum": "2026-11-10",
+    "titel": "Geschenke für Kinder von 15 bis 50 €: Ideen zum Bauen, Basteln und Entdecken",
+    "beschreibung": "Du suchst Weihnachtsgeschenke für Kinder, die nicht nach einem Tag in der Ecke liegen? Ein Experimentierkasten, ein Klemmbaustein-Set oder ein Malset im Koffer laden zum Forschen und kreativen Spielen ein, und Walkie-Talkies bringen Bewegung ins Kinderzimmer. Alle Geschenkideen für Kinder von 15 bis 50 € findest du auf der Seite. #geschenkefürkinder #weihnachtsgeschenke #spielzeug #werbung",
+    "emoji": "🧸",
+    "seite": "geschenke-fuer-kinder",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "kinder basteln tisch",
+    "produkte": [
+      "Experimentierkasten für Kinder",
+      "Klemmbaustein-Set",
+      "Malset im Koffer",
+      "Walkie-Talkies für Kinder",
+      "Kinderkamera digital",
+      "Familien-Brettspiel"
+    ],
+    "foto_id": 4052803
+  },
+  {
+    "id": "2026-11-10-nikolausgeschenke-fuer-erwachsene",
+    "datum": "2026-11-10",
+    "titel": "Nikolausgeschenke für Erwachsene: kleine Ideen für den Stiefel",
+    "beschreibung": "Du suchst ein Nikolausgeschenk für den Partner, die Mitbewohnerin oder Kollegen? Eine Wärmflasche mit Strickbezug, ein Windlicht-Set oder ein Handcreme-Set passen in jeden Stiefel, und für Plätzchenfans gibt es Ausstecher. Kleine Geschenke für Erwachsene zum 6. Dezember findest du alle auf der Seite. #nikolausgeschenke #nikolaus #kleinegeschenke #werbung",
+    "emoji": "🎅",
+    "seite": "nikolausgeschenke",
+    "filter": {
+      "recipient": "household"
+    },
+    "design": "d",
+    "foto": "nikolaus stiefel",
+    "produkte": [
+      "Wärmflasche mit Strickbezug",
+      "Windlicht-Set aus Glas",
+      "Handcreme-Set",
+      "Plätzchen-Ausstecher-Set",
+      "Kuscheldecke mit Ärmeln",
+      "Bullet-Journal-Notizbuch"
+    ],
+    "foto_id": 3009717
+  },
+  {
+    "id": "2026-11-10-geschenke-fuer-gamer-unter-15",
+    "datum": "2026-11-10",
+    "titel": "Geschenke für Gamer unter 15 €: kleine Ideen für Zocker",
+    "beschreibung": "Du suchst ein kleines Geschenk für Gamer zum Wichteln oder für den Nikolausstiefel? Ein großes Gaming-Mauspad, ein Headset-Ständer für den Schreibtisch oder ein LED-Strip fürs Zimmer werden beim Zocken jeden Tag genutzt. Alle Gaming-Geschenke unter 15 € findest du auf der Seite. #geschenkefürgamer #gaming #wichtelgeschenke #werbung",
+    "emoji": "🎮",
+    "seite": "geschenke-fuer-gamer",
+    "filter": {
+      "budget": "under15"
+    },
+    "design": "c",
+    "produkte": [
+      "Gaming-Mauspad XXL",
+      "Headset-Ständer für den Schreibtisch",
+      "LED-Strip mit App-Steuerung"
+    ]
+  },
+  {
+    "id": "2026-11-10-wichtelgeschenke-fuer-teenager",
+    "datum": "2026-11-10",
+    "titel": "Wichtelgeschenke für Teenager unter 15 €: Ideen für die Klasse",
+    "beschreibung": "Du suchst Wichtelgeschenke für die Klasse oder ein kleines Geschenk für Jugendliche? Eine Sunset-Lampe, ein Kartenspiel für Partys oder ein Bullet-Journal-Notizbuch kommen bei Teenagern gut an und bleiben unter 15 €. Alle Wichtelideen für Teenager findest du auf der Seite. #wichtelgeschenke #geschenkefürteenager #wichteln #werbung",
+    "emoji": "🎁",
+    "seite": "wichtelgeschenke-unter-15-euro",
+    "filter": {
+      "recipient": "teenager"
+    },
+    "design": "b",
+    "produkte": [
+      "Sunset-Lampe",
+      "Kartenspiel für Partys",
+      "Bullet-Journal-Notizbuch",
+      "LED-Strip mit App-Steuerung",
+      "Gesichtsmasken-Set",
+      "Springseil mit Zähler"
+    ]
+  },
+  {
+    "id": "2026-11-10-geschenk-fuer-hundebesitzer-teenager",
+    "datum": "2026-11-10",
+    "titel": "Geschenk für Hundebesitzer: Ideen für Teenager mit eigenem Hund",
+    "beschreibung": "Du suchst ein Geschenk für Hundebesitzer, die jeden Tag mit dem Hund unterwegs sind? Für Jugendliche mit Hund passen ein LED-Leuchthalsband für dunkle Abende, ein Leckerli-Beutel für Spaziergänge oder ein Hundehandtuch für nasse Pfoten. Alle Geschenke für Tierfreunde findest du auf der Seite. #geschenkfürhundebesitzer #hundeliebe #tierfreunde #werbung",
+    "emoji": "🐕",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {
+      "recipient": "teenager"
+    },
+    "design": "d",
+    "foto": "mädchen hund sofa",
+    "produkte": [
+      "LED-Leuchthalsband für Hunde",
+      "Leckerli-Beutel für Spaziergänge",
+      "Hundehandtuch aus Mikrofaser",
+      "Intelligenzspielzeug für Hunde",
+      "Fellpflegebürste für Hunde",
+      "Interaktives Katzenspielzeug"
+    ],
+    "foto_id": 1866531
   }
 ];

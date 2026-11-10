@@ -636,7 +636,8 @@ window.PAGES = [
       "USB-Mikrofon für Streaming",
       "LED-Strip mit App-Steuerung",
       "LED-Neonschild fürs Zimmer",
-      "Ringlicht mit Handyhalter"
+      "Ringlicht mit Handyhalter",
+      "Headset-Ständer für den Schreibtisch"
     ],
     "ratgeber": {
       "titel": "Ratgeber: Geschenke für Gamer",
@@ -772,7 +773,8 @@ window.PAGES = [
       "Kinderkamera digital",
       "Programmierbarer Lernroboter",
       "Familien-Brettspiel",
-      "Balance Board aus Holz"
+      "Balance Board aus Holz",
+      "Window-Color-Set für Kinder"
     ],
     "ratgeber": {
       "titel": "Ratgeber: Das passende Geschenk für Kinder finden",

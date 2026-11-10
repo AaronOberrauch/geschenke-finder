@@ -3076,5 +3076,73 @@ window.PRODUCTS = [
       "Für Übungen mit Kurzhanteln",
       "Platzsparend zu verstauen"
     ]
+    },
+  {
+    "title": "Hundehandtuch aus Mikrofaser",
+    "query": "Hundehandtuch Mikrofaser saugstark",
+    "emoji": "🐕",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "nikolaus",
+      "geburtstag"
+    ],
+    "badge": "Für Hundebesitzer",
+    "highlights": [
+      "Nimmt viel Nässe auf",
+      "Praktisch nach dem Spaziergang",
+      "Waschbar"
+    ]
+  },
+  {
+    "title": "Window-Color-Set für Kinder",
+    "query": "Window Color Set Kinder Vorlagen",
+    "emoji": "🖍️",
+    "category": "fun",
+    "budget": "under15",
+    "recipients": [
+      "kids"
+    ],
+    "occasions": [
+      "weihnachten",
+      "nikolaus",
+      "geburtstag",
+      "ostern"
+    ],
+    "badge": "Zum Basteln",
+    "highlights": [
+      "Bilder für Fenster und Glas",
+      "Mit Vorlagen zum Nachmalen",
+      "Wieder ablösbar"
+    ]
+  },
+  {
+    "title": "Headset-Ständer für den Schreibtisch",
+    "query": "Headset Ständer Schreibtisch Gaming",
+    "emoji": "🎧",
+    "category": "tech",
+    "budget": "under15",
+    "recipients": [
+      "teenager",
+      "household"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "geburtstag"
+    ],
+    "badge": "Für Gamer",
+    "highlights": [
+      "Ordnung auf dem Schreibtisch",
+      "Kopfhörer immer griffbereit",
+      "Kleines Geschenk für Zocker"
+    ]
   }
 ];
