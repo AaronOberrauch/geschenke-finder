@@ -3144,5 +3144,76 @@ window.PRODUCTS = [
       "Kopfhörer immer griffbereit",
       "Kleines Geschenk für Zocker"
     ]
+  },
+  {
+    "title": "Spielkissen mit Katzenminze",
+    "query": "Katzenminze Kissen Spielzeug Katze",
+    "emoji": "🐈",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "nikolaus",
+      "geburtstag"
+    ],
+    "badge": "Für Katzenbesitzer",
+    "highlights": [
+      "Kleine Kissen zum Spielen und Kuscheln",
+      "Mit Katzenminze gefüllt",
+      "Oft im Mehrfach-Set"
+    ]
+  },
+  {
+    "title": "Plüsch-Hausschuhe",
+    "query": "Plüsch Hausschuhe warm",
+    "emoji": "🧦",
+    "category": "home",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "nikolaus",
+      "muttertag"
+    ],
+    "badge": "Für gemütliche Abende",
+    "highlights": [
+      "Weich und warm",
+      "Für kalte Böden",
+      "In vielen Größen und Farben"
+    ]
+  },
+  {
+    "title": "Bento-Lunchbox mit Fächern",
+    "query": "Bento Box Lunchbox Fächer auslaufsicher",
+    "emoji": "🍱",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "teenager",
+      "kids"
+    ],
+    "occasions": [
+      "weihnachten",
+      "schulanfang",
+      "geburtstag"
+    ],
+    "badge": "Für Büro und Schule",
+    "highlights": [
+      "Mehrere Fächer für verschiedene Speisen",
+      "Gut zu verstauen",
+      "Für Pausen unterwegs"
+    ]
   }
 ];

@@ -1381,5 +1381,108 @@ window.PINS = [
       "Interaktives Katzenspielzeug"
     ],
     "foto_id": 1866531
+  },
+  {
+    "id": "2026-11-12-weihnachtsgeschenke-unter-15-euro",
+    "datum": "2026-11-12",
+    "titel": "Weihnachtsgeschenke unter 15 €: kleine Ideen für Kollegen, Freunde und Familie",
+    "beschreibung": "Du suchst kleine Weihnachtsgeschenke unter 15 Euro oder ein Geschenk für Kollegen zu Weihnachten? Ein Windlicht-Set aus Glas, eine Wärmflasche mit Strickbezug oder ein Edelstahl-Thermobecher passen fast immer und sprengen kein Budget. Alle Weihnachtsgeschenke unter 15 € findest du auf der Seite. #weihnachtsgeschenke #kleinegeschenke #geschenkideen #werbung",
+    "emoji": "🎄",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "budget": "under15"
+    },
+    "design": "d",
+    "foto": "kerzen geschenke tisch",
+    "produkte": [
+      "Windlicht-Set aus Glas",
+      "Wärmflasche mit Strickbezug",
+      "Edelstahl-Thermobecher",
+      "Puzzle 1000 Teile",
+      "Handcreme-Set",
+      "Plätzchen-Ausstecher-Set"
+    ],
+    "foto_id": 1849900
+  },
+  {
+    "id": "2026-11-12-geschenk-fuer-sie-bis-150",
+    "datum": "2026-11-12",
+    "titel": "Geschenk für sie bis 150 €: größere Ideen für Freundin, Frau und Mama",
+    "beschreibung": "Du suchst ein Geschenk für sie, das ein bisschen größer ausfallen darf – für die Freundin, die Frau oder die Mama? Eine Sofortbildkamera für gemeinsame Erinnerungen, eine Warmluftbürste oder eine elektrische Heizdecke für gemütliche Winterabende sind schöne Weihnachtsgeschenke für Frauen. Alle Ideen nach Budget sortiert findest du auf der Seite. #geschenkfürsie #weihnachtsgeschenke #geschenkefürfrauen #werbung",
+    "emoji": "💝",
+    "seite": "geschenke-fuer-frauen",
+    "filter": {
+      "budget": "50to150"
+    },
+    "design": "d",
+    "foto": "frau decke sofa",
+    "produkte": [
+      "Sofortbildkamera",
+      "Warmluftbürste",
+      "Elektrische Heizdecke",
+      "Hängesessel"
+    ],
+    "foto_id": 3281583
+  },
+  {
+    "id": "2026-11-12-geschenke-maenner-kochen-grillen",
+    "datum": "2026-11-12",
+    "titel": "Geschenke für Männer, die gern kochen und grillen: Ideen für Weihnachten",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Männer, die gern am Herd oder am Grill stehen? Ein digitales Grillthermometer, ein Grillbesteck-Set im Koffer oder ein Gusseisentopf mit Deckel sind Geschenke für Hobbyköche, die oft im Einsatz sind. Alle Geschenkideen für Männer findest du auf der Seite. #geschenkefürmänner #grillen #hobbykoch #werbung",
+    "emoji": "🔥",
+    "seite": "geschenke-fuer-maenner",
+    "filter": {
+      "category": "kitchen"
+    },
+    "design": "b",
+    "produkte": [
+      "Digitales Grillthermometer",
+      "Grillbesteck-Set im Koffer",
+      "Gusseisentopf mit Deckel",
+      "Edelstahl-Thermobecher"
+    ]
+  },
+  {
+    "id": "2026-11-12-kleine-geschenke-fuer-kinder-unter-15",
+    "datum": "2026-11-12",
+    "titel": "Kleine Geschenke für Kinder unter 15 €: Basteln, Malen und Vorlesen",
+    "beschreibung": "Du suchst kleine Geschenke für Kinder unter 15 Euro – als Nikolausgeschenk, für den Adventskalender oder zu Weihnachten? Ein Bügelperlen-Set, ein Window-Color-Set oder ein Vorlese-Bilderbuch zu Weihnachten machen Kindern Freude und regen zum Basteln an. Alle Geschenke für Kinder findest du auf der Seite. #geschenkefürkinder #basteln #weihnachten #werbung",
+    "emoji": "🧸",
+    "seite": "geschenke-fuer-kinder",
+    "filter": {
+      "budget": "under15"
+    },
+    "design": "d",
+    "foto": "kinder basteln tisch",
+    "produkte": [
+      "Bügelperlen-Set",
+      "Window-Color-Set für Kinder",
+      "Vorlese-Bilderbuch zu Weihnachten",
+      "Knete-Set für Kinder",
+      "Kinder-Taschenlampe als Projektor"
+    ],
+    "foto_id": 4052803
+  },
+  {
+    "id": "2026-11-12-weihnachtsgeschenke-fuer-katzenbesitzer",
+    "datum": "2026-11-12",
+    "titel": "Weihnachtsgeschenke für Katzenbesitzer: Ideen für Katze und Halter",
+    "beschreibung": "Du suchst Geschenke für Katzenbesitzer oder ein Weihnachtsgeschenk für die Katze selbst? Ein Spielkissen mit Katzenminze, eine Katzenhöhle zum Kuscheln oder eine Katzen-Fensterliege für den Ausblick freuen Tier und Halter gleichermaßen. Alle Weihnachtsgeschenke für Tierfreunde findest du auf der Seite. #geschenkfürkatzenbesitzer #katzenliebe #weihnachtsgeschenke #werbung",
+    "emoji": "🐈",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "category": "pets"
+    },
+    "design": "d",
+    "foto": "katze weihnachtsbaum",
+    "produkte": [
+      "Spielkissen mit Katzenminze",
+      "Katzenhöhle zum Kuscheln",
+      "Katzen-Fensterliege",
+      "Kratzbrett aus Wellpappe",
+      "Katzentunnel",
+      "Erhöhter Katzennapf aus Keramik"
+    ],
+    "foto_id": 3822157
   }
 ];

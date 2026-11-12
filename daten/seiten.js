@@ -480,7 +480,8 @@ window.PAGES = [
       "Gaming-Mauspad XXL",
       "Werkzeug-Adventskalender",
       "Gusseisentopf mit Deckel",
-      "Klappbare Hantelbank"
+      "Klappbare Hantelbank",
+      "Plüsch-Hausschuhe"
     ],
     "foto_id": 7092687,
     "ratgeber": {
@@ -567,7 +568,9 @@ window.PAGES = [
       "Windlicht-Set aus Glas",
       "Teekanne aus Glas mit Stövchen",
       "Fotoalbum zum Einkleben",
-      "Rezeptbuch zum Selbstschreiben"
+      "Rezeptbuch zum Selbstschreiben",
+      "Plüsch-Hausschuhe",
+      "Elektrische Heizdecke"
     ],
     "foto_id": 8431871,
     "ratgeber": {
@@ -774,7 +777,9 @@ window.PAGES = [
       "Programmierbarer Lernroboter",
       "Familien-Brettspiel",
       "Balance Board aus Holz",
-      "Window-Color-Set für Kinder"
+      "Window-Color-Set für Kinder",
+      "Vorlese-Bilderbuch zu Weihnachten",
+      "Kinder-Taschenlampe als Projektor"
     ],
     "ratgeber": {
       "titel": "Ratgeber: Das passende Geschenk für Kinder finden",
@@ -846,7 +851,8 @@ window.PAGES = [
       "Kräutergarten-Anzuchtset",
       "Puzzle 1000 Teile",
       "Familien-Brettspiel",
-      "Briefpapier-Set"
+      "Briefpapier-Set",
+      "Plüsch-Hausschuhe"
     ],
     "ratgeber": {
       "titel": "Ratgeber: Geschenke für Eltern und Großeltern",
