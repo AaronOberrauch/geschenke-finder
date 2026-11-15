@@ -905,5 +905,78 @@ window.PAGES = [
       ]
     },
     "foto_id": 10487963
+  },
+  {
+    "slug": "geschenke-fuer-hobbykoeche",
+    "titel": "Geschenke für Hobbyköche: Ideen für alle, die gern kochen",
+    "kurztitel": "Für Hobbyköche",
+    "emoji": "🍳",
+    "anlass": "geburtstag",
+    "monate": [],
+    "beschreibung": "Geschenke für Hobbyköche: Gusseisentopf, Pizzastein, Nudelmaschine, Gewürzmühlen und Rezeptbuch – Ideen für Küche und Esstisch, nach Budget sortiert.",
+    "intro": "Für alle, die am Wochenende stundenlang am Herd stehen oder Freunde gern zum Essen einladen. Hier findest du Ideen, die in der Küche wirklich benutzt werden – vom kleinen Helfer bis zum Topf für viele Jahre.",
+    "filter": {},
+    "foto": "kochen küche gemüse",
+    "produkte": [
+      "Gusseisentopf mit Deckel",
+      "Pizzastein für den Backofen",
+      "Nudelmaschine",
+      "Gewürzmühlen-Set für Salz und Pfeffer",
+      "Ausziehbares Gewürzregal",
+      "Rezeptbuch zum Selbstschreiben",
+      "Digitales Grillthermometer",
+      "Vorratsdosen-Set luftdicht",
+      "Kräutergarten-Anzuchtset",
+      "Raclette-Grill",
+      "Fondue-Set",
+      "Silikon-Backmatten-Set"
+    ],
+    "ratgeber": {
+      "titel": "Ratgeber: Geschenke für Hobbyköche",
+      "abschnitte": [
+        {
+          "ueberschrift": "Erst schauen, was schon in der Küche steht",
+          "text": "Wer gern kocht, hat meist schon eine gut sortierte Küche. Die größte Gefahr ist deshalb nicht ein schlechtes Geschenk, sondern ein doppeltes. Achte beim nächsten Besuch darauf, welche Töpfe auf dem Herd stehen, ob es schon einen Pizzastein gibt und wie die Gewürze aufbewahrt werden. Oft verrät die Küche selbst, was fehlt.\n\nHilfreich ist auch die Frage, was die Person am liebsten kocht. Wer am Sonntag Schmorgerichte macht, freut sich über einen schweren Topf mit Deckel. Wer Freunde gern zu Pizza oder frischer Pasta einlädt, kann mit Pizzastein oder Nudelmaschine sofort etwas anfangen. Und wer viel ausprobiert, braucht vor allem Ordnung bei Gewürzen und Vorräten."
+        },
+        {
+          "ueberschrift": "Vom kleinen Helfer bis zum Geschenk für viele Jahre",
+          "text": "Du musst für Hobbyköche nicht viel ausgeben. Unter 15 € passen Silikon-Backmatten oder ein Kräutergarten fürs Fensterbrett, der auch im Winter frische Kräuter liefert. Zwischen 15 und 50 € liegen viele Klassiker: ein Gewürzmühlen-Set, ein Pizzastein, eine Nudelmaschine oder ein Grillthermometer, mit dem der Braten nicht mehr nach Gefühl gelingen muss.\n\nWer etwas mehr ausgeben möchte oder mit anderen zusammenlegt, findet beim Gusseisentopf oder Raclette-Grill ein Geschenk, das oft über viele Jahre im Einsatz ist. Ein Topf aus Gusseisen ist allerdings schwer. Wenn die beschenkte Person ungern schwere Töpfe hebt, ist ein kleineres Modell oft die bessere Wahl."
+        },
+        {
+          "ueberschrift": "Persönlich machen: Rezept, Einladung oder gemeinsamer Abend",
+          "text": "Ein Küchengeschenk wird persönlicher, wenn du eine kleine Idee dazulegst. Zur Nudelmaschine passt ein handgeschriebenes Rezept für deine Lieblingssoße, zum Pizzastein eine Einladung zum gemeinsamen Pizzaabend. Ein Rezeptbuch zum Selbstschreiben kannst du vorab mit zwei, drei Rezepten füllen, die euch verbinden.\n\nTypischer Fehler: Spezialgeräte, die nur für ein einziges Gericht taugen und dann im Schrank verschwinden. Frag dich deshalb, ob das Geschenk mehrmals im Monat benutzt wird. Raclette und Fondue sind die Ausnahme, weil sie zu Weihnachten und Silvester ohnehin oft auf den Tisch kommen und eher ein Anlass für Gäste sind als ein Alltagsgerät."
+        }
+      ],
+      "produkttexte": {
+        "Gusseisentopf mit Deckel": "Für alle, die gern schmoren, Eintöpfe kochen oder Brot im Topf backen. Ein schwerer Topf hält die Wärme lange und kann auch zum Servieren auf den Tisch.",
+        "Pizzastein für den Backofen": "Für Pizzafans, die zu Hause einen knusprigeren Boden möchten. Passt gut zusammen mit einer Einladung zum gemeinsamen Pizzaabend.",
+        "Nudelmaschine": "Für Hobbyköche, die frische Pasta selbst machen möchten. Eine schöne Beschäftigung für ein langes Wochenende, gern auch zu zweit oder mit Kindern.",
+        "Gewürzmühlen-Set für Salz und Pfeffer": "Ein Klassiker, der in jeder Küche gebraucht wird und auch auf dem Esstisch gut aussieht. Frisch gemahlen schmeckt vielen Gewürzen besser als fertig gemahlen.",
+        "Ausziehbares Gewürzregal": "Für alle, deren Gewürze sich im Schrank stapeln. Mit einem Regal ist schneller zu sehen, was noch da ist und was nachgekauft werden muss.",
+        "Rezeptbuch zum Selbstschreiben": "Für Hobbyköche, die ihre Lieblingsrezepte endlich an einem Ort sammeln wollen. Trag die ersten Rezepte selbst ein, dann ist es ein sehr persönliches Geschenk.",
+        "Digitales Grillthermometer": "Zeigt die Kerntemperatur von Braten und Grillgut an. Passt zu allen, die nicht mehr nach Gefühl garen möchten, ob im Backofen oder am Grill.",
+        "Kräutergarten-Anzuchtset": "Ein kleines Geschenk für alle, die gern frische Kräuter verwenden. Auf dem Fensterbrett wachsen Basilikum und Co. auch in den Wintermonaten.",
+        "Raclette-Grill": "Für gesellige Abende mit Freunden oder der Familie. Jeder stellt sich sein Pfännchen selbst zusammen, und der Gastgeber muss nicht die ganze Zeit in der Küche stehen."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man einem Hobbykoch, der schon alles hat?",
+          "antwort": "Etwas, das verbraucht oder anders genutzt wird als die vorhandene Ausstattung: ein Kräutergarten, ein Rezeptbuch mit euren Lieblingsrezepten oder ein Pizzastein, falls es noch keinen gibt. Auch eine Einladung zum gemeinsamen Kochabend passt."
+        },
+        {
+          "frage": "Welche Geschenke für Hobbyköche gibt es unter 50 €?",
+          "antwort": "Unter 50 € passen zum Beispiel ein Gewürzmühlen-Set, ein Pizzastein, eine Nudelmaschine, ein digitales Grillthermometer oder ein Fondue-Set. Kleine Ideen unter 15 € sind Silikon-Backmatten und ein Kräutergarten-Anzuchtset."
+        },
+        {
+          "frage": "Was ist ein gutes Weihnachtsgeschenk für jemanden, der gern kocht?",
+          "antwort": "Zu Weihnachten passt alles, was gemeinsame Essen schöner macht: ein Raclette-Grill oder Fondue-Set für die Feiertage, ein Gusseisentopf für den Festtagsbraten oder ein Grillthermometer, mit dem der Braten zum richtigen Zeitpunkt aus dem Ofen kommt."
+        },
+        {
+          "frage": "Was kann man Hobbyköchen zum Geburtstag schenken?",
+          "antwort": "Schau, was die Person am liebsten kocht: Für Pasta-Fans eine Nudelmaschine, für Pizza-Fans einen Pizzastein, für Schmorgerichte einen Gusseisentopf. Ein selbst gefülltes Rezeptbuch macht das Geschenk persönlich, auch mit kleinem Budget."
+        }
+      ]
+    },
+    "foto_id": 1979272
   }
 ];

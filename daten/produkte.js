@@ -3076,7 +3076,7 @@ window.PRODUCTS = [
       "Für Übungen mit Kurzhanteln",
       "Platzsparend zu verstauen"
     ]
-    },
+  },
   {
     "title": "Hundehandtuch aus Mikrofaser",
     "query": "Hundehandtuch Mikrofaser saugstark",
@@ -3214,6 +3214,72 @@ window.PRODUCTS = [
       "Mehrere Fächer für verschiedene Speisen",
       "Gut zu verstauen",
       "Für Pausen unterwegs"
+    ]
+  },
+  {
+    "title": "Gewürzmühlen-Set für Salz und Pfeffer",
+    "query": "Salz und Pfeffermühle Set",
+    "emoji": "🧂",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag",
+      "vatertag",
+      "muttertag"
+    ],
+    "badge": "Für Hobbyköche",
+    "highlights": [
+      "Frisch gemahlen am Herd und am Tisch",
+      "Mahlgrad meist einstellbar",
+      "Zum Nachfüllen"
+    ]
+  },
+  {
+    "title": "Laufrad für Hamster",
+    "query": "Hamster Laufrad",
+    "emoji": "🐹",
+    "category": "pets",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "kids"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag"
+    ],
+    "badge": "Für kleine Haustiere",
+    "highlights": [
+      "Bewegung im Käfig",
+      "In verschiedenen Größen erhältlich",
+      "Zum Aufstellen oder Befestigen"
+    ]
+  },
+  {
+    "title": "Gewichtsmanschetten für Arme und Beine",
+    "query": "Gewichtsmanschetten Arme Beine",
+    "emoji": "🏋️",
+    "category": "sport",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "teenager",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag"
+    ],
+    "badge": "Fürs Training zu Hause",
+    "highlights": [
+      "Mit Klettverschluss",
+      "Für Workout, Pilates und Spaziergänge",
+      "Platzsparend zu verstauen"
     ]
   }
 ];

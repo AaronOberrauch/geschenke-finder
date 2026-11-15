@@ -1484,5 +1484,110 @@ window.PINS = [
       "Erhöhter Katzennapf aus Keramik"
     ],
     "foto_id": 3822157
+  },
+  {
+    "id": "2026-11-15-geschenke-fuer-hobbykoeche",
+    "datum": "2026-11-15",
+    "titel": "Geschenke für Hobbyköche: Ideen für alle, die gern kochen und Gäste einladen",
+    "beschreibung": "Du suchst Geschenke für Hobbyköche – zu Weihnachten oder zum Geburtstag? Ein Gusseisentopf mit Deckel, ein Pizzastein für den Backofen oder eine Nudelmaschine werden in der Küche wirklich benutzt, und mit einem Gewürzmühlen-Set ist auch ein kleines Geschenk für Kochfans dabei. Alle Ideen nach Budget sortiert findest du auf der Seite. #geschenkefürhobbyköche #kochen #weihnachtsgeschenke #werbung",
+    "emoji": "🍳",
+    "seite": "geschenke-fuer-hobbykoeche",
+    "filter": {},
+    "design": "d",
+    "foto": "kochen küche gemüse",
+    "produkte": [
+      "Gusseisentopf mit Deckel",
+      "Pizzastein für den Backofen",
+      "Nudelmaschine",
+      "Gewürzmühlen-Set für Salz und Pfeffer",
+      "Digitales Grillthermometer",
+      "Rezeptbuch zum Selbstschreiben"
+    ],
+    "foto_id": 1979272
+  },
+  {
+    "id": "2026-11-15-geschenk-fuer-hundebesitzer-unter-15",
+    "datum": "2026-11-15",
+    "titel": "Geschenk für Hundebesitzer unter 15 €: kleine Ideen für Weihnachten",
+    "beschreibung": "Du suchst ein kleines Geschenk für Hundebesitzer oder ein Wichtelgeschenk für die Kollegin mit Hund? Ein Schnüffelteppich, ein LED-Leuchthalsband für die dunklen Gassirunden oder ein Hundehandtuch aus Mikrofaser bleiben unter 15 € und werden im Winter oft gebraucht. Auch für Katzenbesitzer ist etwas dabei. Alle Ideen findest du auf der Seite. #geschenkfürhundebesitzer #hundeliebe #wichtelgeschenke #werbung",
+    "emoji": "🐕",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {
+      "recipient": "household",
+      "budget": "under15"
+    },
+    "design": "d",
+    "foto": "hund decke sofa",
+    "produkte": [
+      "Schnüffelteppich für Hunde",
+      "LED-Leuchthalsband für Hunde",
+      "Hundehandtuch aus Mikrofaser",
+      "Leckerli-Beutel für Spaziergänge",
+      "Fellpflegebürste für Hunde",
+      "Spielkissen mit Katzenminze"
+    ],
+    "foto_id": 4526558
+  },
+  {
+    "id": "2026-11-15-home-workout-geschenke-fuer-partner",
+    "datum": "2026-11-15",
+    "titel": "Home Workout Geschenke für Partner und Freunde: Ideen fürs Training zu Hause",
+    "beschreibung": "Du suchst Fitness Geschenke für den Partner, die beste Freundin oder einen Kollegen, der zu Hause trainiert? Gewichtsmanschetten, ein Fitnessbänder-Set, eine rutschfeste Yogamatte oder ein Balance Board aus Holz passen auch ins kleine Wohnzimmer – gerade rechtzeitig für gute Vorsätze im neuen Jahr. Alle Home-Training-Ideen findest du auf der Seite. #homeworkout #fitnessgeschenke #trainingzuhause #werbung",
+    "emoji": "🏋️",
+    "seite": "home-training-geschenke",
+    "filter": {
+      "recipient": "household"
+    },
+    "design": "c",
+    "produkte": [
+      "Gewichtsmanschetten für Arme und Beine",
+      "Fitnessbänder-Set",
+      "Yogamatte rutschfest",
+      "Balance Board aus Holz",
+      "Faszienrolle",
+      "Pilates-Ring"
+    ]
+  },
+  {
+    "id": "2026-11-15-gemuetliche-weihnachtsgeschenke-zuhause",
+    "datum": "2026-11-15",
+    "titel": "Gemütliche Weihnachtsgeschenke fürs Zuhause: Kuscheldecke, Hausschuhe und Windlichter",
+    "beschreibung": "Du suchst Weihnachtsgeschenke für gemütliche Winterabende – für die Freundin, die Eltern oder den Partner? Eine Kuscheldecke mit Ärmeln, Plüsch-Hausschuhe, ein Windlicht-Set aus Glas oder eine Wärmflasche mit Strickbezug machen das Sofa noch gemütlicher. Merk dir die Ideen schon jetzt, bevor am 19. November die Black Week bei Amazon beginnt. Alle Weihnachtsgeschenke findest du auf der Seite. #weihnachtsgeschenke #gemütlich #cozyhome #werbung",
+    "emoji": "🕯️",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "category": "home"
+    },
+    "design": "d",
+    "foto": "wohnzimmer kerzen decke",
+    "produkte": [
+      "Kuscheldecke mit Ärmeln",
+      "Plüsch-Hausschuhe",
+      "Windlicht-Set aus Glas",
+      "Wärmflasche mit Strickbezug",
+      "Duftkerzen-Set",
+      "Elektrische Heizdecke"
+    ],
+    "foto_id": 8230254
+  },
+  {
+    "id": "2026-11-15-wichtelgeschenke-fuer-erwachsene-unter-15",
+    "datum": "2026-11-15",
+    "titel": "Wichtelgeschenke für Erwachsene unter 15 €: Ideen für Kollegen und Familie",
+    "beschreibung": "Du suchst Wichtelgeschenke für Kollegen oder fürs Familienwichteln unter Erwachsenen? Ein Edelstahl-Thermobecher, ein Puzzle mit 1000 Teilen, ein Handcreme-Set oder ein Kräutergarten-Anzuchtset sind kleine Geschenke unter 15 €, die nicht in der Schublade landen. Alle Wichtelgeschenke findest du auf der Seite. #wichtelgeschenke #wichteln #geschenkfürkollegen #werbung",
+    "emoji": "🎁",
+    "seite": "wichtelgeschenke-unter-15-euro",
+    "filter": {
+      "recipient": "parents"
+    },
+    "design": "b",
+    "produkte": [
+      "Edelstahl-Thermobecher",
+      "Puzzle 1000 Teile",
+      "Handcreme-Set",
+      "Kräutergarten-Anzuchtset",
+      "Windlicht-Set aus Glas",
+      "Briefpapier-Set"
+    ]
   }
 ];
