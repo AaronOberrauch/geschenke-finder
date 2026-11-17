@@ -1589,5 +1589,109 @@ window.PINS = [
       "Windlicht-Set aus Glas",
       "Briefpapier-Set"
     ]
+  },
+  {
+    "id": "2026-11-17-geschenke-fuer-oma-und-opa-unter-50",
+    "datum": "2026-11-17",
+    "titel": "Geschenke für Oma und Opa unter 50 €: Fotoalbum, Teekanne und gemütliche Ideen",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Oma und Opa oder ein Geschenk für die Eltern, das wirklich benutzt wird? Ein Fotoalbum zum Einkleben, ein Rezeptbuch zum Selbstschreiben, eine Teekanne mit Stövchen oder Plüsch-Hausschuhe machen den Winter gemütlicher und bringen gemeinsame Erinnerungen auf den Tisch. Alle Ideen für Eltern und Großeltern findest du auf der Seite. #geschenkefürgroßeltern #weihnachtsgeschenke #geschenkfüroma #werbung",
+    "emoji": "👵",
+    "seite": "geschenke-fuer-eltern-und-grosseltern",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "oma tee tisch",
+    "produkte": [
+      "Fotoalbum zum Einkleben",
+      "Rezeptbuch zum Selbstschreiben",
+      "Teekanne aus Glas mit Stövchen",
+      "Tee-Geschenkset",
+      "Plüsch-Hausschuhe",
+      "Familien-Brettspiel"
+    ],
+    "foto_id": 1170554
+  },
+  {
+    "id": "2026-11-17-geschenke-fuer-teenager-bis-150",
+    "datum": "2026-11-17",
+    "titel": "Geschenke für Teenager bis 150 €: größere Ideen zum Merken für die Black Week",
+    "beschreibung": "Du suchst ein größeres Weihnachtsgeschenk für Teenager – für die Tochter, den Sohn oder das Patenkind? Eine Sofortbildkamera, ein Plattenspieler mit Lautsprechern, Noise-Cancelling-Kopfhörer oder ein Hängesessel fürs Jugendzimmer sind Geschenkideen, die lange Freude machen. Merk sie dir für die Black Week bis 30. November. Alle Geschenke für Teenager nach Budget findest du auf der Seite. #geschenkefürteenager #weihnachtsgeschenke #blackweek #werbung",
+    "emoji": "🎧",
+    "seite": "geschenke-fuer-teenager",
+    "filter": {
+      "budget": "50to150"
+    },
+    "design": "b",
+    "produkte": [
+      "Sofortbildkamera",
+      "Plattenspieler mit Lautsprechern",
+      "Noise-Cancelling-Kopfhörer",
+      "Hängesessel",
+      "Handy-Gimbal für Videos",
+      "Retro-Spielkonsole mit Klassikern"
+    ]
+  },
+  {
+    "id": "2026-11-17-nikolausgeschenke-fuer-kinder",
+    "datum": "2026-11-17",
+    "titel": "Nikolausgeschenke für Kinder: kleine Ideen zum Basteln, Malen und Vorlesen",
+    "beschreibung": "Du suchst Nikolausgeschenke für Kinder, die in den Stiefel passen und mehr als Süßes sind? Ein Bügelperlen-Set, Window-Color zum Bemalen der Fenster, ein Vorlese-Bilderbuch zu Weihnachten oder ein Plätzchen-Ausstecher-Set für die Adventsbäckerei sorgen für gemütliche Nachmittage. Alle Ideen für den Nikolausstiefel findest du auf der Seite. #nikolausgeschenke #nikolausstiefel #geschenkefürkinder #werbung",
+    "emoji": "🎅",
+    "seite": "nikolausgeschenke",
+    "filter": {
+      "recipient": "kids"
+    },
+    "design": "d",
+    "foto": "kinder plätzchen backen",
+    "produkte": [
+      "Bügelperlen-Set",
+      "Window-Color-Set für Kinder",
+      "Vorlese-Bilderbuch zu Weihnachten",
+      "Plätzchen-Ausstecher-Set",
+      "Knete-Set für Kinder",
+      "Kinder-Taschenlampe als Projektor"
+    ],
+    "foto_id": 1085719
+  },
+  {
+    "id": "2026-11-17-geschenke-fuer-kinder-mit-kaninchen-und-hamster",
+    "datum": "2026-11-17",
+    "titel": "Geschenke für Kaninchen, Hamster und Meerschweinchen: Ideen für Kinder mit Haustier",
+    "beschreibung": "Dein Kind hat ein Kaninchen, Meerschweinchen oder einen Hamster und wünscht sich zu Weihnachten etwas fürs Haustier? Ein Kuschelhaus, eine Heuraufe, ein Laufrad für den Hamster oder Knabberspielzeug für Kleintiere sind Geschenke für Tierfreunde, die Kind und Tier gemeinsam Freude machen. Alle Geschenke für Haustierbesitzer findest du auf der Seite. #kaninchen #meerschweinchen #geschenkefürtierfreunde #werbung",
+    "emoji": "🐰",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {
+      "recipient": "kids"
+    },
+    "design": "d",
+    "foto": "kaninchen kind",
+    "produkte": [
+      "Kuschelhaus für Meerschweinchen und Kaninchen",
+      "Heuraufe für Kaninchen und Meerschweinchen",
+      "Laufrad für Hamster",
+      "Knabberspielzeug für Kleintiere",
+      "Pfotenabdruck-Set",
+      "Katzentunnel"
+    ],
+    "foto_id": 6808652
+  },
+  {
+    "id": "2026-11-17-geschenke-fuer-kaffeeliebhaber-black-week",
+    "datum": "2026-11-17",
+    "titel": "Geschenke für Kaffeeliebhaber zur Black Week: Espressokocher, Handmühle und mehr",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Kaffeeliebhaber oder jemanden, der gern Tee trinkt? Ein Espressokocher für den Herd, eine Handkaffeemühle, eine French Press oder ein Wasserkocher mit Temperaturwahl machen aus der morgendlichen Tasse ein kleines Ritual. Merk dir die Ideen für die Black Week bis 30. November. Alle Kaffee-Geschenke findest du auf der Seite. #kaffeeliebhaber #kaffeegeschenke #weihnachtsgeschenke #werbung",
+    "emoji": "☕",
+    "seite": "geschenke-fuer-kaffeeliebhaber",
+    "filter": {},
+    "design": "c",
+    "produkte": [
+      "Espressokocher für den Herd",
+      "Handkaffeemühle",
+      "French Press",
+      "Wasserkocher mit Temperaturwahl",
+      "Milchkännchen für Latte Art",
+      "Elektrischer Milchaufschäumer"
+    ]
   }
 ];

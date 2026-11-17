@@ -3281,5 +3281,74 @@ window.PRODUCTS = [
       "Für Workout, Pilates und Spaziergänge",
       "Platzsparend zu verstauen"
     ]
+  },
+  {
+    "title": "Wasserkocher mit Temperaturwahl",
+    "query": "Wasserkocher Temperatureinstellung",
+    "emoji": "🫖",
+    "category": "kitchen",
+    "budget": "50to150",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag",
+      "muttertag"
+    ],
+    "badge": "Für Tee- und Kaffeefans",
+    "highlights": [
+      "Wassertemperatur in Stufen einstellbar",
+      "Für grünen Tee und Filterkaffee",
+      "Mit Abschaltautomatik"
+    ]
+  },
+  {
+    "title": "Espressokocher für den Herd",
+    "query": "Espressokocher Herd",
+    "emoji": "☕",
+    "category": "kitchen",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag",
+      "vatertag"
+    ],
+    "badge": "Für Kaffeeliebhaber",
+    "highlights": [
+      "Ohne Kapseln und ohne Strom",
+      "In verschiedenen Tassengrößen",
+      "Klassische Zubereitung auf dem Herd"
+    ]
+  },
+  {
+    "title": "Ballschleuder für Hunde",
+    "query": "Ballschleuder Hund",
+    "emoji": "🎾",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag",
+      "wichteln",
+      "nikolaus"
+    ],
+    "badge": "Für Hundebesitzer",
+    "highlights": [
+      "Weit werfen ohne viel Kraft",
+      "Ball aufheben ohne Bücken",
+      "Für Wiese und Park"
+    ]
   }
 ];

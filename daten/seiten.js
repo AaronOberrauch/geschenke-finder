@@ -706,7 +706,9 @@ window.PAGES = [
       "Elektrischer Milchaufschäumer",
       "Milchkännchen für Latte Art",
       "Edelstahl-Thermobecher",
-      "Kaffeevollautomat"
+      "Kaffeevollautomat",
+      "Espressokocher für den Herd",
+      "Wasserkocher mit Temperaturwahl"
     ],
     "ratgeber": {
       "titel": "Ratgeber: Geschenke für Kaffeeliebhaber",
@@ -852,7 +854,8 @@ window.PAGES = [
       "Puzzle 1000 Teile",
       "Familien-Brettspiel",
       "Briefpapier-Set",
-      "Plüsch-Hausschuhe"
+      "Plüsch-Hausschuhe",
+      "Wasserkocher mit Temperaturwahl"
     ],
     "ratgeber": {
       "titel": "Ratgeber: Geschenke für Eltern und Großeltern",
