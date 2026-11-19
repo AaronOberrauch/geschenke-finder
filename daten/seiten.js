@@ -640,7 +640,8 @@ window.PAGES = [
       "LED-Strip mit App-Steuerung",
       "LED-Neonschild fürs Zimmer",
       "Ringlicht mit Handyhalter",
-      "Headset-Ständer für den Schreibtisch"
+      "Headset-Ständer für den Schreibtisch",
+      "Mechanische Gaming-Tastatur"
     ],
     "ratgeber": {
       "titel": "Ratgeber: Geschenke für Gamer",
@@ -932,7 +933,8 @@ window.PAGES = [
       "Kräutergarten-Anzuchtset",
       "Raclette-Grill",
       "Fondue-Set",
-      "Silikon-Backmatten-Set"
+      "Silikon-Backmatten-Set",
+      "Sous-Vide-Garer"
     ],
     "ratgeber": {
       "titel": "Ratgeber: Geschenke für Hobbyköche",

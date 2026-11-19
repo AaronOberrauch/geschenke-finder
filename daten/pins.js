@@ -1693,5 +1693,109 @@ window.PINS = [
       "Milchkännchen für Latte Art",
       "Elektrischer Milchaufschäumer"
     ]
+  },
+  {
+    "id": "2026-11-19-weihnachtsgeschenke-bis-150-black-week",
+    "datum": "2026-11-19",
+    "titel": "Weihnachtsgeschenke bis 150 €: größere Ideen zum Merken für die Black Week",
+    "beschreibung": "Du suchst ein größeres Weihnachtsgeschenk für den Partner, die Eltern oder die ganze Familie? Ein Raclette-Grill für gemeinsame Abende, ein Plattenspieler mit Lautsprechern, eine elektrische Heizdecke oder ein Hängesessel sind Geschenkideen, die lange genutzt werden. Merk sie dir für die Black Week bis 30. November. Alle Weihnachtsgeschenke nach Budget findest du auf der Seite. #weihnachtsgeschenke #geschenkideen #blackweek #werbung",
+    "emoji": "🎄",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "budget": "50to150"
+    },
+    "design": "c",
+    "produkte": [
+      "Raclette-Grill",
+      "Plattenspieler mit Lautsprechern",
+      "Elektrische Heizdecke",
+      "Hängesessel",
+      "Gusseisentopf mit Deckel",
+      "Wasserkocher mit Temperaturwahl"
+    ]
+  },
+  {
+    "id": "2026-11-19-weihnachtsgeschenke-haustier-bis-150",
+    "datum": "2026-11-19",
+    "titel": "Weihnachtsgeschenke für Hunde- und Katzenbesitzer: größere Ideen fürs Haustier",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Hundebesitzer oder Katzenbesitzer, das wirklich gebraucht wird? Ein Kratzbaum, ein Hundebett mit erhöhtem Rand oder ein automatischer Futterspender sind Geschenke für Tierfreunde, über die sich Mensch und Tier freuen. Alle Haustier-Geschenke zu Weihnachten findest du auf der Seite. #geschenkefürhundebesitzer #katzenliebe #weihnachtsgeschenke #werbung",
+    "emoji": "🐾",
+    "seite": "weihnachtsgeschenke",
+    "filter": {
+      "category": "pets",
+      "budget": "50to150"
+    },
+    "design": "d",
+    "foto": "hund weihnachtsbaum",
+    "produkte": [
+      "Katzen-Kratzbaum",
+      "Hundebett mit erhöhtem Rand",
+      "Automatischer Futterspender"
+    ],
+    "foto_id": 5932577
+  },
+  {
+    "id": "2026-11-19-geschenke-fuer-frauen-gemuetliches-zuhause",
+    "datum": "2026-11-19",
+    "titel": "Geschenke für Frauen fürs gemütliche Zuhause: Ideen für kalte Winterabende",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für die Freundin, Mama oder Schwester, das zu langen Winterabenden passt? Eine Kuscheldecke mit Ärmeln, ein Duftkerzen-Set, eine Wärmflasche mit Strickbezug oder Plüsch-Hausschuhe machen es zu Hause richtig gemütlich. Alle Geschenke für Frauen nach Budget findest du auf der Seite. #geschenkefürfrauen #weihnachtsgeschenke #gemütlich #werbung",
+    "emoji": "🕯️",
+    "seite": "geschenke-fuer-frauen",
+    "filter": {
+      "category": "home"
+    },
+    "design": "d",
+    "foto": "strickdecke tee winter",
+    "produkte": [
+      "Kuscheldecke mit Ärmeln",
+      "Duftkerzen-Set",
+      "Wärmflasche mit Strickbezug",
+      "Plüsch-Hausschuhe",
+      "Windlicht-Set aus Glas",
+      "Schmuckkästchen"
+    ],
+    "foto_id": 6795381
+  },
+  {
+    "id": "2026-11-19-geschenke-fuer-hobbykoeche-unter-50",
+    "datum": "2026-11-19",
+    "titel": "Geschenke für Hobbyköche unter 50 €: Nudelmaschine, Pizzastein und mehr",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für jemanden, der gerne kocht? Eine Nudelmaschine für frische Pasta, ein Pizzastein für den Backofen, ein Gewürzmühlen-Set oder ein Rezeptbuch zum Selbstschreiben sind Geschenke für Hobbyköche, die in jeder Küche Platz finden. Alle Küchen-Geschenke nach Budget findest du auf der Seite. #geschenkefürhobbyköche #kochen #weihnachtsgeschenke #werbung",
+    "emoji": "🍝",
+    "seite": "geschenke-fuer-hobbykoeche",
+    "filter": {
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "pasta kochen küche",
+    "produkte": [
+      "Nudelmaschine",
+      "Pizzastein für den Backofen",
+      "Gewürzmühlen-Set für Salz und Pfeffer",
+      "Rezeptbuch zum Selbstschreiben",
+      "Fondue-Set",
+      "Digitales Grillthermometer"
+    ],
+    "foto_id": 6639970
+  },
+  {
+    "id": "2026-11-19-nikolausgeschenke-erwachsene-unter-15",
+    "datum": "2026-11-19",
+    "titel": "Nikolausgeschenke für Erwachsene unter 15 €: kleine Ideen für den Stiefel",
+    "beschreibung": "Du suchst ein kleines Nikolausgeschenk für den Partner, die Kollegin oder die Eltern? Ein Windlicht-Set, eine Wärmflasche mit Strickbezug, ein Handcreme-Set oder Badebomben passen in jeden Nikolausstiefel und machen den 6. Dezember gemütlich. Alle Nikolausgeschenke nach Budget findest du auf der Seite. #nikolausgeschenke #nikolaus #kleinegeschenke #werbung",
+    "emoji": "🥾",
+    "seite": "nikolausgeschenke",
+    "filter": {
+      "budget": "under15"
+    },
+    "design": "b",
+    "produkte": [
+      "Windlicht-Set aus Glas",
+      "Wärmflasche mit Strickbezug",
+      "Handcreme-Set",
+      "Badebomben-Set",
+      "Milchkännchen für Latte Art",
+      "Bullet-Journal-Notizbuch"
+    ]
   }
 ];

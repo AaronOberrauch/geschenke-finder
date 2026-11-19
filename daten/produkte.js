@@ -3350,5 +3350,71 @@ window.PRODUCTS = [
       "Ball aufheben ohne Bücken",
       "Für Wiese und Park"
     ]
+  },
+  {
+    "title": "Mechanische Gaming-Tastatur",
+    "query": "mechanische gaming tastatur",
+    "emoji": "⌨️",
+    "category": "tech",
+    "budget": "50to150",
+    "recipients": [
+      "teenager",
+      "household"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag"
+    ],
+    "badge": "Für Gamer",
+    "highlights": [
+      "Spürbarer Tastenanschlag",
+      "Beleuchtete Tasten",
+      "Für Spiele und zum Schreiben"
+    ]
+  },
+  {
+    "title": "Heizungsliege für Katzen",
+    "query": "heizungsliege katze",
+    "emoji": "🐈",
+    "category": "pets",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents",
+      "kids"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag",
+      "nikolaus"
+    ],
+    "badge": "Für Katzenbesitzer",
+    "highlights": [
+      "Wird am Heizkörper eingehängt",
+      "Warmer Platz im Winter",
+      "Bezug meist abnehmbar"
+    ]
+  },
+  {
+    "title": "Sous-Vide-Garer",
+    "query": "sous vide garer stick",
+    "emoji": "🥩",
+    "category": "kitchen",
+    "budget": "50to150",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag",
+      "vatertag"
+    ],
+    "badge": "Für Hobbyköche",
+    "highlights": [
+      "Gart im Wasserbad bei fester Temperatur",
+      "Für Fleisch, Fisch und Gemüse",
+      "Platzsparend im Topf einsetzbar"
+    ]
   }
 ];
