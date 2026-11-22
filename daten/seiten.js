@@ -983,5 +983,68 @@ window.PAGES = [
       ]
     },
     "foto_id": 1979272
+  },
+  {
+    "slug": "valentinstagsgeschenke",
+    "titel": "Valentinstagsgeschenke: Ideen für Partner, Freundin und Freund",
+    "kurztitel": "Valentinstag",
+    "emoji": "💝",
+    "anlass": "valentinstag",
+    "monate": [
+      12,
+      1,
+      2
+    ],
+    "beschreibung": "Valentinstagsgeschenke für Freundin, Freund und Partner – gemütliche, persönliche und kleine Ideen nach Budget, direkt auf Amazon ansehen.",
+    "intro": "Am 14. Februar ist Valentinstag – und ein liebevolles Geschenk muss weder teuer noch kitschig sein. Hier findest du Ideen für gemeinsame Abende, kleine Aufmerksamkeiten und persönliche Erinnerungen.",
+    "filter": {},
+    "foto": "kerzen herz tisch",
+    "ratgeber": {
+      "titel": "Ratgeber: Das passende Valentinstagsgeschenk finden",
+      "abschnitte": [
+        {
+          "ueberschrift": "Gemeinsame Zeit statt großer Geste",
+          "text": "Viele Paare wünschen sich zum Valentinstag vor allem eines: einen Abend, der sich anders anfühlt als der Alltag. Ein Geschenk, das ihr gemeinsam nutzen könnt, wirkt darum oft länger als Blumen, die nach ein paar Tagen welken. Ein Fondue-Set für einen gemütlichen Abend zu zweit, Gesprächskarten für Paare oder ein Sternenhimmel-Projektor fürs Schlafzimmer machen aus dem 14. Februar ein kleines Erlebnis zu Hause.\n\nÜberleg dir dabei, was euch beiden Spaß macht: Kocht ihr gern zusammen, schaut ihr lieber Filme auf dem Sofa, oder redet ihr gern bis spät in die Nacht? Das Geschenk muss nicht überraschen – es soll zeigen, dass du an eure gemeinsame Zeit gedacht hast."
+        },
+        {
+          "ueberschrift": "Persönlich wird es durch Erinnerungen",
+          "text": "Ein Valentinstagsgeschenk für die Freundin oder den Freund wird besonders, wenn es eure Geschichte erzählt. Ein Fotoalbum zum Einkleben kannst du mit Bildern vom ersten Urlaub, Eintrittskarten und kleinen Notizen füllen. Mit einer Sofortbildkamera entstehen neue Erinnerungen direkt auf Papier, und ein Briefpapier-Set lädt dazu ein, endlich mal wieder einen echten Liebesbrief zu schreiben.\n\nPlane für solche Geschenke etwas Zeit ein: Ein halb gefülltes Album mit dem Versprechen, den Rest gemeinsam zu gestalten, ist übrigens auch eine schöne Idee, wenn es knapp wird."
+        },
+        {
+          "ueberschrift": "Wohlfühlen, Budget und typische Fehler",
+          "text": "Wer lieber etwas zum Entspannen verschenkt, liegt mit einem flauschigen Bademantel, einem Duftkerzen-Set oder einem Wellness-Geschenkset meist richtig. Achte dabei auf Düfte und Farben, die die Person auch sonst mag – nicht jeder liebt Rosenduft oder knalliges Rot. Auch Blau, Grün oder warme Naturtöne wirken liebevoll.\n\nDu musst nicht viel ausgeben: Kleine Valentinstagsgeschenke unter 15 €, etwa Badebomben oder Gesprächskarten, kommen von Herzen genauso gut an. Typische Fehler sind Geschenke mit versteckter Botschaft (Fitnessgeräte, Ratgeber zur Selbstoptimierung) und Last-Minute-Käufe an der Tankstelle. Und noch ein Tipp: Der Valentinstag 2027 fällt auf einen Sonntag – bestell rechtzeitig, damit alles pünktlich da ist."
+        }
+      ],
+      "produkttexte": {
+        "Fondue-Set": "Für alle, die den Valentinstag lieber zu Hause feiern. Ein Fondue-Abend dauert lange, ist gesellig und lässt sich mit Käse, Brühe oder Schokolade ganz nach eurem Geschmack gestalten.",
+        "Gesprächskarten für Paare": "Eine kleine Idee mit großer Wirkung: Die Fragen bringen euch auf Themen, über die ihr im Alltag selten redet. Passt gut zu einem Abend ohne Handy und Fernseher.",
+        "Sternenhimmel-Projektor": "Zaubert einen Sternenhimmel an die Zimmerdecke und macht das Schlafzimmer oder Wohnzimmer abends besonders gemütlich. Schön für Paare, die gern zusammen auf dem Sofa liegen.",
+        "Fotoalbum zum Einkleben": "Für Romantiker, die Erinnerungen gern in den Händen halten. Mit Fotos, Tickets und kleinen Notizen wird daraus ein Geschenk, das es nur einmal gibt.",
+        "Sofortbildkamera": "Passt zu allen, die gern unterwegs sind und Momente festhalten möchten. Die Bilder kommen sofort heraus und eignen sich perfekt fürs gemeinsame Album oder die Pinnwand.",
+        "Flauschiger Bademantel": "Ein Wohlfühl-Geschenk für die Freundin, den Freund oder den Partner, der es abends gern kuschelig hat. Wähle eine Farbe, die zur Person passt, nicht unbedingt Rot.",
+        "Duftkerzen-Set": "Kerzen sorgen schnell für eine warme Stimmung beim Abendessen oder in der Badewanne. Mehrere Düfte in einem Set machen es leichter, den richtigen zu treffen.",
+        "Briefpapier-Set": "Für alle, die ihre Gefühle lieber aufschreiben als aussprechen. Ein handgeschriebener Brief zum Valentinstag ist eine kleine Geste, die lange aufgehoben wird.",
+        "Schmuckkästchen": "Ein hübscher Platz für Ringe, Ketten und Ohrringe – ideal für die Freundin, deren Schmuck bisher in einer Schale auf dem Nachttisch liegt."
+      },
+      "faq": [
+        {
+          "frage": "Was schenkt man zum Valentinstag, wenn man noch nicht lange zusammen ist?",
+          "antwort": "Am Anfang einer Beziehung passt eher etwas Kleines und Gemeinsames, zum Beispiel Gesprächskarten für Paare, ein Duftkerzen-Set oder ein selbst geplanter Abend. Zu große Geschenke können schnell Druck machen."
+        },
+        {
+          "frage": "Gibt es gute Valentinstagsgeschenke unter 15 Euro?",
+          "antwort": "Ja. Badebomben, Gesprächskarten, ein Briefpapier-Set für einen Liebesbrief oder ein Gesichtsmasken-Set für einen Wellness-Abend kosten wenig und wirken trotzdem persönlich. Wichtig ist, dass das Geschenk zur Person passt."
+        },
+        {
+          "frage": "Was kann man einem Mann zum Valentinstag schenken?",
+          "antwort": "Viele Männer freuen sich über etwas, das sie im Alltag nutzen oder gemeinsam erleben können: Kopfhörer, eine Sofortbildkamera oder ein Fondue-Abend zu zweit. Ein persönlicher Brief dazu macht jedes Geschenk wärmer."
+        },
+        {
+          "frage": "Wann ist Valentinstag 2027?",
+          "antwort": "Der Valentinstag ist immer am 14. Februar, 2027 fällt er auf einen Sonntag. Wer online bestellt, sollte das Geschenk am besten schon Anfang Februar kaufen, damit es rechtzeitig ankommt."
+        }
+      ]
+    },
+    "foto_id": 1280525
   }
 ];

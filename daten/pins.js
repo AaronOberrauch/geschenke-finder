@@ -1797,5 +1797,110 @@ window.PINS = [
       "Milchkännchen für Latte Art",
       "Bullet-Journal-Notizbuch"
     ]
+  },
+  {
+    "id": "2026-11-22-geschenke-fuer-papa-bis-150",
+    "datum": "2026-11-22",
+    "titel": "Geschenke für Papa bis 150 €: Werkzeugkoffer, Hantelbank und mehr zur Black Week",
+    "beschreibung": "Du suchst ein größeres Weihnachtsgeschenk für Papa oder ein Geschenk für den Mann, der schon fast alles hat? Ein bestückter Werkzeugkoffer, eine klappbare Hantelbank, eine beheizbare Weste oder ein Gusseisentopf sind Ideen, die lange genutzt werden. Merk dir die Ideen für die Black Week – alle Geschenke für Männer nach Budget findest du auf der Seite. #geschenkefürpapa #geschenkefürmänner #weihnachtsgeschenke #werbung",
+    "emoji": "🧰",
+    "seite": "geschenke-fuer-maenner",
+    "filter": {
+      "recipient": "parents",
+      "budget": "50to150"
+    },
+    "design": "d",
+    "foto": "werkstatt holz werkzeug",
+    "produkte": [
+      "Bestückter Werkzeugkoffer",
+      "Klappbare Hantelbank",
+      "Beheizbare Weste",
+      "Gusseisentopf mit Deckel",
+      "Noise-Cancelling-Kopfhörer",
+      "Dashcam fürs Auto"
+    ],
+    "foto_id": 1629587
+  },
+  {
+    "id": "2026-11-22-geschenke-fuer-katzenbesitzer-unter-50",
+    "datum": "2026-11-22",
+    "titel": "Geschenke für Katzenbesitzer unter 50 €: Kuschelhöhle, Fummelbrett und Fensterliege",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Katzenbesitzer oder etwas Schönes für die eigene Wohnungskatze? Eine Katzenhöhle zum Kuscheln, ein Fummelbrett für Katzen, eine Katzen-Fensterliege oder ein Trinkbrunnen machen Katze und Halter gleichermaßen froh. Alle Geschenke für Tierfreunde nach Budget findest du auf der Seite. #katzenliebe #geschenkefürkatzenbesitzer #katzen #werbung",
+    "emoji": "🐈",
+    "seite": "geschenke-fuer-tierfreunde",
+    "filter": {
+      "recipient": "household",
+      "budget": "15to50"
+    },
+    "design": "d",
+    "foto": "katze fenster winter",
+    "produkte": [
+      "Katzenhöhle zum Kuscheln",
+      "Fummelbrett für Katzen",
+      "Katzen-Fensterliege",
+      "Katzen-Trinkbrunnen",
+      "Heizungsliege für Katzen",
+      "Erhöhter Katzennapf aus Keramik"
+    ],
+    "foto_id": 4070953
+  },
+  {
+    "id": "2026-11-22-home-workout-geschenke-teenager",
+    "datum": "2026-11-22",
+    "titel": "Home Workout Geschenke für Teenager: Ideen fürs Training im Kinderzimmer",
+    "beschreibung": "Dein Teenager will zu Hause trainieren, aber das Zimmer ist klein? Ein Springseil mit Zähler, Fitnessbänder, eine Klimmzugstange für den Türrahmen oder eine Soft-Plyo-Box brauchen wenig Platz und passen gut als Weihnachtsgeschenk. Alle Home-Training-Geschenke nach Budget findest du auf der Seite. #homeworkout #fitnesszuhause #geschenkefürteenager #werbung",
+    "emoji": "🏋️",
+    "seite": "home-training-geschenke",
+    "filter": {
+      "recipient": "teenager"
+    },
+    "design": "d",
+    "foto": "fitness training",
+    "produkte": [
+      "Springseil mit Zähler",
+      "Fitnessbänder-Set",
+      "Klimmzugstange für den Türrahmen",
+      "Soft-Plyo-Box",
+      "Balance Board aus Holz",
+      "Liegestützgriffe"
+    ],
+    "foto_id": 2604149
+  },
+  {
+    "id": "2026-11-22-geschenke-fuer-hobbykoeche-bis-150",
+    "datum": "2026-11-22",
+    "titel": "Geschenke für Hobbyköche bis 150 €: größere Küchen-Ideen zum Merken für die Black Week",
+    "beschreibung": "Du suchst ein besonderes Weihnachtsgeschenk für jemanden, der gerne kocht? Ein Gusseisentopf mit Deckel, ein Sous-Vide-Garer oder ein Raclette-Grill für gesellige Abende sind Geschenke für Hobbyköche, die jahrelang in der Küche bleiben. Alle Ideen für Hobbyköche nach Budget findest du auf der Seite. #geschenkefürhobbyköche #kochen #weihnachtsgeschenke #werbung",
+    "emoji": "🍲",
+    "seite": "geschenke-fuer-hobbykoeche",
+    "filter": {
+      "budget": "50to150"
+    },
+    "design": "c",
+    "produkte": [
+      "Gusseisentopf mit Deckel",
+      "Sous-Vide-Garer",
+      "Raclette-Grill"
+    ]
+  },
+  {
+    "id": "2026-11-22-weihnachtsgeschenke-fuer-gamer-teenager",
+    "datum": "2026-11-22",
+    "titel": "Weihnachtsgeschenke für Gamer im Teenageralter: Headset, Tastatur und Zimmer-Deko",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für einen Gamer im Teenageralter? Ein Gaming-Headset, eine mechanische Gaming-Tastatur, ein XXL-Mauspad oder ein LED-Neonschild fürs Zimmer passen zu jedem Zocker-Schreibtisch. Alle Geschenke für Gamer nach Budget findest du auf der Seite. #gaming #geschenkefürgamer #geschenkefürteenager #werbung",
+    "emoji": "🎮",
+    "seite": "geschenke-fuer-gamer",
+    "filter": {
+      "recipient": "teenager"
+    },
+    "design": "b",
+    "produkte": [
+      "Gaming-Headset",
+      "Mechanische Gaming-Tastatur",
+      "Gaming-Mauspad XXL",
+      "LED-Neonschild fürs Zimmer",
+      "Headset-Ständer für den Schreibtisch",
+      "Gaming-Maus"
+    ]
   }
 ];

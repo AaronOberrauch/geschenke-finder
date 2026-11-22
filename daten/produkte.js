@@ -425,7 +425,8 @@ window.PRODUCTS = [
       "teenager"
     ],
     "occasions": [
-      "nikolaus"
+      "nikolaus",
+      "valentinstag"
     ],
     "badge": "Gemütliches Licht",
     "highlights": [
@@ -1647,7 +1648,8 @@ window.PRODUCTS = [
     ],
     "occasions": [
       "muttertag",
-      "wichteln"
+      "wichteln",
+      "valentinstag"
     ],
     "badge": "Gemütliche Stimmung",
     "highlights": [
@@ -1667,7 +1669,8 @@ window.PRODUCTS = [
       "parents"
     ],
     "occasions": [
-      "muttertag"
+      "muttertag",
+      "valentinstag"
     ],
     "badge": "Zum Wohlfühlen",
     "highlights": [
@@ -2051,7 +2054,8 @@ window.PRODUCTS = [
       "parents"
     ],
     "occasions": [
-      "muttertag"
+      "muttertag",
+      "valentinstag"
     ],
     "badge": "Für gepflegte Hände",
     "highlights": [
@@ -2733,7 +2737,8 @@ window.PRODUCTS = [
     "occasions": [
       "nikolaus",
       "wichteln",
-      "muttertag"
+      "muttertag",
+      "valentinstag"
     ],
     "badge": "Für kalte Tage",
     "highlights": [
@@ -2932,7 +2937,8 @@ window.PRODUCTS = [
       "weihnachten",
       "wichteln",
       "nikolaus",
-      "geburtstag"
+      "geburtstag",
+      "valentinstag"
     ],
     "badge": "Für gemütliche Abende",
     "highlights": [
@@ -3415,6 +3421,74 @@ window.PRODUCTS = [
       "Gart im Wasserbad bei fester Temperatur",
       "Für Fleisch, Fisch und Gemüse",
       "Platzsparend im Topf einsetzbar"
+    ]
+  },
+  {
+    "title": "Fummelbrett für Katzen",
+    "query": "fummelbrett katze",
+    "emoji": "🐱",
+    "category": "pets",
+    "budget": "15to50",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag"
+    ],
+    "badge": "Zum Beschäftigen",
+    "highlights": [
+      "Futter in Mulden verstecken",
+      "Beschäftigung für Wohnungskatzen",
+      "Leicht zu reinigen"
+    ]
+  },
+  {
+    "title": "Soft-Plyo-Box",
+    "query": "soft plyo box schaumstoff",
+    "emoji": "📦",
+    "category": "sport",
+    "budget": "50to150",
+    "recipients": [
+      "household",
+      "teenager",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag"
+    ],
+    "badge": "Fürs Home-Training",
+    "highlights": [
+      "Weicher Schaumstoff-Bezug",
+      "Für Step-ups, Sprünge und Dips",
+      "Mehrere Höhen je nach Seite"
+    ]
+  },
+  {
+    "title": "Gesprächskarten für Paare",
+    "query": "fragekarten für paare",
+    "emoji": "💬",
+    "category": "fun",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "parents",
+      "teenager"
+    ],
+    "occasions": [
+      "valentinstag",
+      "weihnachten",
+      "wichteln",
+      "geburtstag"
+    ],
+    "badge": "Für Zweisamkeit",
+    "highlights": [
+      "Fragen für gemeinsame Abende",
+      "Kleines Format, passt in jede Tasche",
+      "Ohne Bildschirm"
     ]
   }
 ];
