@@ -1902,5 +1902,110 @@ window.PINS = [
       "Headset-Ständer für den Schreibtisch",
       "Gaming-Maus"
     ]
+  },
+  {
+    "id": "2026-11-26-geschenke-fuer-kinder-entdecken",
+    "datum": "2026-11-26",
+    "titel": "Geschenke für Kinder zum Entdecken und Spielen: Mikroskop, Bausteine und Brettspiel",
+    "beschreibung": "Du suchst ein Weihnachtsgeschenk für Kinder, das nicht nach einem Tag in der Ecke liegt? Ein Mikroskop für Kinder, ein Experimentierkasten oder ein Klemmbaustein-Set laden zum Forschen und Bauen ein, ein Familien-Brettspiel bringt alle an einen Tisch. Alle Geschenke für Kinder nach Budget findest du auf der Seite. #geschenkefürkinder #weihnachtsgeschenke #spielzeug #werbung",
+    "emoji": "🔬",
+    "seite": "geschenke-fuer-kinder",
+    "filter": {
+      "category": "fun"
+    },
+    "design": "d",
+    "foto": "kinder spielen teppich",
+    "produkte": [
+      "Mikroskop für Kinder",
+      "Experimentierkasten für Kinder",
+      "Klemmbaustein-Set",
+      "Familien-Brettspiel",
+      "Malset im Koffer",
+      "Holzspielzeug-Set für Kleinkinder"
+    ],
+    "foto_id": 1639351
+  },
+  {
+    "id": "2026-11-26-geschenke-fuer-eltern-bis-150",
+    "datum": "2026-11-26",
+    "titel": "Geschenke für Eltern bis 150 €: Bilderrahmen, Heizdecke und Brotbackautomat zum Black Friday",
+    "beschreibung": "Du suchst ein größeres Weihnachtsgeschenk für Mama und Papa oder für Oma und Opa? Ein digitaler Bilderrahmen mit WLAN zeigt neue Familienfotos, eine elektrische Heizdecke wärmt an kalten Abenden und ein Brotbackautomat sorgt für frisches Brot am Wochenende. Alle Geschenke für Eltern und Großeltern nach Budget findest du auf der Seite. #geschenkefüreltern #weihnachtsgeschenke #großeltern #werbung",
+    "emoji": "🎁",
+    "seite": "geschenke-fuer-eltern-und-grosseltern",
+    "filter": {
+      "budget": "50to150"
+    },
+    "design": "d",
+    "foto": "großeltern sofa weihnachten",
+    "produkte": [
+      "Digitaler Bilderrahmen mit WLAN",
+      "Elektrische Heizdecke",
+      "Brotbackautomat",
+      "Wasserkocher mit Temperaturwahl"
+    ],
+    "foto_id": 670240
+  },
+  {
+    "id": "2026-11-26-wichtelgeschenke-kinder-unter-15",
+    "datum": "2026-11-26",
+    "titel": "Wichtelgeschenke für Kinder unter 15 €: kleine Ideen für Klasse, Kita und Familie",
+    "beschreibung": "Wichteln in der Schulklasse, im Kindergarten oder bei der Familienfeier? Ein Plätzchen-Ausstecher-Set oder ein Springseil mit Zähler sind kleine Wichtelgeschenke für Kinder, und für Kinder mit Kaninchen oder Meerschweinchen passt ein Knabberspielzeug für Kleintiere. Alle Wichtelgeschenke unter 15 € findest du auf der Seite. #wichteln #wichtelgeschenk #geschenkefürkinder #werbung",
+    "emoji": "🎅",
+    "seite": "wichtelgeschenke-unter-15-euro",
+    "filter": {
+      "recipient": "kids"
+    },
+    "design": "b",
+    "produkte": [
+      "Plätzchen-Ausstecher-Set",
+      "Springseil mit Zähler",
+      "Knabberspielzeug für Kleintiere",
+      "Katzentunnel",
+      "Heuraufe für Kaninchen und Meerschweinchen",
+      "Pfotenabdruck-Set"
+    ]
+  },
+  {
+    "id": "2026-11-26-nikolausgeschenke-hundebesitzer",
+    "datum": "2026-11-26",
+    "titel": "Nikolausgeschenke für Hundebesitzer und Katzenfreunde: Kleinigkeiten für den Stiefel",
+    "beschreibung": "Du suchst ein kleines Nikolausgeschenk für Hundebesitzer oder ein Geschenk für Katzenliebhaber? Eine Trinkflasche für Hunde unterwegs, eine Ballschleuder oder ein Spielkissen mit Katzenminze passen in jeden Nikolausstiefel. Alle Nikolausgeschenke für Tierfreunde findest du auf der Seite. #nikolaus #nikolausgeschenk #hundeliebe #katzenliebe #werbung",
+    "emoji": "🐾",
+    "seite": "nikolausgeschenke",
+    "filter": {
+      "category": "pets",
+      "recipient": "household"
+    },
+    "design": "d",
+    "foto": "hund decke winter",
+    "produkte": [
+      "Trinkflasche für Hunde unterwegs",
+      "Ballschleuder für Hunde",
+      "Spielkissen mit Katzenminze",
+      "Schnüffelteppich für Hunde",
+      "Hundehandtuch aus Mikrofaser",
+      "Kratzbrett aus Wellpappe"
+    ],
+    "foto_id": 633962
+  },
+  {
+    "id": "2026-11-26-wellness-geschenke-frauen-unter-50",
+    "datum": "2026-11-26",
+    "titel": "Wellness Geschenke für Frauen unter 50 €: Bademantel, Seidenkissenbezug und Mani-Set",
+    "beschreibung": "Du suchst ein Wellness-Geschenk für die Freundin, die Schwester oder Mama? Ein flauschiger Bademantel, ein Seidenkissenbezug oder ein Mani- und Pediküre-Set machen aus einem gewöhnlichen Abend einen kleinen Wohlfühlabend zu Hause. Alle Geschenke für Frauen nach Budget findest du auf der Seite. #geschenkefürfrauen #wellness #weihnachtsgeschenke #werbung",
+    "emoji": "🛁",
+    "seite": "geschenke-fuer-frauen",
+    "filter": {
+      "category": "beauty",
+      "budget": "15to50"
+    },
+    "design": "c",
+    "produkte": [
+      "Flauschiger Bademantel",
+      "Seidenkissenbezug",
+      "Mani- und Pediküre-Set",
+      "Wellness-Geschenkset",
+      "Aroma-Diffuser"
+    ]
   }
 ];

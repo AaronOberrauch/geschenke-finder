@@ -3490,5 +3490,72 @@ window.PRODUCTS = [
       "Kleines Format, passt in jede Tasche",
       "Ohne Bildschirm"
     ]
+  },
+  {
+    "title": "Mikroskop für Kinder",
+    "query": "kindermikroskop",
+    "emoji": "🔬",
+    "category": "fun",
+    "budget": "15to50",
+    "recipients": [
+      "kids",
+      "teenager"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag"
+    ],
+    "badge": "Zum Entdecken",
+    "highlights": [
+      "Mehrere Vergrößerungsstufen",
+      "Mit Zubehör für erste Präparate",
+      "Für kleine Forscherinnen und Forscher"
+    ]
+  },
+  {
+    "title": "Brotbackautomat",
+    "query": "brotbackautomat",
+    "emoji": "🍞",
+    "category": "kitchen",
+    "budget": "50to150",
+    "recipients": [
+      "household",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "geburtstag",
+      "muttertag"
+    ],
+    "badge": "Für Hobbybäcker",
+    "highlights": [
+      "Knetet, lässt gehen und backt",
+      "Verschiedene Backprogramme",
+      "Frisches Brot ohne viel Aufwand"
+    ]
+  },
+  {
+    "title": "Trinkflasche für Hunde unterwegs",
+    "query": "hunde trinkflasche unterwegs",
+    "emoji": "💧",
+    "category": "pets",
+    "budget": "under15",
+    "recipients": [
+      "household",
+      "teenager",
+      "parents"
+    ],
+    "occasions": [
+      "weihnachten",
+      "wichteln",
+      "nikolaus",
+      "geburtstag"
+    ],
+    "badge": "Für Gassirunden",
+    "highlights": [
+      "Flasche und Trinkschale in einem",
+      "Passt in Tasche oder Rucksack",
+      "Praktisch für Ausflüge"
+    ]
   }
 ];

@@ -782,7 +782,8 @@ window.PAGES = [
       "Balance Board aus Holz",
       "Window-Color-Set für Kinder",
       "Vorlese-Bilderbuch zu Weihnachten",
-      "Kinder-Taschenlampe als Projektor"
+      "Kinder-Taschenlampe als Projektor",
+      "Mikroskop für Kinder"
     ],
     "ratgeber": {
       "titel": "Ratgeber: Das passende Geschenk für Kinder finden",
@@ -856,7 +857,8 @@ window.PAGES = [
       "Familien-Brettspiel",
       "Briefpapier-Set",
       "Plüsch-Hausschuhe",
-      "Wasserkocher mit Temperaturwahl"
+      "Wasserkocher mit Temperaturwahl",
+      "Brotbackautomat"
     ],
     "ratgeber": {
       "titel": "Ratgeber: Geschenke für Eltern und Großeltern",
